@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "C:/Users/50567920/Documents/GitHub/hugo-grimoire",
+	"sourceRoot": "C:/Users/50567920/Documents/GitHub/trimad.github.io",
 	"sources": [
 		"themes/hugo-clarity/assets/sass/main.sass",
 		"themes/hugo-clarity/assets/sass/_variables.sass",
