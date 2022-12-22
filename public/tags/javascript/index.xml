@@ -3,7 +3,4 @@ click mouse in iframe to generate a new map
 This sketch maps perlin noise between a value of 0 and 255 across a grid. Values greater than or equal to 100 are
 "grass", values between 75 and 100 are "sand", and values less than or equal to 75 are "water".
 Click here to render a fullscreen map
-Launch the p5.js editor</description></item><item><title>Arrays</title><link>https://trimad.github.io/post/2016-12-13-arrays/</link><pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2016-12-13-arrays/</guid><description>
-View Fullscreen
-View In p5.js Editor
-Click on them circles homes</description></item></channel></rss>
+Launch the p5.js editor</description></item></channel></rss>
