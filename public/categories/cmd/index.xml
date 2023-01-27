@@ -20,18 +20,8 @@ ffmpeg Download
 ffmpeg Documentation
 Audio Processing
 Convert to 8kHz, single-channel PCM
-```console
-ffmpeg -i "input.mp3" -ar 8000 -ac 1 output.wav
-```
-Convert to 16kHz, single-channel PCM
-```console
-ffmpeg -i "input.mp3" -ar 16000 -ac 1 output.wav
-```
-Convert to 48kHz, single-channel PCM
-```console
-ffmpeg -i input.mp3 -ar 48000 -ac 1 output.wav
-```
-Video Processing
+1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 8000 -ac 1 output.wav Convert to 16kHz, single-channel PCM
+1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 16000 -ac 1 output.wav Convert to 48kHz, single-channel PCM
+1ffmpeg -i input.mp3 -ar 48000 -ac 1 output.wav Video Processing
 Add Music to a Video
-```console
-ffmpeg -i video.</description></item></channel></rss>
+1ffmpeg -i video.mp4 -i music.</description></item></channel></rss>

@@ -21,7 +21,7 @@ https://cdn-ce21media.streaming.mediaservices.windows.net/REDACTED/20220518_day1
 
 You'll know you're on the right track if you open a downloaded `.m3u8` file in Notepad++ and it looks something like this:
 
-```
+```Shell
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-PLAYLIST-TYPE:VOD
@@ -47,7 +47,7 @@ Fragments(video=249540000000,format=m3u8-aapl-v3,audiotrack=aac_UND_2_56)
 
 This URL can then be fed into ffmpeg like so and you will have successfully downloaded the stream:
 
-```console
+```Shell
 ffmpeg -i "https://cdn-ce21media.streaming.mediaservices.windows.net/REDACTED/20220518_day1dbt_baxermusser8460.ism/QualityLevels(1194234)/Manifest(video,format=m3u8-aapl-v3,audiotrack=aac_UND_2_56)" movie.mp4
 ```
 
