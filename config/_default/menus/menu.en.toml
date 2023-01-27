@@ -15,12 +15,8 @@
   weight = -108
 [[main]]
   parent = "Links"
-  name = "LinkedIn"
-  url = "https://www.linkedin.com/"
-[[main]]
-  parent = "Links"
-  name = "Twitter"
-  url = "https://twitter.com/"
+  name = "TikTok"
+  url = "https://www.tiktok.com/@kill3d2d3th/"
 
 [[main]]
   name = "About"
@@ -33,15 +29,15 @@
   name = "github"
   type = "social"
   weight = 1
-  url = "https://github.com/#"
+  url = "https://github.com/Trimad"
 [[social]]
-  name = "twitter"
+  name = "facebook"
   weight = 2
-  url = "https://twitter.com/#"
-[[social]]
-  name = "linkedin"
+  url = "https://www.tiktok.com/@kill3d2d3th/"
+  [[social]]
+  name = "instagram"
   weight = 3
-  url = "https://www.linkedin.com/in/#"
+  url = "https://www.tiktok.com/@kill3d2d3th/"
 [[social]]
   name = "rss"
   weight = 4
@@ -59,4 +55,4 @@
 # name = "gitlab"
 # url = "https://gitlab.com/#"
 # name = "discord"
-# url = "https://discord.gg/#"
+# url = "https://discord.gg/601998651924938753"
