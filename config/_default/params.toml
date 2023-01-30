@@ -132,7 +132,7 @@ languageMenuName = "🌐"
 # website author
 [author]
 name = "Tristan Madden"
- photo = "images/jane-doe.png" #include this if you would like to show the author photo on the sidebar
+ photo = "images/blondie.gif" #include this if you would like to show the author photo on the sidebar
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.

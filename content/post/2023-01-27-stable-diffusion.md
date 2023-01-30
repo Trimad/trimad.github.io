@@ -71,3 +71,21 @@ for i in range(len(distances)):
 ```
 
 This script is a Python script that renames a sequence of PNG images in a folder based on the distance of their RGB values from the RGB values of the first image in the sequence. The script imports the os, PIL and math modules, it sets the folder path where the images are located and get the list of all files in that folder. It opens the first image and gets its RGB values, then creates an empty list to store the distances. It iterates over the remaining images in the folder, if the file is a png it opens the image and gets its RGB values. Then it calculates the distance between the RGB values of the current image and the first image using the Euclidean distance formula, appends the distance and the image name to the distance list. The script then sorts the distance list by the distance, renames the first image to "0000.png" and renames each image to the next number in the sequence using the os.rename() function, and 4 digits zero-padded number followed by the extension.
+
+<h2>Frame Interpolation</h2>
+
+<h3><a href="https://github.com/google-research/frame-interpolation" title="FILM">FILM</a></h3>
+
+
+Activate the Conda environment
+```Shell
+conda activate frame_interpolation
+```
+From the Conda Shell, cd to the FILM directory
+```Shell
+cd C:\Users\trima\FILM
+```
+Place the images you would like to interpolate in the "photos" directory and run this command to begin interpolating them.
+```Shell
+python -m eval.interpolator_cli --pattern "photos" --model_path pretrained_models\film_net\Style\saved_model --times_to_interpolate 1 --output_video
+```
