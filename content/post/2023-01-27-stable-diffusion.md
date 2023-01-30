@@ -91,6 +91,7 @@ python -m eval.interpolator_cli --pattern "photos" --model_path pretrained_model
 ```
 
 <h2>Color Grading</h3>
+<h3>By Mean</h3>
 
 ```Python
 import os

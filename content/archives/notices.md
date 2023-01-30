@@ -1,5 +1,6 @@
 ---
 author: Hugo Authors
+category: archives
 title: Using Notices
 date: 2021-08-20
 description: Using Notices functionality within this theme

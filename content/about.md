@@ -1,25 +1,32 @@
 +++
 title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
+description = "A little about myself"
+date = "2023-01-30"
+aliases = ["about-us", "about-me", "contact"]
 author = "Hugo Authors"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-
-Hugo makes use of a variety of open source projects including:
-
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+   riverrun, past Eve and Adam's, from swerve of shore to bend
+of bay, brings us by a commodius vicus of recirculation back to
+Howth Castle and Environs.
+    Sir Tristram, violer d'amores, fr'over the short sea, had passen-
+core rearrived from North Armorica on this side the scraggy
+isthmus of Europe Minor to wielderfight his penisolate war: nor
+had topsawyer's rocks by the stream Oconee exaggerated themselse
+to Laurens County's gorgios while they went doublin their mumper
+all the time: nor avoice from afire bellowsed mishe mishe to
+tauftauf thuartpeatrick: not yet, though venissoon after, had a
+kidscad buttended a bland old isaac: not yet, though all's fair in
+vanessy, were sosie sesthers wroth with twone nathandjoe. Rot a
+peck of pa's malt had Jhem or Shen brewed by arclight and rory
+end to the regginbrow was to be seen ringsome on the aquaface.
+    The fall (bababadalgharaghtakamminarronnkonnbronntonner-
+ronntuonnthunntrovarrhounawnskawntoohoohoordenenthur-
+nuk!) of a once wallstrait oldparr is retaled early in bed and later
+on life down through all christian minstrelsy. The great fall of the
+offwall entailed at such short notice the pftjschute of Finnegan,
+erse solid man, that the humptyhillhead of humself prumptly sends
+an unquiring one well to the west in quest of his tumptytumtoes:
+and their upturnpikepointandplace is at the knock out in the park
+where oranges have been laid to rust upon the green since dev-
+linsfirst loved livvy. 
