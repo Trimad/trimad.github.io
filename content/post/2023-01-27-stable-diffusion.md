@@ -10,7 +10,7 @@ title: Stable Diffusion Scripts
 
 <h3>Numbering PNG files in a folder in sequence</h3>
 
-```JavaScript
+```Python
 import os
 import pathlib
 
@@ -33,7 +33,7 @@ The script is changing the name of all png files in the current working director
 
 <h3>Distance Sort </h3>
 
-```JavaScript
+```Python
 import os
 from PIL import Image
 from math import sqrt
@@ -89,3 +89,64 @@ Place the images you would like to interpolate in the "photos" directory and run
 ```Shell
 python -m eval.interpolator_cli --pattern "photos" --model_path pretrained_models\film_net\Style\saved_model --times_to_interpolate 1 --output_video
 ```
+
+<h2>Color Grading</h3>
+
+```Python
+import os
+import cv2
+import numpy as np
+
+def average_color_grading(folder_path):
+    # Get all image filenames in the folder
+    filenames = [f for f in os.listdir(folder_path) if f.endswith('.jpg') or f.endswith('.png')]
+    
+    # Initialize a sum of color grading for all images
+    color_grading_sum = None
+    
+    # Iterate through all images, adding each image's color grading to the sum
+    for filename in filenames:
+        print("averaging " + filename)
+        image_path = os.path.join(folder_path, filename)
+        image = cv2.imread(image_path)
+        
+        # Average color grading of an image is computed as mean of its pixels
+        color_grading = np.mean(image, axis=(0, 1))
+        
+        # Add the color grading of the current image to the sum
+        if color_grading_sum is None:
+            color_grading_sum = color_grading
+        else:
+            color_grading_sum += color_grading
+    
+    # Divide the sum of color grading by the number of images to get the average color grading
+    average_color_grading = color_grading_sum / len(filenames)
+    
+    return average_color_grading
+
+def apply_color_grading(folder_path, average_color_grading):
+    # Get all image filenames in the folder
+    filenames = [f for f in os.listdir(folder_path) if f.endswith('.jpg') or f.endswith('.png')]
+    
+    # Create a new folder to save the color graded frames
+    color_graded_folder = os.path.join(folder_path, 'color_graded')
+    os.makedirs(color_graded_folder, exist_ok=True)
+    
+    # Iterate through all images, applying the average color grading to each frame
+    for i, filename in enumerate(filenames):
+        print("color grading " + filename)
+        image_path = os.path.join(folder_path, filename)
+        image = cv2.imread(image_path)
+        
+        # Subtract the average color grading from each pixel to apply the color grading
+        color_graded_image = image - np.mean(image, axis=(0, 1)) + average_color_grading
+        
+        # Zero-pad the sequential number and save the color graded image with the zero-padded sequential number
+        color_graded_image_path = os.path.join(color_graded_folder, str(i).zfill(len(str(len(filenames)))) + '.jpg')
+        cv2.imwrite(color_graded_image_path, color_graded_image)
+
+folder_path = 'images'
+average_color_grading = average_color_grading(folder_path)
+apply_color_grading(folder_path, average_color_grading)
+```
+This program applies color grading to a set of images stored in the "images" folder. It does so by first computing the average color grading of all the images and then subtracting the average color grading from each pixel of each image and adding the average color grading. The resulting color graded images are saved in a new folder called "color_graded" within the "images" folder. It applies the average color grading to each frame by subtracting the mean of each frame's pixels from each pixel and adding the average color grading. 

@@ -1,60 +1,303 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Clarity</title><link>https://trimad.github.io/post/</link><description>Recent content in Posts on Clarity</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 27 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Stable Diffusion Scripts</title><link>https://trimad.github.io/post/2023-01-27-stable-diffusion/</link><pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-01-27-stable-diffusion/</guid><description>
-Data Grooming
-Numbering PNG files in a folder in sequence
-1import os 2import pathlib 3 4collection = os.getcwd() 5#print(collection) 6for i, filename in enumerate(os.listdir(collection)): 7 file_extension = pathlib.Path(filename).suffix 8 #print(&amp;#34;File Extension: &amp;#34;, file_extension) 9 if(file_extension == &amp;#34;.png&amp;#34;): 10 os.rename(collection +&amp;#34;\\&amp;#34;+ filename, collection +&amp;#34;\\&amp;#34;+ str(i).zfill(4) + &amp;#34;.png&amp;#34;) This code block is a Python script that does the following:
-Imports the os and pathlib modules. Defines a variable collection which is set to the current working directory.</description></item><item><title>Download Movie Streams</title><link>https://trimad.github.io/post/2022-06-09-download-movie-streams/</link><pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-06-09-download-movie-streams/</guid><description>
-This is my tentative work flow for downloading movie streams online. The gist of what I've learned about this process is that every HTTP Live Stream (HLS) begins with an .m3u8 playlist with a MIME type of x-mpegURL or vnd.apple.mpegURL. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page.</description></item><item><title>youtube-dl</title><link>https://trimad.github.io/post/2022-04-16-youtube-dl/</link><pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-16-youtube-dl/</guid><description>
-youtube-dl is a command-line program to download videos from www.youtube.com and a few other sites.
-Examples
-Download a YouTube video with the best available audio quality:
-```console
-youtube-dl -f bestaudio "https://www.youtube.com/watch?v=iik25wqIuFo"
-```
-Download an entire YouTube playlist:
-```console
-youtube-dl --yes-playlist "https://www.youtube.com/playlist?list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd"
-```
-Begin downloading from a playlist at a specific position:
-```console
-youtube-dl --yes-playlist --playlist-start 22 "https://www.youtube.com/watch?v=M5c9HdaQqh0&amp;list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd"
-```
-Download the Windows executable</description></item><item><title>Dump WiFi Passwords</title><link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid><description>
-This PowerShell script dumps the saved passwords of all wireless networks saved on a Windows 10 or Windows 11 computer. It accomplishes this by first calling:
-1netsh wlan show profile and then:
-1netsh wlan show profile [SSID] key=clear The outputs of these commands are captured in arrays and everything beyond that is just string matching and filtering. The output is saved as &amp;quot;output.csv&amp;quot; to your working directory and then automatically opens output.</description></item><item><title>Using Hugo page bundles</title><link>https://trimad.github.io/post/bundle/</link><pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/bundle/</guid><description>
-Page bundles are an optional way to organize page resources within Hugo. You can opt-in to using page bundles in Hugo Clarity with `usePageBundles` in your site configuration --- or in a page's front matter.</description></item><item><title>Using OpenStreetMap</title><link>https://trimad.github.io/post/map/</link><pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/map/</guid><description/></item><item><title>ffmpeg</title><link>https://trimad.github.io/post/2022-04-16-ffmpeg/</link><pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-16-ffmpeg/</guid><description>
-ffmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
-ffmpeg Download
-ffmpeg Documentation
-Audio Processing
-Convert to 8kHz, single-channel PCM
-1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 8000 -ac 1 output.wav Convert to 16kHz, single-channel PCM
-1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 16000 -ac 1 output.wav Convert to 48kHz, single-channel PCM
-1ffmpeg -i input.mp3 -ar 48000 -ac 1 output.wav Video Processing
-Add Music to a Video
-1ffmpeg -i video.mp4 -i music.</description></item><item><title>Using Notices</title><link>https://trimad.github.io/post/notices/</link><pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/notices/</guid><description>
-The &amp;quot;Notices&amp;quot; shortcode enables you to call out pieces of information - sidebars, warnings, tips, etc.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hugo Grimoire</title>
+    <link>https://trimad.github.io/post/</link>
+    <description>Recent content in Posts on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 27 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stable Diffusion Scripts</title>
+      <link>https://trimad.github.io/post/2023-01-27-stable-diffusion/</link>
+      <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-01-27-stable-diffusion/</guid>
+      <description>
+        
+          
+            Data GroomingNumbering PNG files in a folder in sequence1import os 2import pathlib 3 4collection = os.getcwd() 5#print(collection) 6for i, filename in enumerate(os.listdir(collection)): 7 file_extension = pathlib.Path(filename).suffix 8 #print(&amp;#34;File Extension: &amp;#34;, file_extension) 9 if(file_extension == &amp;#34;.png&amp;#34;): 10 os.rename(collection +&amp;#34;\\&amp;#34;+ filename, collection +&amp;#34;\\&amp;#34;+ str(i).zfill(4) + &amp;#34;.png&amp;#34;) This code block is a Python script that does the following:
+Imports the os and pathlib modules. Defines a variable collection which is set to the current working directory.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Download Movie Streams</title>
+      <link>https://trimad.github.io/post/2022-06-09-download-movie-streams/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-06-09-download-movie-streams/</guid>
+      <description>
+        
+          
+            This is my tentative work flow for downloading movie streams online. The gist of what I&#39;ve learned about this process is that every HTTP Live Stream (HLS) begins with an .m3u8 playlist with a MIME type of x-mpegURL or vnd.apple.mpegURL. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>youtube-dl</title>
+      <link>https://trimad.github.io/post/2022-04-16-youtube-dl/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-16-youtube-dl/</guid>
+      <description>
+        
+          
+            youtube-dl is a command-line program that allows users to download videos from YouTube and other video-sharing websites. The program is open-source and can be used on a variety of operating systems, including Windows, Mac, and Linux. It can download videos in a variety of formats, including MP4, FLV, and 3GP, and can also extract audio from videos as MP3 or other audio formats. Additionally, youtube-dl can be used to download videos from other websites like Vimeo, Dailymotion, and more.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump WiFi Passwords</title>
+      <link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid>
+      <description>
+        
+          
+            This script uses the Windows command-line tool &amp;quot;netsh&amp;quot; to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named &amp;quot;output.csv&amp;quot;. Finally, the script opens the &amp;quot;output.csv&amp;quot; file.
+The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quot;output.csv&amp;quot; file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using Hugo page bundles</title>
+      <link>https://trimad.github.io/post/bundle/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/bundle/</guid>
+      <description>
+        
+          
+            Page bundles are an optional way to organize page resources within Hugo. You can opt-in to using page bundles in Hugo Clarity with `usePageBundles` in your site configuration --- or in a page&#39;s front matter.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using OpenStreetMap</title>
+      <link>https://trimad.github.io/post/drafts/map/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/drafts/map/</guid>
+      <description>
+        
+          
+            
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>https://trimad.github.io/post/2022-04-16-ffmpeg/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-16-ffmpeg/</guid>
+      <description>
+        
+          
+            ffmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
+ffmpeg Downloadffmpeg DocumentationAudio ProcessingConvert to 8kHz, single-channel PCM1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 8000 -ac 1 output.wav Convert to 16kHz, single-channel PCM1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 16000 -ac 1 output.wav Convert to 48kHz, single-channel PCM1ffmpeg -i input.mp3 -ar 48000 -ac 1 output.wav Video ProcessingAdd Music to a Video1ffmpeg -i video.mp4 -i music.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using Notices</title>
+      <link>https://trimad.github.io/post/drafts/notices/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/drafts/notices/</guid>
+      <description>
+        
+          
+            The &amp;quot;Notices&amp;quot; shortcode enables you to call out pieces of information - sidebars, warnings, tips, etc.
 To create a notice on a page, you can use the notice shortcode.
-You use the notice shortcode, with the first parameter being one of note, info, tip, and warning. Then add a title for your note in quotes as the second parameter. The inner body of the note can be whatever markdown you want to create.</description></item><item><title>Guia de Sintaxe Markdown</title><link>https://trimad.github.io/post/markdown-syntax.pt/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/markdown-syntax.pt/</guid><description>
-&lt;p>&lt;strong>Este artigo oferece um exemplo básico de uma tradução em Português. O restante conteúdo não foi traduzido.&lt;/strong>&lt;/p>
-&lt;p>Artigo original: https://trimad.github.io/post/markdown-syntax/&lt;/p>
-&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://trimad.github.io/post/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/markdown-syntax/</guid><description>
-&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p></description></item><item><title>Rich Content</title><link>https://trimad.github.io/post/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/rich-content/</guid><description>
-&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p></description></item><item><title>Placeholder Text</title><link>https://trimad.github.io/post/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/placeholder-text/</guid><description>
-&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p></description></item><item><title>Math Typesetting</title><link>https://trimad.github.io/post/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/math-typesetting/</guid><description>
-&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description></item><item><title>Emoji Support</title><link>https://trimad.github.io/post/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/emoji-support/</guid><description>
-&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p></description></item><item><title>Kattis Challenge "Line Them Up"</title><link>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</guid><description>
-The Challenge
-My solution</description></item><item><title>Kattis Challenge "Server"</title><link>https://trimad.github.io/post/2017-08-18-kattis-server/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-18-kattis-server/</guid><description>
-The Challenge
-My solution</description></item><item><title>Kattis Challenge "A Different Problem"</title><link>https://trimad.github.io/post/2017-08-15-kattis-different/</link><pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-15-kattis-different/</guid><description>
-The Challenge
-My solution</description></item><item><title>Simple 2D Terrain Generation Using Perlin Noise</title><link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link><pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid><description>
-click mouse in iframe to generate a new map
-This sketch maps perlin noise between a value of 0 and 255 across a grid. Values greater than or equal to 100 are
-"grass", values between 75 and 100 are "sand", and values less than or equal to 75 are "water".
-Click here to render a fullscreen map
-Launch the p5.js editor</description></item><item><title>Arrays</title><link>https://trimad.github.io/post/2016-12-13-arrays/</link><pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2016-12-13-arrays/</guid><description>
-View Fullscreen
-View In p5.js Editor
-Click on them circles homes</description></item></channel></rss>
+You use the notice shortcode, with the first parameter being one of note, info, tip, and warning. Then add a title for your note in quotes as the second parameter. The inner body of the note can be whatever markdown you want to create.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://trimad.github.io/post/drafts/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/drafts/markdown-syntax/</guid>
+      <description>
+        
+          
+            &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://trimad.github.io/post/drafts/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/drafts/rich-content/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://trimad.github.io/post/drafts/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/drafts/placeholder-text/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://trimad.github.io/post/drafts/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/drafts/math-typesetting/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>https://trimad.github.io/post/drafts/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/drafts/emoji-support/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Line Them Up&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</guid>
+      <description>
+        
+          
+            The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Server&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-18-kattis-server/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-18-kattis-server/</guid>
+      <description>
+        
+          
+            The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;A Different Problem&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-15-kattis-different/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-15-kattis-different/</guid>
+      <description>
+        
+          
+            The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Simple 2D Terrain Generation Using Perlin Noise</title>
+      <link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid>
+      <description>
+        
+          
+            click mouse in iframe to generate a new mapThis sketch maps perlin noise between a value of 0 and 255 across a grid. Values greater than or equal to 100 are&#34;grass&#34;, values between 75 and 100 are &#34;sand&#34;, and values less than or equal to 75 are &#34;water&#34;.Click here to render a fullscreen mapLaunch the p5.js editor
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Arrays</title>
+      <link>https://trimad.github.io/post/2016-12-13-arrays/</link>
+      <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2016-12-13-arrays/</guid>
+      <description>
+        
+          
+            View FullscreenView In p5.js EditorClick on them circles homes
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
