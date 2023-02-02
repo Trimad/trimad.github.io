@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>k-means on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/k-means/</link>
+    <description>Recent content in k-means on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/k-means/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D k-means Clustering</title>
+      <link>https://trimad.github.io/post/2021-05-18-k-means-clustering/2021-05-18-k-means-clustering/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-05-18-k-means-clustering/2021-05-18-k-means-clustering/</guid>
+      <description>
+        
+          
+            Wikipediak-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. This results in a partitioning of the data space into Voronoi cells.
+K=2{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
+K=3{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
+K=4{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
