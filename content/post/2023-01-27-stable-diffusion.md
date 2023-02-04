@@ -151,3 +151,19 @@ average_color_grading = average_color_grading(folder_path)
 apply_color_grading(folder_path, average_color_grading)
 ```
 This program applies color grading to a set of images stored in the "images" folder. It does so by first computing the average color grading of all the images and then subtracting the average color grading from each pixel of each image and adding the average color grading. The resulting color graded images are saved in a new folder called "color_graded" within the "images" folder. It applies the average color grading to each frame by subtracting the mean of each frame's pixels from each pixel and adding the average color grading. 
+
+<h3>Generate CFG values for X/Y plot</h3>
+
+```JavaScript
+let frames = 60;
+let str = "";
+function setup() {
+  noLoop();
+  for (let i = 0; i <= frames; i++) {
+    let x = map(i, 0, frames, 6, 9);
+    str += nf(x,1,2);
+    str += i < frames ? ", " : "";
+  }
+  print(str);
+}
+```
