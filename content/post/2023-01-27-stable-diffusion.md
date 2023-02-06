@@ -1,7 +1,7 @@
 ---
 author: Tristan Madden
 categories: [Stable Diffusion]
-date: 2023-01-27
+date: 2023-02-05
 tags: [🎨]
 title: Stable Diffusion Scripts
 ---
@@ -166,4 +166,19 @@ function setup() {
   }
   print(str);
 }
+```
+
+<h3>Delete every other frame</h3>
+
+```Python
+import os
+
+folder_path = "C:\\Users\\trima\\Videos\\video\\frames" # Change this to the path of the folder containing the images
+image_files = [f for f in os.listdir(folder_path) if f.endswith(".jpg") or f.endswith(".jpeg") or f.endswith(".png")]
+
+for i, image_file in enumerate(image_files):
+    print(image_file)
+    if i % 2 == 1:
+        os.remove(os.path.join(folder_path, image_file))
+
 ```
