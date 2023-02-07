@@ -3,7 +3,40 @@ Edit This Sketch
 This sketch draws an Archimedean Spiral using polar coordinates. If the &amp;quot;EXPORT&amp;quot; variable is true, the sketch will spit-out an SVG file of the drawn spiral. My motivation for making this was so I could cut-out a spiral with my wife's Cricut Maker and hang something more interesting above my son's bassinet than empty white ceiling.
 Example SVG files
 {: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
-{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }</description></item><item><title>Arrays</title><link>https://trimad.github.io/post/2016-12-13-arrays/</link><pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2016-12-13-arrays/</guid><description>
+{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }</description></item><item><title>Fridge Magnet Simulator</title><link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link><pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid><description>
+Launch this sketch is a new window (recommended)
+Launch p5.js web editor
+This is a virtual simulation of the magnets on my girlfriend's fridge.</description></item><item><title>Orbiting Pixels Utility</title><link>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</link><pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</guid><description>
+Launch this sketch is a new window (recommended)
+Launch p5.js web editor
+This is not a program that should be running in a browser. With that said, writing this program was a laborious process that taught me a lot about JavaScript, about Processing, and about optimization. The algorithm I implemented works first by creating a grid of evenly-spaced points. Each points has a corresponding object that rotates around that point that can be assigned characteristics such as rotation radius, a shape, and a color that corresponds to an x and y position on a source image.</description></item><item><title>Ulam Spiral</title><link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link><pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid><description>
+Launch this sketch is a new window (recommended)
+Launch p5.js web editor
+The Ulam Spiral or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanislaw Ulam in 1963 and popularized in Martin Gardner's Mathematical Games column in Scientific American a short time later. It is constructed by writing the positive integers in a square spiral and specially marking the prime numbers.
+What I've done differently is allowed for iterating every integer in the grid forwards or backwards to search for long, connected diaganal lines of prime numbers in the grid.</description></item><item><title>Merge Sort using WEBGL</title><link>https://trimad.github.io/post/2018-02-05-merge-sort/</link><pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid><description>
+This is a (perhaps overkill) 3D WEBGL visualization of Merge Sort using the WEBGL rendering mode.
+Launch this sketch is a new window (recommended)
+Launch the p5.js editor
+Controls
+- ENTER = play sorting animation
+- LEFT_ARROW = step backwards
+- RIGHT_ARROW = step forwards
+- SCROLL_UP = zoom in
+- SCROLL_DOWN = zoom out</description></item><item><title>10PRINT Image Filter</title><link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link><pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid><description>
+This sketch is a browser-based image filtering utility inspired by 10PRINT. The UI allows users to produce faithful looking interpretations of 10PRINT, 10PRINT patterns that look hand-drawn, and the user can even create an explosive shit-mess of scribbles, if they so choose to.
+Launch this sketch is a new window (recommended)
+Launch p5.js web editor</description></item><item><title>Insertion Sort using WEBGL</title><link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link><pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid><description>
+This is a (perhaps overkill) 3D WEBGL visualization of Insertion Sort using the WEBGL rendering mode.
+click mouse in iframe to begin
+Controls
+- MOUSE = pan around
+- ENTER = play sorting animation
+- LEFT_ARROW = step backwards
+- RIGHT_ARROW = step forwards
+- SCROLL_UP = zoom in
+- SCROLL_DOWN = zoom out
+Launch this sketch is a new window (recommended)
+Launch the p5.js editor</description></item><item><title>Arrays</title><link>https://trimad.github.io/post/2016-12-13-arrays/</link><pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2016-12-13-arrays/</guid><description>
 View Fullscreen
 View In p5.js Editor
 Click on them circles homes</description></item></channel></rss>

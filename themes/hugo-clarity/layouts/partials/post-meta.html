@@ -5,35 +5,46 @@
 {{- $scratch := newScratch }}
 {{- $scratch.Set "writeSeparator" false }}
 {{- if $showPostMeta }}
-  <div class="post_meta">
-{{- end }}
+
+
+<div class="post_meta">
+  {{- end }}
   {{- if $showDate }}
-    <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
-    <span class="post_date">
-      {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
-    </span>
-    {{- $scratch.Set "writeSeparator" true }}
+  <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
+  {{ $lastmod := .Lastmod.Format "02.01.2006" }}<!-- custom -->
+{{ $date := .Date.Format "02.01.2006" }}<!-- custom -->
+  <span class="post_date">
+    {{ .Date.Format (default "2006-01-02 " $.Site.Params.dateFormat) -}}
+    {{ if ne $lastmod $date }}
+    last modified {{ .Lastmod.Format "2006-01-02" }}
+    {{ end }}
+
+  </span>
+
+  <span class="date-info italic"> </span>
+
+  {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
   {{- if $showReadTime }}
-    <span class="post_time">{{ if ($scratch.Get "writeSeparator") }} · {{ end }}{{ T "reading_time" . }}</span>
-    {{- $scratch.Set "writeSeparator" true }}
+  <span class="post_time">{{ if ($scratch.Get "writeSeparator") }} · {{ end }}{{ T "reading_time" . }}</span>
+  {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
   {{- with .Params.tags -}}
-    <span>
-      {{- if ($scratch.Get "writeSeparator") }}&nbsp;· {{ end }}
-      {{- range . }}
-        {{- $tag := urlize . -}}
-        <a href='{{ absLangURL (printf "tags/%s/" $tag) }}' title="{{ . }}" class="post_tag button button_translucent">
-          {{- . }}
-        </a>
-      {{- end }}
-    </span>
-    {{- $scratch.Set "writeSeparator" true }}
+  <span>
+    {{- if ($scratch.Get "writeSeparator") }}&nbsp;· {{ end }}
+    {{- range . }}
+    {{- $tag := urlize . -}}
+    <a href='{{ absLangURL (printf "tags/%s/" $tag) }}' title="{{ . }}" class="post_tag button button_translucent">
+      {{- . }}
+    </a>
+    {{- end }}
+  </span>
+  {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
   {{- if $showShare }}
-    <span class="page_only">{{ if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}{{ partial "share" . }}</span>
-    {{- $scratch.Set "writeSeparator" true }}
+  <span class="page_only">{{ if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}{{ partial "share" . }}</span>
+  {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
-{{- if $showPostMeta }}
-  </div>
+  {{- if $showPostMeta }}
+</div>
 {{- end }}

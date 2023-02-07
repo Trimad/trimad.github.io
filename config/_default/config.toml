@@ -3,7 +3,7 @@
 baseurl = "https://trimad.github.io/"  # Include trailing slash
 title = "Hugo Grimoire"  # Edit directly from config/_default/languages.toml # alternatively, uncomment this and remove `title` entry from the aforemention file.
 # canonifyurls = true
-paginate = 10
+paginate = 20
 theme = "hugo-clarity"
 disqusShortname = ""
 
@@ -24,5 +24,9 @@ series = "series"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
-# https://makewithhugo.com/add-a-last-edited-date/
+# https://centurio.net/2022/01/24/set-last-modified-date-automatically/
+
 enableGitInfo = true
+
+[frontmatter]
+lastmod = ['lastmod', ':git', 'date', 'publishDate']

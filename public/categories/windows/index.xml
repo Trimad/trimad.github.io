@@ -13,4 +13,5 @@ Put Workstation to sleep
 rundll32 powrprof.dll, SetSuspendState Sleep
 ```
 Microsoft Reference
-ss64.com Reference</description></item></channel></rss>
+ss64.com Reference</description></item><item><title>Windows 10/11 ms-settings URI Scheme Reference</title><link>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</guid><description>
+Knowing the URI Scheme is useful because you can jump straight to specific settings menus using 🪟+R.</description></item></channel></rss>

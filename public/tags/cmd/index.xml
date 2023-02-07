@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CMD on Hugo Grimoire</title><link>https://trimad.github.io/tags/cmd/</link><description>Recent content in CMD on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 06 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/cmd/index.xml" rel="self" type="application/rss+xml"/><item><title>Uninstall Third-Party Drivers with CMD</title><link>https://trimad.github.io/post/2023-02-06-uninstall-drivers/</link><pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-06-uninstall-drivers/</guid><description>
-You can uninstall the WAVES MaxxAudio Pro driver from the Command Prompt (CMD) by using the &amp;quot;pnputil.exe&amp;quot; utility. Here's the basic process:
+You can uninstall third-party drivers (such as the WAVES MaxxAudio Pro driver) from the Command Prompt (CMD) by using the &amp;quot;pnputil.exe&amp;quot; utility. Here's the basic process:
 Open Command Prompt as administrator: Press the Windows key + X, and then select &amp;quot;Command Prompt (Admin)&amp;quot;.
 Type the following command and press Enter:
-1pnputil.exe -e 2# or 3pnputil.exe &amp;gt; !drivers.csv This command lists all the third-party drivers installed on your system.
-Locate the WAVES MaxxAudio Pro driver in the list and make note of its INF file name (e.</description></item></channel></rss>
+1pnputil.exe -e 2# or export the list to a file 3pnputil.exe &amp;gt; !drivers.csv This command lists all the third-party drivers installed on your system.</description></item></channel></rss>

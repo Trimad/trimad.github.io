@@ -1,27 +1,57 @@
 <!doctype html><html lang=en data-figures data-mode=lit><head><title>k-means | Hugo Grimoire</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta http-equiv=x-ua-compatible content="IE=edge"><script async src="https://www.googletagmanager.com/gtag/js?id=XXXXXXXXXX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","XXXXXXXXXX")</script><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta name=description content><meta name=twitter:card content="summary"><meta name=twitter:creator content><meta name=twitter:title content="k-means"><meta name=twitter:image content="https://trimad.github.io/images/thumbnail.png"><meta property="og:url" content="https://trimad.github.io/tags/k-means/"><meta property="og:title" content="k-means"><meta property="og:description" content><meta property="og:image" content="https://trimad.github.io/images/thumbnail.png"><link rel=apple-touch-icon sizes=180x180 href=https://trimad.github.io/icons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://trimad.github.io/icons/favicon-32x32.png><link rel=manifest href=https://trimad.github.io/icons/site.webmanifest><link rel=canonical href=https://trimad.github.io/tags/k-means/><link rel=alternate type=application/rss+xml href=https://trimad.github.io/tags/k-means/index.xml title="Hugo Grimoire"><link rel=preload href=https://trimad.github.io/css/styles.eb6fc8891e1014648c83ef31c61cc7cc3c750016afe947273eded8f83061bf8c85b36fdb7947d8b3ca0fa954ec5fa8104343bc4ae148969f496a00d92b7a87fb.css integrity="sha512-62/IiR4QFGSMg+8xxhzHzDx1ABav6UcnPt7Y+DBhv4yFs2/beUfYs8oPqVTsX6gQQ0O8SuFIlp9JagDZK3qH+w==" as=style crossorigin=anonymous><link rel=preload href=https://trimad.github.io/en/js/bundle.da91a9f6430a7f8c9f62e99e508b0bfcf92cc6dd0e5730d694a8a5ece1660b2c3eac789cc9584388cae4fea59e3063138715fd82b53241fe7c5ab721f03da62c.js as=script integrity="sha512-2pGp9kMKf4yfYumeUIsL/Pksxt0OVzDWlKil7OFmCyw+rHicyVhDiMrk/qWeMGMThxX9grUyQf58Wrch8D2mLA==" crossorigin=anonymous><link rel=stylesheet type=text/css href=https://trimad.github.io/css/styles.eb6fc8891e1014648c83ef31c61cc7cc3c750016afe947273eded8f83061bf8c85b36fdb7947d8b3ca0fa954ec5fa8104343bc4ae148969f496a00d92b7a87fb.css integrity="sha512-62/IiR4QFGSMg+8xxhzHzDx1ABav6UcnPt7Y+DBhv4yFs2/beUfYs8oPqVTsX6gQQ0O8SuFIlp9JagDZK3qH+w==" crossorigin=anonymous></head><body data-code=9999 data-lines=false id=documentTop data-lang=en><header class=nav_header><nav class=nav><a href=https://trimad.github.io/ class="nav_brand nav_item" title="Hugo Grimoire">Hugo Grimoire<div class=nav_close><div><svg class="icon"><title>open-menu</title><use xlink:href="#open-menu"/></svg><svg class="icon"><title>closeme</title><use xlink:href="#closeme"/></svg></div></div></a><div class='nav_body nav_body_left'><div class=nav_parent><a href=https://trimad.github.io/ class=nav_item title=Home>Home</a></div><div class=nav_parent><a href=https://trimad.github.io/archives/ class=nav_item title=Archives>Archives</a></div><div class=nav_parent><a href=https://trimad.github.io/ class=nav_item title=Links>Links <img src=https://trimad.github.io/icons/caret-icon.svg alt=icon class=nav_icon></a><div class=nav_sub><span class=nav_child></span>
-<a href=https://www.tiktok.com/@kill3d2d3th/ class="nav_child nav_item" title=TikTok>TikTok</a></div></div><div class=nav_parent><a href=https://trimad.github.io/about/ class=nav_item title=About>About</a></div><div class=follow><a href=https://github.com/Trimad><svg class="icon"><title>github</title><use xlink:href="#github"/></svg></a><a href=https://www.youtube.com/channel/UCsZ-kpWb24L1GYzQYlbHxMw><svg class="icon"><title>youtube</title><use xlink:href="#youtube"/></svg></a><a href=https://trimad.github.io/index.xml><svg class="icon"><title>rss</title><use xlink:href="#rss"/></svg></a><div class=color_mode><input type=checkbox class=color_choice id=mode></div></div></div></nav></header><main><div class="grid-inverse wrap content"><div><ul class=posts id=posts><li class=post_item><div class=excerpt><div class=excerpt_header><h3 class=post_link><a href=https://trimad.github.io/post/2021-05-18-k-means-clustering/ title="k-means Clustering">k-means Clustering</a></h3><div class=post_meta><span><svg class="icon"><title>calendar</title><use xlink:href="#calendar"/></svg></span><span class=post_date>May 18, 2021</span>
-<span class=post_time>· 1 min read</span><span>&nbsp;· <a href=https://trimad.github.io/tags/k-means/ title=k-means class="post_tag button button_translucent">k-means</a></span>
+<a href=https://www.tiktok.com/@kill3d2d3th/ class="nav_child nav_item" title=TikTok>TikTok</a></div></div><div class=nav_parent><a href=https://trimad.github.io/about/ class=nav_item title=About>About</a></div><div class=follow><a href=https://github.com/Trimad><svg class="icon"><title>github</title><use xlink:href="#github"/></svg></a><a href=https://www.youtube.com/channel/UCsZ-kpWb24L1GYzQYlbHxMw><svg class="icon"><title>youtube</title><use xlink:href="#youtube"/></svg></a><a href=https://trimad.github.io/index.xml><svg class="icon"><title>rss</title><use xlink:href="#rss"/></svg></a><div class=color_mode><input type=checkbox class=color_choice id=mode></div></div></div></nav></header><main><div class="grid-inverse wrap content"><div><ul class=posts id=posts><li class=post_item><div class=excerpt><div class=excerpt_header><h3 class=post_link><a href=https://trimad.github.io/post/2021-05-18-k-means-clustering/ title="k-means Clustering">k-means Clustering</a></h3><div class=post_meta><span><svg class="icon"><title>calendar</title><use xlink:href="#calendar"/></svg></span><span class=post_date>2021-05-18</span>
+<span class="date-info italic"></span><span class=post_time>· 1 min read</span><span>&nbsp;· <a href=https://trimad.github.io/tags/k-means/ title=k-means class="post_tag button button_translucent">k-means</a></span>
 <span class=page_only>&nbsp;·<div class=post_share>Share on:
 <a href="https://twitter.com/intent/tweet?text=k-means%20Clustering&url=https%3a%2f%2ftrimad.github.io%2fpost%2f2021-05-18-k-means-clustering%2f&tw_p=tweetbutton" class=twitter title="Share on Twitter" target=_blank rel=nofollow><svg class="icon"><title>twitter</title><use xlink:href="#twitter"/></svg></a><a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ftrimad.github.io%2fpost%2f2021-05-18-k-means-clustering%2f&t=k-means%20Clustering" class=facebook title="Share on Facebook" target=_blank rel=nofollow><svg class="icon"><title>facebook</title><use xlink:href="#facebook"/></svg></a><a href=#linkedinshare id=linkedinshare class=linkedin title="Share on LinkedIn" rel=nofollow><svg class="icon"><title>linkedin</title><use xlink:href="#linkedin"/></svg></a><a href=https://trimad.github.io/post/2021-05-18-k-means-clustering/ title="Copy Link" class="link link_yank"><svg class="icon"><title>copy</title><use xlink:href="#copy"/></svg></a></div></span></div></div><div class=excerpt_footer><div class=pale><p>Wikipedia
 k-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. This results in a …</p><br><a href=https://trimad.github.io/post/2021-05-18-k-means-clustering/ title="Read More" class="excerpt_more button">Read More</a></div></div></div></li><li></li></ul></div><aside class=sidebar><section class=sidebar_inner><br><div class=search><input type=search class="search_field form_field" placeholder=Search... id=find autocomplete=off data-scope=tags>
-<label for=find class=search_label><svg class="icon"><title>search</title><use xlink:href="#search"/></svg></label><div class="search_results results"></div></div><div class=author_header><img src=https://trimad.github.io/images/blondie.gif alt="Tristan Madden photo"><h2>Tristan Madden</h2></div><div class=author_bio>The impediment to action advances action. What stands in the way becomes the way.</div><a href=https://trimad.github.io/about/ class="button mt-1" role=button title='Read More'>Read More</a><h2 class=mt-4>Recent Posts</h2><ul class=flex-column><li><a href=https://trimad.github.io/post/2023-02-06-uninstall-drivers/ class=nav-link title="Uninstall Third-Party Drivers with CMD">Uninstall Third-Party Drivers with CMD</a></li><li><a href=https://trimad.github.io/post/2023-02-05-stable-diffusion/ class=nav-link title="Stable Diffusion Scripts">Stable Diffusion Scripts</a></li><li><a href=https://trimad.github.io/post/2023-02-02-all-about-time/ class=nav-link title="All About Time">All About Time</a></li><li><a href=https://trimad.github.io/post/2022-06-09-download-movie-streams/ class=nav-link title="Download Movie Streams">Download Movie Streams</a></li><li><a href=https://trimad.github.io/post/2022-05-14-logistic-map/2022-05-14-logistic-map/ class=nav-link title="Logistic Map">Logistic Map</a></li><li><a href=https://trimad.github.io/post/2022-05-04-archimedean-spiral/ class=nav-link title="Archimedean Spiral">Archimedean Spiral</a></li><li><a href=https://trimad.github.io/post/2022-04-21-rundll32/ class=nav-link title=rundll32>rundll32</a></li><li><a href=https://trimad.github.io/post/2022-04-16-youtube-dl/ class=nav-link title=youtube-dl>youtube-dl</a></li></ul><div><h2 class="mt-4 taxonomy" id=categories-section>Categories</h2><nav class=tags_nav><a href=https://trimad.github.io/categories/cmd/ class="post_tag button button_translucent" title=cmd>CMD
-<span class=button_tally>6</span></a>
-<a href=https://trimad.github.io/categories/java/ class="post_tag button button_translucent" title=java>JAVA
-<span class=button_tally>6</span></a>
+<label for=find class=search_label><svg class="icon"><title>search</title><use xlink:href="#search"/></svg></label><div class="search_results results"></div></div><div class=author_header><img src=https://trimad.github.io/images/blondie.gif alt="Tristan Madden photo"><h2>Tristan Madden</h2></div><div class=author_bio>The impediment to action advances action. What stands in the way becomes the way.</div><a href=https://trimad.github.io/about/ class="button mt-1" role=button title='Read More'>Read More</a><h2 class=mt-4>Recent Posts</h2><ul class=flex-column><li><a href=https://trimad.github.io/post/2023-02-07-purge-emails/ class=nav-link title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a></li><li><a href=https://trimad.github.io/post/2023-02-06-uninstall-drivers/ class=nav-link title="Uninstall Third-Party Drivers with CMD">Uninstall Third-Party Drivers with CMD</a></li><li><a href=https://trimad.github.io/post/2023-02-05-stable-diffusion/ class=nav-link title="Stable Diffusion Scripts">Stable Diffusion Scripts</a></li><li><a href=https://trimad.github.io/post/2023-02-02-all-about-time/ class=nav-link title="All About Time">All About Time</a></li><li><a href=https://trimad.github.io/post/2022-06-09-download-movie-streams/ class=nav-link title="Download Movie Streams">Download Movie Streams</a></li><li><a href=https://trimad.github.io/post/2022-05-14-logistic-map/2022-05-14-logistic-map/ class=nav-link title="Logistic Map">Logistic Map</a></li><li><a href=https://trimad.github.io/post/2022-05-04-archimedean-spiral/ class=nav-link title="Archimedean Spiral">Archimedean Spiral</a></li><li><a href=https://trimad.github.io/post/2022-04-21-rundll32/ class=nav-link title=rundll32>rundll32</a></li></ul><div><h2 class="mt-4 taxonomy" id=categories-section>Categories</h2><nav class=tags_nav><a href=https://trimad.github.io/categories/java/ class="post_tag button button_translucent" title=java>JAVA
+<span class=button_tally>33</span></a>
 <a href=https://trimad.github.io/categories/coding-challenge/ class="post_tag button button_translucent" title=coding-challenge>CODING-CHALLENGE
-<span class=button_tally>3</span></a>
-<a href=https://trimad.github.io/categories/javascript/ class="post_tag button button_translucent" title=javascript>JAVASCRIPT
-<span class=button_tally>3</span></a>
+<span class=button_tally>15</span></a>
 <a href=https://trimad.github.io/categories/processing/ class="post_tag button button_translucent" title=processing>PROCESSING
+<span class=button_tally>15</span></a>
+<a href=https://trimad.github.io/categories/javascript/ class="post_tag button button_translucent" title=javascript>JAVASCRIPT
+<span class=button_tally>10</span></a>
+<a href=https://trimad.github.io/categories/powershell/ class="post_tag button button_translucent" title=powershell>POWERSHELL
+<span class=button_tally>9</span></a>
+<a href=https://trimad.github.io/categories/p5.js/ class="post_tag button button_translucent" title=p5.js>P5.JS
+<span class=button_tally>8</span></a>
+<a href=https://trimad.github.io/categories/cmd/ class="post_tag button button_translucent" title=cmd>CMD
+<span class=button_tally>7</span></a>
+<a href=https://trimad.github.io/categories/exchange-online/ class="post_tag button button_translucent" title=exchange-online>EXCHANGE-ONLINE
 <span class=button_tally>3</span></a>
+<a href=https://trimad.github.io/categories/masm/ class="post_tag button button_translucent" title=masm>MASM
+<span class=button_tally>3</span></a>
+<a href=https://trimad.github.io/categories/batchfile/ class="post_tag button button_translucent" title=batchfile>BATCHFILE
+<span class=button_tally>2</span></a>
+<a href=https://trimad.github.io/categories/c/ class="post_tag button button_translucent" title=c>C
+<span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/categories/ffmpeg/ class="post_tag button button_translucent" title=ffmpeg>FFMPEG
 <span class=button_tally>2</span></a>
-<a href=https://trimad.github.io/categories/p5.js/ class="post_tag button button_translucent" title=p5.js>P5.JS
+<a href=https://trimad.github.io/categories/windows/ class="post_tag button button_translucent" title=windows>WINDOWS
 <span class=button_tally>2</span></a>
-<a href=https://trimad.github.io/categories/powershell/ class="post_tag button button_translucent" title=powershell>POWERSHELL
-<span class=button_tally>2</span></a>
+<a href=https://trimad.github.io/categories/active-directory/ class="post_tag button button_translucent" title=active-directory>ACTIVE-DIRECTORY
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/appx/ class="post_tag button button_translucent" title=appx>APPX
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/categories/archives/ class="post_tag button button_translucent" title=archives>ARCHIVES
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/exchangeonlinemanagement/ class="post_tag button button_translucent" title=exchangeonlinemanagement>EXCHANGEONLINEMANAGEMENT
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/fractal/ class="post_tag button button_translucent" title=fractal>FRACTAL
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/google-apps-script/ class="post_tag button button_translucent" title=google-apps-script>GOOGLE-APPS-SCRIPT
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/m365/ class="post_tag button button_translucent" title=m365>M365
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/maxine/ class="post_tag button button_translucent" title=maxine>MAXINE
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/nvidia/ class="post_tag button button_translucent" title=nvidia>NVIDIA
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/o365/ class="post_tag button button_translucent" title=o365>O365
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/reference/ class="post_tag button button_translucent" title=reference>REFERENCE
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/categories/security/ class="post_tag button button_translucent" title=security>SECURITY
 <span class=button_tally>1</span></a>
@@ -31,33 +61,101 @@ k-means clustering is a method of vector quantization, originally from signal pr
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/categories/themes/ class="post_tag button button_translucent" title=themes>THEMES
 <span class=button_tally>1</span></a>
-<a href=https://trimad.github.io/categories/windows/ class="post_tag button button_translucent" title=windows>WINDOWS
+<a href=https://trimad.github.io/categories/vbscript/ class="post_tag button button_translucent" title=vbscript>VBSCRIPT
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/categories/youtube-dl/ class="post_tag button button_translucent" title=youtube-dl>YOUTUBE-DL
 <span class=button_tally>1</span></a></nav></div><div><h2 class="mt-4 taxonomy" id=series-section>Series</h2><nav class=tags_nav><a href=https://trimad.github.io/series/themes-guide/ class="post_tag button button_translucent" title=themes-guide>THEMES-GUIDE
 <span class=button_tally>2</span></a></nav></div><div><h2 class="mt-4 taxonomy" id=tags-section>Tags</h2><nav class=tags_nav><a href=https://trimad.github.io/tags/interactive/ class="post_tag button button_translucent" title=interactive>INTERACTIVE
-<span class=button_tally>3</span></a>
+<span class=button_tally>9</span></a>
+<a href=https://trimad.github.io/tags/uva/ class="post_tag button button_translucent" title=uva>UVA
+<span class=button_tally>9</span></a>
 <a href=https://trimad.github.io/tags/kattis/ class="post_tag button button_translucent" title=kattis>KATTIS
+<span class=button_tally>6</span></a>
+<a href=https://trimad.github.io/tags/reports/ class="post_tag button button_translucent" title=reports>REPORTS
+<span class=button_tally>6</span></a>
+<a href=https://trimad.github.io/tags/assembly/ class="post_tag button button_translucent" title=assembly>ASSEMBLY
 <span class=button_tally>3</span></a>
 <a href=https://trimad.github.io/tags/audio/ class="post_tag button button_translucent" title=audio>AUDIO
-<span class=button_tally>2</span></a>
+<span class=button_tally>3</span></a>
 <a href=https://trimad.github.io/tags/fractal/ class="post_tag button button_translucent" title=fractal>FRACTAL
+<span class=button_tally>3</span></a>
+<a href=https://trimad.github.io/tags/open-simplex-noise/ class="post_tag button button_translucent" title=open-simplex-noise>OPEN-SIMPLEX-NOISE
+<span class=button_tally>3</span></a>
+<a href=https://trimad.github.io/tags/prime-numbers/ class="post_tag button button_translucent" title=prime-numbers>PRIME-NUMBERS
+<span class=button_tally>3</span></a>
+<a href=https://trimad.github.io/tags/processing/ class="post_tag button button_translucent" title=processing>PROCESSING
+<span class=button_tally>3</span></a>
+<a href=https://trimad.github.io/tags/sorting/ class="post_tag button button_translucent" title=sorting>SORTING
+<span class=button_tally>3</span></a>
+<a href=https://trimad.github.io/tags/active-directory/ class="post_tag button button_translucent" title=active-directory>ACTIVE-DIRECTORY
+<span class=button_tally>2</span></a>
+<a href=https://trimad.github.io/tags/domain/ class="post_tag button button_translucent" title=domain>DOMAIN
+<span class=button_tally>2</span></a>
+<a href=https://trimad.github.io/tags/exchange-online/ class="post_tag button button_translucent" title=exchange-online>EXCHANGE-ONLINE
 <span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/tags/markdown/ class="post_tag button button_translucent" title=markdown>MARKDOWN
+<span class=button_tally>2</span></a>
+<a href=https://trimad.github.io/tags/minimum-spanning-tree/ class="post_tag button button_translucent" title=minimum-spanning-tree>MINIMUM-SPANNING-TREE
+<span class=button_tally>2</span></a>
+<a href=https://trimad.github.io/tags/office/ class="post_tag button button_translucent" title=office>OFFICE
+<span class=button_tally>2</span></a>
+<a href=https://trimad.github.io/tags/perlin-noise/ class="post_tag button button_translucent" title=perlin-noise>PERLIN-NOISE
 <span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/tags/video/ class="post_tag button button_translucent" title=video>VIDEO
 <span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/tags/%EF%B8%8F/ class="post_tag button button_translucent" title=️>️
 <span class=button_tally>2</span></a>
+<a href=https://trimad.github.io/tags/10print/ class="post_tag button button_translucent" title=10print>10PRINT
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/3n+1/ class="post_tag button button_translucent" title=3n+1>3N+1
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/android/ class="post_tag button button_translucent" title=android>ANDROID
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/appx/ class="post_tag button button_translucent" title=appx>APPX
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/azure/ class="post_tag button button_translucent" title=azure>AZURE
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/bipartite-graph/ class="post_tag button button_translucent" title=bipartite-graph>BIPARTITE-GRAPH
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/bitset/ class="post_tag button button_translucent" title=bitset>BITSET
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/buddhabrot/ class="post_tag button button_translucent" title=buddhabrot>BUDDHABROT
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/calendars/ class="post_tag button button_translucent" title=calendars>CALENDARS
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/cmd/ class="post_tag button button_translucent" title=cmd>CMD
 <span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/collatz-conjecture/ class="post_tag button button_translucent" title=collatz-conjecture>COLLATZ-CONJECTURE
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/counting-sort/ class="post_tag button button_translucent" title=counting-sort>COUNTING-SORT
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/css/ class="post_tag button button_translucent" title=css>CSS
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/dag/ class="post_tag button button_translucent" title=dag>DAG
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/directed-acyclic-graph/ class="post_tag button button_translucent" title=directed-acyclic-graph>DIRECTED-ACYCLIC-GRAPH
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/disjoint-set/ class="post_tag button button_translucent" title=disjoint-set>DISJOINT-SET
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/distance/ class="post_tag button button_translucent" title=distance>DISTANCE
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/drivers/ class="post_tag button button_translucent" title=drivers>DRIVERS
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/emoji/ class="post_tag button button_translucent" title=emoji>EMOJI
 <span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/exchange-online-management/ class="post_tag button button_translucent" title=exchange-online-management>EXCHANGE-ONLINE-MANAGEMENT
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/featured/ class="post_tag button button_translucent" title=featured>FEATURED
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/ffmpeg/ class="post_tag button button_translucent" title=ffmpeg>FFMPEG
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/fibonacci/ class="post_tag button button_translucent" title=fibonacci>FIBONACCI
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/google-forms/ class="post_tag button button_translucent" title=google-forms>GOOGLE-FORMS
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/gsuite/ class="post_tag button button_translucent" title=gsuite>GSUITE
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/hard-delete/ class="post_tag button button_translucent" title=hard-delete>HARD-DELETE
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/html/ class="post_tag button button_translucent" title=html>HTML
 <span class=button_tally>1</span></a>
@@ -65,11 +163,25 @@ k-means clustering is a method of vector quantization, originally from signal pr
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/index/ class="post_tag button button_translucent" title=index>INDEX
 <span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/insertion-sort/ class="post_tag button button_translucent" title=insertion-sort>INSERTION-SORT
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/javascript/ class="post_tag button button_translucent" title=javascript>JAVASCRIPT
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/juno/ class="post_tag button button_translucent" title=juno>JUNO
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/jupiter/ class="post_tag button button_translucent" title=jupiter>JUPITER
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/k-means/ class="post_tag button button_translucent" title=k-means>K-MEANS
 <span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/kruskals-algorithm/ class="post_tag button button_translucent" title=kruskals-algorithm>KRUSKALS-ALGORITHM
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/lorenz-system/ class="post_tag button button_translucent" title=lorenz-system>LORENZ-SYSTEM
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/m3u8/ class="post_tag button button_translucent" title=m3u8>M3U8
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/maximum-flow/ class="post_tag button button_translucent" title=maximum-flow>MAXIMUM-FLOW
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/merge-sort/ class="post_tag button button_translucent" title=merge-sort>MERGE-SORT
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/netsh/ class="post_tag button button_translucent" title=netsh>NETSH
 <span class=button_tally>1</span></a>
@@ -77,17 +189,31 @@ k-means clustering is a method of vector quantization, originally from signal pr
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/passwords/ class="post_tag button button_translucent" title=passwords>PASSWORDS
 <span class=button_tally>1</span></a>
-<a href=https://trimad.github.io/tags/perlin-noise/ class="post_tag button button_translucent" title=perlin-noise>PERLIN-NOISE
+<a href=https://trimad.github.io/tags/prims-algorithm/ class="post_tag button button_translucent" title=prims-algorithm>PRIMS-ALGORITHM
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/privacy/ class="post_tag button button_translucent" title=privacy>PRIVACY
 <span class=button_tally>1</span></a>
-<a href=https://trimad.github.io/tags/reports/ class="post_tag button button_translucent" title=reports>REPORTS
+<a href=https://trimad.github.io/tags/purge/ class="post_tag button button_translucent" title=purge>PURGE
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/regedit/ class="post_tag button button_translucent" title=regedit>REGEDIT
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/robocopy/ class="post_tag button button_translucent" title=robocopy>ROBOCOPY
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/rundll32/ class="post_tag button button_translucent" title=rundll32>RUNDLL32
 <span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/sdk/ class="post_tag button button_translucent" title=sdk>SDK
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/shortcodes/ class="post_tag button button_translucent" title=shortcodes>SHORTCODES
 <span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/smtp/ class="post_tag button button_translucent" title=smtp>SMTP
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/sound/ class="post_tag button button_translucent" title=sound>SOUND
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/space/ class="post_tag button button_translucent" title=space>SPACE
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/spiral/ class="post_tag button button_translucent" title=spiral>SPIRAL
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/string/ class="post_tag button button_translucent" title=string>STRING
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/terrain/ class="post_tag button button_translucent" title=terrain>TERRAIN
 <span class=button_tally>1</span></a>
@@ -96,6 +222,8 @@ k-means clustering is a method of vector quantization, originally from signal pr
 <a href=https://trimad.github.io/tags/themes/ class="post_tag button button_translucent" title=themes>THEMES
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/time/ class="post_tag button button_translucent" title=time>TIME
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/topological-sort/ class="post_tag button button_translucent" title=topological-sort>TOPOLOGICAL-SORT
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/userdll32/ class="post_tag button button_translucent" title=userdll32>USERDLL32
 <span class=button_tally>1</span></a>
