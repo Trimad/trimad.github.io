@@ -5,9 +5,8 @@ date: 2023-02-07
 tags: [purge, hard delete]
 title: Purge emails with ExchangeOnlineManagement
 ---
-<h1>Content Search</h2>
+<h1>Content Search</h1>
 <a href="https://compliance.microsoft.com/contentsearchv2?viewid=search">https://compliance.microsoft.com/contentsearchv2?viewid=search</a>
-
 
 <h1>Purge</h1>
 ```PowerShell
