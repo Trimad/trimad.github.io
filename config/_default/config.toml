@@ -23,3 +23,6 @@ series = "series"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+
+# https://makewithhugo.com/add-a-last-edited-date/
+enableGitInfo = true

@@ -29,8 +29,6 @@ pnputil.exe -d INF_file_name
 # e.g. pnputil.exe -d oem72.inf
 ```
 
-e.g.
-
 This command uninstalls the driver.
 
 Restart your computer to complete the uninstallation process.
