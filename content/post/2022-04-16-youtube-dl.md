@@ -1,8 +1,8 @@
 ---
 title: youtube-dl
 author: Tristan Madden
-categories: [CMD, youtube-dl]
-tags: [audio, video,🏴‍☠️]
+categories: [download, video]
+tags: [download, youtube-dl]
 date: 2022-04-16
 ---
 youtube-dl is a command-line program that allows users to download videos from YouTube and other video-sharing websites. The program is open-source and can be used on a variety of operating systems, including Windows, Mac, and Linux. It can download videos in a variety of formats, including MP4, FLV, and 3GP, and can also extract audio from videos as MP3 or other audio formats. Additionally, youtube-dl can be used to download videos from other websites like Vimeo, Dailymotion, and more.

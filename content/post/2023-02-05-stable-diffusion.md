@@ -3,7 +3,7 @@ author: Tristan Madden
 categories: [Stable Diffusion]
 date: 2023-02-05
 lastmod: 2023-02-06
-tags: [🎨]
+tags: [ai, image processing]
 title: Stable Diffusion Scripts
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Basic Prime Checker, C++
 author: Tristan Madden
-categories: [C]
+categories: [C++]
 tags: [prime numbers]
 date: 2018-03-24
 ---

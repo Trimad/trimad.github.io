@@ -1,8 +1,8 @@
 ---
 author: Tristan Madden
-categories: [CMD,ffmpeg]
+categories: [download, video]
 date: 2022-06-09
-tags: [🏴‍☠️,m3u8]
+tags: [download, ffmpeg]
 title: Download Movie Streams
 ---
 

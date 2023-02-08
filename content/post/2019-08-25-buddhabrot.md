@@ -1,7 +1,7 @@
 ---
 title: Buddhabrot
 author: Tristan Madden
-categories: [C, Fractal, Java]
+categories: [C#, Fractal, Java]
 tags: [fractal, buddhabrot]
 date: 2019-08-25
 ---

@@ -5,12 +5,13 @@ date: 2023-02-07
 tags: [purge, hard delete]
 title: Purge emails with ExchangeOnlineManagement
 ---
-<h1>Content Search</h1>
+<h2>Content Search</h2>
 <a href="https://compliance.microsoft.com/contentsearchv2?viewid=search">https://compliance.microsoft.com/contentsearchv2?viewid=search</a>
 
-<h1>Purge</h1>
+<h2>Purge</h2>
+
 ```PowerShell
-#Connected to Security & Compliance PowerShell
+# Import the Exchange Online Management module into the current PowerShell sessionand establish a connection to Exchange Online using the specified User Principal Name (UPN)
 Import-Module ExchangeOnlineManagement
 Connect-IPPSSession -UserPrincipalName admin@thecompany.org
  
