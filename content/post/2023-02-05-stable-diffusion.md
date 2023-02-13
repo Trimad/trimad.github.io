@@ -16,12 +16,14 @@ import os
 import pathlib
 
 collection = os.getcwd()
-#print(collection)
 for i, filename in enumerate(os.listdir(collection)):
     file_extension = pathlib.Path(filename).suffix
-    #print("File Extension: ", file_extension)
-    if(file_extension == ".png"):
-        os.rename(collection +"\\"+ filename, collection +"\\"+ str(i).zfill(4) + ".png")
+    if file_extension == ".png":
+        new_filename = f"{str(i).zfill(4)}.png"
+        old_path = os.path.join(collection, filename)
+        new_path = os.path.join(collection, new_filename)
+        os.rename(old_path, new_path)
+
 ```
 This code block is a Python script that does the following:
 
