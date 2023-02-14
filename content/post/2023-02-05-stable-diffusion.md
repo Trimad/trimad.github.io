@@ -158,12 +158,17 @@ function setup() {
 ```Python
 import os
 
-folder_path = "C:\\Users\\trima\\Videos\\video\\frames" # Change this to the path of the folder containing the images
-image_files = [f for f in os.listdir(folder_path) if f.endswith(".jpg") or f.endswith(".jpeg") or f.endswith(".png")]
+# get the current working directory
+cwd = os.getcwd()
 
-for i, image_file in enumerate(image_files):
-    print(image_file)
-    if i % 2 == 1:
-        os.remove(os.path.join(folder_path, image_file))
+# get a list of all the files in the directory
+files = os.listdir(cwd)
 
+# loop through the list of files
+for i, file in enumerate(files):
+    # check if the file is an image file
+    if file.endswith('.jpg') or file.endswith('.jpeg') or file.endswith('.png'):
+        # delete every other image file
+        if i % 2 == 1:
+            os.remove(file)
 ```
