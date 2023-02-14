@@ -172,3 +172,56 @@ for i, file in enumerate(files):
         if i % 2 == 1:
             os.remove(file)
 ```
+
+<h3>Add a vignette fade</h3>
+
+Fades from bottom to top. Great for hiding mistakes and artifacts. 
+
+```Shell
+from PIL import Image
+import os
+import threading
+
+# Get the directory where the script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+class VignetteThread(threading.Thread):
+    def __init__(self, filename):
+        threading.Thread.__init__(self)
+        self.filename = filename
+
+    def run(self):
+        # Open the image file
+        image = Image.open(os.path.join(script_dir, self.filename))
+        
+        # Define the size of the vignette black fade
+        fade_height = 256
+        
+        # Create a black mask with the same size as the image
+        mask = Image.new("L", image.size, 255)
+        
+        # Draw a linear gradient from white to black on the mask
+        for y in range(image.size[1] - fade_height, image.size[1]):
+            alpha = int(255 * (y - (image.size[1] - fade_height)) / fade_height)
+            mask.paste(255 - alpha, (0, y, image.size[0], y+1))
+        
+        # Apply the mask to the image
+        image.putalpha(mask)
+        
+        # Save the modified image with a new filename
+        new_filename = os.path.splitext(self.filename)[0] + "_vignette.png"
+        image.save(os.path.join(script_dir, new_filename))
+
+# Loop through each file in the directory and create a thread for each image
+threads = []
+for filename in os.listdir(script_dir):
+    if filename.endswith(".jpg") or filename.endswith(".png"):
+        thread = VignetteThread(filename)
+        threads.append(thread)
+        thread.start()
+
+# Wait for all threads to complete
+for thread in threads:
+    thread.join()
+
+```
