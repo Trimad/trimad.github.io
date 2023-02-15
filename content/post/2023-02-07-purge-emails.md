@@ -2,6 +2,7 @@
 author: Tristan Madden
 categories: [ExchangeOnlineManagement, O365, M365]
 date: 2023-02-07
+lastmod: 2023-02-15
 tags: [purge, hard delete]
 title: Purge emails with ExchangeOnlineManagement
 ---
@@ -20,4 +21,7 @@ New-ComplianceSearchAction -SearchName "name_of_content_search" -Purge -PurgeTyp
  
 # Checked status of compliance serach action:
 Get-ComplianceSearchAction -Identity "name_of_content_search_Purge" | Format-List
+
+# Silently disconnect from Exchange Online PowerShell or Security & Compliance PowerShell without a confirmation prompt or any notification text.
+Disconnect-ExchangeOnline -Confirm:$false
 ```
