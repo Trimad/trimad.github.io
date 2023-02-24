@@ -17,6 +17,10 @@
   parent = "Links"
   name = "TikTok"
   url = "https://www.tiktok.com/@kill3d2d3th/"
+[[main]]
+  parent = "Links"
+  name = "p5.js"
+  url = "https://editor.p5js.org/Berkanan/sketches"
 
 [[main]]
   name = "About"
