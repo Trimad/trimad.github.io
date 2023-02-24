@@ -8,8 +8,11 @@ lastmod: 2023-02-08
 ---
 
 ```PowerShell
-# Connect to Exchage
+#If not installed already
+Install-Module ExchangeOnlineManagement
+#Import
 Import-Module ExchangeOnlineManagement
+#Connect
 Connect-ExchangeOnline -UserPrincipalName <UPN>
 
 # Remove AccessRights from a user
@@ -18,8 +21,8 @@ Remove-MailboxFolderPermission -Identity target@company.com:\Calendar -User user
 Add-MailboxFolderPermission -Identity target@company.com:\Calendar -User user@company.com -AccessRights Owner
 # See who currently has folder permissions to a user's calendar
 Get-MailboxFolderPermission -Identity target@company.com:\Calendar
-
 ```
+
 I haven't tested these since 2021:
 
 ```PowerShell

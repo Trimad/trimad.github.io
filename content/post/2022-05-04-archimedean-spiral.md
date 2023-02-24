@@ -5,9 +5,9 @@ date: 2022-05-04
 categories: [JavaScript, p5.js]
 tags: [spiral, interactive]
 ---
-<div class="iframe-wrapper-1-1">
- <iframe src="https://editor.p5js.org/Berkanan/full/LjPig4gu_"></iframe>
-</div>
+
+ <iframe width=100% height=1024px src="https://editor.p5js.org/Berkanan/full/LjPig4gu_"></iframe>
+
 <h2><a class="btn btn-outline-secondary btn-lg" href="https://editor.p5js.org/Berkanan/sketches/LjPig4gu_">Edit This Sketch</a></h2>
 
 This sketch draws an <a href="https://en.wikipedia.org/wiki/Archimedean_spiral">Archimedean Spiral</a> using polar coordinates. If the "EXPORT" variable is true, the sketch will spit-out an SVG file of the drawn spiral. My motivation for making this was so I could cut-out a spiral with my wife's Cricut Maker and hang something more interesting above my son's bassinet than empty white ceiling.
