@@ -3,10 +3,12 @@ author: Tristan Madden
 categories: [Python]
 date: 2023-02-15
 tags: [phishing]
-title: Decode Phishing Emails
+title: Decrypt Phishing Emails
 ---
 
-<h2>Decode HEX strings</h2>
+I've notice that a lot of phishing emails use hexadecimal strings to obfuscate their JavaScript. These are some Python scripts useful for identifying where form actions are POSTing to. 
+
+<h2>Convert HEX strings</h2>
 
 ```Python
 import re
@@ -32,7 +34,7 @@ The resulting decoded content is written to an output.html file using the open f
 
 Note that this program assumes that the input HTML file contains only hexadecimal representations of ASCII characters that are encoded using the \\x notation. If there are other types of encodings present in the file, they will not be handled by this program.
 
-<h2>Decode HEX strings</h2>
+<h2>Convert URL-encoded</h2>
 
 <h2></h2>
 
