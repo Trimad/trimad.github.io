@@ -1,16 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>userdll32 on Hugo Grimoire</title><link>https://trimad.github.io/tags/userdll32/</link><description>Recent content in userdll32 on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 21 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/userdll32/index.xml" rel="self" type="application/rss+xml"/><item><title>rundll32</title><link>https://trimad.github.io/post/2022-04-21-rundll32/</link><pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-21-rundll32/</guid><description>
-Loads and runs 32-bit dynamic-link libraries (DLLs). You must run the rundll32 command from an elevated command prompt. To open an elevated command prompt, click Start, right-click Command Prompt, and then click Run as administrator.
-Make Windows beep
-```console
-rundll32 user32.dll, MessageBeep
-```
-Lock Workstation
-```console
-rundll32 user32.dll, LockWorkStation
-```
-Put Workstation to sleep
-```console
-rundll32 powrprof.dll, SetSuspendState Sleep
-```
-Microsoft Reference
-ss64.com Reference</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>userdll32 on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/userdll32/</link>
+    <description>Recent content in userdll32 on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/userdll32/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rundll32</title>
+      <link>https://trimad.github.io/post/2022-04-21-rundll32/</link>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-21-rundll32/</guid>
+      <description>
+        
+          
+            Loads and runs 32-bit dynamic-link libraries (DLLs). You must run the rundll32 command from an elevated command prompt. To open an elevated command prompt, click Start, right-click Command Prompt, and then click Run as administrator.
+Make Windows beep```consolerundll32 user32.dll, MessageBeep```Lock Workstation```consolerundll32 user32.dll, LockWorkStation```Put Workstation to sleep```consolerundll32 powrprof.dll, SetSuspendState Sleep```Microsoft Referencess64.com Reference
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kruskal's algorithm on Hugo Grimoire</title><link>https://trimad.github.io/tags/kruskals-algorithm/</link><description>Recent content in kruskal's algorithm on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/kruskals-algorithm/index.xml" rel="self" type="application/rss+xml"/><item><title>Kruskal's Algorithm Visualized With Processing</title><link>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</link><pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kruskal&#39;s algorithm on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/kruskals-algorithm/</link>
+    <description>Recent content in kruskal&#39;s algorithm on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/kruskals-algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kruskal&#39;s Algorithm Visualized With Processing</title>
+      <link>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

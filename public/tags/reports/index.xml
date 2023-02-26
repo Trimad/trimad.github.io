@@ -1,8 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>reports on Hugo Grimoire</title><link>https://trimad.github.io/tags/reports/</link><description>Recent content in reports on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/reports/index.xml" rel="self" type="application/rss+xml"/><item><title>Dump WiFi Passwords</title><link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid><description>
-This script uses the Windows command-line tool &amp;quot;netsh&amp;quot; to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named &amp;quot;output.csv&amp;quot;. Finally, the script opens the &amp;quot;output.csv&amp;quot; file.
-The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quot;output.csv&amp;quot; file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer.</description></item><item><title>Combining PowerShell Cmdlets</title><link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link><pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid><description>
-I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the ExchangeOnlineManagement module, and other data only from the AzureAD module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.</description></item><item><title>Active Directory Group Membership</title><link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link><pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid><description>
-This PowerShell script generates a report showing all groups and group members when run on an on-premises domain controller. The script requires that you import the ActiveDirectory module. The report is in .csv format so the rows may need some manipulation to see all the members if you're opening it in Excel.</description></item><item><title>Managing Exchange Online Calendars</title><link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link><pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid><description>
-Manage client calendars for them, using the the ExchangeOnlineManagement module.</description></item><item><title>Managing Auto-Expanding Archives</title><link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link><pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid><description>
-Managing auto-expanding archives via the ExchangeOnlineManagement module is a pain in my ass. This Github Gist is an aggregate of scripts I've written that allow me to administrate this mailbox feature effectively.</description></item><item><title>Daily Donation Report</title><link>https://trimad.github.io/post/2019-08-25-daily-donation-report/</link><pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-08-25-daily-donation-report/</guid><description>
-This Google Apps Script aggregates data submitted by Google Forms, puts it in .xlsx format and sends it in an HTML formatted email.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reports on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/reports/</link>
+    <description>Recent content in reports on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/reports/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dump WiFi Passwords</title>
+      <link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid>
+      <description>
+        
+          
+            This script uses the Windows command-line tool &amp;quot;netsh&amp;quot; to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named &amp;quot;output.csv&amp;quot;. Finally, the script opens the &amp;quot;output.csv&amp;quot; file.
+The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quot;output.csv&amp;quot; file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Combining PowerShell Cmdlets</title>
+      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <description>
+        
+          
+            I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the ExchangeOnlineManagement module, and other data only from the AzureAD module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Active Directory Group Membership</title>
+      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
+      <description>
+        
+          
+            This PowerShell script generates a report showing all groups and group members when run on an on-premises domain controller. The script requires that you import the ActiveDirectory module. The report is in .csv format so the rows may need some manipulation to see all the members if you&#39;re opening it in Excel.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Auto-Expanding Archives</title>
+      <link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid>
+      <description>
+        
+          
+            Managing auto-expanding archives via the ExchangeOnlineManagement module is a pain in my ass. This Github Gist is an aggregate of scripts I&#39;ve written that allow me to administrate this mailbox feature effectively.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Daily Donation Report</title>
+      <link>https://trimad.github.io/post/2019-08-25-daily-donation-report/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-08-25-daily-donation-report/</guid>
+      <description>
+        
+          
+            This Google Apps Script aggregates data submitted by Google Forms, puts it in .xlsx format and sends it in an HTML formatted email.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

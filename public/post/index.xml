@@ -1,140 +1,1199 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Hugo Grimoire</title><link>https://trimad.github.io/post/</link><description>Recent content in Posts on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 07 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Purge emails with ExchangeOnlineManagement</title><link>https://trimad.github.io/post/2023-02-07-purge-emails/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-07-purge-emails/</guid><description>
-Content Search
-https://compliance.microsoft.com/contentsearchv2?viewid=search
-Purge
-```PowerShell
-#Connected to Security &amp; Compliance PowerShell
-Import-Module ExchangeOnlineManagement
-Connect-IPPSSession -UserPrincipalName admin@thecompany.org
-Performed a &amp;quot;hard delete&amp;quot; of phishing emails New-ComplianceSearchAction -SearchName &amp;quot;name_of_content_search&amp;quot; -Purge -PurgeType HardDelete
-Checked status of compliance serach action: Get-ComplianceSearchAction -Identity &amp;quot;name_of_content_search_Purge&amp;quot; | Format-List</description></item><item><title>Uninstall Third-Party Drivers with CMD</title><link>https://trimad.github.io/post/2023-02-06-uninstall-drivers/</link><pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-06-uninstall-drivers/</guid><description>
-You can uninstall third-party drivers (such as the WAVES MaxxAudio Pro driver) from the Command Prompt (CMD) by using the &amp;quot;pnputil.exe&amp;quot; utility. Here's the basic process:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hugo Grimoire</title>
+    <link>https://trimad.github.io/post/</link>
+    <description>Recent content in Posts on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI Whisper</title>
+      <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>
+      <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid>
+      <description>
+        
+          
+            Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Microsoft LAPS (Local Administrator Password Solution)</title>
+      <link>https://trimad.github.io/post/2023-02-23-laps/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-23-laps/</guid>
+      <description>
+        
+          
+            Microsoft LAPS (Local Administrator Password Solution) is a tool designed to securely manage local administrator account passwords on Windows domain-joined computers. It automates password generation and rotation, and stores passwords in a secure manner, providing greater control and security over local accounts.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>MicrosoftTeams PowerShell module</title>
+      <link>https://trimad.github.io/post/2023-02-23-microsoftteams/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-23-microsoftteams/</guid>
+      <description>
+        
+          
+            PowerShell scripts for Microsoft Teams stuff.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Decrypt Phishing Emails</title>
+      <link>https://trimad.github.io/post/2023-02-15-decrypt-phishing-emails/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-15-decrypt-phishing-emails/</guid>
+      <description>
+        
+          
+            I&#39;ve notice that a lot of phishing emails use hexadecimal strings to obfuscate their JavaScript. These are some Python scripts useful for identifying where form actions are POSTing to.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>net user</title>
+      <link>https://trimad.github.io/post/2023-02-22-net-user/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-22-net-user/</guid>
+      <description>
+        
+          
+            The &#34;net user&#34; command is a Command Prompt (CMD) command used to manage user accounts on a Windows operating system. It can be used to create, modify, or delete user accounts, as well as to change passwords and manage group memberships.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Force domain controller to sync with AzureAD</title>
+      <link>https://trimad.github.io/post/2023-02-09-force-ad-sync/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-09-force-ad-sync/</guid>
+      <description>
+        
+          
+            PowerShell script that forces an AD sync with AzureAD
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Purge emails with ExchangeOnlineManagement</title>
+      <link>https://trimad.github.io/post/2023-02-07-purge-emails/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-07-purge-emails/</guid>
+      <description>
+        
+          
+            This PowerShell script imports the Exchange Online Management module and connects to Exchange Online, performs a &#34;hard delete&#34; of phishing emails by using a compliance search action, and then disconnects from Exchange Online PowerShell without a confirmation prompt or any notification text.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Uninstall Third-Party Drivers with CMD</title>
+      <link>https://trimad.github.io/post/2023-02-06-uninstall-drivers/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-06-uninstall-drivers/</guid>
+      <description>
+        
+          
+            You can uninstall third-party drivers (such as the WAVES MaxxAudio Pro driver) from the Command Prompt (CMD) by using the &amp;quot;pnputil.exe&amp;quot; utility. Here&#39;s the basic process:
 Open Command Prompt as administrator: Press the Windows key + X, and then select &amp;quot;Command Prompt (Admin)&amp;quot;.
 Type the following command and press Enter:
-1pnputil.exe -e 2# or export the list to a file 3pnputil.exe &amp;gt; !drivers.csv This command lists all the third-party drivers installed on your system.</description></item><item><title>Stable Diffusion Scripts</title><link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link><pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid><description>
-Data Grooming
-Numbering PNG files in a folder in sequence
-1import os 2import pathlib 3 4collection = os.getcwd() 5#print(collection) 6for i, filename in enumerate(os.listdir(collection)): 7 file_extension = pathlib.Path(filename).suffix 8 #print(&amp;#34;File Extension: &amp;#34;, file_extension) 9 if(file_extension == &amp;#34;.png&amp;#34;): 10 os.rename(collection +&amp;#34;\\&amp;#34;+ filename, collection +&amp;#34;\\&amp;#34;+ str(i).zfill(4) + &amp;#34;.png&amp;#34;) This code block is a Python script that does the following:
-Imports the os and pathlib modules. Defines a variable collection which is set to the current working directory.</description></item><item><title>All About Time</title><link>https://trimad.github.io/post/2023-02-02-all-about-time/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-02-all-about-time/</guid><description>
-The first command, &amp;quot;wmic path Win32_OperatingSystem get LastBootUpTime&amp;quot;, is a Windows Management Instrumentation (WMI) command that retrieves the time the operating system was last booted. The second command, &amp;quot;systeminfo | find &amp;quot;System Boot Time&amp;quot;&amp;quot;, is a Windows Command Prompt command that uses the systeminfo command to retrieve system information, which is then piped (|) to the find command to search for the specific line containing &amp;quot;System Boot Time&amp;quot;. The third command, &amp;quot;(get-date) - (gcim Win32_OperatingSystem).</description></item><item><title>Download Movie Streams</title><link>https://trimad.github.io/post/2022-06-09-download-movie-streams/</link><pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-06-09-download-movie-streams/</guid><description>
-This is my tentative work flow for downloading movie streams online. The gist of what I've learned about this process is that every HTTP Live Stream (HLS) begins with an .m3u8 playlist with a MIME type of x-mpegURL or vnd.apple.mpegURL. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page.</description></item><item><title>Logistic Map</title><link>https://trimad.github.io/post/2022-05-14-logistic-map/2022-05-14-logistic-map/</link><pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-05-14-logistic-map/2022-05-14-logistic-map/</guid><description>
-hell yeah dude
-Repository for code that generated this fractal: https://github.com/Trimad/Sandbox</description></item><item><title>Archimedean Spiral</title><link>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</guid><description>
-Edit This Sketch
-This sketch draws an Archimedean Spiral using polar coordinates. If the &amp;quot;EXPORT&amp;quot; variable is true, the sketch will spit-out an SVG file of the drawn spiral. My motivation for making this was so I could cut-out a spiral with my wife's Cricut Maker and hang something more interesting above my son's bassinet than empty white ceiling.
-Example SVG files
+1pnputil.exe -e 2# or export the list to a file 3pnputil.exe &amp;gt; !drivers.csv This command lists all the third-party drivers installed on your system.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>FILM</title>
+      <link>https://trimad.github.io/post/2023-02-10-film/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-10-film/</guid>
+      <description>
+        
+          
+            GitHub RepositorySetup GPU environmentThe Windows setup instructions in the GitHub repository are wrong or outdated. Tensorflow kept trying to use the CPU instead of the GPU until I installed CUDA and CUDNN this way:1conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 2python -m pip install &amp;#34;tensorflow&amp;lt;2.11&amp;#34; 3pip install protobuf==3.20.3 UsageActivate the Conda environment:
+1conda activate frame_interpolation From the Conda Shell, cd to the FILM directory:
+1cd C:\Users\trima\frame-interpolation Place the images you would like to interpolate in the &amp;quot;photos&amp;quot; directory and run this command to begin interpolating them:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>MiDaS</title>
+      <link>https://trimad.github.io/post/2023-02-10-midas/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-10-midas/</guid>
+      <description>
+        
+          
+            GitHub RepositoryDuring installation, I ran into an issue where the CUDA package wasn&#39;t found. Had to modify environment.yaml to:
+1name: midas-py310 2channels: 3 - pytorch 4 - defaults 5dependencies: 6 - nvidia::cuda-toolkit=11.7.0 7 - python=3.10.8 8 - pytorch::pytorch=1.13.0 9 - torchvision=0.14.0 10 - pip=22.3.1 11 - numpy=1.23.4 12 - pip: 13 - opencv-python==4.6.0.66 14 - imutils==0.5.4 15 - timm==0.6.12 16 - einops==0.6.0 Commands that were helpful for troubleshooting CUDA:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stable Diffusion Scripts</title>
+      <link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid>
+      <description>
+        
+          
+            Data GroomingNumbering PNG files in a folder in sequence1import os 2import pathlib 3 4collection = os.getcwd() 5for i, filename in enumerate(os.listdir(collection)): 6 file_extension = pathlib.Path(filename).suffix 7 if file_extension == &amp;#34;.png&amp;#34;: 8 new_filename = f&amp;#34;{str(i).zfill(4)}.png&amp;#34; 9 old_path = os.path.join(collection, filename) 10 new_path = os.path.join(collection, new_filename) 11 os.rename(old_path, new_path) This code block is a Python script that does the following:
+Imports the os and pathlib modules. Defines a variable collection which is set to the current working directory.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>All About Time</title>
+      <link>https://trimad.github.io/post/2023-02-02-all-about-time/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-02-all-about-time/</guid>
+      <description>
+        
+          
+            The first command, &amp;quot;wmic path Win32_OperatingSystem get LastBootUpTime&amp;quot;, is a Windows Management Instrumentation (WMI) command that retrieves the time the operating system was last booted. The second command, &amp;quot;systeminfo | find &amp;quot;System Boot Time&amp;quot;&amp;quot;, is a Windows Command Prompt command that uses the systeminfo command to retrieve system information, which is then piped (|) to the find command to search for the specific line containing &amp;quot;System Boot Time&amp;quot;. The third command, &amp;quot;(get-date) - (gcim Win32_OperatingSystem).
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Download Movie Streams</title>
+      <link>https://trimad.github.io/post/2022-06-09-download-movie-streams/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-06-09-download-movie-streams/</guid>
+      <description>
+        
+          
+            This is my tentative work flow for downloading movie streams online. The gist of what I&#39;ve learned about this process is that every HTTP Live Stream (HLS) begins with an .m3u8 playlist with a MIME type of x-mpegURL or vnd.apple.mpegURL. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logistic Map</title>
+      <link>https://trimad.github.io/post/2022-05-14-logistic-map/</link>
+      <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-05-14-logistic-map/</guid>
+      <description>
+        
+          
+            hell yeah dude
+Repository for code that generated this fractal: https://github.com/Trimad/Sandbox
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Archimedean Spiral</title>
+      <link>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</link>
+      <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</guid>
+      <description>
+        
+          
+            Edit This SketchThis sketch draws an Archimedean Spiral using polar coordinates. If the &amp;quot;EXPORT&amp;quot; variable is true, the sketch will spit-out an SVG file of the drawn spiral. My motivation for making this was so I could cut-out a spiral with my wife&#39;s Cricut Maker and hang something more interesting above my son&#39;s bassinet than empty white ceiling.
+Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
 {: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
-{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }</description></item><item><title>rundll32</title><link>https://trimad.github.io/post/2022-04-21-rundll32/</link><pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-21-rundll32/</guid><description>
-Loads and runs 32-bit dynamic-link libraries (DLLs). You must run the rundll32 command from an elevated command prompt. To open an elevated command prompt, click Start, right-click Command Prompt, and then click Run as administrator.
-Make Windows beep
-```console
-rundll32 user32.dll, MessageBeep
-```
-Lock Workstation
-```console
-rundll32 user32.dll, LockWorkStation
-```
-Put Workstation to sleep
-```console
-rundll32 powrprof.dll, SetSuspendState Sleep
-```
-Microsoft Reference
-ss64.com Reference</description></item><item><title>youtube-dl</title><link>https://trimad.github.io/post/2022-04-16-youtube-dl/</link><pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-16-youtube-dl/</guid><description>
-youtube-dl is a command-line program that allows users to download videos from YouTube and other video-sharing websites. The program is open-source and can be used on a variety of operating systems, including Windows, Mac, and Linux. It can download videos in a variety of formats, including MP4, FLV, and 3GP, and can also extract audio from videos as MP3 or other audio formats. Additionally, youtube-dl can be used to download videos from other websites like Vimeo, Dailymotion, and more.</description></item><item><title>Dump WiFi Passwords</title><link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid><description>
-This script uses the Windows command-line tool &amp;quot;netsh&amp;quot; to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named &amp;quot;output.csv&amp;quot;. Finally, the script opens the &amp;quot;output.csv&amp;quot; file.
-The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quot;output.csv&amp;quot; file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer.</description></item><item><title>Record Desktop Silently</title><link>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</link><pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</guid><description>
-Place these 3 files in any directory and run update.vbs to begin recording a Windows session silently.
-Github Repository
-update.exe This file is just ffmpeg that's been renamed to be slightly more inconspicuous in Task Manager. update.bat There are two lines to this batch file. The first line deletes &amp;quot;output.mp4&amp;quot; if it already exists in the same directory. The framerate in frames per second of the recording is set here following the &amp;quot;-framerate&amp;quot; flag The amount of time in seconds to record is set here following the &amp;quot;-t&amp;quot; flag output.</description></item><item><title>ffmpeg</title><link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link><pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-01-27-ffmpeg/</guid><description>
-ffmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
-ffmpeg Download
-ffmpeg Documentation
-Audio Processing
-Convert to 8kHz, single-channel PCM
-1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 8000 -ac 1 output.wav Convert to 16kHz, single-channel PCM
-1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 16000 -ac 1 output.wav Convert to 48kHz, single-channel PCM
-1ffmpeg -i input.mp3 -ar 48000 -ac 1 output.wav Video Processing
-Add Music to a Video
-1ffmpeg -i video.mp4 -i music.</description></item><item><title>Combining PowerShell Cmdlets</title><link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link><pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid><description>
-I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the ExchangeOnlineManagement module, and other data only from the AzureAD module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.</description></item><item><title>Active Directory Group Membership</title><link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link><pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid><description>
-This PowerShell script generates a report showing all groups and group members when run on an on-premises domain controller. The script requires that you import the ActiveDirectory module. The report is in .csv format so the rows may need some manipulation to see all the members if you're opening it in Excel.</description></item><item><title>Managing Exchange Online Calendars</title><link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link><pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid><description>
-Manage client calendars for them, using the the ExchangeOnlineManagement module.</description></item><item><title>Managing Auto-Expanding Archives</title><link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link><pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid><description>
-Managing auto-expanding archives via the ExchangeOnlineManagement module is a pain in my ass. This Github Gist is an aggregate of scripts I've written that allow me to administrate this mailbox feature effectively.</description></item><item><title>k-means Clustering</title><link>https://trimad.github.io/post/2021-05-18-k-means-clustering/</link><pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-05-18-k-means-clustering/</guid><description>
-Wikipedia
-k-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. This results in a partitioning of the data space into Voronoi cells.
-GitHub repository: https://github.com/Trimad/k-means-clustering</description></item><item><title>Windows 10/11 ms-settings URI Scheme Reference</title><link>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</guid><description>
-Knowing the URI Scheme is useful because you can jump straight to specific settings menus using 🪟+R.</description></item><item><title>Remote Reboot With SMTP Status</title><link>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</guid><description>
-PowerShell script that reboots a list of computers and emails the status of the machines.</description></item><item><title>Remove-AppxPackage</title><link>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</guid><description>
-Microsoft Reference</description></item><item><title>Buddhabrot</title><link>https://trimad.github.io/post/2019-08-25-buddhabrot/</link><pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-08-25-buddhabrot/</guid><description/></item><item><title>Daily Donation Report</title><link>https://trimad.github.io/post/2019-08-25-daily-donation-report/</link><pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-08-25-daily-donation-report/</guid><description>
-This Google Apps Script aggregates data submitted by Google Forms, puts it in .xlsx format and sends it in an HTML formatted email.</description></item><item><title>Enable AutoAdminLogon with PowerShell</title><link>https://trimad.github.io/post/2019-08-19-autoadminlogon/</link><pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-08-19-autoadminlogon/</guid><description>
-This script was written to satisfy a niche case where I temporarily needed a PoS (Point of Sale) to automatically login upon startup using AD credentials.</description></item><item><title>Blending Textures With Open Simplex Noise</title><link>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</link><pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid><description/></item><item><title>Robo Mirror</title><link>https://trimad.github.io/post/2019-02-28-robo-mirror/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-02-28-robo-mirror/</guid><description>
-This batch file utilizes robocopy to mirror a list of files contained within &amp;quot;targets.txt&amp;quot; in the same directory.</description></item><item><title>Cube Wave</title><link>https://trimad.github.io/post/2018-12-30-cube-wave/</link><pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-12-30-cube-wave/</guid><description>
-Here's my take on... Daniel Shiffman's take on... Beesandbomb's take on the cube wave. Sources
-- https://twitter.com/beesandbombs/status/940639806522085376
-- https://www.</description></item><item><title>Lorenz Doll</title><link>https://trimad.github.io/post/2018-11-21-lorenz-doll/</link><pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-11-21-lorenz-doll/</guid><description>
-In this sketch I turned every pixel of an image into a Lorenz System. I mapped the velocity of that system to the brightness value of the pixel. This was the result. Sadly, the Processing sketch I made this with is gone forever.</description></item><item><title>Fridge Magnet Simulator</title><link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link><pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid><description>
-Launch this sketch is a new window (recommended)
-Launch p5.js web editor
-This is a virtual simulation of the magnets on my girlfriend's fridge.</description></item><item><title>Orbiting Pixels Utility</title><link>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</link><pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</guid><description>
-Launch this sketch is a new window (recommended)
-Launch p5.js web editor
-This is not a program that should be running in a browser. With that said, writing this program was a laborious process that taught me a lot about JavaScript, about Processing, and about optimization. The algorithm I implemented works first by creating a grid of evenly-spaced points. Each points has a corresponding object that rotates around that point that can be assigned characteristics such as rotation radius, a shape, and a color that corresponds to an x and y position on a source image.</description></item><item><title>Counting Sort</title><link>https://trimad.github.io/post/2018-07-18-counting-sort/</link><pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-07-18-counting-sort/</guid><description/></item><item><title>Barnsley Fern</title><link>https://trimad.github.io/post/2018-06-28-barnsley-fern/</link><pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-06-28-barnsley-fern/</guid><description>
-hell yeah dude 1float x = 0; 2float y = 0; 3 4float[][] magicX = { 5 {0.00, 0.00}, 6 {0.85, 0.04}, 7 {0.20, -0.26}, 8 {-0.15, 0.28} 9}; 10 11float[][] magicY = { 12 {0.16, 0.00, 0.00}, 13 {-0.04, 0.85, 1.6}, 14 {0.23, 0.22, 1.6}, 15 {0.26, 0.24, 0.44} 16}; 17 18//PGraphics pg; 19 20int iterations = 123456; 21 22void setup() { 23 //fullScreen(P3D); 24 size(2048, 2048, P3D); 25 background(0); 26 histogram = new int[width][height]; 27 //pg = createGraphics(width*2, height*2); 28 //pg.</description></item><item><title>Comparing Java Distance Functions</title><link>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</link><pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</guid><description>
-Distance formula 1 execution time: 2224ms Distance formula 2 execution time: 4ms Distance formula 3 execution time: 3ms</description></item><item><title>Ulam Spiral</title><link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link><pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid><description>
-Launch this sketch is a new window (recommended)
-Launch p5.js web editor
-The Ulam Spiral or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanislaw Ulam in 1963 and popularized in Martin Gardner's Mathematical Games column in Scientific American a short time later. It is constructed by writing the positive integers in a square spiral and specially marking the prime numbers.
-What I've done differently is allowed for iterating every integer in the grid forwards or backwards to search for long, connected diaganal lines of prime numbers in the grid.</description></item><item><title>UVa Online Judge Challenge "11045"</title><link>https://trimad.github.io/post/2018-05-01-uva-11045/</link><pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-05-01-uva-11045/</guid><description/></item><item><title>UVa Online Judge Challenge "10305"</title><link>https://trimad.github.io/post/2018-04-26-uva-10305/</link><pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-26-uva-10305/</guid><description/></item><item><title>UVa Online Judge Challenge "572"</title><link>https://trimad.github.io/post/2018-04-23-uva-572/</link><pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-23-uva-572/</guid><description/></item><item><title>Kattis Challenge "Grid"</title><link>https://trimad.github.io/post/2018-04-20-kattis-grid/</link><pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-20-kattis-grid/</guid><description>
-Solved using a non-recursive version of BFS. Runs in pretty good time.
-The Challenge
-My solution</description></item><item><title>Faster Java String Inputs</title><link>https://trimad.github.io/post/2018-04-11-java-turbo-reader/</link><pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-11-java-turbo-reader/</guid><description>
-TurboReader is my solution to the poor input performance of Scanner. All I need from a Reader in most programming contest problems is the ability to read ints and Double, and to read them quickly. That is all this class does, and it also tokenizes those values so that I never have to address empty lines in the text input. I have two versions of this class; a buffered version and an unbuffered version.</description></item><item><title>Kruskal's Algorithm Visualized With Processing</title><link>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</link><pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</guid><description/></item><item><title>Collatz Conjecture + Unit Circle</title><link>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</link><pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</guid><description/></item><item><title>UVa Online Judge Challenge "1112"</title><link>https://trimad.github.io/post/2018-04-09-uva-1112/</link><pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-09-uva-1112/</guid><description/></item><item><title>Minimum Spanning Tree Visualized</title><link>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</link><pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</guid><description/></item><item><title>Basic Prime Checker, C++</title><link>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</link><pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</guid><description>
-Exactly what it sounds like.</description></item><item><title>AT&amp;T Hackathon</title><link>https://trimad.github.io/post/2018-03-12-att-hackathon/</link><pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-03-12-att-hackathon/</guid><description/></item><item><title>Merge Sort using WEBGL</title><link>https://trimad.github.io/post/2018-02-05-merge-sort/</link><pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid><description>
-This is a (perhaps overkill) 3D WEBGL visualization of Merge Sort using the WEBGL rendering mode.
-Launch this sketch is a new window (recommended)
-Launch the p5.js editor
-Controls
-- ENTER = play sorting animation
-- LEFT_ARROW = step backwards
-- RIGHT_ARROW = step forwards
-- SCROLL_UP = zoom in
-- SCROLL_DOWN = zoom out</description></item><item><title>10PRINT Image Filter</title><link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link><pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid><description>
-This sketch is a browser-based image filtering utility inspired by 10PRINT. The UI allows users to produce faithful looking interpretations of 10PRINT, 10PRINT patterns that look hand-drawn, and the user can even create an explosive shit-mess of scribbles, if they so choose to.
-Launch this sketch is a new window (recommended)
-Launch p5.js web editor</description></item><item><title>Insertion Sort using WEBGL</title><link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link><pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid><description>
-This is a (perhaps overkill) 3D WEBGL visualization of Insertion Sort using the WEBGL rendering mode.
-click mouse in iframe to begin
-Controls
-- MOUSE = pan around
-- ENTER = play sorting animation
-- LEFT_ARROW = step backwards
-- RIGHT_ARROW = step forwards
-- SCROLL_UP = zoom in
-- SCROLL_DOWN = zoom out
-Launch this sketch is a new window (recommended)
-Launch the p5.js editor</description></item><item><title>Generating Terrain with Open Simplex Noise</title><link>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</link><pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</guid><description/></item><item><title>Open Simplex Noise</title><link>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</link><pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</guid><description/></item><item><title>Flippy Tiles</title><link>https://trimad.github.io/post/2017-11-18-flippy-tiles/</link><pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-11-18-flippy-tiles/</guid><description/></item><item><title>Juno Cam Image Processing</title><link>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</link><pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</guid><description/></item><item><title>UVa Online Judge Challenge "10550"</title><link>https://trimad.github.io/post/2017-11-09-uva-10550/</link><pubDate>Thu, 09 Nov 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-11-09-uva-10550/</guid><description/></item><item><title>Demonstrating Procedures and Console Output</title><link>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</link><pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</guid><description>
-Output of the program This MASM program demonstrates the use of procedures (functions) as well as printing different colors to console.</description></item><item><title>Sieve of Eratosthenes</title><link>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</link><pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</guid><description>
-This is my first attempt a prime sieve in assembly. It is largely a direct translation from a Sieve of Eratosthenes originally written in Java, so this program is not exactly optimally structured. Firstly, it stores all primes up to n in an array. Secondly, it counts the number of primes before n and stores that hexadecimal value in the EAX register. This is rough. There is much room for improvement, and I intend to revisit this program without using the MUL function.</description></item><item><title>UVa Online Judge Challenge "272"</title><link>https://trimad.github.io/post/2017-10-17-uva-272/</link><pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-10-17-uva-272/</guid><description/></item><item><title>Nth Fibonacci Number</title><link>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</link><pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</guid><description>
-This is my first x86 MASM program. As the title states, this program outputs a Fibonacci number that corresponds to an input value of n. I'm not happy with its current state because it is constantly swapping between the memory and registers.</description></item><item><title>UVa Online Judge Challenge "100"</title><link>https://trimad.github.io/post/2017-10-05-uva-100/</link><pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-10-05-uva-100/</guid><description/></item><item><title>UVa Online Judge Challenge "10110"</title><link>https://trimad.github.io/post/2017-10-05-uva-10110/</link><pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-10-05-uva-10110/</guid><description/></item><item><title>Kattis Challenge "Parking"</title><link>https://trimad.github.io/post/2017-09-15-kattis-parking2/</link><pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-09-15-kattis-parking2/</guid><description>
-The Challenge
-My solution</description></item><item><title>Kattis Challenge "Sum of Others"</title><link>https://trimad.github.io/post/2017-09-15-kattis-sum-of-others/</link><pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-09-15-kattis-sum-of-others/</guid><description>
-The Challenge
-My solution</description></item><item><title>UVa Online Judge Challenge "11172"</title><link>https://trimad.github.io/post/2017-08-24-uva-11172/</link><pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-24-uva-11172/</guid><description/></item><item><title>Kattis Challenge "Line Them Up"</title><link>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</guid><description>
-The Challenge
-My solution</description></item><item><title>Kattis Challenge "Server"</title><link>https://trimad.github.io/post/2017-08-18-kattis-server/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-18-kattis-server/</guid><description>
-The Challenge
-My solution</description></item><item><title>Kattis Challenge "A Different Problem"</title><link>https://trimad.github.io/post/2017-08-15-kattis-different/</link><pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-15-kattis-different/</guid><description>
-The Challenge
-My solution</description></item><item><title>Simple 2D Terrain Generation Using Perlin Noise</title><link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link><pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid><description>
-click mouse in iframe to generate a new map
-This sketch maps perlin noise between a value of 0 and 255 across a grid. Values greater than or equal to 100 are
-"grass", values between 75 and 100 are "sand", and values less than or equal to 75 are "water".
-Click here to render a fullscreen map
-Launch the p5.js editor</description></item><item><title>Arrays</title><link>https://trimad.github.io/post/2016-12-13-arrays/</link><pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2016-12-13-arrays/</guid><description>
-View Fullscreen
-View In p5.js Editor
-Click on them circles homes</description></item><item><title>Using the NVIDIA Maxine Audio Effects SDK Demo</title><link>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid><description>
-This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine SDK.
-Download the Latest Audio Effects SDK
-NVIDIA Maxine Documentation
-Find and download a YouTube video using [youtube-dl]({{ site.baseurl }}{% link _posts/2022-04-16-youtube-dl.md %}) 1youtube-dl -f bestaudio https://www.youtube.com/watch?v=XlfcvUtUoOM The Audio Effects SDK only accepts audio that is in .wav format sampled at 8000Hz single-channel, 16000Hz single-channel, or 48000Hz single-channel. This can be resampled using [ffmpeg]({{ site.baseurl }}{% link _posts/2022-04-16-ffmpeg.</description></item></channel></rss>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>rundll32</title>
+      <link>https://trimad.github.io/post/2022-04-21-rundll32/</link>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-21-rundll32/</guid>
+      <description>
+        
+          
+            Loads and runs 32-bit dynamic-link libraries (DLLs). You must run the rundll32 command from an elevated command prompt. To open an elevated command prompt, click Start, right-click Command Prompt, and then click Run as administrator.
+Make Windows beep```consolerundll32 user32.dll, MessageBeep```Lock Workstation```consolerundll32 user32.dll, LockWorkStation```Put Workstation to sleep```consolerundll32 powrprof.dll, SetSuspendState Sleep```Microsoft Referencess64.com Reference
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>NVIDIA Maxine Windows Audio Effects SDK</title>
+      <link>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
+      <description>
+        
+          
+            This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine Windows Audio Effects SDK.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>youtube-dl</title>
+      <link>https://trimad.github.io/post/2022-04-16-youtube-dl/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-16-youtube-dl/</guid>
+      <description>
+        
+          
+            youtube-dl is a command-line program that allows users to download videos from YouTube and other video-sharing websites. The program is open-source and can be used on a variety of operating systems, including Windows, Mac, and Linux. It can download videos in a variety of formats, including MP4, FLV, and 3GP, and can also extract audio from videos as MP3 or other audio formats. Additionally, youtube-dl can be used to download videos from other websites like Vimeo, Dailymotion, and more.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump WiFi Passwords</title>
+      <link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid>
+      <description>
+        
+          
+            This script uses the Windows command-line tool &amp;quot;netsh&amp;quot; to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named &amp;quot;output.csv&amp;quot;. Finally, the script opens the &amp;quot;output.csv&amp;quot; file.
+The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quot;output.csv&amp;quot; file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Record Desktop Silently</title>
+      <link>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</guid>
+      <description>
+        
+          
+            Place these 3 files in any directory and run update.vbs to begin recording a Windows session silently.
+Github Repositoryupdate.exe This file is just ffmpeg that&#39;s been renamed to be slightly more inconspicuous in Task Manager. update.bat There are two lines to this batch file. The first line deletes &amp;quot;output.mp4&amp;quot; if it already exists in the same directory. The framerate in frames per second of the recording is set here following the &amp;quot;-framerate&amp;quot; flag The amount of time in seconds to record is set here following the &amp;quot;-t&amp;quot; flag output.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-01-27-ffmpeg/</guid>
+      <description>
+        
+          
+            ffmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
+ffmpeg Downloadffmpeg DocumentationAudio ProcessingConvert to 8kHz, single-channel PCM1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 8000 -ac 1 output.wav Convert to 16kHz, single-channel PCM1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 16000 -ac 1 output.wav Convert to 48kHz, single-channel PCM1ffmpeg -i input.mp3 -ar 48000 -ac 1 output.wav Video ProcessingAdd Music to a Video1ffmpeg -i video.mp4 -i music.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Combining PowerShell Cmdlets</title>
+      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <description>
+        
+          
+            I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the ExchangeOnlineManagement module, and other data only from the AzureAD module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Active Directory Group Membership</title>
+      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
+      <description>
+        
+          
+            This PowerShell script generates a report showing all groups and group members when run on an on-premises domain controller. The script requires that you import the ActiveDirectory module. The report is in .csv format so the rows may need some manipulation to see all the members if you&#39;re opening it in Excel.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Exchange Calendars</title>
+      <link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid>
+      <description>
+        
+          
+            1#If not installed already 2Install-Module ExchangeOnlineManagement 3#Import 4Import-Module ExchangeOnlineManagement 5#Connect 6Connect-ExchangeOnline -UserPrincipalName &amp;lt;UPN&amp;gt; 7 8# Remove AccessRights from a user 9Remove-MailboxFolderPermission -Identity target@company.com:\Calendar -User user@company.com 10# Grant AccessRights to a user 11Add-MailboxFolderPermission -Identity target@company.com:\Calendar -User user@company.com -AccessRights Owner 12# See who currently has folder permissions to a user&amp;#39;s calendar 13Get-MailboxFolderPermission -Identity target@company.com:\Calendar I haven&#39;t tested these since 2021:
+1# Connect to Exchage 2Import-Module ExchangeOnlineManagement 3Connect-ExchangeOnline -UserPrincipalName &amp;lt;UPN&amp;gt; 4 5# Get a list of all mailbox aliases 6# Source: https://docs.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Auto-Expanding Archives</title>
+      <link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid>
+      <description>
+        
+          
+            Managing auto-expanding archives via the ExchangeOnlineManagement module is a pain in my ass. This Github Gist is an aggregate of scripts I&#39;ve written that allow me to administrate this mailbox feature effectively.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>k-means Clustering</title>
+      <link>https://trimad.github.io/post/2021-05-18-k-means-clustering/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-05-18-k-means-clustering/</guid>
+      <description>
+        
+          
+            Wikipediak-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. This results in a partitioning of the data space into Voronoi cells.
+GitHub repository: https://github.com/Trimad/k-means-clustering
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Windows 10/11 ms-settings URI Scheme Reference</title>
+      <link>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</guid>
+      <description>
+        
+          
+            Knowing the URI Scheme is useful because you can jump straight to specific settings menus using 🪟+R.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remote Reboot With SMTP Status</title>
+      <link>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</guid>
+      <description>
+        
+          
+            PowerShell script that reboots a list of computers and emails the status of the machines.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove-AppxPackage</title>
+      <link>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</guid>
+      <description>
+        
+          
+            Microsoft Reference
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Buddhabrot</title>
+      <link>https://trimad.github.io/post/2019-08-25-buddhabrot/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-08-25-buddhabrot/</guid>
+      <description>
+        
+          
+            GitHub Repository
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Daily Donation Report</title>
+      <link>https://trimad.github.io/post/2019-08-25-daily-donation-report/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-08-25-daily-donation-report/</guid>
+      <description>
+        
+          
+            This Google Apps Script aggregates data submitted by Google Forms, puts it in .xlsx format and sends it in an HTML formatted email.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Enable AutoAdminLogon with PowerShell</title>
+      <link>https://trimad.github.io/post/2019-08-19-autoadminlogon/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-08-19-autoadminlogon/</guid>
+      <description>
+        
+          
+            This script was written to satisfy a niche case where I temporarily needed a PoS (Point of Sale) to automatically login upon startup using AD credentials.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Blending Textures With Open Simplex Noise</title>
+      <link>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Robo Mirror</title>
+      <link>https://trimad.github.io/post/2019-02-28-robo-mirror/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-02-28-robo-mirror/</guid>
+      <description>
+        
+          
+            This batch file utilizes robocopy to mirror a list of files contained within &amp;quot;targets.txt&amp;quot; in the same directory.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cube Wave</title>
+      <link>https://trimad.github.io/post/2018-12-30-cube-wave/</link>
+      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-12-30-cube-wave/</guid>
+      <description>
+        
+          
+            Here&#39;s my take on... Daniel Shiffman&#39;s take on... Beesandbomb&#39;s take on the cube wave. Sources- https://twitter.com/beesandbombs/status/940639806522085376- https://www.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Lorenz Doll</title>
+      <link>https://trimad.github.io/post/2018-11-21-lorenz-doll/</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-11-21-lorenz-doll/</guid>
+      <description>
+        
+          
+            In this sketch I turned every pixel of an image into a Lorenz System. I mapped the velocity of that system to the brightness value of the pixel. This was the result. Sadly, the Processing sketch I made this with is gone forever.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Fridge Magnet Simulator</title>
+      <link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid>
+      <description>
+        
+          
+            Launch this sketch is a new window (recommended)Launch p5.js web editorThis is a virtual simulation of the magnets on my girlfriend&#39;s fridge.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Orbiting Pixels Utility</title>
+      <link>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</guid>
+      <description>
+        
+          
+            Launch this sketch is a new window (recommended)Launch p5.js web editorThis program works by creating a grid of evenly-spaced points. Each points has a corresponding object that rotates about that point and is assigned characteristics such as rotation radius, shape, and color that corresponds to the same x and y position of a source image. The phase of each object&#39;s rotation to the brightness value of the source image&#39;s corresponding pixel.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Counting Sort</title>
+      <link>https://trimad.github.io/post/2018-07-18-counting-sort/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-07-18-counting-sort/</guid>
+      <description>
+        
+          
+            
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Barnsley Fern</title>
+      <link>https://trimad.github.io/post/2018-06-28-barnsley-fern/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-06-28-barnsley-fern/</guid>
+      <description>
+        
+          
+            hell yeah dude
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Comparing Java Distance Functions</title>
+      <link>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</guid>
+      <description>
+        
+          
+             Distance formula 1 execution time: 2224ms Distance formula 2 execution time: 4ms Distance formula 3 execution time: 3ms 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ulam Spiral</title>
+      <link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link>
+      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid>
+      <description>
+        
+          
+            Launch this sketch is a new window (recommended)Launch p5.js web editorThe Ulam Spiral or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanislaw Ulam in 1963 and popularized in Martin Gardner&#39;s Mathematical Games column in Scientific American a short time later. It is constructed by writing the positive integers in a square spiral and specially marking the prime numbers.
+What I&#39;ve done differently is allowed for iterating every integer in the grid forwards or backwards to search for long, connected diaganal lines of prime numbers in the grid.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>UVa Online Judge Challenge &#34;11045&#34;</title>
+      <link>https://trimad.github.io/post/2018-05-01-uva-11045/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-05-01-uva-11045/</guid>
+      <description>
+        
+          
+            This is a maximum flow problem on a bipartite graph. I created the flow chart above to visualize the 3 test cases. The virtual judge run time was 0.18s.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>UVa Online Judge Challenge &#34;10305&#34;</title>
+      <link>https://trimad.github.io/post/2018-04-26-uva-10305/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-26-uva-10305/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>UVa Online Judge Challenge &#34;572&#34;</title>
+      <link>https://trimad.github.io/post/2018-04-23-uva-572/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-23-uva-572/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Grid&#34;</title>
+      <link>https://trimad.github.io/post/2018-04-20-kattis-grid/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-20-kattis-grid/</guid>
+      <description>
+        
+          
+            Solved using a non-recursive version of BFS. Runs in pretty good time.
+The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Faster Java String Inputs</title>
+      <link>https://trimad.github.io/post/2018-04-11-java-turbo-reader/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-11-java-turbo-reader/</guid>
+      <description>
+        
+          
+            TurboReader is my solution to the poor input performance of Scanner. All I need from a Reader in most programming contest problems is the ability to read ints and Double, and to read them quickly. That is all this class does, and it also tokenizes those values so that I never have to address empty lines in the text input. I have two versions of this class; a buffered version and an unbuffered version.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kruskal&#39;s Algorithm Visualized With Processing</title>
+      <link>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Collatz Conjecture &#43; Unit Circle</title>
+      <link>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>UVa Online Judge Challenge &#34;1112&#34;</title>
+      <link>https://trimad.github.io/post/2018-04-09-uva-1112/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-09-uva-1112/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Minimum Spanning Tree Visualized</title>
+      <link>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Basic Prime Checker, C&#43;&#43;</title>
+      <link>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</guid>
+      <description>
+        
+          
+            Exactly what it sounds like.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>AT&amp;T Hackathon</title>
+      <link>https://trimad.github.io/post/2018-03-12-att-hackathon/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-03-12-att-hackathon/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Merge Sort using WEBGL</title>
+      <link>https://trimad.github.io/post/2018-02-05-merge-sort/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid>
+      <description>
+        
+          
+            This is a (perhaps overkill) 3D WEBGL visualization of Merge Sort using the WEBGL rendering mode.
+Launch this sketch is a new window (recommended)Launch the p5.js editorControls- ENTER = play sorting animation- LEFT_ARROW = step backwards- RIGHT_ARROW = step forwards- SCROLL_UP = zoom in- SCROLL_DOWN = zoom out
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>10PRINT Image Filter</title>
+      <link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid>
+      <description>
+        
+          
+            This sketch is a browser-based image filtering utility inspired by 10PRINT. The UI allows users to produce faithful looking interpretations of 10PRINT, 10PRINT patterns that look hand-drawn, and the user can even create an explosive shit-mess of scribbles, if they so choose to.
+Launch this sketch is a new window (recommended)Launch p5.js web editor
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insertion Sort using WEBGL</title>
+      <link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid>
+      <description>
+        
+          
+            This is a (perhaps overkill) 3D WEBGL visualization of Insertion Sort using the WEBGL rendering mode.
+click mouse in iframe to beginControls- MOUSE = pan around- ENTER = play sorting animation- LEFT_ARROW = step backwards- RIGHT_ARROW = step forwards- SCROLL_UP = zoom in- SCROLL_DOWN = zoom outLaunch this sketch is a new window (recommended)Launch the p5.js editor
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generating Terrain with Open Simplex Noise</title>
+      <link>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Open Simplex Noise</title>
+      <link>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flippy Tiles</title>
+      <link>https://trimad.github.io/post/2017-11-18-flippy-tiles/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-11-18-flippy-tiles/</guid>
+      <description>
+        
+          
+            
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Juno Cam Image Processing</title>
+      <link>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>UVa Online Judge Challenge &#34;10550&#34;</title>
+      <link>https://trimad.github.io/post/2017-11-09-uva-10550/</link>
+      <pubDate>Thu, 09 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-11-09-uva-10550/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Demonstrating Procedures and Console Output</title>
+      <link>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</link>
+      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</guid>
+      <description>
+        
+          
+            Output of the program This MASM program demonstrates the use of procedures (functions) as well as printing different colors to console.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Sieve of Eratosthenes</title>
+      <link>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</guid>
+      <description>
+        
+          
+            This is my first attempt a prime sieve in assembly. It is largely a direct translation from a Sieve of Eratosthenes originally written in Java, so this program is not exactly optimally structured. Firstly, it stores all primes up to n in an array. Secondly, it counts the number of primes before n and stores that hexadecimal value in the EAX register. This is rough. There is much room for improvement, and I intend to revisit this program without using the MUL function.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>UVa Online Judge Challenge &#34;272&#34;</title>
+      <link>https://trimad.github.io/post/2017-10-17-uva-272/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-10-17-uva-272/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nth Fibonacci Number</title>
+      <link>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</guid>
+      <description>
+        
+          
+            This is my first x86 MASM program. As the title states, this program outputs a Fibonacci number that corresponds to an input value of n. I&#39;m not happy with its current state because it is constantly swapping between the memory and registers.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>UVa Online Judge Challenge &#34;100&#34;</title>
+      <link>https://trimad.github.io/post/2017-10-05-uva-100/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-10-05-uva-100/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>UVa Online Judge Challenge &#34;10110&#34;</title>
+      <link>https://trimad.github.io/post/2017-10-05-uva-10110/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-10-05-uva-10110/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Parking&#34;</title>
+      <link>https://trimad.github.io/post/2017-09-15-kattis-parking2/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-09-15-kattis-parking2/</guid>
+      <description>
+        
+          
+            The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Sum of Others&#34;</title>
+      <link>https://trimad.github.io/post/2017-09-15-kattis-sum-of-others/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-09-15-kattis-sum-of-others/</guid>
+      <description>
+        
+          
+            The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>UVa Online Judge Challenge &#34;11172&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-24-uva-11172/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-24-uva-11172/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Line Them Up&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</guid>
+      <description>
+        
+          
+            The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Server&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-18-kattis-server/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-18-kattis-server/</guid>
+      <description>
+        
+          
+            The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;A Different Problem&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-15-kattis-different/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-15-kattis-different/</guid>
+      <description>
+        
+          
+            The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Simple 2D Terrain Generation Using Perlin Noise</title>
+      <link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid>
+      <description>
+        
+          
+            click mouse in iframe to generate a new mapThis sketch maps perlin noise between a value of 0 and 255 across a grid. Values greater than or equal to 100 are&#34;grass&#34;, values between 75 and 100 are &#34;sand&#34;, and values less than or equal to 75 are &#34;water&#34;.Click here to render a fullscreen mapLaunch the p5.js editor
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Arrays</title>
+      <link>https://trimad.github.io/post/2016-12-13-arrays/</link>
+      <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2016-12-13-arrays/</guid>
+      <description>
+        
+          
+            View FullscreenView In p5.js EditorClick on them circles homes
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

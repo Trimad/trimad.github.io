@@ -4,9 +4,12 @@ categories: [Java, Processing]
 date: 2018-06-28
 tags: [fractal]
 title: Barnsley Fern
+featureImage: barnsleyfern.png"
+thumbnail: "barnsleyfern.png"
+summary: "hell yeah dude"
 ---
+
 hell yeah dude
-{{< figure src="barnsleyfern.png" >}}
 {{< youtube V6b9nNOdKV4 >}}
 
 ```Java

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>phishing on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/phishing/</link>
+    <description>Recent content in phishing on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/phishing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decrypt Phishing Emails</title>
+      <link>https://trimad.github.io/post/2023-02-15-decrypt-phishing-emails/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-15-decrypt-phishing-emails/</guid>
+      <description>
+        
+          
+            I&#39;ve notice that a lot of phishing emails use hexadecimal strings to obfuscate their JavaScript. These are some Python scripts useful for identifying where form actions are POSTing to.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

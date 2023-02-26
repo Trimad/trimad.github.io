@@ -1,10 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ExchangeOnlineManagement on Hugo Grimoire</title><link>https://trimad.github.io/categories/exchangeonlinemanagement/</link><description>Recent content in ExchangeOnlineManagement on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 07 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/exchangeonlinemanagement/index.xml" rel="self" type="application/rss+xml"/><item><title>Purge emails with ExchangeOnlineManagement</title><link>https://trimad.github.io/post/2023-02-07-purge-emails/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-07-purge-emails/</guid><description>
-Content Search
-https://compliance.microsoft.com/contentsearchv2?viewid=search
-Purge
-```PowerShell
-#Connected to Security &amp; Compliance PowerShell
-Import-Module ExchangeOnlineManagement
-Connect-IPPSSession -UserPrincipalName admin@thecompany.org
-Performed a &amp;quot;hard delete&amp;quot; of phishing emails New-ComplianceSearchAction -SearchName &amp;quot;name_of_content_search&amp;quot; -Purge -PurgeType HardDelete
-Checked status of compliance serach action: Get-ComplianceSearchAction -Identity &amp;quot;name_of_content_search_Purge&amp;quot; | Format-List</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ExchangeOnlineManagement on Hugo Grimoire</title>
+    <link>https://trimad.github.io/categories/exchangeonlinemanagement/</link>
+    <description>Recent content in ExchangeOnlineManagement on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 07 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/exchangeonlinemanagement/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Purge emails with ExchangeOnlineManagement</title>
+      <link>https://trimad.github.io/post/2023-02-07-purge-emails/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-07-purge-emails/</guid>
+      <description>
+        
+          
+            This PowerShell script imports the Exchange Online Management module and connects to Exchange Online, performs a &#34;hard delete&#34; of phishing emails by using a compliance search action, and then disconnects from Exchange Online PowerShell without a confirmation prompt or any notification text.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Combining PowerShell Cmdlets</title>
+      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <description>
+        
+          
+            I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the ExchangeOnlineManagement module, and other data only from the AzureAD module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Exchange Calendars</title>
+      <link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid>
+      <description>
+        
+          
+            1#If not installed already 2Install-Module ExchangeOnlineManagement 3#Import 4Import-Module ExchangeOnlineManagement 5#Connect 6Connect-ExchangeOnline -UserPrincipalName &amp;lt;UPN&amp;gt; 7 8# Remove AccessRights from a user 9Remove-MailboxFolderPermission -Identity target@company.com:\Calendar -User user@company.com 10# Grant AccessRights to a user 11Add-MailboxFolderPermission -Identity target@company.com:\Calendar -User user@company.com -AccessRights Owner 12# See who currently has folder permissions to a user&amp;#39;s calendar 13Get-MailboxFolderPermission -Identity target@company.com:\Calendar I haven&#39;t tested these since 2021:
+1# Connect to Exchage 2Import-Module ExchangeOnlineManagement 3Connect-ExchangeOnline -UserPrincipalName &amp;lt;UPN&amp;gt; 4 5# Get a list of all mailbox aliases 6# Source: https://docs.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Auto-Expanding Archives</title>
+      <link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid>
+      <description>
+        
+          
+            Managing auto-expanding archives via the ExchangeOnlineManagement module is a pain in my ass. This Github Gist is an aggregate of scripts I&#39;ve written that allow me to administrate this mailbox feature effectively.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

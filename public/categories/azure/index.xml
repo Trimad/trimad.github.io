@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on Hugo Grimoire</title>
+    <link>https://trimad.github.io/categories/azure/</link>
+    <description>Recent content in Azure on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 09 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Force domain controller to sync with AzureAD</title>
+      <link>https://trimad.github.io/post/2023-02-09-force-ad-sync/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-09-force-ad-sync/</guid>
+      <description>
+        
+          
+            PowerShell script that forces an AD sync with AzureAD
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,8 +3,11 @@ author: Tristan Madden
 categories: [PowerShell]
 date: 2023-02-23
 tags: [microsoft teams]
-title: MicrosoftTeamsPowerShell
+title: MicrosoftTeams PowerShell module
+summary: PowerShell scripts for Microsoft Teams stuff.
 ---
+
+PowerShell scripts for Microsoft Teams stuff.
 
 <h3>Get all owners of all teams and team channels</h3>
 

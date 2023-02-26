@@ -1,3 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>domain on Hugo Grimoire</title><link>https://trimad.github.io/tags/domain/</link><description>Recent content in domain on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/domain/index.xml" rel="self" type="application/rss+xml"/><item><title>Active Directory Group Membership</title><link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link><pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid><description>
-This PowerShell script generates a report showing all groups and group members when run on an on-premises domain controller. The script requires that you import the ActiveDirectory module. The report is in .csv format so the rows may need some manipulation to see all the members if you're opening it in Excel.</description></item><item><title>Enable AutoAdminLogon with PowerShell</title><link>https://trimad.github.io/post/2019-08-19-autoadminlogon/</link><pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-08-19-autoadminlogon/</guid><description>
-This script was written to satisfy a niche case where I temporarily needed a PoS (Point of Sale) to automatically login upon startup using AD credentials.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>domain on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/domain/</link>
+    <description>Recent content in domain on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/domain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active Directory Group Membership</title>
+      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
+      <description>
+        
+          
+            This PowerShell script generates a report showing all groups and group members when run on an on-premises domain controller. The script requires that you import the ActiveDirectory module. The report is in .csv format so the rows may need some manipulation to see all the members if you&#39;re opening it in Excel.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Enable AutoAdminLogon with PowerShell</title>
+      <link>https://trimad.github.io/post/2019-08-19-autoadminlogon/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-08-19-autoadminlogon/</guid>
+      <description>
+        
+          
+            This script was written to satisfy a niche case where I temporarily needed a PoS (Point of Sale) to automatically login upon startup using AD credentials.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

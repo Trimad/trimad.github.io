@@ -8,8 +8,6 @@ title: OpenAI Whisper
 
 Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
 
-
-
 <h3><a href="<h2><a href="https://github.com/google-research/frame-interpolation" title="FILM">GitHub Repository</a></h3>
 
 <h3>Installation</h3>
