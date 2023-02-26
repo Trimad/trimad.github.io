@@ -1,51 +1,62 @@
 ---
-title: Using the NVIDIA Maxine Audio Effects SDK Demo
+title: NVIDIA Maxine Windows Audio Effects SDK
 author: Tristan Madden
+date: 2022-04-20
+lastmod: 2023-02-25
 categories: [NVIDIA, Maxine]
 tags: [audio, sound, SDK]
+summary: This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine Windows Audio Effects SDK.
 ---
 
-This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine SDK.
-<h2><a href="https://developer.nvidia.com/maxine-getting-started">Download the Latest Audio Effects SDK
-</a></h2>
-<h2><a href="https://docs.nvidia.com/deeplearning/maxine/audio-effects-sdk/index.html">NVIDIA Maxine Documentation</a></h2>
+This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine Windows Audio Effects SDK.
 
-1. Find and download a YouTube video using [youtube-dl]({{ site.baseurl }}{% link _posts/2022-04-16-youtube-dl.md %})
-```console
-youtube-dl -f bestaudio https://www.youtube.com/watch?v=XlfcvUtUoOM
-```
-2. The Audio Effects SDK only accepts audio that is in .wav format sampled at 8000Hz single-channel, 16000Hz single-channel, or 48000Hz single-channel. This can be resampled using [ffmpeg]({{ site.baseurl }}{% link _posts/2022-04-16-ffmpeg.md %}).
+<h3><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/maxine/resources/maxine_windows_audio_effects_sdk_ga/files">Download (requires NVIDIA developer account)</a></h3>
+<h3><a href="https://docs.nvidia.com/deeplearning/maxine/audio-effects-sdk/index.html">NVIDIA Maxine Documentation</a></h3>
+
+The Audio Effects SDK only accepts audio that is in .wav format sampled at 8000Hz single-channel, 16000Hz single-channel, or 48000Hz single-channel. This can be resampled using ffmpeg.
+
 - Convert a .mp3 file to 8kHz, single-channel PCM:
+
 ```console
-ffmpeg -i test.mp3 -ar 8000 -ac 1 input.wav
+ffmpeg -i input.mp3 -ar 8000 -ac 1 8000.wav
 ```
+
 - Convert a .m4a file to 16kHz, single-channel PCM:
+
 ```console
-ffmpeg -i "Elvis How great thou art 1972 (very impressive)-XlfcvUtUoOM.m4a" -ar 16000 -ac 1 input.wav
+ffmpeg -i input.mp3 -ar 16000 -ac 1 16000.wav
 ```
+
 - Convert a .wav file to 48kHz, single-channel PCM:
+
 ```console
-ffmpeg -i test.wav -ar 48000 -ac 1 -input.wav
+ffmpeg -i input.mp3 -ar 48000 -ac 1 48000.wav
 ```
-3. Create a config file to use with the effects_demo included with the SDK. Below is an example config "myconfig.txt" that combines two pre-trained models provided by the SDK to reduce reverb, to reduce noise, and to create an upscaled, <em>supperresolution</em> version of the audio. 
+
+A config file has to be fed to a batch script. The "effects_demo" includes sample config files for different GPU architectures. I hava an NVIDIA RTX 4080, so I would customize the "denoiser48k_cfg_ada.txt" config file and run it with the "run_denoiser_48k_ada.bat" batch file. Example config:
+
 ```console
-# Effect
-effect dereverb_denoiser16k_superres16kto48k
+# Effect.
+# Supported values are: denoiser/dereverb/dereverb_denoiser/aec/superres
+effect dereverb_denoiser
 # Point this to the model file.
-model ..\..\bin\models\turing\dereverb_denoiser_16k.trtpkg,..\..\bin\models\turing\superres_16kto48k.trtpkg
-# Input file
-input_wav input.wav
-# Effect applied audio data will be saved to this file.
-output_wav output.wav
+# This indicates 48k model for denoiser effect for ADA supported GPU architecture is picked from models folder
+# Similarly, this path can be modified as per user's choice of effect and sample rate (8k/16k/48k depending on effect)
+model models\ada\dereverb_denoiser_48k.trtpkg
+# Noisy input file
+# 48k Input file is picked from denoiser folder. 
+# User can modify below line to pick their own file as input.
+input_wav input_files\48000.wav
+# Denoised audio data will be saved to this file.
+# Output can be dumped at user specifid location too. In this case, Output will be saved to current folder.
+output_wav 48000.wav
 # Set to 1 for real time mode i.e. audio data will be processed 
 # at same speed like that of an audio input device like
 # microphone. Since the denoising is faster that real time, the
 # processing will be equal to audio file duration.
 real_time 0
 # Intensity Ratio
-intensity_ratio 1.0,1.0
-```
-4. Run the NVIDIA effects_demo with the aforementioned config file.
-```console
-effects_demo.exe -c myconfig.txt
+intensity_ratio 0.5
+# Enable VAD
+enable_vad 1
 ```
