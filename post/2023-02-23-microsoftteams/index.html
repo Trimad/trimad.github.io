@@ -31,7 +31,7 @@
 </span></span><span class=line><span class=ln>25</span><span class=cl>
 </span></span><span class=line><span class=ln>26</span><span class=cl>    <span class=nv>$channels</span> <span class=p>=</span> <span class=nb>Get-TeamAllChannel</span> <span class=n>-GroupId</span> <span class=nv>$groupId</span>
 </span></span><span class=line><span class=ln>27</span><span class=cl>
-</span></span><span class=line><span class=ln>28</span><span class=cl>    <span class=nv>$teamChannelOwners</span> <span class=p>=</span> <span class=k>foreach</span> <span class=p>(</span><span class=nv>$channel</span> <span class=k>in</span> <span class=nv>$channels</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln>28</span><span class=cl>    <span class=nv>$teamChannelOwners</span> <span class=p>+=</span> <span class=k>foreach</span> <span class=p>(</span><span class=nv>$channel</span> <span class=k>in</span> <span class=nv>$channels</span><span class=p>)</span> <span class=p>{</span>
 </span></span><span class=line><span class=ln>29</span><span class=cl>    
 </span></span><span class=line><span class=ln>30</span><span class=cl>        <span class=nv>$channelDisplayName</span> <span class=p>=</span> <span class=nv>$channel</span><span class=p>.</span><span class=py>DisplayName</span>
 </span></span><span class=line><span class=ln>31</span><span class=cl>    
