@@ -1,7 +1,7 @@
 ---
 title: Dump WiFi Passwords
 author: Tristan Madden
-categories: [PowerShell, Security]
+categories: [PowerShell]
 tags: [netsh, passwords, reports]
 date: 2022-04-11
 ---
