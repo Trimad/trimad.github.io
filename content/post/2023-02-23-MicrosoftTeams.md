@@ -39,7 +39,7 @@ $teamOwners = foreach ($team in $teams) {
 
     $channels = Get-TeamAllChannel -GroupId $groupId
 
-    $teamChannelOwners = foreach ($channel in $channels) {
+    $teamChannelOwners += foreach ($channel in $channels) {
     
         $channelDisplayName = $channel.DisplayName
     
