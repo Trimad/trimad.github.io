@@ -59,6 +59,22 @@ Imports the os and pathlib modules. Defines a variable collection which is set t
     </item>
     
     <item>
+      <title>Download Streams</title>
+      <link>https://trimad.github.io/post/2022-06-09-download-streams/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid>
+      <description>
+        
+          
+            This is my tentative work flow for downloading movie streams online. The gist of what I&#39;ve learned about this process is that every HTTP Live Stream (HLS) begins with an .m3u8 playlist with a MIME type of x-mpegURL or vnd.apple.mpegURL. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>ffmpeg</title>
       <link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>

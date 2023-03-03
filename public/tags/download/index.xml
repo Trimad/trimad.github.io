@@ -22,5 +22,21 @@
       </description>
     </item>
     
+    <item>
+      <title>Download YouTube Videos</title>
+      <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid>
+      <description>
+        
+          
+            yt-dlpyt-dlp is a free and open-source command-line tool for downloading videos and audio from YouTube and other video hosting sites. It is a fork of youtube-dl with additional features and improvements, including better performance and more frequent updates. Unlike youtube-dl, which has faced various legal challenges and takedowns, yt-dlp is actively maintained and regularly updated to ensure compatibility with the latest changes in video hosting sites.GitHub Repository Download the Windows executableDownload a YouTube video with default settings:
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>

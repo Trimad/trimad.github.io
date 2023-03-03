@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/yt-dlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Downloading YouTube Videos</title>
+      <title>Download YouTube Videos</title>
       <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
@@ -15,7 +15,7 @@
       <description>
         
           
-            youtube-dl is a command-line program that allows users to download videos from YouTube and other video-sharing websites. The program is open-source and can be used on a variety of operating systems, including Windows, Mac, and Linux. It can download videos in a variety of formats, including MP4, FLV, and 3GP, and can also extract audio from videos as MP3 or other audio formats. Additionally, youtube-dl can be used to download videos from other websites like Vimeo, Dailymotion, and more.
+            yt-dlpyt-dlp is a free and open-source command-line tool for downloading videos and audio from YouTube and other video hosting sites. It is a fork of youtube-dl with additional features and improvements, including better performance and more frequent updates. Unlike youtube-dl, which has faced various legal challenges and takedowns, yt-dlp is actively maintained and regularly updated to ensure compatibility with the latest changes in video hosting sites.GitHub Repository Download the Windows executableDownload a YouTube video with default settings:
           
           
         
