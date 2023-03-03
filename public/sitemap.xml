@@ -8,35 +8,32 @@
     <loc>https://trimad.github.io/categories/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/firewall/</loc>
+    <loc>https://trimad.github.io/categories/cmd/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/netsh/</loc>
+    <loc>https://trimad.github.io/tags/firewall/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/netsh/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/post/2023-03-03-netsh/</loc>
+    <loc>https://trimad.github.io/tags/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/cmd/</loc>
-    <lastmod>2023-02-24T00:00:00+00:00</lastmod>
+    <loc>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/openai/</loc>
-    <lastmod>2023-02-24T00:00:00+00:00</lastmod>
+    <loc>https://trimad.github.io/tags/ai/</loc>
+    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/audio/</loc>
+    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-24-openai-whisper/</loc>
     <lastmod>2023-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/</loc>
-    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/whisper/</loc>
-    <lastmod>2023-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/laps/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-23-laps/</loc>
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
@@ -68,25 +65,19 @@
     <loc>https://trimad.github.io/categories/python/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/azure/</loc>
+    <loc>https://trimad.github.io/tags/azure/</loc>
     <lastmod>2023-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-09-force-ad-sync/</loc>
     <lastmod>2023-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/m365/</loc>
+    <loc>https://trimad.github.io/tags/m365/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/sync/</loc>
-    <lastmod>2023-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/exchangeonlinemanagement/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/hard-delete/</loc>
-    <lastmod>2023-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/o365/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/purge/</loc>
@@ -95,17 +86,11 @@
     <loc>https://trimad.github.io/post/2023-02-07-purge-emails/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/cmd/</loc>
-    <lastmod>2023-02-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/tags/drivers/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-06-uninstall-drivers/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/ai/</loc>
-    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/depth-map/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
@@ -113,8 +98,8 @@
     <loc>https://trimad.github.io/post/2023-02-10-film/</loc>
     <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/image-processing/</loc>
-    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
+    <loc>https://trimad.github.io/tags/images/</loc>
+    <lastmod>2023-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/interpolation/</loc>
     <lastmod>2023-02-27T00:00:00+00:00</lastmod>
@@ -127,6 +112,9 @@
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-05-stable-diffusion/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/video/</loc>
+    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-02-all-about-time/</loc>
     <lastmod>2023-02-02T00:00:00+00:00</lastmod>
@@ -143,16 +131,13 @@
     <loc>https://trimad.github.io/tags/download/</loc>
     <lastmod>2022-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/download/</loc>
-    <lastmod>2022-06-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2022-06-09-download-movie-streams/</loc>
+    <loc>https://trimad.github.io/post/2022-06-09-download-streams/</loc>
     <lastmod>2022-06-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/ffmpeg/</loc>
     <lastmod>2022-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/video/</loc>
+    <loc>https://trimad.github.io/categories/%EF%B8%8F/</loc>
     <lastmod>2022-06-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/fractal/</loc>
@@ -182,9 +167,6 @@
     <loc>https://trimad.github.io/tags/spiral/</loc>
     <lastmod>2022-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/audio/</loc>
-    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/categories/maxine/</loc>
     <lastmod>2023-02-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -200,16 +182,19 @@
     <loc>https://trimad.github.io/tags/sound/</loc>
     <lastmod>2023-02-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/categories/video/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://trimad.github.io/tags/youtube-dl/</loc>
     <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/post/2022-04-16-youtube-dl/</loc>
+    <loc>https://trimad.github.io/tags/yt-dlp/</loc>
     <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</loc>
-    <lastmod>2022-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/netsh/</loc>
     <lastmod>2022-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/reports/</loc>
@@ -251,13 +236,7 @@
     <loc>https://trimad.github.io/post/2022-01-27-ffmpeg/</loc>
     <lastmod>2023-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/video/</loc>
-    <lastmod>2023-02-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/tags/active-directory/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/azure/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</loc>
@@ -274,9 +253,6 @@
   </url><url>
     <loc>https://trimad.github.io/tags/domain/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/m365/</loc>
-    <lastmod>2023-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</loc>
     <lastmod>2023-02-08T00:00:00+00:00</lastmod>

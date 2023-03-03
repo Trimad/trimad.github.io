@@ -1,8 +1,8 @@
 ---
 author: Tristan Madden
-categories: [PowerShell, Azure, M365]
+categories: [PowerShell]
 date: 2023-02-09
-tags: [sync]
+tags: [Azure, M365]
 title: Force domain controller to sync with AzureAD
 summary: PowerShell script that forces an AD sync with AzureAD
 ---

@@ -2,7 +2,7 @@
 author: Tristan Madden
 categories: [CMD]
 date: 2023-02-24
-tags: [openai, whisper]
+tags: [AI, audio]
 title: OpenAI Whisper
 ---
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yt-dlp on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/yt-dlp/</link>
+    <description>Recent content in yt-dlp on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/yt-dlp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Downloading YouTube Videos</title>
+      <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid>
+      <description>
+        
+          
+            youtube-dl is a command-line program that allows users to download videos from YouTube and other video-sharing websites. The program is open-source and can be used on a variety of operating systems, including Windows, Mac, and Linux. It can download videos in a variety of formats, including MP4, FLV, and 3GP, and can also extract audio from videos as MP3 or other audio formats. Additionally, youtube-dl can be used to download videos from other websites like Vimeo, Dailymotion, and more.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

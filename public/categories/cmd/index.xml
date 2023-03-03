@@ -5,7 +5,23 @@
     <link>https://trimad.github.io/categories/cmd/</link>
     <description>Recent content in CMD on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Defender Firewall</title>
+      <link>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</guid>
+      <description>
+        
+          
+            Examples of rules are commonly used in network setups where specific programs or ports need to be allowed through the firewall to ensure that they can communicate with other devices or software.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>OpenAI Whisper</title>
       <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>

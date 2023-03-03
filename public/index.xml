@@ -8,14 +8,14 @@
     <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows Defender Firewall</title>
-      <link>https://trimad.github.io/post/2023-03-03-netsh/</link>
+      <link>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-03-netsh/</guid>
+      <guid>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</guid>
       <description>
         
           
-            The &#34;net user&#34; command is a Command Prompt (CMD) command used to manage user accounts on a Windows operating system. It can be used to create, modify, or delete user accounts, as well as to change passwords and manage group memberships.
+            Examples of rules are commonly used in network setups where specific programs or ports need to be allowed through the firewall to ensure that they can communicate with other devices or software.
           
           
         
@@ -223,11 +223,11 @@ Imports the os and pathlib modules. Defines a variable collection which is set t
     </item>
     
     <item>
-      <title>Download Movie Streams</title>
-      <link>https://trimad.github.io/post/2022-06-09-download-movie-streams/</link>
+      <title>Download Streams</title>
+      <link>https://trimad.github.io/post/2022-06-09-download-streams/</link>
       <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-06-09-download-movie-streams/</guid>
+      <guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid>
       <description>
         
           
@@ -290,11 +290,11 @@ Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;qu
     </item>
     
     <item>
-      <title>youtube-dl</title>
-      <link>https://trimad.github.io/post/2022-04-16-youtube-dl/</link>
+      <title>Downloading YouTube Videos</title>
+      <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-16-youtube-dl/</guid>
+      <guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid>
       <description>
         
           

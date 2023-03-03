@@ -1,9 +1,9 @@
 ---
 author: Tristan Madden
-categories: [download, video]
+categories: [🏴‍☠️]
 date: 2022-06-09
-tags: [download, ffmpeg]
-title: Download Movie Streams
+tags: [download, ffmpeg, video]
+title: Download Streams
 ---
 
 This is my tentative work flow for downloading movie streams online. The gist of what I've learned about this process is that every HTTP Live Stream (HLS) begins with an `.m3u8` playlist with a MIME type of `x-mpegURL` or `vnd.apple.mpegURL`. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page. These .ts files can also be aggregated and assembled into a video. 
@@ -11,7 +11,7 @@ This is my tentative work flow for downloading movie streams online. The gist of
 <h2>Finding the Playlist</h2>
 `.m3u8` playlists load at the very beginning of the stream and are easy to spot in Firefox Developer Edition. Navigate to the stream, press F12, click on the "Network" tab and refresh the page.
 
-![iamge](/images/2022-06-09/a.png)
+![](/images/2022-06-09/a.png)
 
 In this first example we see the `.m3u8` playlist referred to as a Manifest. It sticks out in Firefox Developer Edition because the MIME type is `vnd.apple.mpegURL`. In Edge or Chrome this type will be something nondescript for some reason and the playlist will be much harder to spot. Right-click on the GET request for the playlist copy the URL, and you will have something like this:
 
