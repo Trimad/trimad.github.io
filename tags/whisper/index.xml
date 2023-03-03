@@ -1,3 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>whisper on Hugo Grimoire</title><link>https://trimad.github.io/tags/whisper/</link><description>Recent content in whisper on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/whisper/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI Whisper</title><link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid><description>
-Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
-GitHub Repository Installation 1pip install git+https://github.com/openai/whisper.git Fix CUDA not detecting GPU Whisper will default to the CPU if a GPU is not detected, which is considerably slower. 1pip uninstall torch 2pip install torch torchvision torchaudio --extra-index-url https://download.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>whisper on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/whisper/</link>
+    <description>Recent content in whisper on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/whisper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI Whisper</title>
+      <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>
+      <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid>
+      <description>
+        
+          
+            Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+GitHub RepositoryInstallation1pip install git+https://github.com/openai/whisper.git Fix CUDA not detecting GPUWhisper will default to the CPU if a GPU is not detected, which is considerably slower.1pip uninstall torch 2pip install torch torchvision torchaudio --extra-index-url https://download.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
