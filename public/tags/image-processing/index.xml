@@ -17,7 +17,7 @@
           
             GitHub RepositorySetup GPU environmentThe Windows setup instructions in the GitHub repository are wrong or outdated. Tensorflow kept trying to use the CPU instead of the GPU until I installed CUDA and CUDNN this way:1conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 2python -m pip install &amp;#34;tensorflow&amp;lt;2.11&amp;#34; 3pip install protobuf==3.20.3 UsageActivate the Conda environment:
 1conda activate frame_interpolation From the Conda Shell, cd to the FILM directory:
-1cd C:\Users\trima\frame-interpolation Place the images you would like to interpolate in the &amp;quot;photos&amp;quot; directory and run this command to begin interpolating them:
+1cd C:\Users\trima\frame-interpolation Open File Explorer at this directory and copy the frames you want to interpolate to the &amp;quot;photos&amp;quot; folder.
           
           
         

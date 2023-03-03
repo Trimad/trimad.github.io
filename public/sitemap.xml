@@ -3,10 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://trimad.github.io/</loc>
-    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/</loc>
-    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/categories/firewall/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/categories/netsh/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/post/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/post/2023-03-03-netsh/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/cmd/</loc>
     <lastmod>2023-02-24T00:00:00+00:00</lastmod>
@@ -17,11 +29,8 @@
     <loc>https://trimad.github.io/post/2023-02-24-openai-whisper/</loc>
     <lastmod>2023-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/post/</loc>
-    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/tags/</loc>
-    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/whisper/</loc>
     <lastmod>2023-02-24T00:00:00+00:00</lastmod>
@@ -36,6 +45,9 @@
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-23-microsoftteams/</loc>
+    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/passwords/</loc>
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/powershell/</loc>
@@ -93,19 +105,19 @@
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/ai/</loc>
-    <lastmod>2023-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/depth-map/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-10-film/</loc>
-    <lastmod>2023-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/image-processing/</loc>
-    <lastmod>2023-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/interpolation/</loc>
-    <lastmod>2023-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-10-midas/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
@@ -170,18 +182,6 @@
     <loc>https://trimad.github.io/tags/spiral/</loc>
     <lastmod>2022-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/rundll32/</loc>
-    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2022-04-21-rundll32/</loc>
-    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/userdll32/</loc>
-    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/windows/</loc>
-    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/tags/audio/</loc>
     <lastmod>2023-02-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -212,13 +212,7 @@
     <loc>https://trimad.github.io/tags/netsh/</loc>
     <lastmod>2022-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/passwords/</loc>
-    <lastmod>2022-04-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/tags/reports/</loc>
-    <lastmod>2022-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/security/</loc>
     <lastmod>2022-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/archives/</loc>
@@ -303,6 +297,9 @@
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/reference/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/categories/windows/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</loc>

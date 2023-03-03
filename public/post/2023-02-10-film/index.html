@@ -155,7 +155,7 @@
 
   <span class="post_date">
     2023-02-05 
-    last modified 2023-02-06
+    last modified 2023-02-27
     
 
   </span>
@@ -199,7 +199,7 @@
   </div>
   </span>
 </div>
-    <div class="post_body"><h3><a href="https://github.com/google-research/frame-interpolation" title="FILM">GitHub Repository</a></h3>
+    <div class="post_body"><h3><a href="https://github.com/google-research/frame-interpolation">GitHub Repository</a></h3>
 <h3>Setup GPU environment</h3>
 The Windows setup instructions in the GitHub repository are wrong or outdated. Tensorflow kept trying to use the CPU instead of the GPU until I installed CUDA and CUDNN this way:
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">conda install -c conda-forge <span class="nv">cudatoolkit</span><span class="o">=</span>11.2 <span class="nv">cudnn</span><span class="o">=</span>8.1.0
@@ -210,6 +210,8 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">conda activate frame_interpolation
 </span></span></code></pre></div><p>From the Conda Shell, cd to the FILM directory:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">cd</span> C:<span class="se">\U</span>sers<span class="se">\t</span>rima<span class="se">\f</span>rame-interpolation
+</span></span></code></pre></div><p>Open File Explorer at this directory and copy the frames you want to interpolate to the &quot;photos&quot; folder.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">start .
 </span></span></code></pre></div><p>Place the images you would like to interpolate in the &quot;photos&quot; directory and run this command to begin interpolating them:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">python -m eval.interpolator_cli --pattern <span class="s2">&#34;photos&#34;</span> --model_path pretrained_models<span class="se">\f</span>ilm_net<span class="se">\S</span>tyle<span class="se">\s</span>aved_model --times_to_interpolate <span class="m">1</span> --output_video
 </span></span></code></pre></div>
@@ -255,6 +257,9 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://trimad.github.io/post/2023-03-03-netsh/" class="nav-link" title="Windows Defender Firewall">Windows Defender Firewall</a>
+      </li>
+      <li>
         <a href="https://trimad.github.io/post/2023-02-24-openai-whisper/" class="nav-link" title="OpenAI Whisper">OpenAI Whisper</a>
       </li>
       <li>
@@ -274,9 +279,6 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
       </li>
       <li>
         <a href="https://trimad.github.io/post/2023-02-07-purge-emails/" class="nav-link" title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a>
-      </li>
-      <li>
-        <a href="https://trimad.github.io/post/2023-02-06-uninstall-drivers/" class="nav-link" title="Uninstall Third-Party Drivers with CMD">Uninstall Third-Party Drivers with CMD</a>
       </li>
     </ul>
     <div>
@@ -314,7 +316,7 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
         
         <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
           CMD
-          <span class="button_tally">7</span>
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://trimad.github.io/categories/exchangeonlinemanagement/' class="post_tag button button_translucent" title="exchangeonlinemanagement">
@@ -344,11 +346,6 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
         
         <a href='https://trimad.github.io/categories/video/' class="post_tag button button_translucent" title="video">
           VIDEO
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
-          WINDOWS
           <span class="button_tally">2</span>
         </a>
         
@@ -392,6 +389,11 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
           <span class="button_tally">1</span>
         </a>
         
+        <a href='https://trimad.github.io/categories/firewall/' class="post_tag button button_translucent" title="firewall">
+          FIREWALL
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='https://trimad.github.io/categories/fractal/' class="post_tag button button_translucent" title="fractal">
           FRACTAL
           <span class="button_tally">1</span>
@@ -409,6 +411,11 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
         
         <a href='https://trimad.github.io/categories/maxine/' class="post_tag button button_translucent" title="maxine">
           MAXINE
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/netsh/' class="post_tag button button_translucent" title="netsh">
+          NETSH
           <span class="button_tally">1</span>
         </a>
         
@@ -432,11 +439,6 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/categories/security/' class="post_tag button button_translucent" title="security">
-          SECURITY
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/categories/stable-diffusion/' class="post_tag button button_translucent" title="stable-diffusion">
           STABLE-DIFFUSION
           <span class="button_tally">1</span>
@@ -454,6 +456,11 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
         
         <a href='https://trimad.github.io/categories/vbscript/' class="post_tag button button_translucent" title="vbscript">
           VBSCRIPT
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
           <span class="button_tally">1</span>
         </a>
         
@@ -566,6 +573,11 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
         
         <a href='https://trimad.github.io/tags/minimum-spanning-tree/' class="post_tag button button_translucent" title="minimum-spanning-tree">
           MINIMUM-SPANNING-TREE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
+          PASSWORDS
           <span class="button_tally">2</span>
         </a>
         
@@ -794,11 +806,6 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
-          PASSWORDS
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/tags/phishing/' class="post_tag button button_translucent" title="phishing">
           PHISHING
           <span class="button_tally">1</span>
@@ -826,11 +833,6 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
         
         <a href='https://trimad.github.io/tags/robocopy/' class="post_tag button button_translucent" title="robocopy">
           ROBOCOPY
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/rundll32/' class="post_tag button button_translucent" title="rundll32">
-          RUNDLL32
           <span class="button_tally">1</span>
         </a>
         
@@ -896,11 +898,6 @@ The Windows setup instructions in the GitHub repository are wrong or outdated. T
         
         <a href='https://trimad.github.io/tags/topological-sort/' class="post_tag button button_translucent" title="topological-sort">
           TOPOLOGICAL-SORT
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/userdll32/' class="post_tag button button_translucent" title="userdll32">
-          USERDLL32
           <span class="button_tally">1</span>
         </a>
         

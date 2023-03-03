@@ -16,6 +16,7 @@
         
           
             Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+GitHub RepositoryInstallation1pip install git+https://github.com/openai/whisper.git Fix CUDA not detecting GPUWhisper will default to the CPU if a GPU is not detected, which is considerably slower.1pip uninstall torch 2pip install torch torchvision torchaudio --extra-index-url https://download.
           
           
         
@@ -67,23 +68,6 @@ Type the following command and press Enter:
         
           
             The first command, &amp;quot;wmic path Win32_OperatingSystem get LastBootUpTime&amp;quot;, is a Windows Management Instrumentation (WMI) command that retrieves the time the operating system was last booted. The second command, &amp;quot;systeminfo | find &amp;quot;System Boot Time&amp;quot;&amp;quot;, is a Windows Command Prompt command that uses the systeminfo command to retrieve system information, which is then piped (|) to the find command to search for the specific line containing &amp;quot;System Boot Time&amp;quot;. The third command, &amp;quot;(get-date) - (gcim Win32_OperatingSystem).
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>rundll32</title>
-      <link>https://trimad.github.io/post/2022-04-21-rundll32/</link>
-      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2022-04-21-rundll32/</guid>
-      <description>
-        
-          
-            Loads and runs 32-bit dynamic-link libraries (DLLs). You must run the rundll32 command from an elevated command prompt. To open an elevated command prompt, click Start, right-click Command Prompt, and then click Run as administrator.
-Make Windows beep```consolerundll32 user32.dll, MessageBeep```Lock Workstation```consolerundll32 user32.dll, LockWorkStation```Put Workstation to sleep```consolerundll32 powrprof.dll, SetSuspendState Sleep```Microsoft Referencess64.com Reference
           
           
         

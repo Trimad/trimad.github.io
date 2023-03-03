@@ -198,45 +198,46 @@
 </div>
     <div class="post_body"><p>PowerShell scripts for Microsoft Teams stuff.</p>
 <h3>Get all owners of all teams and team channels</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># Documentation: https://learn.microsoft.com/en-us/powershell/module/teams/?view=teams-ps</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c">## Documentation: https://learn.microsoft.com/en-us/powershell/module/teams/?view=teams-ps</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"> 
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="c"># Run the following command to install the latest PowerShellGet:</span>
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">PowerShellGet</span> <span class="n">-Force</span> <span class="n">-AllowClobber</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"> 
 </span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="c"># Install the Teams PowerShell Module.</span>
 </span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">MicrosoftTeams</span> <span class="n">-Force</span> <span class="n">-AllowClobber</span>
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"> 
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="c"># To start working with Microsoft Teams PowerShell module, sign in with your Azure credentials.</span>
 </span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="nb">Connect-MicrosoftTeams</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl">
-</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="nv">$teams</span> <span class="p">=</span> <span class="nb">Get-Team</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">DisplayName</span><span class="p">,</span><span class="n">GroupId</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">
-</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="nv">$teamOwners</span><span class="p">=</span><span class="vm">@</span><span class="p">()</span> 
-</span></span><span class="line"><span class="ln">15</span><span class="cl">
-</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="nv">$teamChannelOwners</span><span class="p">=</span><span class="vm">@</span><span class="p">()</span> 
-</span></span><span class="line"><span class="ln">17</span><span class="cl">
-</span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="nv">$teamOwners</span> <span class="p">=</span> <span class="k">foreach</span> <span class="p">(</span><span class="nv">$team</span> <span class="k">in</span> <span class="nv">$teams</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl"> 
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="nv">$user</span> <span class="p">=</span><span class="nb">Read-Host</span> <span class="n">-Prompt</span> <span class="s1">&#39;Input the user name&#39;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="nv">$teams</span> <span class="p">=</span> <span class="nb">Get-Team</span> <span class="n">-User</span> <span class="nv">$user</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="nv">$teamMemberships</span><span class="p">=@()</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="nv">$teamChannels</span><span class="p">=@()</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="nv">$teamChannelMemberships</span><span class="p">=@()</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl"> 
+</span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="nv">$i</span> <span class="p">=</span> <span class="n">1</span>
 </span></span><span class="line"><span class="ln">19</span><span class="cl">
-</span></span><span class="line"><span class="ln">20</span><span class="cl">    <span class="nv">$groupId</span> <span class="p">=</span> <span class="nv">$team</span><span class="p">.</span><span class="py">GroupId</span>
-</span></span><span class="line"><span class="ln">21</span><span class="cl">    
-</span></span><span class="line"><span class="ln">22</span><span class="cl">    <span class="nv">$teamDisplayName</span> <span class="p">=</span> <span class="nv">$team</span><span class="p">.</span><span class="py">DisplayName</span>
-</span></span><span class="line"><span class="ln">23</span><span class="cl">
-</span></span><span class="line"><span class="ln">24</span><span class="cl">    <span class="nb">Get-TeamUser</span> <span class="n">-GroupId</span> <span class="nv">$groupId</span> <span class="n">-Role</span> <span class="n">Owner</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="p">*,</span><span class="vm">@</span><span class="p">{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&#34;TeamName&#34;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nv">$teamDisplayName</span><span class="p">}},</span><span class="vm">@</span><span class="p">{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&#34;GroupId&#34;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nv">$groupId</span><span class="p">}}</span>
-</span></span><span class="line"><span class="ln">25</span><span class="cl">
-</span></span><span class="line"><span class="ln">26</span><span class="cl">    <span class="nv">$channels</span> <span class="p">=</span> <span class="nb">Get-TeamAllChannel</span> <span class="n">-GroupId</span> <span class="nv">$groupId</span>
-</span></span><span class="line"><span class="ln">27</span><span class="cl">
-</span></span><span class="line"><span class="ln">28</span><span class="cl">    <span class="nv">$teamChannelOwners</span> <span class="p">=</span> <span class="k">foreach</span> <span class="p">(</span><span class="nv">$channel</span> <span class="k">in</span> <span class="nv">$channels</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">29</span><span class="cl">    
-</span></span><span class="line"><span class="ln">30</span><span class="cl">        <span class="nv">$channelDisplayName</span> <span class="p">=</span> <span class="nv">$channel</span><span class="p">.</span><span class="py">DisplayName</span>
-</span></span><span class="line"><span class="ln">31</span><span class="cl">    
-</span></span><span class="line"><span class="ln">32</span><span class="cl">        <span class="nb">Get-TeamChannelUser</span> <span class="n">-GroupId</span> <span class="nv">$groupId</span> <span class="n">-DisplayName</span> <span class="nv">$channelDisplayName</span> <span class="n">-Role</span> <span class="n">Owner</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="p">*,</span><span class="vm">@</span><span class="p">{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&#34;ChannelName&#34;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nv">$channelDisplayName</span><span class="p">}},</span><span class="vm">@</span><span class="p">{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&#34;GroupId&#34;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nv">$groupId</span><span class="p">}}</span>
-</span></span><span class="line"><span class="ln">33</span><span class="cl">    
-</span></span><span class="line"><span class="ln">34</span><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="ln">35</span><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="nv">$teamMemberships</span> <span class="p">=</span> <span class="k">foreach</span> <span class="p">(</span><span class="nv">$team</span> <span class="k">in</span> <span class="nv">$teams</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">    <span class="nv">$GroupId</span> <span class="p">=</span> <span class="nv">$team</span><span class="p">.</span><span class="n">GroupId</span>   
+</span></span><span class="line"><span class="ln">22</span><span class="cl">    
+</span></span><span class="line"><span class="ln">23</span><span class="cl">    <span class="nb">Get-TeamUser</span> <span class="n">-GroupId</span> <span class="nv">$GroupId</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="p">*,@{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&#34;GroupId&#34;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nv">$GroupId</span><span class="p">}}</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">    <span class="nv">$channels</span> <span class="p">=</span> <span class="nb">Get-TeamAllChannel</span> <span class="n">-GroupId</span> <span class="nv">$GroupId</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="p">*,@{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&#34;GroupId&#34;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nv">$GroupId</span><span class="p">}}</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl">    <span class="nv">$teamChannels</span> <span class="p">+=</span> <span class="nv">$channels</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl">
+</span></span><span class="line"><span class="ln">27</span><span class="cl">    <span class="nv">$teamChannelMemberships</span> <span class="p">+=</span> <span class="k">foreach</span> <span class="p">(</span><span class="nv">$channel</span> <span class="k">in</span> <span class="nv">$channels</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">28</span><span class="cl">        <span class="nv">$channelDisplayName</span> <span class="p">=</span> <span class="nv">$channel</span><span class="p">.</span><span class="n">DisplayName</span>
+</span></span><span class="line"><span class="ln">29</span><span class="cl">        <span class="nb">Get-TeamChannelUser</span> <span class="n">-GroupId</span> <span class="nv">$GroupId</span> <span class="n">-DisplayName</span> <span class="nv">$channelDisplayName</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="p">*,@{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&#34;GroupId&#34;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nv">$GroupId</span><span class="p">}}</span>
+</span></span><span class="line"><span class="ln">30</span><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="ln">31</span><span class="cl">
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    <span class="nv">$percent</span> <span class="p">=</span> <span class="no">[Math]</span><span class="p">::</span><span class="n">Round</span><span class="p">((</span><span class="n">100</span> <span class="p">*</span> <span class="nv">$i</span><span class="p">)</span> <span class="p">/</span> <span class="nv">$teams</span><span class="p">.</span><span class="n">Length</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    <span class="nb">Write-Progress</span> <span class="n">-Activity</span> <span class="s2">&#34;Search in Progress&#34;</span> <span class="n">-Status</span> <span class="s2">&#34;$percent% complete&#34;</span>
+</span></span><span class="line"><span class="ln">34</span><span class="cl">    <span class="nv">$i</span><span class="p">++</span>
+</span></span><span class="line"><span class="ln">35</span><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="ln">36</span><span class="cl">
-</span></span><span class="line"><span class="ln">37</span><span class="cl"><span class="nv">$teamOwners</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">-Path</span> <span class="s2">&#34;team-owners.csv&#34;</span> <span class="n">-NoTypeInformation</span>
-</span></span><span class="line"><span class="ln">38</span><span class="cl">
-</span></span><span class="line"><span class="ln">39</span><span class="cl"><span class="nv">$teamChannelOwners</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">-Path</span> <span class="s2">&#34;team-channel-owners.csv&#34;</span> <span class="n">-NoTypeInformation</span>
+</span></span><span class="line"><span class="ln">37</span><span class="cl"><span class="nv">$teams</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">-Path</span> <span class="s2">&#34;teams.csv&#34;</span> <span class="n">-NoTypeInformation</span>
+</span></span><span class="line"><span class="ln">38</span><span class="cl"><span class="nv">$teamMemberships</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">-Path</span> <span class="s2">&#34;team-memberships.csv&#34;</span> <span class="n">-NoTypeInformation</span>
+</span></span><span class="line"><span class="ln">39</span><span class="cl"><span class="nv">$teamChannels</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">-Path</span> <span class="s2">&#34;team-channels.csv&#34;</span> <span class="n">-NoTypeInformation</span>
+</span></span><span class="line"><span class="ln">40</span><span class="cl"><span class="nv">$teamChannelMemberShips</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">-Path</span> <span class="s2">&#34;team-channel-memberships.csv&#34;</span> <span class="n">-NoTypeInformation</span>
 </span></span></code></pre></div>
     </div>
 <div class="post_comments">
@@ -280,6 +281,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://trimad.github.io/post/2023-03-03-netsh/" class="nav-link" title="Windows Defender Firewall">Windows Defender Firewall</a>
+      </li>
+      <li>
         <a href="https://trimad.github.io/post/2023-02-24-openai-whisper/" class="nav-link" title="OpenAI Whisper">OpenAI Whisper</a>
       </li>
       <li>
@@ -299,9 +303,6 @@
       </li>
       <li>
         <a href="https://trimad.github.io/post/2023-02-07-purge-emails/" class="nav-link" title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a>
-      </li>
-      <li>
-        <a href="https://trimad.github.io/post/2023-02-06-uninstall-drivers/" class="nav-link" title="Uninstall Third-Party Drivers with CMD">Uninstall Third-Party Drivers with CMD</a>
       </li>
     </ul>
     <div>
@@ -339,7 +340,7 @@
         
         <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
           CMD
-          <span class="button_tally">7</span>
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://trimad.github.io/categories/exchangeonlinemanagement/' class="post_tag button button_translucent" title="exchangeonlinemanagement">
@@ -369,11 +370,6 @@
         
         <a href='https://trimad.github.io/categories/video/' class="post_tag button button_translucent" title="video">
           VIDEO
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
-          WINDOWS
           <span class="button_tally">2</span>
         </a>
         
@@ -417,6 +413,11 @@
           <span class="button_tally">1</span>
         </a>
         
+        <a href='https://trimad.github.io/categories/firewall/' class="post_tag button button_translucent" title="firewall">
+          FIREWALL
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='https://trimad.github.io/categories/fractal/' class="post_tag button button_translucent" title="fractal">
           FRACTAL
           <span class="button_tally">1</span>
@@ -434,6 +435,11 @@
         
         <a href='https://trimad.github.io/categories/maxine/' class="post_tag button button_translucent" title="maxine">
           MAXINE
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/netsh/' class="post_tag button button_translucent" title="netsh">
+          NETSH
           <span class="button_tally">1</span>
         </a>
         
@@ -457,11 +463,6 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/categories/security/' class="post_tag button button_translucent" title="security">
-          SECURITY
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/categories/stable-diffusion/' class="post_tag button button_translucent" title="stable-diffusion">
           STABLE-DIFFUSION
           <span class="button_tally">1</span>
@@ -479,6 +480,11 @@
         
         <a href='https://trimad.github.io/categories/vbscript/' class="post_tag button button_translucent" title="vbscript">
           VBSCRIPT
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
           <span class="button_tally">1</span>
         </a>
         
@@ -591,6 +597,11 @@
         
         <a href='https://trimad.github.io/tags/minimum-spanning-tree/' class="post_tag button button_translucent" title="minimum-spanning-tree">
           MINIMUM-SPANNING-TREE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
+          PASSWORDS
           <span class="button_tally">2</span>
         </a>
         
@@ -819,11 +830,6 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
-          PASSWORDS
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/tags/phishing/' class="post_tag button button_translucent" title="phishing">
           PHISHING
           <span class="button_tally">1</span>
@@ -851,11 +857,6 @@
         
         <a href='https://trimad.github.io/tags/robocopy/' class="post_tag button button_translucent" title="robocopy">
           ROBOCOPY
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/rundll32/' class="post_tag button button_translucent" title="rundll32">
-          RUNDLL32
           <span class="button_tally">1</span>
         </a>
         
@@ -921,11 +922,6 @@
         
         <a href='https://trimad.github.io/tags/topological-sort/' class="post_tag button button_translucent" title="topological-sort">
           TOPOLOGICAL-SORT
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/userdll32/' class="post_tag button button_translucent" title="userdll32">
-          USERDLL32
           <span class="button_tally">1</span>
         </a>
         

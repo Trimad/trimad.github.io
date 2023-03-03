@@ -207,9 +207,9 @@
 </span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="nb">Connect-ExchangeOnline</span> <span class="n">-UserPrincipalName</span> <span class="p">&lt;</span><span class="n">UPN</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="ln"> 7</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="c"># Remove AccessRights from a user</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="nb">Remove-MailboxFolderPermission</span> <span class="n">-Identity</span> <span class="n">target</span><span class="nv">@company</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="p">\</span><span class="n">Calendar</span> <span class="n">-User</span> <span class="n">user</span><span class="nv">@company</span><span class="p">.</span><span class="py">com</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="nb">Remove-MailboxFolderPermission</span> <span class="n">-Identity</span> <span class="n">target</span><span class="nv">@company</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="p">\</span><span class="n">Calendar</span> <span class="n">-User</span> <span class="n">user</span><span class="nv">@company</span><span class="p">.</span><span class="n">com</span>
 </span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="c"># Grant AccessRights to a user</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="nb">Add-MailboxFolderPermission</span> <span class="n">-Identity</span> <span class="n">target</span><span class="nv">@company</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="p">\</span><span class="n">Calendar</span> <span class="n">-User</span> <span class="n">user</span><span class="nv">@company</span><span class="p">.</span><span class="py">com</span> <span class="n">-AccessRights</span> <span class="n">Owner</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="nb">Add-MailboxFolderPermission</span> <span class="n">-Identity</span> <span class="n">target</span><span class="nv">@company</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="p">\</span><span class="n">Calendar</span> <span class="n">-User</span> <span class="n">user</span><span class="nv">@company</span><span class="p">.</span><span class="n">com</span> <span class="n">-AccessRights</span> <span class="n">Owner</span>
 </span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="c"># See who currently has folder permissions to a user&#39;s calendar</span>
 </span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="nb">Get-MailboxFolderPermission</span> <span class="n">-Identity</span> <span class="n">target</span><span class="nv">@company</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="p">\</span><span class="n">Calendar</span>
 </span></span></code></pre></div><p>I haven't tested these since 2021:</p>
@@ -219,7 +219,7 @@
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="c"># Get a list of all mailbox aliases</span>
 </span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="c"># Source: https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailbox?view=exchange-ps</span>
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-Mailbox</span> <span class="p">|</span> <span class="nb">Select </span><span class="n">-ExpandProperty</span> <span class="nb">Alias</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-Mailbox</span> <span class="p">|</span> <span class="nb">Select </span><span class="n">-ExpandProperty</span> <span class="k">Alias</span>
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="c"># Add AccessRights for a user to all mailboxes</span>
 </span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="c"># Source: https://docs.microsoft.com/en-us/powershell/module/exchange/add-mailboxfolderpermission?view=exchange-ps</span>
@@ -275,6 +275,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://trimad.github.io/post/2023-03-03-netsh/" class="nav-link" title="Windows Defender Firewall">Windows Defender Firewall</a>
+      </li>
+      <li>
         <a href="https://trimad.github.io/post/2023-02-24-openai-whisper/" class="nav-link" title="OpenAI Whisper">OpenAI Whisper</a>
       </li>
       <li>
@@ -294,9 +297,6 @@
       </li>
       <li>
         <a href="https://trimad.github.io/post/2023-02-07-purge-emails/" class="nav-link" title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a>
-      </li>
-      <li>
-        <a href="https://trimad.github.io/post/2023-02-06-uninstall-drivers/" class="nav-link" title="Uninstall Third-Party Drivers with CMD">Uninstall Third-Party Drivers with CMD</a>
       </li>
     </ul>
     <div>
@@ -334,7 +334,7 @@
         
         <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
           CMD
-          <span class="button_tally">7</span>
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://trimad.github.io/categories/exchangeonlinemanagement/' class="post_tag button button_translucent" title="exchangeonlinemanagement">
@@ -364,11 +364,6 @@
         
         <a href='https://trimad.github.io/categories/video/' class="post_tag button button_translucent" title="video">
           VIDEO
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
-          WINDOWS
           <span class="button_tally">2</span>
         </a>
         
@@ -412,6 +407,11 @@
           <span class="button_tally">1</span>
         </a>
         
+        <a href='https://trimad.github.io/categories/firewall/' class="post_tag button button_translucent" title="firewall">
+          FIREWALL
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='https://trimad.github.io/categories/fractal/' class="post_tag button button_translucent" title="fractal">
           FRACTAL
           <span class="button_tally">1</span>
@@ -429,6 +429,11 @@
         
         <a href='https://trimad.github.io/categories/maxine/' class="post_tag button button_translucent" title="maxine">
           MAXINE
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/netsh/' class="post_tag button button_translucent" title="netsh">
+          NETSH
           <span class="button_tally">1</span>
         </a>
         
@@ -452,11 +457,6 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/categories/security/' class="post_tag button button_translucent" title="security">
-          SECURITY
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/categories/stable-diffusion/' class="post_tag button button_translucent" title="stable-diffusion">
           STABLE-DIFFUSION
           <span class="button_tally">1</span>
@@ -474,6 +474,11 @@
         
         <a href='https://trimad.github.io/categories/vbscript/' class="post_tag button button_translucent" title="vbscript">
           VBSCRIPT
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
           <span class="button_tally">1</span>
         </a>
         
@@ -586,6 +591,11 @@
         
         <a href='https://trimad.github.io/tags/minimum-spanning-tree/' class="post_tag button button_translucent" title="minimum-spanning-tree">
           MINIMUM-SPANNING-TREE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
+          PASSWORDS
           <span class="button_tally">2</span>
         </a>
         
@@ -814,11 +824,6 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
-          PASSWORDS
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/tags/phishing/' class="post_tag button button_translucent" title="phishing">
           PHISHING
           <span class="button_tally">1</span>
@@ -846,11 +851,6 @@
         
         <a href='https://trimad.github.io/tags/robocopy/' class="post_tag button button_translucent" title="robocopy">
           ROBOCOPY
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/rundll32/' class="post_tag button button_translucent" title="rundll32">
-          RUNDLL32
           <span class="button_tally">1</span>
         </a>
         
@@ -916,11 +916,6 @@
         
         <a href='https://trimad.github.io/tags/topological-sort/' class="post_tag button button_translucent" title="topological-sort">
           TOPOLOGICAL-SORT
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/userdll32/' class="post_tag button button_translucent" title="userdll32">
-          USERDLL32
           <span class="button_tally">1</span>
         </a>
         

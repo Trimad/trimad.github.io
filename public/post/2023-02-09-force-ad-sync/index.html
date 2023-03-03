@@ -205,15 +205,15 @@
 <li>Based on the user's selection, the script runs the appropriate command using the Start-ADSyncSyncCycle cmdlet with either the Delta or Initial policy type. If the user selects &quot;Exit&quot;, the script exits.</li>
 <li>Finally, the script displays a message indicating that it is running and to check the &quot;miisclient&quot; to confirm. It then pauses for 10 seconds using the Start-Sleep cmdlet.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nv">$myWindowsID</span> <span class="p">=</span> <span class="p">[</span><span class="no">System.Security.Principal.WindowsIdentity</span><span class="p">]::</span><span class="n">GetCurrent</span><span class="p">()</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nv">$myWindowsPrincipal</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="py">Security</span><span class="p">.</span><span class="py">Principal</span><span class="p">.</span><span class="py">WindowsPrincipal</span><span class="p">(</span><span class="nv">$myWindowsID</span><span class="p">)</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="nv">$adminRole</span> <span class="p">=</span> <span class="p">[</span><span class="no">System.Security.Principal.WindowsBuiltInRole</span><span class="p">]::</span><span class="n">Administrator</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nv">$myWindowsID</span> <span class="p">=</span> <span class="no">[System.Security.Principal.WindowsIdentity]</span><span class="p">::</span><span class="n">GetCurrent</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nv">$myWindowsPrincipal</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Security</span><span class="p">.</span><span class="n">Principal</span><span class="p">.</span><span class="n">WindowsPrincipal</span><span class="p">(</span><span class="nv">$myWindowsID</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="nv">$adminRole</span> <span class="p">=</span> <span class="no">[System.Security.Principal.WindowsBuiltInRole]</span><span class="p">::</span><span class="n">Administrator</span>
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="o">-not</span> <span class="nv">$myWindowsPrincipal</span><span class="p">.</span><span class="py">IsInRole</span><span class="p">(</span><span class="nv">$adminRole</span><span class="p">))</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="nv">$newProcess</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="py">Diagnostics</span><span class="p">.</span><span class="py">ProcessStartInfo</span> <span class="s2">&#34;PowerShell&#34;</span>
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="nv">$newProcess</span><span class="p">.</span><span class="py">Arguments</span> <span class="p">=</span> <span class="nv">$myInvocation</span><span class="p">.</span><span class="py">MyCommand</span><span class="p">.</span><span class="py">Definition</span>
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="nv">$newProcess</span><span class="p">.</span><span class="py">Verb</span> <span class="p">=</span> <span class="s2">&#34;runas&#34;</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="p">[</span><span class="no">System.Diagnostics.Process</span><span class="p">]::</span><span class="n">Start</span><span class="p">(</span><span class="nv">$newProcess</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="o">-not</span> <span class="nv">$myWindowsPrincipal</span><span class="p">.</span><span class="n">IsInRole</span><span class="p">(</span><span class="nv">$adminRole</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="nv">$newProcess</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Diagnostics</span><span class="p">.</span><span class="n">ProcessStartInfo</span> <span class="s2">&#34;PowerShell&#34;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="nv">$newProcess</span><span class="p">.</span><span class="n">Arguments</span> <span class="p">=</span> <span class="nv">$myInvocation</span><span class="p">.</span><span class="n">MyCommand</span><span class="p">.</span><span class="n">Definition</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="nv">$newProcess</span><span class="p">.</span><span class="n">Verb</span> <span class="p">=</span> <span class="s2">&#34;runas&#34;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="no">[System.Diagnostics.Process]</span><span class="p">::</span><span class="n">Start</span><span class="p">(</span><span class="nv">$newProcess</span><span class="p">)</span>
 </span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="n">exit</span>
 </span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="ln">12</span><span class="cl">
@@ -224,14 +224,14 @@
 </span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="nv">$selected_menu_item</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s1">&#39;Which number would you like to run (1 or 2)? (Enter Number and Press Enter)&#39;</span>
 </span></span><span class="line"><span class="ln">18</span><span class="cl">
 </span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="nv">$selected_menu_item</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">20</span><span class="cl">    <span class="mf">1</span> <span class="p">{</span> <span class="nb">Start-ADSyncSyncCycle</span> <span class="n">-PolicyType</span> <span class="n">Delta</span> <span class="p">}</span>
-</span></span><span class="line"><span class="ln">21</span><span class="cl">    <span class="mf">2</span> <span class="p">{</span> <span class="nb">Start-ADSyncSyncCycle</span> <span class="n">-PolicyType</span> <span class="n">Initial</span> <span class="p">}</span>
-</span></span><span class="line"><span class="ln">22</span><span class="cl">    <span class="mf">3</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s1">&#39;Exit&#39;</span><span class="p">;</span> <span class="n">exit</span> <span class="p">}</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">    <span class="n">1</span> <span class="p">{</span> <span class="nb">Start-ADSyncSyncCycle</span> <span class="n">-PolicyType</span> <span class="n">Delta</span> <span class="p">}</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">    <span class="n">2</span> <span class="p">{</span> <span class="nb">Start-ADSyncSyncCycle</span> <span class="n">-PolicyType</span> <span class="n">Initial</span> <span class="p">}</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">    <span class="n">3</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s1">&#39;Exit&#39;</span><span class="p">;</span> <span class="n">exit</span> <span class="p">}</span>
 </span></span><span class="line"><span class="ln">23</span><span class="cl">    <span class="k">default</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s1">&#39;Incorrect Input&#39;</span> <span class="n">-ForegroundColor</span> <span class="n">Red</span> <span class="p">}</span>
 </span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="ln">25</span><span class="cl">
 </span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="nb">Write-Host</span> <span class="s1">&#39;Running Now.... Check miisclient to confirm&#39;</span>
-</span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="nb">Start-Sleep</span> <span class="n">-s</span> <span class="mf">10</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="nb">Start-Sleep</span> <span class="n">-s</span> <span class="n">10</span>
 </span></span></code></pre></div>
     </div>
 <div class="post_comments">
@@ -275,6 +275,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://trimad.github.io/post/2023-03-03-netsh/" class="nav-link" title="Windows Defender Firewall">Windows Defender Firewall</a>
+      </li>
+      <li>
         <a href="https://trimad.github.io/post/2023-02-24-openai-whisper/" class="nav-link" title="OpenAI Whisper">OpenAI Whisper</a>
       </li>
       <li>
@@ -294,9 +297,6 @@
       </li>
       <li>
         <a href="https://trimad.github.io/post/2023-02-07-purge-emails/" class="nav-link" title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a>
-      </li>
-      <li>
-        <a href="https://trimad.github.io/post/2023-02-06-uninstall-drivers/" class="nav-link" title="Uninstall Third-Party Drivers with CMD">Uninstall Third-Party Drivers with CMD</a>
       </li>
     </ul>
     <div>
@@ -334,7 +334,7 @@
         
         <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
           CMD
-          <span class="button_tally">7</span>
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://trimad.github.io/categories/exchangeonlinemanagement/' class="post_tag button button_translucent" title="exchangeonlinemanagement">
@@ -364,11 +364,6 @@
         
         <a href='https://trimad.github.io/categories/video/' class="post_tag button button_translucent" title="video">
           VIDEO
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
-          WINDOWS
           <span class="button_tally">2</span>
         </a>
         
@@ -412,6 +407,11 @@
           <span class="button_tally">1</span>
         </a>
         
+        <a href='https://trimad.github.io/categories/firewall/' class="post_tag button button_translucent" title="firewall">
+          FIREWALL
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='https://trimad.github.io/categories/fractal/' class="post_tag button button_translucent" title="fractal">
           FRACTAL
           <span class="button_tally">1</span>
@@ -429,6 +429,11 @@
         
         <a href='https://trimad.github.io/categories/maxine/' class="post_tag button button_translucent" title="maxine">
           MAXINE
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/netsh/' class="post_tag button button_translucent" title="netsh">
+          NETSH
           <span class="button_tally">1</span>
         </a>
         
@@ -452,11 +457,6 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/categories/security/' class="post_tag button button_translucent" title="security">
-          SECURITY
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/categories/stable-diffusion/' class="post_tag button button_translucent" title="stable-diffusion">
           STABLE-DIFFUSION
           <span class="button_tally">1</span>
@@ -474,6 +474,11 @@
         
         <a href='https://trimad.github.io/categories/vbscript/' class="post_tag button button_translucent" title="vbscript">
           VBSCRIPT
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
           <span class="button_tally">1</span>
         </a>
         
@@ -586,6 +591,11 @@
         
         <a href='https://trimad.github.io/tags/minimum-spanning-tree/' class="post_tag button button_translucent" title="minimum-spanning-tree">
           MINIMUM-SPANNING-TREE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
+          PASSWORDS
           <span class="button_tally">2</span>
         </a>
         
@@ -814,11 +824,6 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
-          PASSWORDS
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/tags/phishing/' class="post_tag button button_translucent" title="phishing">
           PHISHING
           <span class="button_tally">1</span>
@@ -846,11 +851,6 @@
         
         <a href='https://trimad.github.io/tags/robocopy/' class="post_tag button button_translucent" title="robocopy">
           ROBOCOPY
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/rundll32/' class="post_tag button button_translucent" title="rundll32">
-          RUNDLL32
           <span class="button_tally">1</span>
         </a>
         
@@ -916,11 +916,6 @@
         
         <a href='https://trimad.github.io/tags/topological-sort/' class="post_tag button button_translucent" title="topological-sort">
           TOPOLOGICAL-SORT
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/userdll32/' class="post_tag button button_translucent" title="userdll32">
-          USERDLL32
           <span class="button_tally">1</span>
         </a>
         

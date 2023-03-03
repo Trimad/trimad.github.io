@@ -2,7 +2,7 @@
 author: Tristan Madden
 categories: [CMD]
 date: 2023-02-06
-tags: [CMD, drivers]
+tags: [drivers]
 title: Uninstall Third-Party Drivers with CMD
 ---
 

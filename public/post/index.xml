@@ -5,7 +5,23 @@
     <link>https://trimad.github.io/post/</link>
     <description>Recent content in Posts on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Defender Firewall</title>
+      <link>https://trimad.github.io/post/2023-03-03-netsh/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-03-03-netsh/</guid>
+      <description>
+        
+          
+            The &#34;net user&#34; command is a Command Prompt (CMD) command used to manage user accounts on a Windows operating system. It can be used to create, modify, or delete user accounts, as well as to change passwords and manage group memberships.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>OpenAI Whisper</title>
       <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>
@@ -16,6 +32,7 @@
         
           
             Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+GitHub RepositoryInstallation1pip install git+https://github.com/openai/whisper.git Fix CUDA not detecting GPUWhisper will default to the CPU if a GPU is not detected, which is considerably slower.1pip uninstall torch 2pip install torch torchvision torchaudio --extra-index-url https://download.
           
           
         
@@ -148,7 +165,7 @@ Type the following command and press Enter:
           
             GitHub RepositorySetup GPU environmentThe Windows setup instructions in the GitHub repository are wrong or outdated. Tensorflow kept trying to use the CPU instead of the GPU until I installed CUDA and CUDNN this way:1conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 2python -m pip install &amp;#34;tensorflow&amp;lt;2.11&amp;#34; 3pip install protobuf==3.20.3 UsageActivate the Conda environment:
 1conda activate frame_interpolation From the Conda Shell, cd to the FILM directory:
-1cd C:\Users\trima\frame-interpolation Place the images you would like to interpolate in the &amp;quot;photos&amp;quot; directory and run this command to begin interpolating them:
+1cd C:\Users\trima\frame-interpolation Open File Explorer at this directory and copy the frames you want to interpolate to the &amp;quot;photos&amp;quot; folder.
           
           
         
@@ -250,23 +267,6 @@ Repository for code that generated this fractal: https://github.com/Trimad/Sandb
             Edit This SketchThis sketch draws an Archimedean Spiral using polar coordinates. If the &amp;quot;EXPORT&amp;quot; variable is true, the sketch will spit-out an SVG file of the drawn spiral. My motivation for making this was so I could cut-out a spiral with my wife&#39;s Cricut Maker and hang something more interesting above my son&#39;s bassinet than empty white ceiling.
 Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
 {: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>rundll32</title>
-      <link>https://trimad.github.io/post/2022-04-21-rundll32/</link>
-      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2022-04-21-rundll32/</guid>
-      <description>
-        
-          
-            Loads and runs 32-bit dynamic-link libraries (DLLs). You must run the rundll32 command from an elevated command prompt. To open an elevated command prompt, click Start, right-click Command Prompt, and then click Run as administrator.
-Make Windows beep```consolerundll32 user32.dll, MessageBeep```Lock Workstation```consolerundll32 user32.dll, LockWorkStation```Put Workstation to sleep```consolerundll32 powrprof.dll, SetSuspendState Sleep```Microsoft Referencess64.com Reference
           
           
         

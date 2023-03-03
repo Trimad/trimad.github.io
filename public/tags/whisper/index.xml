@@ -16,6 +16,7 @@
         
           
             Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+GitHub RepositoryInstallation1pip install git+https://github.com/openai/whisper.git Fix CUDA not detecting GPUWhisper will default to the CPU if a GPU is not detected, which is considerably slower.1pip uninstall torch 2pip install torch torchvision torchaudio --extra-index-url https://download.
           
           
         

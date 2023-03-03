@@ -244,31 +244,31 @@
 </span></span><span class="line"><span class="ln"> 12</span><span class="cl"><span class="kn">import</span> <span class="nn">java.util.LinkedList</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln"> 13</span><span class="cl"><span class="kn">import</span> <span class="nn">java.util.Queue</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln"> 14</span><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
-</span></span><span class="line"><span class="ln"> 15</span><span class="cl">    <span class="kd">static</span> <span class="kt">int</span> <span class="n">source</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-</span></span><span class="line"><span class="ln"> 16</span><span class="cl">    <span class="kd">static</span> <span class="kt">int</span> <span class="n">sink</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
-</span></span><span class="line"><span class="ln"> 17</span><span class="cl">    <span class="kd">static</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;(</span><span class="mi">6</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 15</span><span class="cl">    <span class="kd">static</span> <span class="kt">int</span> <span class="n">source</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="ln"> 16</span><span class="cl">    <span class="kd">static</span> <span class="kt">int</span> <span class="n">sink</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="ln"> 17</span><span class="cl">    <span class="kd">static</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;(</span><span class="n">6</span><span class="o">);</span>
 </span></span><span class="line"><span class="ln"> 18</span><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IOException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="ln"> 19</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;XS&#34;</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
-</span></span><span class="line"><span class="ln"> 20</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;S&#34;</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
-</span></span><span class="line"><span class="ln"> 21</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;M&#34;</span><span class="o">,</span> <span class="mi">4</span><span class="o">);</span>
-</span></span><span class="line"><span class="ln"> 22</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;L&#34;</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>
-</span></span><span class="line"><span class="ln"> 23</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;XL&#34;</span><span class="o">,</span> <span class="mi">6</span><span class="o">);</span>
-</span></span><span class="line"><span class="ln"> 24</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;XXL&#34;</span><span class="o">,</span> <span class="mi">7</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 19</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;XS&#34;</span><span class="o">,</span> <span class="n">2</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 20</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;S&#34;</span><span class="o">,</span> <span class="n">3</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 21</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;M&#34;</span><span class="o">,</span> <span class="n">4</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 22</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;L&#34;</span><span class="o">,</span> <span class="n">5</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 23</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;XL&#34;</span><span class="o">,</span> <span class="n">6</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 24</span><span class="cl">        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;XXL&#34;</span><span class="o">,</span> <span class="n">7</span><span class="o">);</span>
 </span></span><span class="line"><span class="ln"> 25</span><span class="cl">        <span class="n">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">InputStreamReader</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">));</span>
 </span></span><span class="line"><span class="ln"> 26</span><span class="cl">        <span class="kt">int</span> <span class="n">testCases</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
-</span></span><span class="line"><span class="ln"> 27</span><span class="cl">        <span class="k">while</span> <span class="o">(</span><span class="n">testCases</span><span class="o">--</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln"> 27</span><span class="cl">        <span class="k">while</span> <span class="o">(</span><span class="n">testCases</span><span class="o">--</span> <span class="o">&gt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="ln"> 28</span><span class="cl">            <span class="n">String</span><span class="o">[]</span> <span class="n">nm</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">().</span><span class="na">split</span><span class="o">(</span><span class="s">&#34; &#34;</span><span class="o">);</span>
 </span></span><span class="line"><span class="ln"> 29</span><span class="cl">            <span class="c1">//N is multiple of 6, 1 ≤ N ≤ 36
-</span></span></span><span class="line"><span class="ln"> 30</span><span class="cl"><span class="c1"></span>            <span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">nm</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+</span></span></span><span class="line"><span class="ln"> 30</span><span class="cl"><span class="c1"></span>            <span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">nm</span><span class="o">[</span><span class="n">0</span><span class="o">]);</span>
 </span></span><span class="line"><span class="ln"> 31</span><span class="cl">            <span class="c1">//M, 1 ≤ M ≤ 30, indicates the number of volunteers, with N ≥ M
-</span></span></span><span class="line"><span class="ln"> 32</span><span class="cl"><span class="c1"></span>            <span class="kt">int</span> <span class="n">M</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">nm</span><span class="o">[</span><span class="mi">1</span><span class="o">]);</span>
+</span></span></span><span class="line"><span class="ln"> 32</span><span class="cl"><span class="c1"></span>            <span class="kt">int</span> <span class="n">M</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">nm</span><span class="o">[</span><span class="n">1</span><span class="o">]);</span>
 </span></span><span class="line"><span class="ln"> 33</span><span class="cl">            <span class="cm">/* * * * * * * * * * * * * * * * * * * * *
 </span></span></span><span class="line"><span class="ln"> 34</span><span class="cl"><span class="cm">            |* The size of the graph will be the sum of: 
 </span></span></span><span class="line"><span class="ln"> 35</span><span class="cl"><span class="cm">            |* -the number of shirt sizes available (6)
 </span></span></span><span class="line"><span class="ln"> 36</span><span class="cl"><span class="cm">            |* -the number of volunteers (M)
 </span></span></span><span class="line"><span class="ln"> 37</span><span class="cl"><span class="cm">            |* -the sink and source (2)
 </span></span></span><span class="line"><span class="ln"> 38</span><span class="cl"><span class="cm">            |* * * * * * * * * * * * * * * * * * * * */</span>
-</span></span><span class="line"><span class="ln"> 39</span><span class="cl">            <span class="n">MyGraph</span> <span class="n">graph</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyGraph</span><span class="o">(</span><span class="n">M</span> <span class="o">+</span> <span class="mi">8</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 39</span><span class="cl">            <span class="n">MyGraph</span> <span class="n">graph</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyGraph</span><span class="o">(</span><span class="n">M</span> <span class="o">+</span> <span class="n">8</span><span class="o">);</span>
 </span></span><span class="line"><span class="ln"> 40</span><span class="cl">            <span class="cm">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 </span></span></span><span class="line"><span class="ln"> 41</span><span class="cl"><span class="cm">            |* S T E P   O N E
 </span></span></span><span class="line"><span class="ln"> 42</span><span class="cl"><span class="cm">            |* Construct the edges from the source node to the t-shirt nodes.
@@ -276,8 +276,8 @@
 </span></span></span><span class="line"><span class="ln"> 44</span><span class="cl"><span class="cm">            |* in stock of this size.
 </span></span></span><span class="line"><span class="ln"> 45</span><span class="cl"><span class="cm">            |* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span>
 </span></span><span class="line"><span class="ln"> 46</span><span class="cl">            <span class="kt">int</span> <span class="n">t</span><span class="o">;</span>
-</span></span><span class="line"><span class="ln"> 47</span><span class="cl">            <span class="k">for</span> <span class="o">(</span><span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="o">;</span> <span class="n">t</span><span class="o">++)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="ln"> 48</span><span class="cl">                <span class="n">graph</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="n">source</span><span class="o">,</span> <span class="n">t</span> <span class="o">+</span> <span class="mi">2</span><span class="o">,</span> <span class="n">N</span> <span class="o">/</span> <span class="mi">6</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 47</span><span class="cl">            <span class="k">for</span> <span class="o">(</span><span class="n">t</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">6</span><span class="o">;</span> <span class="n">t</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln"> 48</span><span class="cl">                <span class="n">graph</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="n">source</span><span class="o">,</span> <span class="n">t</span> <span class="o">+</span> <span class="n">2</span><span class="o">,</span> <span class="n">N</span> <span class="o">/</span> <span class="n">6</span><span class="o">);</span>
 </span></span><span class="line"><span class="ln"> 49</span><span class="cl">            <span class="o">}</span>
 </span></span><span class="line"><span class="ln"> 50</span><span class="cl">            <span class="cm">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 </span></span></span><span class="line"><span class="ln"> 51</span><span class="cl"><span class="cm">            |* S T E P   T W O
@@ -285,20 +285,20 @@
 </span></span></span><span class="line"><span class="ln"> 53</span><span class="cl"><span class="cm">            |* This is the bipartite graph.
 </span></span></span><span class="line"><span class="ln"> 54</span><span class="cl"><span class="cm">            |* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span>
 </span></span><span class="line"><span class="ln"> 55</span><span class="cl">            <span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">;</span>
-</span></span><span class="line"><span class="ln"> 56</span><span class="cl">            <span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">M</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln"> 56</span><span class="cl">            <span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">M</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="ln"> 57</span><span class="cl">                <span class="n">String</span><span class="o">[]</span> <span class="n">sizes</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">().</span><span class="na">split</span><span class="o">(</span><span class="s">&#34; &#34;</span><span class="o">);</span>
-</span></span><span class="line"><span class="ln"> 58</span><span class="cl">                <span class="n">a</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">sizes</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
-</span></span><span class="line"><span class="ln"> 59</span><span class="cl">                <span class="n">b</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">sizes</span><span class="o">[</span><span class="mi">1</span><span class="o">]);</span>
-</span></span><span class="line"><span class="ln"> 60</span><span class="cl">                <span class="n">graph</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">8</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
-</span></span><span class="line"><span class="ln"> 61</span><span class="cl">                <span class="n">graph</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="n">b</span><span class="o">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">8</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 58</span><span class="cl">                <span class="n">a</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">sizes</span><span class="o">[</span><span class="n">0</span><span class="o">]);</span>
+</span></span><span class="line"><span class="ln"> 59</span><span class="cl">                <span class="n">b</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">sizes</span><span class="o">[</span><span class="n">1</span><span class="o">]);</span>
+</span></span><span class="line"><span class="ln"> 60</span><span class="cl">                <span class="n">graph</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">i</span> <span class="o">+</span> <span class="n">8</span><span class="o">,</span> <span class="n">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 61</span><span class="cl">                <span class="n">graph</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="n">b</span><span class="o">,</span> <span class="n">i</span> <span class="o">+</span> <span class="n">8</span><span class="o">,</span> <span class="n">1</span><span class="o">);</span>
 </span></span><span class="line"><span class="ln"> 62</span><span class="cl">            <span class="o">}</span>
 </span></span><span class="line"><span class="ln"> 63</span><span class="cl">            <span class="cm">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 </span></span></span><span class="line"><span class="ln"> 64</span><span class="cl"><span class="cm">            |* S T E P   T H R E E
 </span></span></span><span class="line"><span class="ln"> 65</span><span class="cl"><span class="cm">            |* Construct the edges from the volunteer nodes to the sink node.
 </span></span></span><span class="line"><span class="ln"> 66</span><span class="cl"><span class="cm">            |* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span>
 </span></span><span class="line"><span class="ln"> 67</span><span class="cl">            <span class="kt">int</span> <span class="n">v</span><span class="o">;</span>
-</span></span><span class="line"><span class="ln"> 68</span><span class="cl">            <span class="k">for</span> <span class="o">(</span><span class="n">v</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">v</span> <span class="o">&lt;</span> <span class="n">M</span><span class="o">;</span> <span class="n">v</span><span class="o">++)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="ln"> 69</span><span class="cl">                <span class="n">graph</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="n">v</span> <span class="o">+</span> <span class="mi">8</span><span class="o">,</span> <span class="n">sink</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln"> 68</span><span class="cl">            <span class="k">for</span> <span class="o">(</span><span class="n">v</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">v</span> <span class="o">&lt;</span> <span class="n">M</span><span class="o">;</span> <span class="n">v</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln"> 69</span><span class="cl">                <span class="n">graph</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="n">v</span> <span class="o">+</span> <span class="n">8</span><span class="o">,</span> <span class="n">sink</span><span class="o">,</span> <span class="n">1</span><span class="o">);</span>
 </span></span><span class="line"><span class="ln"> 70</span><span class="cl">            <span class="o">}</span>
 </span></span><span class="line"><span class="ln"> 71</span><span class="cl">            <span class="cm">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 </span></span></span><span class="line"><span class="ln"> 72</span><span class="cl"><span class="cm">            |* S T E P   F O U R
@@ -331,34 +331,34 @@
 </span></span></span><span class="line"><span class="ln"> 99</span><span class="cl"><span class="cm">    |* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span>
 </span></span><span class="line"><span class="ln">100</span><span class="cl">    <span class="kt">int</span> <span class="nf">maxFlow</span><span class="o">(</span><span class="kt">int</span> <span class="n">source</span><span class="o">,</span> <span class="kt">int</span> <span class="n">sink</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="ln">101</span><span class="cl">        <span class="kt">int</span><span class="o">[]</span> <span class="n">prev</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">size</span><span class="o">];</span>
-</span></span><span class="line"><span class="ln">102</span><span class="cl">        <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="ln">102</span><span class="cl">        <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln">103</span><span class="cl">        <span class="kt">int</span> <span class="n">mincut</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span> <span class="c1">//infinity
 </span></span></span><span class="line"><span class="ln">104</span><span class="cl"><span class="c1"></span>        <span class="k">while</span> <span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="ln">105</span><span class="cl">            <span class="n">Queue</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">q</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LinkedList</span><span class="o">&lt;&gt;();</span>
 </span></span><span class="line"><span class="ln">106</span><span class="cl">            <span class="n">q</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">source</span><span class="o">);</span>
-</span></span><span class="line"><span class="ln">107</span><span class="cl">            <span class="n">Arrays</span><span class="o">.</span><span class="na">fill</span><span class="o">(</span><span class="n">prev</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">);</span>
-</span></span><span class="line"><span class="ln">108</span><span class="cl">            <span class="k">while</span> <span class="o">(!</span><span class="n">q</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="n">prev</span><span class="o">[</span><span class="n">sink</span><span class="o">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln">107</span><span class="cl">            <span class="n">Arrays</span><span class="o">.</span><span class="na">fill</span><span class="o">(</span><span class="n">prev</span><span class="o">,</span> <span class="o">-</span><span class="n">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="ln">108</span><span class="cl">            <span class="k">while</span> <span class="o">(!</span><span class="n">q</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="n">prev</span><span class="o">[</span><span class="n">sink</span><span class="o">]</span> <span class="o">==</span> <span class="o">-</span><span class="n">1</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="ln">109</span><span class="cl">                <span class="kt">int</span> <span class="n">u</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="na">remove</span><span class="o">();</span>
-</span></span><span class="line"><span class="ln">110</span><span class="cl">                <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">v</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">v</span> <span class="o">&lt;</span> <span class="n">size</span><span class="o">;</span> <span class="n">v</span><span class="o">++)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="ln">111</span><span class="cl">                    <span class="k">if</span> <span class="o">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">source</span> <span class="o">&amp;&amp;</span> <span class="n">prev</span><span class="o">[</span><span class="n">v</span><span class="o">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">edges</span><span class="o">[</span><span class="n">u</span><span class="o">][</span><span class="n">v</span><span class="o">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln">110</span><span class="cl">                <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">v</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">v</span> <span class="o">&lt;</span> <span class="n">size</span><span class="o">;</span> <span class="n">v</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln">111</span><span class="cl">                    <span class="k">if</span> <span class="o">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">source</span> <span class="o">&amp;&amp;</span> <span class="n">prev</span><span class="o">[</span><span class="n">v</span><span class="o">]</span> <span class="o">==</span> <span class="o">-</span><span class="n">1</span> <span class="o">&amp;&amp;</span> <span class="n">edges</span><span class="o">[</span><span class="n">u</span><span class="o">][</span><span class="n">v</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="ln">112</span><span class="cl">                        <span class="n">q</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">v</span><span class="o">);</span>
 </span></span><span class="line"><span class="ln">113</span><span class="cl">                        <span class="n">prev</span><span class="o">[</span><span class="n">v</span><span class="o">]</span> <span class="o">=</span> <span class="n">u</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln">114</span><span class="cl">                    <span class="o">}</span>
 </span></span><span class="line"><span class="ln">115</span><span class="cl">                <span class="o">}</span>
 </span></span><span class="line"><span class="ln">116</span><span class="cl">            <span class="o">}</span>
-</span></span><span class="line"><span class="ln">117</span><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">prev</span><span class="o">[</span><span class="n">sink</span><span class="o">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln">117</span><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">prev</span><span class="o">[</span><span class="n">sink</span><span class="o">]</span> <span class="o">==</span> <span class="o">-</span><span class="n">1</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="ln">118</span><span class="cl">                <span class="k">break</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln">119</span><span class="cl">            <span class="o">}</span>
 </span></span><span class="line"><span class="ln">120</span><span class="cl">            <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="n">sink</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln">121</span><span class="cl">            <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">prev</span><span class="o">[</span><span class="n">y</span><span class="o">];</span>
-</span></span><span class="line"><span class="ln">122</span><span class="cl">            <span class="k">while</span> <span class="o">(</span><span class="n">x</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln">122</span><span class="cl">            <span class="k">while</span> <span class="o">(</span><span class="n">x</span> <span class="o">!=</span> <span class="o">-</span><span class="n">1</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="ln">123</span><span class="cl">                <span class="n">mincut</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">min</span><span class="o">(</span><span class="n">mincut</span><span class="o">,</span> <span class="n">edges</span><span class="o">[</span><span class="n">x</span><span class="o">][</span><span class="n">y</span><span class="o">]);</span>
 </span></span><span class="line"><span class="ln">124</span><span class="cl">                <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln">125</span><span class="cl">                <span class="n">x</span> <span class="o">=</span> <span class="n">prev</span><span class="o">[</span><span class="n">y</span><span class="o">];</span>
 </span></span><span class="line"><span class="ln">126</span><span class="cl">            <span class="o">}</span>
 </span></span><span class="line"><span class="ln">127</span><span class="cl">            <span class="kt">int</span> <span class="n">v</span> <span class="o">=</span> <span class="n">sink</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln">128</span><span class="cl">            <span class="kt">int</span> <span class="n">u</span> <span class="o">=</span> <span class="n">prev</span><span class="o">[</span><span class="n">v</span><span class="o">];</span>
-</span></span><span class="line"><span class="ln">129</span><span class="cl">            <span class="k">while</span> <span class="o">(</span><span class="n">u</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="ln">129</span><span class="cl">            <span class="k">while</span> <span class="o">(</span><span class="n">u</span> <span class="o">!=</span> <span class="o">-</span><span class="n">1</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="ln">130</span><span class="cl">                <span class="n">edges</span><span class="o">[</span><span class="n">u</span><span class="o">][</span><span class="n">v</span><span class="o">]</span> <span class="o">-=</span> <span class="n">mincut</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln">131</span><span class="cl">                <span class="n">edges</span><span class="o">[</span><span class="n">v</span><span class="o">][</span><span class="n">u</span><span class="o">]</span> <span class="o">+=</span> <span class="n">mincut</span><span class="o">;</span>
 </span></span><span class="line"><span class="ln">132</span><span class="cl">                <span class="n">v</span> <span class="o">=</span> <span class="n">u</span><span class="o">;</span>
@@ -412,6 +412,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://trimad.github.io/post/2023-03-03-netsh/" class="nav-link" title="Windows Defender Firewall">Windows Defender Firewall</a>
+      </li>
+      <li>
         <a href="https://trimad.github.io/post/2023-02-24-openai-whisper/" class="nav-link" title="OpenAI Whisper">OpenAI Whisper</a>
       </li>
       <li>
@@ -431,9 +434,6 @@
       </li>
       <li>
         <a href="https://trimad.github.io/post/2023-02-07-purge-emails/" class="nav-link" title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a>
-      </li>
-      <li>
-        <a href="https://trimad.github.io/post/2023-02-06-uninstall-drivers/" class="nav-link" title="Uninstall Third-Party Drivers with CMD">Uninstall Third-Party Drivers with CMD</a>
       </li>
     </ul>
     <div>
@@ -471,7 +471,7 @@
         
         <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
           CMD
-          <span class="button_tally">7</span>
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://trimad.github.io/categories/exchangeonlinemanagement/' class="post_tag button button_translucent" title="exchangeonlinemanagement">
@@ -501,11 +501,6 @@
         
         <a href='https://trimad.github.io/categories/video/' class="post_tag button button_translucent" title="video">
           VIDEO
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
-          WINDOWS
           <span class="button_tally">2</span>
         </a>
         
@@ -549,6 +544,11 @@
           <span class="button_tally">1</span>
         </a>
         
+        <a href='https://trimad.github.io/categories/firewall/' class="post_tag button button_translucent" title="firewall">
+          FIREWALL
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='https://trimad.github.io/categories/fractal/' class="post_tag button button_translucent" title="fractal">
           FRACTAL
           <span class="button_tally">1</span>
@@ -566,6 +566,11 @@
         
         <a href='https://trimad.github.io/categories/maxine/' class="post_tag button button_translucent" title="maxine">
           MAXINE
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/netsh/' class="post_tag button button_translucent" title="netsh">
+          NETSH
           <span class="button_tally">1</span>
         </a>
         
@@ -589,11 +594,6 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/categories/security/' class="post_tag button button_translucent" title="security">
-          SECURITY
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/categories/stable-diffusion/' class="post_tag button button_translucent" title="stable-diffusion">
           STABLE-DIFFUSION
           <span class="button_tally">1</span>
@@ -611,6 +611,11 @@
         
         <a href='https://trimad.github.io/categories/vbscript/' class="post_tag button button_translucent" title="vbscript">
           VBSCRIPT
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
           <span class="button_tally">1</span>
         </a>
         
@@ -723,6 +728,11 @@
         
         <a href='https://trimad.github.io/tags/minimum-spanning-tree/' class="post_tag button button_translucent" title="minimum-spanning-tree">
           MINIMUM-SPANNING-TREE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
+          PASSWORDS
           <span class="button_tally">2</span>
         </a>
         
@@ -951,11 +961,6 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://trimad.github.io/tags/passwords/' class="post_tag button button_translucent" title="passwords">
-          PASSWORDS
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://trimad.github.io/tags/phishing/' class="post_tag button button_translucent" title="phishing">
           PHISHING
           <span class="button_tally">1</span>
@@ -983,11 +988,6 @@
         
         <a href='https://trimad.github.io/tags/robocopy/' class="post_tag button button_translucent" title="robocopy">
           ROBOCOPY
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/rundll32/' class="post_tag button button_translucent" title="rundll32">
-          RUNDLL32
           <span class="button_tally">1</span>
         </a>
         
@@ -1053,11 +1053,6 @@
         
         <a href='https://trimad.github.io/tags/topological-sort/' class="post_tag button button_translucent" title="topological-sort">
           TOPOLOGICAL-SORT
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://trimad.github.io/tags/userdll32/' class="post_tag button button_translucent" title="userdll32">
-          USERDLL32
           <span class="button_tally">1</span>
         </a>
         
