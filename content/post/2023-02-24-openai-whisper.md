@@ -4,6 +4,7 @@ categories: [CMD]
 date: 2023-02-24
 tags: [AI, audio]
 title: OpenAI Whisper
+ShowReadingTime: false
 ---
 
 Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.

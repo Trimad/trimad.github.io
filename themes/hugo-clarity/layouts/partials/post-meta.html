@@ -25,10 +25,10 @@
 
   {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
-  <!-- {{- if $showReadTime }} -->
+  {{- if $showReadTime }}
   <span class="post_time">{{ if ($scratch.Get "writeSeparator") }} · {{ end }}{{ T "reading_time" . }}</span>
   {{- $scratch.Set "writeSeparator" true }}
-  <!-- {{- end }} -->
+  {{- end }}
   {{- with .Params.tags -}}
   <span>
     {{- if ($scratch.Get "writeSeparator") }}&nbsp;· {{ end }}
