@@ -9,7 +9,7 @@ disqusShortname = ""
 
 DefaultContentLanguage = "en"
 # [languages]
-# config/_default/languages.toml
+#config/_default/languages.toml
 
 disableLanguages = ['pt']
 
@@ -30,3 +30,6 @@ enableGitInfo = true
 
 [frontmatter]
 lastmod = ['lastmod', ':git', 'date', 'publishDate']
+
+[reading_time]
+other = "{{ .ReadingTime }} min read"

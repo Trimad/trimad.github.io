@@ -2,3 +2,6 @@
   title = "Hugo Grimoire"
   LanguageName = "English"
   weight = 1
+
+[reading_time]
+other = "{{ .ReadingTime }} min read"
