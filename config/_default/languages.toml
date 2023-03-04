@@ -1,5 +1,4 @@
-
-#[en]
-#  title = "Clarity"
-#  LanguageName = "English"
-#  weight = 1
+[en]
+  title = "Hugo Grimoire"
+  LanguageName = "English"
+  weight = 1
