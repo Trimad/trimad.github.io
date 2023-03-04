@@ -31,5 +31,4 @@ enableGitInfo = true
 [frontmatter]
 lastmod = ['lastmod', ':git', 'date', 'publishDate']
 
-[reading_time]
-other = "{{ .ReadingTime }} min read"
+showReadTime = true
