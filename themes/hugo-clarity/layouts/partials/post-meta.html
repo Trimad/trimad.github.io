@@ -5,24 +5,13 @@
 {{- $scratch := newScratch }}
 {{- $scratch.Set "writeSeparator" false }}
 {{- if $showPostMeta }}
-
-
 <div class="post_meta">
   {{- end }}
   {{- if $showDate }}
   <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
-  {{ $lastmod := .Lastmod.Format "02.01.2006" }}<!-- custom -->
-{{ $date := .Date.Format "02.01.2006" }}<!-- custom -->
   <span class="post_date">
-    {{ .Date.Format (default "2006-01-02 " $.Site.Params.dateFormat) -}}
-    {{ if ne $lastmod $date }}
-    last modified {{ .Lastmod.Format "2006-01-02" }}
-    {{ end }}
-
+    {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
   </span>
-
-  <span class="date-info italic"> </span>
-
   {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
   {{- if $showReadTime }}

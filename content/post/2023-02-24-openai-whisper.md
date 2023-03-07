@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [CMD]
+categories: [Shell]
 date: 2023-02-24
 tags: [AI, audio]
 title: OpenAI Whisper
@@ -13,21 +13,21 @@ Whisper is a general-purpose speech recognition model. It is trained on a large 
 
 <h3>Installation</h3>
 
-```CMD
+```Shell
 pip install git+https://github.com/openai/whisper.git 
 ```
 
 <h3>Fix CUDA not detecting GPU</h3>
 Whisper will default to the CPU if a GPU is not detected, which is considerably slower.
 
-```CMD
+```Shell
 pip uninstall torch
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 ```
 
 <h3>Example usage</h3>
 
-```CMD
+```Shell
 # Transcribe
 whisper input.mp3 --model medium.en --language en --task transcribe
 # Translate
