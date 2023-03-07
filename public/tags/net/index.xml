@@ -15,7 +15,7 @@
       <description>
         
           
-            The &#34;net user&#34; command is a Command Prompt (CMD) command used to manage user accounts on a Windows operating system. It can be used to create, modify, or delete user accounts, as well as to change passwords and manage group memberships.
+            The &#34;net user&#34; command is a Command Prompt (Shell) command used to manage user accounts on a Windows operating system. It can be used to create, modify, or delete user accounts, as well as to change passwords and manage group memberships.
           
           
         

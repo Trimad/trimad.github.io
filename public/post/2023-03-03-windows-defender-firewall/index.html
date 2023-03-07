@@ -105,17 +105,6 @@
     <a href="https://trimad.github.io/about/" class="nav_item" title="About">About </a>
   </div>
       
-      <div class="nav_parent">
-        <a href="#" class="nav_item">🌐</a>
-        <div class="nav_sub">
-          <span class="nav_child"></span>
-          
-          <a href="https://trimad.github.io/" class="nav_child nav_item">English</a>
-          
-          <a href="https://trimad.github.io/reading_time/" class="nav_child nav_item"></a>
-          
-        </div>
-      </div>
 <div class='follow'>
   <a href="https://github.com/Trimad">
     <svg class="icon">
@@ -154,21 +143,21 @@
 <div class="grid-inverse wrap content">
   <article class="post_content">
     <h1 class="post_title">Windows Defender Firewall</h1>
-
-
 <div class="post_meta">
   <span><svg class="icon">
   <title>calendar</title>
   <use xlink:href="#calendar"></use>
 </svg>
 </span>
-  
-
+  <span>
+    
+    
+  </span>
   <span class="post_date">
     2023-03-03 
-
+    last modified 2023-03-07
+    
   </span>
-
   <span class="date-info italic"> </span>
   <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://trimad.github.io/tags/netsh/' title="netsh" class="post_tag button button_translucent">netsh
     </a><a href='https://trimad.github.io/tags/firewall/' title="firewall" class="post_tag button button_translucent">firewall
@@ -210,15 +199,18 @@
 </div>
     <div class="post_body"><h2>Firewall Rules</h2>
 <h3>Turn the firewall on or off</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">netsh advfirewall set allprofiles state on
-</span></span><span class="line"><span class="ln">2</span><span class="cl">netsh advfirewall set allprofiles state off
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">netsh advfirewall <span class="nb">set</span> allprofiles state on
+</span></span><span class="line"><span class="ln">2</span><span class="cl">netsh advfirewall <span class="nb">set</span> allprofiles state off
 </span></span></code></pre></div><h3>Exception for a program</h3>
 This example allows incoming traffic for the program "WaspPunch.exe" located at "C:\Program Files (x86)\Wasp Technologies\WaspTime\WaspPunch.exe". The "dir=in" parameter specifies that the rule applies to inbound traffic. The "action=allow" parameter allows the traffic through, and "enable=yes" ensures that the rule is enabled.
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">netsh advfirewall firewall add rule name=&#34;WaspPunch.exe&#34; dir=in action=allow program=&#34;C:\Program Files (x86)\Wasp Technologies\WaspTime\WaspPunch.exe&#34; enable=yes
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">netsh advfirewall firewall add rule <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;WaspPunch.exe&#34;</span> <span class="nv">dir</span><span class="o">=</span>in <span class="nv">action</span><span class="o">=</span>allow <span class="nv">program</span><span class="o">=</span><span class="s2">&#34;C:\Program Files (x86)\Wasp Technologies\WaspTime\WaspPunch.exe&#34;</span> <span class="nv">enable</span><span class="o">=</span>yes
+</span></span></code></pre></div><h3>Exception for Remote Desktop</h3>
+You do not need to create a separate exception for the port when whitelisting "remote desktop". When you enable the "remote desktop" rule group using this command it automatically allows traffic on the default Remote Desktop Protocol (RDP) port, which is TCP port 3389.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">netsh advfirewall firewall <span class="nb">set</span> rule <span class="nv">group</span><span class="o">=</span><span class="s2">&#34;remote desktop&#34;</span> new <span class="nv">enable</span><span class="o">=</span>yes
 </span></span></code></pre></div><h3>Exception for a port</h3>
 These rules allow incoming TCP traffic on ports 10004 and 10005. Again, the "dir=in" parameter specifies that the rules apply to inbound traffic, "action=allow" allows the traffic through, and "enable=yes" ensures that the rules are enabled.
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">netsh advfirewall firewall add rule name=&#34;10004&#34; dir=in action=allow protocol=TCP localport=10004 enable=yes
-</span></span><span class="line"><span class="ln">2</span><span class="cl">netsh advfirewall firewall add rule name=&#34;10005&#34; dir=in action=allow protocol=TCP localport=10005 enable=yes
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">netsh advfirewall firewall add rule <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;10004&#34;</span> <span class="nv">dir</span><span class="o">=</span>in <span class="nv">action</span><span class="o">=</span>allow <span class="nv">protocol</span><span class="o">=</span>TCP <span class="nv">localport</span><span class="o">=</span><span class="m">10004</span> <span class="nv">enable</span><span class="o">=</span>yes
+</span></span><span class="line"><span class="ln">2</span><span class="cl">netsh advfirewall firewall add rule <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;10005&#34;</span> <span class="nv">dir</span><span class="o">=</span>in <span class="nv">action</span><span class="o">=</span>allow <span class="nv">protocol</span><span class="o">=</span>TCP <span class="nv">localport</span><span class="o">=</span><span class="m">10005</span> <span class="nv">enable</span><span class="o">=</span>yes
 </span></span></code></pre></div>
     </div>
 <div class="post_comments">
@@ -314,14 +306,14 @@ These rules allow incoming TCP traffic on ports 10004 and 10005. Again, the "dir
           <span class="button_tally">10</span>
         </a>
         
-        <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
-          CMD
-          <span class="button_tally">8</span>
-        </a>
-        
         <a href='https://trimad.github.io/categories/p5.js/' class="post_tag button button_translucent" title="p5.js">
           P5.JS
           <span class="button_tally">8</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
+          CMD
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://trimad.github.io/categories/exchangeonlinemanagement/' class="post_tag button button_translucent" title="exchangeonlinemanagement">
@@ -336,6 +328,11 @@ These rules allow incoming TCP traffic on ports 10004 and 10005. Again, the "dir
         
         <a href='https://trimad.github.io/categories/batchfile/' class="post_tag button button_translucent" title="batchfile">
           BATCHFILE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/shell/' class="post_tag button button_translucent" title="shell">
+          SHELL
           <span class="button_tally">2</span>
         </a>
         

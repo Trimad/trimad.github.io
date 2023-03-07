@@ -29,14 +29,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="The &quot;net user&quot; command is a Command Prompt (CMD) command used to manage user accounts on a Windows operating system. It can be used to create, modify, …" />
+<meta name="description" content="The &quot;net user&quot; command is a Command Prompt (Shell) command used to manage user accounts on a Windows operating system. It can be used to create, …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="net user" />
 <meta name="twitter:image" content="https://trimad.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://trimad.github.io/post/2023-02-22-net-user/" />
 <meta property="og:title" content="net user" />
-<meta property="og:description" content="The &quot;net user&quot; command is a Command Prompt (CMD) command used to manage user accounts on a Windows operating system. It can be used to create, modify, …" />
+<meta property="og:description" content="The &quot;net user&quot; command is a Command Prompt (Shell) command used to manage user accounts on a Windows operating system. It can be used to create, …" />
 <meta property="og:image" content="https://trimad.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://trimad.github.io/icons/apple-touch-icon.png">
@@ -105,17 +105,6 @@
     <a href="https://trimad.github.io/about/" class="nav_item" title="About">About </a>
   </div>
       
-      <div class="nav_parent">
-        <a href="#" class="nav_item">🌐</a>
-        <div class="nav_sub">
-          <span class="nav_child"></span>
-          
-          <a href="https://trimad.github.io/" class="nav_child nav_item">English</a>
-          
-          <a href="https://trimad.github.io/reading_time/" class="nav_child nav_item"></a>
-          
-        </div>
-      </div>
 <div class='follow'>
   <a href="https://github.com/Trimad">
     <svg class="icon">
@@ -154,21 +143,19 @@
 <div class="grid-inverse wrap content">
   <article class="post_content">
     <h1 class="post_title">net user</h1>
-
-
 <div class="post_meta">
   <span><svg class="icon">
   <title>calendar</title>
   <use xlink:href="#calendar"></use>
 </svg>
 </span>
-  
-
+  <span>
+    
+    
+  </span>
   <span class="post_date">
     2023-02-15 
-
   </span>
-
   <span class="date-info italic"> </span>
   <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://trimad.github.io/tags/net/' title="net" class="post_tag button button_translucent">net
     </a>
@@ -207,16 +194,16 @@
   </div>
   </span>
 </div>
-    <div class="post_body"><p>The &quot;net user&quot; command is a Command Prompt (CMD) command used to manage user accounts on a Windows operating system. It can be used to create, modify, or delete user accounts, as well as to change passwords and manage group memberships.</p>
+    <div class="post_body"><p>The &quot;net user&quot; command is a Command Prompt (Shell) command used to manage user accounts on a Windows operating system. It can be used to create, modify, or delete user accounts, as well as to change passwords and manage group memberships.</p>
 <h3>Check if account is locked</h3>
 <p><em>The find is case sensitive:</em></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">net user /domain <span class="p">&lt;</span>username<span class="p">&gt;</span> | find <span class="s2">&#34;Account active&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">net user /domain &lt;username&gt; <span class="p">|</span> find <span class="s2">&#34;Account active&#34;</span>
 </span></span></code></pre></div><h3>Unlock account</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">Net user <span class="p">&lt;</span>username<span class="p">&gt;</span> /domain /active:yes
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">Net user &lt;username&gt; /domain /active:yes
 </span></span></code></pre></div><h3>Reset password</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">net user <span class="p">&lt;</span>username<span class="p">&gt;</span> &lt;password<span class="p">&gt;</span> /domain /active:Yes
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">net user &lt;username&gt; &lt;password&gt; /domain /active:Yes
 </span></span></code></pre></div><h3>Add to group</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">net localgroup <span class="p">&lt;</span>groupname<span class="p">&gt;</span> &lt;domain<span class="p">&gt;</span>/<span class="p">&lt;</span>username<span class="p">&gt;</span> /add
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">net localgroup &lt;groupname&gt; &lt;domain&gt;/&lt;username&gt; /add
 </span></span></code></pre></div>
     </div>
 <div class="post_comments">
@@ -312,14 +299,14 @@
           <span class="button_tally">10</span>
         </a>
         
-        <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
-          CMD
-          <span class="button_tally">8</span>
-        </a>
-        
         <a href='https://trimad.github.io/categories/p5.js/' class="post_tag button button_translucent" title="p5.js">
           P5.JS
           <span class="button_tally">8</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
+          CMD
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://trimad.github.io/categories/exchangeonlinemanagement/' class="post_tag button button_translucent" title="exchangeonlinemanagement">
@@ -334,6 +321,11 @@
         
         <a href='https://trimad.github.io/categories/batchfile/' class="post_tag button button_translucent" title="batchfile">
           BATCHFILE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/shell/' class="post_tag button button_translucent" title="shell">
+          SHELL
           <span class="button_tally">2</span>
         </a>
         

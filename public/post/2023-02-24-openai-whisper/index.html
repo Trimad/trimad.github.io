@@ -105,17 +105,6 @@
     <a href="https://trimad.github.io/about/" class="nav_item" title="About">About </a>
   </div>
       
-      <div class="nav_parent">
-        <a href="#" class="nav_item">🌐</a>
-        <div class="nav_sub">
-          <span class="nav_child"></span>
-          
-          <a href="https://trimad.github.io/" class="nav_child nav_item">English</a>
-          
-          <a href="https://trimad.github.io/reading_time/" class="nav_child nav_item"></a>
-          
-        </div>
-      </div>
 <div class='follow'>
   <a href="https://github.com/Trimad">
     <svg class="icon">
@@ -154,21 +143,19 @@
 <div class="grid-inverse wrap content">
   <article class="post_content">
     <h1 class="post_title">OpenAI Whisper</h1>
-
-
 <div class="post_meta">
   <span><svg class="icon">
   <title>calendar</title>
   <use xlink:href="#calendar"></use>
 </svg>
 </span>
-  
-
+  <span>
+    
+    
+  </span>
   <span class="post_date">
     2023-02-24 
-
   </span>
-
   <span class="date-info italic"> </span>
   <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://trimad.github.io/tags/ai/' title="AI" class="post_tag button button_translucent">AI
     </a><a href='https://trimad.github.io/tags/audio/' title="audio" class="post_tag button button_translucent">audio
@@ -211,15 +198,15 @@
     <div class="post_body"><p>Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.</p>
 <h3><a href="https://github.com/openai/whisper">GitHub Repository</a></h3>
 <h3>Installation</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">pip install git+https://github.com/openai/whisper.git 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">pip install git+https://github.com/openai/whisper.git 
 </span></span></code></pre></div><h3>Fix CUDA not detecting GPU</h3>
 Whisper will default to the CPU if a GPU is not detected, which is considerably slower.
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">pip uninstall torch
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">pip uninstall torch
 </span></span><span class="line"><span class="ln">2</span><span class="cl">pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 </span></span></code></pre></div><h3>Example usage</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl"># Transcribe
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1"># Transcribe</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">whisper input.mp3 --model medium.en --language en --task transcribe
-</span></span><span class="line"><span class="ln">3</span><span class="cl"># Translate
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"># Translate</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">whisper japanese.wav --model large --language Japanese --task translate
 </span></span></code></pre></div><h3>Available models and languages</h3>
 <p>There are five model sizes, four with English-only versions, offering speed and accuracy tradeoffs. Below are the names of the available models and their approximate memory requirements and relative speed.</p>
@@ -373,14 +360,14 @@ Whisper will default to the CPU if a GPU is not detected, which is considerably 
           <span class="button_tally">10</span>
         </a>
         
-        <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
-          CMD
-          <span class="button_tally">8</span>
-        </a>
-        
         <a href='https://trimad.github.io/categories/p5.js/' class="post_tag button button_translucent" title="p5.js">
           P5.JS
           <span class="button_tally">8</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/cmd/' class="post_tag button button_translucent" title="cmd">
+          CMD
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://trimad.github.io/categories/exchangeonlinemanagement/' class="post_tag button button_translucent" title="exchangeonlinemanagement">
@@ -395,6 +382,11 @@ Whisper will default to the CPU if a GPU is not detected, which is considerably 
         
         <a href='https://trimad.github.io/categories/batchfile/' class="post_tag button button_translucent" title="batchfile">
           BATCHFILE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://trimad.github.io/categories/shell/' class="post_tag button button_translucent" title="shell">
+          SHELL
           <span class="button_tally">2</span>
         </a>
         

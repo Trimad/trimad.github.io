@@ -4,7 +4,13 @@
 {{- $showPostMeta := or ($showShare) ($showDate) ($showReadTime) (isset .Params "tags") }}
 {{- $scratch := newScratch }}
 {{- $scratch.Set "writeSeparator" false }}
+{{- $showLastMod := ne (.Param "lastmod") (.Param "date") }}
 {{- if $showPostMeta }}
+
+<script>console.log('{{ printf "%v" (.Param "lastmod") }}');</script>
+<script>console.log('{{ printf "%v" (.Param "date") }}');</script>
+<script>console.log('{{ printf "%v" $showLastMod }}');</script>
+
 <div class="post_meta">
   {{- end }}
   {{- if $showDate }}
@@ -14,6 +20,17 @@
   </span>
   {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
+
+  {{- if $showLastMod }}
+  <!-- <span>{{ partial "sprite" (dict "icon" "calendar") }}</span> -->
+  <span class="last_mod">
+    <i>last modified:&nbsp;
+    {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
+  </i>
+  </span>
+  {{- $scratch.Set "writeSeparator" true }}
+  {{- end }}
+
   {{- if $showReadTime }}
   <span class="post_time">{{ if ($scratch.Get "writeSeparator") }} · {{ end }}{{ T "reading_time" . }}</span>
   {{- $scratch.Set "writeSeparator" true }}
