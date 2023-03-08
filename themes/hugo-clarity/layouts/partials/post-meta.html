@@ -14,21 +14,20 @@
 <div class="post_meta">
   {{- end }}
   {{- if $showDate }}
-  <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
-  <span class="post_date">
-    {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
-  </span>
-  {{- $scratch.Set "writeSeparator" true }}
+    <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
+    <span class="post_date">
+      {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
+    </span>
+    {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
-
   {{- if $showLastMod }}
-  <!-- <span>{{ partial "sprite" (dict "icon" "calendar") }}</span> -->
-  <span class="last_mod">
-    <i>last modified:&nbsp;
-    {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
-  </i>
-  </span>
-  {{- $scratch.Set "writeSeparator" true }}
+    {{ $lastmod := .Lastmod.Format "02.01.2006" }}
+    <span class="last_mod">
+      {{ if ($scratch.Get "writeSeparator") }} · {{ end }}
+      <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
+      <i>last modified {{ .Lastmod.Format "2006-01-02" }}</i>
+    </span>
+    {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
 
   {{- if $showReadTime }}
