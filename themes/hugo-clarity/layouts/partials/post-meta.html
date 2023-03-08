@@ -5,29 +5,32 @@
 {{- $scratch := newScratch }}
 {{- $scratch.Set "writeSeparator" false }}
 {{- $showLastMod := ne (.Param "lastmod") (.Param "date") }}
+
 {{- if $showPostMeta }}
-
-<script>console.log('{{ printf "%v" (.Param "lastmod") }}');</script>
+<!-- <script>console.log('{{ printf "%v" (.Param "lastmod") }}');</script>
 <script>console.log('{{ printf "%v" (.Param "date") }}');</script>
-<script>console.log('{{ printf "%v" $showLastMod }}');</script>
-
+<script>console.log('{{ printf "%v" $showLastMod }}');</script> -->
 <div class="post_meta">
   {{- end }}
+
   {{- if $showDate }}
-    <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
-    <span class="post_date">
-      {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
-    </span>
-    {{- $scratch.Set "writeSeparator" true }}
+  <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
+  <span class="post_date">
+    {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
+  </span>
+  {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
+
   {{- if $showLastMod }}
-    {{ $lastmod := .Lastmod.Format "02.01.2006" }}
-    <span class="last_mod">
-      {{ if ($scratch.Get "writeSeparator") }} · {{ end }}
-      <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
-      <i>last modified {{ .Lastmod.Format "2006-01-02" }}</i>
-    </span>
-    {{- $scratch.Set "writeSeparator" true }}
+  {{ if ($scratch.Get "writeSeparator") }} · {{ end }}
+  <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
+  <span class="last_mod">
+    {{ $lastmod := .Lastmod.Format "Jan 2, 2006" }}
+    
+    
+    <i>last modified {{ $lastmod }}</i>
+  </span>
+  {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
 
   {{- if $showReadTime }}
@@ -46,6 +49,7 @@
   </span>
   {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
+  
   {{- if $showShare }}
   <span class="page_only">{{ if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}{{ partial "share" . }}</span>
   {{- $scratch.Set "writeSeparator" true }}
