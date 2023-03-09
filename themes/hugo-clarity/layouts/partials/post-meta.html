@@ -26,9 +26,7 @@
   <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
   <span class="last_mod">
     {{ $lastmod := .Lastmod.Format "Jan 2, 2006" }}
-    
-    
-    <i>last modified {{ $lastmod }}</i>
+    <i>last modified {{ $lastmod }}&nbsp;</i>
   </span>
   {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
