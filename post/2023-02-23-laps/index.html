@@ -8,7 +8,7 @@
 </span></span></code></pre></div><h3>Get the OU and DC info for a computer</h3><p><em>from Active Directory PowerShell:</em></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=ln>1</span><span class=cl><span class=nb>Get-ADComputer</span> <span class=n>-Identity</span> <span class=p>&lt;</span><span class=n>computername</span><span class=p>&gt;</span> <span class=n>-Properties</span> <span class=n>DistinguishedName</span><span class=p>,</span><span class=n>DNSHostName</span>
 </span></span></code></pre></div><h3>Get the local admin password for all computers</h3><p><em>from Active Directory PowerShell:</em></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=ln>1</span><span class=cl><span class=nb>Get-ADComputer</span> <span class=n>-Filter</span> <span class=p>*</span> <span class=n>-SearchBase</span> <span class=err>“</span><span class=n>OU</span><span class=p>=,</span><span class=n>DC</span><span class=p>=,</span><span class=n>DC</span><span class=p>=,</span><span class=n>DC</span><span class=p>=</span><span class=err>”</span> <span class=p>|</span> <span class=nb>Get-AdmPwdPassword</span> <span class=n>-ComputerName</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Name</span><span class=p>}</span>
 </span></span></code></pre></div></div><div class=post_comments></div></article><aside class=sidebar><section class=sidebar_inner><br><div class=search><input type=search class="search_field form_field" placeholder=Search... id=find autocomplete=off data-scope=post>
-<label for=find class=search_label><svg class="icon"><title>search</title><use xlink:href="#search"/></svg></label><div class="search_results results"></div></div><div class=author_header><img src=https://trimad.github.io/images/blondie.gif alt="Tristan Madden photo"><h2>Tristan Madden</h2></div><div class=author_bio>The impediment to action advances action. What stands in the way becomes the way.</div><a href=https://trimad.github.io/about/ class="button mt-1" role=button title='Read More'>Read More</a><h2 class=mt-4>Recent Posts</h2><ul class=flex-column><li><a href=https://trimad.github.io/post/2023-03-03-windows-defender-firewall/ class=nav-link title="Windows Defender Firewall">Windows Defender Firewall</a></li><li><a href=https://trimad.github.io/post/2023-02-24-openai-whisper/ class=nav-link title="OpenAI Whisper">OpenAI Whisper</a></li><li><a href=https://trimad.github.io/post/2023-02-23-laps/ class=nav-link title="Microsoft LAPS (Local Administrator Password Solution)">Microsoft LAPS (Local Administrator Password Solution)</a></li><li><a href=https://trimad.github.io/post/2023-02-23-microsoftteams/ class=nav-link title="MicrosoftTeams PowerShell module">MicrosoftTeams PowerShell module</a></li><li><a href=https://trimad.github.io/post/2023-02-15-decrypt-phishing-emails/ class=nav-link title="Decrypt Phishing Emails">Decrypt Phishing Emails</a></li><li><a href=https://trimad.github.io/post/2023-02-22-net-user/ class=nav-link title="net user">net user</a></li><li><a href=https://trimad.github.io/post/2023-02-09-force-ad-sync/ class=nav-link title="Force domain controller to sync with AzureAD">Force domain controller to sync with AzureAD</a></li><li><a href=https://trimad.github.io/post/2023-02-07-purge-emails/ class=nav-link title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a></li></ul><div><h2 class="mt-4 taxonomy" id=categories-section>Categories</h2><nav class=tags_nav><a href=https://trimad.github.io/categories/java/ class="post_tag button button_translucent" title=java>JAVA
+<label for=find class=search_label><svg class="icon"><title>search</title><use xlink:href="#search"/></svg></label><div class="search_results results"></div></div><div class=author_header><img src=https://trimad.github.io/images/blondie.gif alt="Tristan Madden photo"><h2>Tristan Madden</h2></div><div class=author_bio>The impediment to action advances action. What stands in the way becomes the way.</div><a href=https://trimad.github.io/about/ class="button mt-1" role=button title='Read More'>Read More</a><h2 class=mt-4>Recent Posts</h2><ul class=flex-column><li><a href=https://trimad.github.io/post/2023-03-03-windows-remediation/ class=nav-link title="Windows Remediation">Windows Remediation</a></li><li><a href=https://trimad.github.io/post/2023-03-03-windows-defender-firewall/ class=nav-link title="Windows Defender Firewall">Windows Defender Firewall</a></li><li><a href=https://trimad.github.io/post/2023-02-24-openai-whisper/ class=nav-link title="OpenAI Whisper">OpenAI Whisper</a></li><li><a href=https://trimad.github.io/post/2023-02-23-laps/ class=nav-link title="Microsoft LAPS (Local Administrator Password Solution)">Microsoft LAPS (Local Administrator Password Solution)</a></li><li><a href=https://trimad.github.io/post/2023-02-23-microsoftteams/ class=nav-link title="MicrosoftTeams PowerShell module">MicrosoftTeams PowerShell module</a></li><li><a href=https://trimad.github.io/post/2023-02-15-decode-phishing-emails/ class=nav-link title="Decode Phishing Emails">Decode Phishing Emails</a></li><li><a href=https://trimad.github.io/post/2023-02-22-net-user/ class=nav-link title="net user">net user</a></li><li><a href=https://trimad.github.io/post/2023-02-09-force-ad-sync/ class=nav-link title="Force domain controller to sync with AzureAD">Force domain controller to sync with AzureAD</a></li></ul><div><h2 class="mt-4 taxonomy" id=categories-section>Categories</h2><nav class=tags_nav><a href=https://trimad.github.io/categories/java/ class="post_tag button button_translucent" title=java>JAVA
 <span class=button_tally>33</span></a>
 <a href=https://trimad.github.io/categories/coding-challenge/ class="post_tag button button_translucent" title=coding-challenge>CODING-CHALLENGE
 <span class=button_tally>15</span></a>
@@ -29,6 +29,8 @@
 <a href=https://trimad.github.io/categories/batchfile/ class="post_tag button button_translucent" title=batchfile>BATCHFILE
 <span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/categories/shell/ class="post_tag button button_translucent" title=shell>SHELL
+<span class=button_tally>2</span></a>
+<a href=https://trimad.github.io/categories/windows/ class="post_tag button button_translucent" title=windows>WINDOWS
 <span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/categories/active-directory/ class="post_tag button button_translucent" title=active-directory>ACTIVE-DIRECTORY
 <span class=button_tally>1</span></a>
@@ -65,8 +67,6 @@
 <a href=https://trimad.github.io/categories/themes/ class="post_tag button button_translucent" title=themes>THEMES
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/categories/vbscript/ class="post_tag button button_translucent" title=vbscript>VBSCRIPT
-<span class=button_tally>1</span></a>
-<a href=https://trimad.github.io/categories/windows/ class="post_tag button button_translucent" title=windows>WINDOWS
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/categories/%EF%B8%8F/ class="post_tag button button_translucent" title=️>️
 <span class=button_tally>1</span></a></nav></div><div><h2 class="mt-4 taxonomy" id=series-section>Series</h2><nav class=tags_nav><a href=https://trimad.github.io/series/themes-guide/ class="post_tag button button_translucent" title=themes-guide>THEMES-GUIDE
@@ -202,6 +202,8 @@
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/phishing/ class="post_tag button button_translucent" title=phishing>PHISHING
 <span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/powershell/ class="post_tag button button_translucent" title=powershell>POWERSHELL
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/prims-algorithm/ class="post_tag button button_translucent" title=prims-algorithm>PRIMS-ALGORITHM
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/privacy/ class="post_tag button button_translucent" title=privacy>PRIVACY
@@ -213,6 +215,8 @@
 <a href=https://trimad.github.io/tags/robocopy/ class="post_tag button button_translucent" title=robocopy>ROBOCOPY
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/sdk/ class="post_tag button button_translucent" title=sdk>SDK
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/shell/ class="post_tag button button_translucent" title=shell>SHELL
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/shortcodes/ class="post_tag button button_translucent" title=shortcodes>SHORTCODES
 <span class=button_tally>1</span></a>
