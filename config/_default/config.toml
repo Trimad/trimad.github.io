@@ -23,12 +23,3 @@ series = "series"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
-
-# https://centurio.net/2022/01/24/set-last-modified-date-automatically/
-
-enableGitInfo = true
-
-[frontmatter]
-lastmod = ['lastmod', ':git', 'date', 'publishDate']
-
-showReadTime = true

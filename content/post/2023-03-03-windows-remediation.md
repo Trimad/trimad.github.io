@@ -2,16 +2,16 @@
 author: Tristan Madden
 categories: [Windows]
 date: 2023-03-09
-# lastmod: 2023-03-09
+lastmod: 2023-03-09
+summary: Useful tools for when that got dang Windows just ain't acting right. 😤
 tags: [shell, PowerShell]
 title: Windows Remediation
-summary: Useful tools for when that got dang Windows just ain't acting right. 😤
+toc: true
 ---
 
 Useful tools for when that got dang Windows just ain't acting right. 😤
 
-
-<h2>DISM</h2>
+## DISM
 
 1. This is a quick scan and will determine if the image is repairable.
 ```PowerShell
@@ -26,14 +26,14 @@ DISM /Online /Cleanup-Image /CheckHealth
 DISM /Online /Cleanup-Image /RestoreHealth
 ```
 
-<h3>SFC</h3>
+## SFC
 The "sfc /scannow" command is a Windows utility used to scan system files for integrity violations and repair any issues it finds. It stands for System File Checker and can help resolve issues with missing or corrupted system files. Running this command requires administrator privileges and may take several minutes to complete.
 
 ```Shell
 sfc /scannow
 ```
 
-<h3>DLL Hell</h3>
+## DLL Hell
 
 Visual Studio Runtime:
 
@@ -54,7 +54,7 @@ Re-register all DLL files:
 for %1 in (*.dll) do regsvr32 /s %1
 ```
 
-<h3>Windows Apps</h3>
+## Windows Apps
 
 Reinstall and re-register all Windows apps for current account only:
 ```PowerShell

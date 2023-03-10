@@ -5,11 +5,12 @@ date: 2023-02-05
 lastmod: 2023-02-06
 tags: [ai, images, video]
 title: Stable Diffusion Scripts
+toc: true
 ---
 
-<h2>Data Grooming</h2>
+## Data Grooming
 
-<h3>Numbering PNG files in a folder in sequence</h3>
+### Numbering PNG files in a folder in sequence
 
 ```Python
 import os
@@ -34,7 +35,7 @@ This code block is a Python script that does the following:
 5. If the file extension is ".png", it renames the file using os.rename() function. The new file name is a zero-padded four digit number, followed by ".png".
 The script is changing the name of all png files in the current working directory to a 4 digit zero padded number followed by .png, this is useful if you have a sequence of files in a folder and you want to sort them in order and not have any gaps in the numbering.
 
-<h3>Distance Sort </h3>
+### Distance Sort
 
 ```Python
 import os
@@ -75,8 +76,8 @@ for i in range(len(distances)):
 
 This script is a Python script that renames a sequence of PNG images in a folder based on the distance of their RGB values from the RGB values of the first image in the sequence. The script imports the os, PIL and math modules, it sets the folder path where the images are located and get the list of all files in that folder. It opens the first image and gets its RGB values, then creates an empty list to store the distances. It iterates over the remaining images in the folder, if the file is a png it opens the image and gets its RGB values. Then it calculates the distance between the RGB values of the current image and the first image using the Euclidean distance formula, appends the distance and the image name to the distance list. The script then sorts the distance list by the distance, renames the first image to "0000.png" and renames each image to the next number in the sequence using the os.rename() function, and 4 digits zero-padded number followed by the extension.
 
-<h2>Color Grading</h3>
-<h3>By Mean</h3>
+## Color Grading
+### By Mean
 
 ```Python
 import os
@@ -137,7 +138,7 @@ apply_color_grading(folder_path, average_color_grading)
 ```
 This program applies color grading to a set of images stored in the "images" folder. It does so by first computing the average color grading of all the images and then subtracting the average color grading from each pixel of each image and adding the average color grading. The resulting color graded images are saved in a new folder called "color_graded" within the "images" folder. It applies the average color grading to each frame by subtracting the mean of each frame's pixels from each pixel and adding the average color grading. 
 
-<h3>Generate CFG values for X/Y plot</h3>
+## Generate CFG values for X/Y plot
 
 ```JavaScript
 let frames = 60;
@@ -153,7 +154,7 @@ function setup() {
 }
 ```
 
-<h3>Delete every other frame</h3>
+## Delete every other frame
 
 ```Python
 import os
@@ -173,7 +174,7 @@ for i, file in enumerate(files):
             os.remove(file)
 ```
 
-<h3>Add a vignette fade</h3>
+## Add a vignette fade
 
 Fades from bottom to top. Great for hiding mistakes and artifacts. 
 
