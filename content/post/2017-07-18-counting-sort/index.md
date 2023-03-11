@@ -2,10 +2,10 @@
 author: Tristan Madden
 categories: [Java, Processing]
 date: 2017-07-18
-lastmod: 2023-03-09
+lastmod: 2023-03-10
 summary: "Counting sort is a non-comparison based sorting algorithm that works by determining, for each element in an input array, the number of elements that are less than it. This information is then used to place the element in its correct position in the output array. The algorithm has a linear time complexity of O(n+k), where n is the number of elements in the input array and k is the range of values in the input array."
 tags: [sorting, counting sort]
-thumbnail: "thumbnail.gif"
+thumbnail: "thumbnail.png"
 title: Counting Sort
 usePageBundles: true
 ---
