@@ -1,8 +1,8 @@
 ---
 author: Tristan Madden
-categories: [🏴‍☠️]
+categories: [Video]
 date: 2022-06-09
-tags: [download, ffmpeg, video]
+tags: [download, ffmpeg]
 title: Download Streams
 ---
 
