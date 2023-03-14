@@ -3,8 +3,7 @@
 <a href=https://editor.p5js.org/Berkanan/sketches class="nav_child nav_item" title=p5.js>p5.js</a>
 <a href=https://www.tiktok.com/@kill3d2d3th/ class="nav_child nav_item" title=TikTok>TikTok</a></div></div><div class=nav_parent><a href=https://trimad.github.io/about/ class=nav_item title=About>About</a></div><div class=follow><a href=https://github.com/Trimad><svg class="icon"><title>github</title><use xlink:href="#github"/></svg></a><a href=https://www.youtube.com/channel/UCsZ-kpWb24L1GYzQYlbHxMw><svg class="icon"><title>youtube</title><use xlink:href="#youtube"/></svg></a><a href=https://trimad.github.io/index.xml><svg class="icon"><title>rss</title><use xlink:href="#rss"/></svg></a><div class=color_mode><input type=checkbox class=color_choice id=mode></div></div></div></nav></header><main><div class="grid-inverse wrap content"><article class=post_content><h1 class=post_title>Download Streams</h1><div class=post_meta><span><svg class="icon"><title>calendar</title><use xlink:href="#calendar"/></svg></span><span class=post_date>Jun 9, 2022</span>
 <span class=post_time>· 2 min read</span><span>&nbsp;· <a href=https://trimad.github.io/tags/download/ title=download class="post_tag button button_translucent">download
-</a><a href=https://trimad.github.io/tags/ffmpeg/ title=ffmpeg class="post_tag button button_translucent">ffmpeg
-</a><a href=https://trimad.github.io/tags/video/ title=video class="post_tag button button_translucent">video</a></span>
+</a><a href=https://trimad.github.io/tags/ffmpeg/ title=ffmpeg class="post_tag button button_translucent">ffmpeg</a></span>
 <span class=page_only>&nbsp;·<div class=post_share>Share on:
 <a href="https://twitter.com/intent/tweet?text=Download%20Streams&url=https%3a%2f%2ftrimad.github.io%2fpost%2f2022-06-09-download-streams%2f&tw_p=tweetbutton" class=twitter title="Share on Twitter" target=_blank rel=nofollow><svg class="icon"><title>twitter</title><use xlink:href="#twitter"/></svg></a><a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ftrimad.github.io%2fpost%2f2022-06-09-download-streams%2f&t=Download%20Streams" class=facebook title="Share on Facebook" target=_blank rel=nofollow><svg class="icon"><title>facebook</title><use xlink:href="#facebook"/></svg></a><a href=#linkedinshare id=linkedinshare class=linkedin title="Share on LinkedIn" rel=nofollow><svg class="icon"><title>linkedin</title><use xlink:href="#linkedin"/></svg></a><a href=https://trimad.github.io/post/2022-06-09-download-streams/ title="Copy Link" class="link link_yank"><svg class="icon"><title>copy</title><use xlink:href="#copy"/></svg></a></div></span></div><div class=post_body><p>This is my tentative work flow for downloading movie streams online. The gist of what I've learned about this process is that every HTTP Live Stream (HLS) begins with an <code>.m3u8</code> playlist with a MIME type of <code>x-mpegURL</code> or <code>vnd.apple.mpegURL</code>. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page. These .ts files can also be aggregated and assembled into a video.</p><h2>Finding the Playlist</h2>`.m3u8` playlists load at the very beginning of the stream and are easy to spot in Firefox Developer Edition. Navigate to the stream, press F12, click on the "Network" tab and refresh the page.<p><figure><picture><img loading=lazy decoding=async alt class="image_figure image_internal image_unprocessed" src=/images/2022-06-09/a.png></picture></figure></p><p>In this first example we see the <code>.m3u8</code> playlist referred to as a Manifest. It sticks out in Firefox Developer Edition because the MIME type is <code>vnd.apple.mpegURL</code>. In Edge or Chrome this type will be something nondescript for some reason and the playlist will be much harder to spot. Right-click on the GET request for the playlist copy the URL, and you will have something like this:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=ln>1</span><span class=cl>https://cdn-ce21media.streaming.mediaservices.windows.net/REDACTED/20220518_day1dbt_baxermusser8460.ism/QualityLevels(1194234)/Manifest(video,format=m3u8-aapl-v3,audiotrack=aac_UND_2_56)
 </span></span></code></pre></div><p>You'll know you're on the right track if you open a downloaded <code>.m3u8</code> file in Notepad++ and it looks something like this:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=ln> 1</span><span class=cl>#EXTM3U
@@ -57,7 +56,7 @@
 </span></span><span class=line><span class=ln>26</span><span class=cl>1898.jpg
 </span></span><span class=line><span class=ln>27</span><span class=cl>#EXT-X-ENDLIST
 </span></span></code></pre></div></div><div class=post_comments></div></article><aside class=sidebar><section class=sidebar_inner><br><div class=search><input type=search class="search_field form_field" placeholder=Search... id=find autocomplete=off data-scope=post>
-<label for=find class=search_label><svg class="icon"><title>search</title><use xlink:href="#search"/></svg></label><div class="search_results results"></div></div><div class=author_header><img src=https://trimad.github.io/images/blondie.gif alt="Tristan Madden photo"><h2>Tristan Madden</h2></div><div class=author_bio>The impediment to action advances action. What stands in the way becomes the way.</div><a href=https://trimad.github.io/about/ class="button mt-1" role=button title='Read More'>Read More</a><h2 class=mt-4>Recent Posts</h2><ul class=flex-column><li><a href=https://trimad.github.io/post/2023-03-03-windows-remediation/ class=nav-link title="Windows Remediation">Windows Remediation</a></li><li><a href=https://trimad.github.io/post/2023-03-03-windows-defender-firewall/ class=nav-link title="Windows Defender Firewall">Windows Defender Firewall</a></li><li><a href=https://trimad.github.io/post/2023-02-24-openai-whisper/ class=nav-link title="OpenAI Whisper">OpenAI Whisper</a></li><li><a href=https://trimad.github.io/post/2023-02-23-laps/ class=nav-link title="Microsoft LAPS (Local Administrator Password Solution)">Microsoft LAPS (Local Administrator Password Solution)</a></li><li><a href=https://trimad.github.io/post/2023-02-23-microsoftteams/ class=nav-link title="MicrosoftTeams PowerShell module">MicrosoftTeams PowerShell module</a></li><li><a href=https://trimad.github.io/post/2023-02-15-decode-phishing-emails/ class=nav-link title="Decode Phishing Emails">Decode Phishing Emails</a></li><li><a href=https://trimad.github.io/post/2023-02-22-net-user/ class=nav-link title="net user">net user</a></li><li><a href=https://trimad.github.io/post/2023-02-09-force-ad-sync/ class=nav-link title="Force domain controller to sync with AzureAD">Force domain controller to sync with AzureAD</a></li></ul><div><h2 class="mt-4 taxonomy" id=categories-section>Categories</h2><nav class=tags_nav><a href=https://trimad.github.io/categories/java/ class="post_tag button button_translucent" title=java>JAVA
+<label for=find class=search_label><svg class="icon"><title>search</title><use xlink:href="#search"/></svg></label><div class="search_results results"></div></div><div class=author_header><img src=https://trimad.github.io/images/blondie.gif alt="Tristan Madden photo"><h2>Tristan Madden</h2></div><div class=author_bio>The impediment to action advances action. What stands in the way becomes the way.</div><a href=https://trimad.github.io/about/ class="button mt-1" role=button title='Read More'>Read More</a><h2 class=mt-4>Recent Posts</h2><ul class=flex-column><li><a href=https://trimad.github.io/post/2023-03-13-llama/ class=nav-link title=LLaMA>LLaMA</a></li><li><a href=https://trimad.github.io/post/2023-03-03-windows-remediation/ class=nav-link title="Windows Remediation">Windows Remediation</a></li><li><a href=https://trimad.github.io/post/2023-03-03-windows-defender-firewall/ class=nav-link title="Windows Defender Firewall">Windows Defender Firewall</a></li><li><a href=https://trimad.github.io/post/2023-02-24-openai-whisper/ class=nav-link title="OpenAI Whisper">OpenAI Whisper</a></li><li><a href=https://trimad.github.io/post/2023-02-23-laps/ class=nav-link title="Microsoft LAPS (Local Administrator Password Solution)">Microsoft LAPS (Local Administrator Password Solution)</a></li><li><a href=https://trimad.github.io/post/2023-02-23-microsoftteams/ class=nav-link title="MicrosoftTeams PowerShell module">MicrosoftTeams PowerShell module</a></li><li><a href=https://trimad.github.io/post/2023-02-15-decode-phishing-emails/ class=nav-link title="Decode Phishing Emails">Decode Phishing Emails</a></li><li><a href=https://trimad.github.io/post/2023-02-22-net-user/ class=nav-link title="net user">net user</a></li></ul><div><h2 class="mt-4 taxonomy" id=categories-section>Categories</h2><nav class=tags_nav><a href=https://trimad.github.io/categories/java/ class="post_tag button button_translucent" title=java>JAVA
 <span class=button_tally>33</span></a>
 <a href=https://trimad.github.io/categories/coding-challenge/ class="post_tag button button_translucent" title=coding-challenge>CODING-CHALLENGE
 <span class=button_tally>15</span></a>
@@ -70,18 +69,20 @@
 <a href=https://trimad.github.io/categories/p5.js/ class="post_tag button button_translucent" title=p5.js>P5.JS
 <span class=button_tally>8</span></a>
 <a href=https://trimad.github.io/categories/cmd/ class="post_tag button button_translucent" title=cmd>CMD
-<span class=button_tally>6</span></a>
+<span class=button_tally>5</span></a>
 <a href=https://trimad.github.io/categories/exchangeonlinemanagement/ class="post_tag button button_translucent" title=exchangeonlinemanagement>EXCHANGEONLINEMANAGEMENT
 <span class=button_tally>4</span></a>
 <a href=https://trimad.github.io/categories/masm/ class="post_tag button button_translucent" title=masm>MASM
 <span class=button_tally>3</span></a>
-<a href=https://trimad.github.io/categories/batchfile/ class="post_tag button button_translucent" title=batchfile>BATCHFILE
-<span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/categories/shell/ class="post_tag button button_translucent" title=shell>SHELL
+<span class=button_tally>3</span></a>
+<a href=https://trimad.github.io/categories/batchfile/ class="post_tag button button_translucent" title=batchfile>BATCHFILE
 <span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/categories/windows/ class="post_tag button button_translucent" title=windows>WINDOWS
 <span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/categories/active-directory/ class="post_tag button button_translucent" title=active-directory>ACTIVE-DIRECTORY
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/categories/ai/ class="post_tag button button_translucent" title=ai>AI
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/categories/appx/ class="post_tag button button_translucent" title=appx>APPX
 <span class=button_tally>1</span></a>
@@ -117,7 +118,7 @@
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/categories/vbscript/ class="post_tag button button_translucent" title=vbscript>VBSCRIPT
 <span class=button_tally>1</span></a>
-<a href=https://trimad.github.io/categories/%EF%B8%8F/ class="post_tag button button_translucent" title=️>️
+<a href=https://trimad.github.io/categories/video/ class="post_tag button button_translucent" title=video>VIDEO
 <span class=button_tally>1</span></a></nav></div><div><h2 class="mt-4 taxonomy" id=series-section>Series</h2><nav class=tags_nav><a href=https://trimad.github.io/series/themes-guide/ class="post_tag button button_translucent" title=themes-guide>THEMES-GUIDE
 <span class=button_tally>2</span></a></nav></div><div><h2 class="mt-4 taxonomy" id=tags-section>Tags</h2><nav class=tags_nav><a href=https://trimad.github.io/tags/interactive/ class="post_tag button button_translucent" title=interactive>INTERACTIVE
 <span class=button_tally>9</span></a>
@@ -129,9 +130,9 @@
 <span class=button_tally>6</span></a>
 <a href=https://trimad.github.io/tags/reports/ class="post_tag button button_translucent" title=reports>REPORTS
 <span class=button_tally>5</span></a>
-<a href=https://trimad.github.io/tags/video/ class="post_tag button button_translucent" title=video>VIDEO
-<span class=button_tally>5</span></a>
 <a href=https://trimad.github.io/tags/ai/ class="post_tag button button_translucent" title=ai>AI
+<span class=button_tally>4</span></a>
+<a href=https://trimad.github.io/tags/video/ class="post_tag button button_translucent" title=video>VIDEO
 <span class=button_tally>4</span></a>
 <a href=https://trimad.github.io/tags/assembly/ class="post_tag button button_translucent" title=assembly>ASSEMBLY
 <span class=button_tally>3</span></a>
@@ -233,6 +234,8 @@
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/kruskals-algorithm/ class="post_tag button button_translucent" title=kruskals-algorithm>KRUSKALS-ALGORITHM
 <span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/llama/ class="post_tag button button_translucent" title=llama>LLAMA
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/lorenz-system/ class="post_tag button button_translucent" title=lorenz-system>LORENZ-SYSTEM
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/maximum-flow/ class="post_tag button button_translucent" title=maximum-flow>MAXIMUM-FLOW
@@ -283,11 +286,7 @@
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/themes/ class="post_tag button button_translucent" title=themes>THEMES
 <span class=button_tally>1</span></a>
-<a href=https://trimad.github.io/tags/time/ class="post_tag button button_translucent" title=time>TIME
-<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/topological-sort/ class="post_tag button button_translucent" title=topological-sort>TOPOLOGICAL-SORT
-<span class=button_tally>1</span></a>
-<a href=https://trimad.github.io/tags/windows/ class="post_tag button button_translucent" title=windows>WINDOWS
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/youtube-dl/ class="post_tag button button_translucent" title=youtube-dl>YOUTUBE-DL
 <span class=button_tally>1</span></a>
