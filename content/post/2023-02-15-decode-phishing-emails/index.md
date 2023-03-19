@@ -6,7 +6,9 @@ lastmod: 2023-02-15
 summary: I've notice that a lot of phishing emails use hexadecimal strings to obfuscate their JavaScript. These are some Python scripts useful for identifying where form actions are POSTing to. 
 tags: [phishing]
 title: Decode Phishing Emails
+thumbnail: "thumbnail.png"
 toc: true
+usePageBundles: true
 ---
 
 ## atob() obfuscation

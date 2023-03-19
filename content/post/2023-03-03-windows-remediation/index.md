@@ -3,10 +3,12 @@ author: Tristan Madden
 categories: [Windows]
 date: 2023-03-09
 lastmod: 2023-03-09
-summary: Useful tools for when that got dang Windows just ain't acting right. 😤
+summary: "Useful tools for when that got dang Windows just ain't acting right. 😤"
 tags: [shell, PowerShell]
+thumbnail: "thumbnail.png"
 title: Windows Remediation
 toc: true
+usePageBundles: true
 ---
 
 Useful tools for when that got dang Windows just ain't acting right. 😤

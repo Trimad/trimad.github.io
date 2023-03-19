@@ -1,8 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Interpolation on Hugo Grimoire</title><link>https://trimad.github.io/categories/interpolation/</link><description>Recent content in Interpolation on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/interpolation/index.xml" rel="self" type="application/rss+xml"/><item><title>FILM</title><link>https://trimad.github.io/post/2023-02-10-film/</link><pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-10-film/</guid><description>
-GitHub Repository
-Setup GPU environment
-The Windows setup instructions in the GitHub repository are wrong or outdated. Tensorflow kept trying to use the CPU instead of the GPU until I installed CUDA and CUDNN this way:
-1conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 2python -m pip install &amp;#34;tensorflow&amp;lt;2.11&amp;#34; 3pip install protobuf==3.20.3 Usage
-Activate the Conda environment:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interpolation on Hugo Grimoire</title>
+    <link>https://trimad.github.io/categories/interpolation/</link>
+    <description>Recent content in Interpolation on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/interpolation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FILM</title>
+      <link>https://trimad.github.io/post/2023-02-10-film/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-10-film/</guid>
+      <description>
+        
+          
+            GitHub RepositorySetup GPU environmentThe Windows setup instructions in the GitHub repository are wrong or outdated. Tensorflow kept trying to use the CPU instead of the GPU until I installed CUDA and CUDNN this way:1conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 2python -m pip install &amp;#34;tensorflow&amp;lt;2.11&amp;#34; 3pip install protobuf==3.20.3 UsageActivate the Conda environment:
 1conda activate frame_interpolation From the Conda Shell, cd to the FILM directory:
-1cd C:\Users\trima\frame-interpolation Open File Explorer at this directory and copy the frames you want to interpolate to the &amp;quot;photos&amp;quot; folder.</description></item></channel></rss>
+1cd C:\Users\trima\frame-interpolation Open File Explorer at this directory and copy the frames you want to interpolate to the &amp;quot;photos&amp;quot; folder.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,7 +4,9 @@ categories: [PowerShell]
 date: 2023-02-23
 tags: [microsoft teams]
 title: MicrosoftTeams PowerShell module
+thumbnail: "thumbnail.png"
 summary: PowerShell scripts for Microsoft Teams stuff.
+usePageBundles: true
 ---
 
 PowerShell scripts for Microsoft Teams stuff.

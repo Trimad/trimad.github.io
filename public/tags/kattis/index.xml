@@ -1,11 +1,111 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kattis on Hugo Grimoire</title><link>https://trimad.github.io/tags/kattis/</link><description>Recent content in kattis on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/kattis/index.xml" rel="self" type="application/rss+xml"/><item><title>Kattis Challenge "Grid"</title><link>https://trimad.github.io/post/2018-04-20-kattis-grid/</link><pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-20-kattis-grid/</guid><description>
-Solved using a non-recursive version of BFS. Runs in pretty good time.
-The Challenge
-My solution</description></item><item><title>Kattis Challenge "Parking"</title><link>https://trimad.github.io/post/2017-09-15-kattis-parking2/</link><pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-09-15-kattis-parking2/</guid><description>
-"When shopping on Long Street, Michael usually parks his car at some random location, and then walks to the stores he needs. Can you help Michael choose a place to park which minimises the distance he needs to walk on his shopping round? Long Street is a straight line, where all positions are integer. You pay for parking in a specific slot, which is an integer position on Long Street. Michael does not want to pay for more than one parking though. He is very strong, and does not mind carrying all the bags around."</description></item><item><title>Kattis Challenge "Sum of Others"</title><link>https://trimad.github.io/post/2017-09-15-kattis-sum-of-others/</link><pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-09-15-kattis-sum-of-others/</guid><description>
-"Every day, your job requires you to add up long lists of integers, like the following:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kattis on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/kattis/</link>
+    <description>Recent content in kattis on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/kattis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kattis Challenge &#34;Grid&#34;</title>
+      <link>https://trimad.github.io/post/2018-04-20-kattis-grid/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-04-20-kattis-grid/</guid>
+      <description>
+        
+          
+            Solved using a non-recursive version of BFS. Runs in pretty good time.
+The ChallengeMy solution
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Parking&#34;</title>
+      <link>https://trimad.github.io/post/2017-09-15-kattis-parking2/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-09-15-kattis-parking2/</guid>
+      <description>
+        
+          
+            &#34;When shopping on Long Street, Michael usually parks his car at some random location, and then walks to the stores he needs. Can you help Michael choose a place to park which minimises the distance he needs to walk on his shopping round? Long Street is a straight line, where all positions are integer. You pay for parking in a specific slot, which is an integer position on Long Street. Michael does not want to pay for more than one parking though. He is very strong, and does not mind carrying all the bags around.&#34;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Sum of Others&#34;</title>
+      <link>https://trimad.github.io/post/2017-09-15-kattis-sum-of-others/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-09-15-kattis-sum-of-others/</guid>
+      <description>
+        
+          
+            &#34;Every day, your job requires you to add up long lists of integers, like the following:
+
 3 + 2 + -4 + 8 + 3 + -6 + 1 + 4 + 6 + -1 + -6 = 10
-That is, a sum of positive and negative integers, followed by an equals sign, followed by a single integer. To save yourself some time, you normally leave out the and signs as you write down your work, so the previous example would be..."</description></item><item><title>Kattis Challenge "Line Them Up"</title><link>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</guid><description>
-"An eccentric coach asks players on the team to line up alphabetically at the start of practice. The coach does not tell the players whether they need to line up in increasing or decreasing order, so they guess. If they guess wrong, the coach makes them run laps before practice. Given a list of names, you are to determine if the list is in increasing alphabetical order, decreasing alphabetical order or neither."</description></item><item><title>Kattis Challenge "Server"</title><link>https://trimad.github.io/post/2017-08-18-kattis-server/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-18-kattis-server/</guid><description>
-"You are in charge of a server that needs to run some submitted tasks on a first-come, first-served basis. Each day, you can dedicate the server to run these tasks for at most minutes. Given the time each task takes, you want to know how many of them will be finished today."</description></item><item><title>Kattis Challenge "A Different Problem"</title><link>https://trimad.github.io/post/2017-08-15-kattis-different/</link><pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-08-15-kattis-different/</guid><description>
-"Write a program that computes the difference between non-negative integers."</description></item></channel></rss>
+
+That is, a sum of positive and negative integers, followed by an equals sign, followed by a single integer. To save yourself some time, you normally leave out the and signs as you write down your work, so the previous example would be...&#34;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Line Them Up&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-18-kattis-line-them-up/</guid>
+      <description>
+        
+          
+            &#34;An eccentric coach asks players on the team to line up alphabetically at the start of practice. The coach does not tell the players whether they need to line up in increasing or decreasing order, so they guess. If they guess wrong, the coach makes them run laps before practice. Given a list of names, you are to determine if the list is in increasing alphabetical order, decreasing alphabetical order or neither.&#34;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;Server&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-18-kattis-server/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-18-kattis-server/</guid>
+      <description>
+        
+          
+            &#34;You are in charge of a server that needs to run some submitted tasks on a first-come, first-served basis. Each day, you can dedicate the server to run these tasks for at most minutes. Given the time each task takes, you want to know how many of them will be finished today.&#34;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kattis Challenge &#34;A Different Problem&#34;</title>
+      <link>https://trimad.github.io/post/2017-08-15-kattis-different/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-08-15-kattis-different/</guid>
+      <description>
+        
+          
+            &#34;Write a program that computes the difference between non-negative integers.&#34;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

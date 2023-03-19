@@ -1,22 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sorting on Hugo Grimoire</title><link>https://trimad.github.io/tags/sorting/</link><description>Recent content in sorting on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/sorting/index.xml" rel="self" type="application/rss+xml"/><item><title>Merge Sort using WEBGL</title><link>https://trimad.github.io/post/2018-02-05-merge-sort/</link><pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid><description>
-This is a (perhaps overkill) 3D WEBGL visualization of Merge Sort using the WEBGL rendering mode.
-Launch this sketch is a new window (recommended)
-Launch the p5.js editor
-Controls
-- ENTER = play sorting animation
-- LEFT_ARROW = step backwards
-- RIGHT_ARROW = step forwards
-- SCROLL_UP = zoom in
-- SCROLL_DOWN = zoom out</description></item><item><title>Insertion Sort using WEBGL</title><link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link><pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid><description>
-This is a (perhaps overkill) 3D WEBGL visualization of Insertion Sort using the WEBGL rendering mode.
-click mouse in iframe to begin
-Controls
-- MOUSE = pan around
-- ENTER = play sorting animation
-- LEFT_ARROW = step backwards
-- RIGHT_ARROW = step forwards
-- SCROLL_UP = zoom in
-- SCROLL_DOWN = zoom out
-Launch this sketch is a new window (recommended)
-Launch the p5.js editor</description></item><item><title>Counting Sort</title><link>https://trimad.github.io/post/2017-07-18-counting-sort/</link><pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-07-18-counting-sort/</guid><description>
-Counting sort is a non-comparison based sorting algorithm that works by determining, for each element in an input array, the number of elements that are less than it. This information is then used to place the element in its correct position in the output array. The algorithm has a linear time complexity of O(n+k), where n is the number of elements in the input array and k is the range of values in the input array.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sorting on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/sorting/</link>
+    <description>Recent content in sorting on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/sorting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Merge Sort using WEBGL</title>
+      <link>https://trimad.github.io/post/2018-02-05-merge-sort/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid>
+      <description>
+        
+          
+            This is a (perhaps overkill) 3D WEBGL visualization of Merge Sort using the WEBGL rendering mode.
+Launch this sketch is a new window (recommended)Launch the p5.js editorControls- ENTER = play sorting animation- LEFT_ARROW = step backwards- RIGHT_ARROW = step forwards- SCROLL_UP = zoom in- SCROLL_DOWN = zoom out
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insertion Sort using WEBGL</title>
+      <link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid>
+      <description>
+        
+          
+            This is a (perhaps overkill) 3D WEBGL visualization of Insertion Sort using the WEBGL rendering mode.
+click mouse in iframe to beginControls- MOUSE = pan around- ENTER = play sorting animation- LEFT_ARROW = step backwards- RIGHT_ARROW = step forwards- SCROLL_UP = zoom in- SCROLL_DOWN = zoom outLaunch this sketch is a new window (recommended)Launch the p5.js editor
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Counting Sort</title>
+      <link>https://trimad.github.io/post/2017-07-18-counting-sort/</link>
+      <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2017-07-18-counting-sort/</guid>
+      <description>
+        
+          
+            Counting sort is a non-comparison based sorting algorithm that works by determining, for each element in an input array, the number of elements that are less than it. This information is then used to place the element in its correct position in the output array. The algorithm has a linear time complexity of O(n+k), where n is the number of elements in the input array and k is the range of values in the input array.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,9 +4,11 @@ categories: [CMD]
 date: 2023-03-03
 lastmod: 2023-03-07
 tags: [netsh, firewall]
+thumbnail: "thumbnail.png"
 title: Windows Defender Firewall
 summary: Examples of rules are commonly used in network setups where specific programs or ports need to be allowed through the firewall to ensure that they can communicate with other devices or software.
 ShowReadingTime: true
+usePageBundles: true
 ---
 
 <h2>Firewall Rules</h2>
