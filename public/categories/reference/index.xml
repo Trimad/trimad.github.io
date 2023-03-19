@@ -1,26 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>reference on Hugo Grimoire</title>
-    <link>https://trimad.github.io/categories/reference/</link>
-    <description>Recent content in reference on Hugo Grimoire</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/reference/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Windows 10/11 ms-settings URI Scheme Reference</title>
-      <link>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</guid>
-      <description>
-        
-          
-            Knowing the URI Scheme is useful because you can jump straight to specific settings menus using 🪟+R.
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>reference on Hugo Grimoire</title><link>https://trimad.github.io/categories/reference/</link><description>Recent content in reference on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows 10/11 ms-settings URI Scheme Reference</title><link>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</guid><description>
+Knowing the URI Scheme is useful because you can jump straight to specific settings menus using 🪟+R.</description></item></channel></rss>

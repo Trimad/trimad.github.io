@@ -2,6 +2,7 @@
 author: Tristan Madden
 categories: [CMD]
 date: 2023-02-06
+lastmod: 2023-03-17
 tags: [drivers]
 title: Uninstall Third-Party Drivers with CMD
 ---
@@ -15,7 +16,7 @@ Type the following command and press Enter:
 ```Shell
 pnputil.exe -e
 # or export the list to a file
-pnputil.exe > !drivers.csv
+pnputil.exe -e > !drivers.csv
 ```
 
 This command lists all the third-party drivers installed on your system.

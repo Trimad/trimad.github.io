@@ -5,14 +5,15 @@
 
 [[main]]
   name = "Archives"
-  url = "archives/"
-  weight = -109
+  url = "archives"
+  weight = -108
 
 # Submenus are done this way: parent -> identifier
+
 [[main]]
   name = "Links"
   identifier = "Links"
-  weight = -108
+  weight = -107
 [[main]]
   parent = "Links"
   name = "TikTok"
@@ -21,11 +22,6 @@
   parent = "Links"
   name = "p5.js"
   url = "https://editor.p5js.org/Berkanan/sketches"
-
-[[main]]
-  name = "About"
-  url = "about/"
-  weight = -107
 
 # social menu links
 

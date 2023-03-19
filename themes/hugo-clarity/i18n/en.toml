@@ -13,8 +13,8 @@ other = "Share on"
 [featured_posts]
 other = "Featured Posts"
 
-[recent_posts]
-other = "Recent Posts"
+[recently_changed]
+other = "Recently Changed"
 
 [404_title]
 other = "Lost"

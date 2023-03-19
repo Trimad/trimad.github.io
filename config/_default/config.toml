@@ -11,8 +11,6 @@ DefaultContentLanguage = "en"
 # [languages]
 #config/_default/languages.toml
 
-disableLanguages = ['pt']
-
 # [menus]
 # config/_default/menus/menu.xx.toml
 

@@ -2,7 +2,8 @@
 author: Tristan Madden
 categories: [Stable Diffusion]
 date: 2023-02-05
-lastmod: 2023-03-10
+featured: true
+lastmod: 2023-03-16
 tags: [ai, images, video]
 title: Stable Diffusion Scripts
 toc: true
@@ -16,24 +17,23 @@ toc: true
 import os
 import pathlib
 
-collection = os.getcwd()
-for i, filename in enumerate(os.listdir(collection)):
-    file_extension = pathlib.Path(filename).suffix
-    if file_extension == ".png":
-        new_filename = f"{str(i).zfill(4)}.png"
-        old_path = os.path.join(collection, filename)
-        new_path = os.path.join(collection, new_filename)
-        os.rename(old_path, new_path)
-
+try:
+    collection = os.getcwd()
+    num_files_renamed = 0
+    for i, filename in enumerate(os.listdir(collection)):
+        file_extension = pathlib.Path(filename).suffix
+        if file_extension == ".png" or file_extension == ".jpg":
+            new_filename = f"{str(i).zfill(5)}.png"
+            old_path = os.path.join(collection, filename)
+            new_path = os.path.join(collection, new_filename)
+            os.rename(old_path, new_path)
+            num_files_renamed += 1
+            print(f"Renamed file {filename} to {new_filename}")
+    print(f"Renamed {num_files_renamed} files.")
+except Exception as e:
+    print(f"Error occurred: {e}")
 ```
-This code block is a Python script that does the following:
-
-1. Imports the os and pathlib modules.
-2. Defines a variable collection which is set to the current working directory.
-3. Iterates through all files in the current working directory using os.listdir(collection) and enumerate() function
-4. For each file, it gets the file extension using the pathlib.Path(filename).suffix method
-5. If the file extension is ".png", it renames the file using os.rename() function. The new file name is a zero-padded four digit number, followed by ".png".
-The script is changing the name of all png files in the current working directory to a 4 digit zero padded number followed by .png, this is useful if you have a sequence of files in a folder and you want to sort them in order and not have any gaps in the numbering.
+This Python script renames all PNG and JPG files in the current working directory by adding a sequential number to the beginning of the filename, padded with leading zeros, and changing the file extension to PNG. It uses the os and pathlib modules to access the file system and the try-except block to catch any errors that may occur during file renaming. The script also prints progress messages to the console, showing the original and new filenames of each file that is renamed.
 
 ## Delete every other image in a folder
 
@@ -104,9 +104,9 @@ import os
 import cv2
 import numpy as np
 
-def average_color_grading(folder_path):
-    # Get all image filenames in the folder
-    filenames = [f for f in os.listdir(folder_path) if f.endswith('.jpg') or f.endswith('.png')]
+def average_color_grading():
+    # Get all image filenames in the same directory as the script
+    filenames = [f for f in os.listdir() if f.endswith('.jpg') or f.endswith('.png')]
     
     # Initialize a sum of color grading for all images
     color_grading_sum = None
@@ -114,7 +114,7 @@ def average_color_grading(folder_path):
     # Iterate through all images, adding each image's color grading to the sum
     for filename in filenames:
         print("averaging " + filename)
-        image_path = os.path.join(folder_path, filename)
+        image_path = filename
         image = cv2.imread(image_path)
         
         # Average color grading of an image is computed as mean of its pixels
@@ -131,30 +131,30 @@ def average_color_grading(folder_path):
     
     return average_color_grading
 
-def apply_color_grading(folder_path, average_color_grading):
-    # Get all image filenames in the folder
-    filenames = [f for f in os.listdir(folder_path) if f.endswith('.jpg') or f.endswith('.png')]
+def apply_color_grading(average_color_grading):
+    # Get all image filenames in the same directory as the script
+    filenames = [f for f in os.listdir() if f.endswith('.jpg') or f.endswith('.png')]
     
     # Create a new folder to save the color graded frames
-    color_graded_folder = os.path.join(folder_path, 'color_graded')
+    color_graded_folder = os.path.join(os.getcwd(), 'color_graded')
     os.makedirs(color_graded_folder, exist_ok=True)
     
     # Iterate through all images, applying the average color grading to each frame
     for i, filename in enumerate(filenames):
         print("color grading " + filename)
-        image_path = os.path.join(folder_path, filename)
+        image_path = filename
         image = cv2.imread(image_path)
         
         # Subtract the average color grading from each pixel to apply the color grading
         color_graded_image = image - np.mean(image, axis=(0, 1)) + average_color_grading
         
         # Zero-pad the sequential number and save the color graded image with the zero-padded sequential number
-        color_graded_image_path = os.path.join(color_graded_folder, str(i).zfill(len(str(len(filenames)))) + '.jpg')
+        color_graded_image_path = os.path.join(color_graded_folder, str(i).zfill(5) + '.png')
         cv2.imwrite(color_graded_image_path, color_graded_image)
 
-folder_path = 'images'
-average_color_grading = average_color_grading(folder_path)
-apply_color_grading(folder_path, average_color_grading)
+average_color_grading = average_color_grading()
+apply_color_grading(average_color_grading)
+
 ```
 This program applies color grading to a set of images stored in the "images" folder. It does so by first computing the average color grading of all the images and then subtracting the average color grading from each pixel of each image and adding the average color grading. The resulting color graded images are saved in a new folder called "color_graded" within the "images" folder. It applies the average color grading to each frame by subtracting the mean of each frame's pixels from each pixel and adding the average color grading. 
 

@@ -1,160 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>interactive on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/interactive/</link>
-    <description>Recent content in interactive on Hugo Grimoire</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/interactive/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Archimedean Spiral</title>
-      <link>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</link>
-      <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</guid>
-      <description>
-        
-          
-            Edit This SketchThis sketch draws an Archimedean Spiral using polar coordinates. If the &amp;quot;EXPORT&amp;quot; variable is true, the sketch will spit-out an SVG file of the drawn spiral. My motivation for making this was so I could cut-out a spiral with my wife&#39;s Cricut Maker and hang something more interesting above my son&#39;s bassinet than empty white ceiling.
-Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>interactive on Hugo Grimoire</title><link>https://trimad.github.io/tags/interactive/</link><description>Recent content in interactive on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/interactive/index.xml" rel="self" type="application/rss+xml"/><item><title>Archimedean Spiral</title><link>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</guid><description>
+Edit This Sketch
+This sketch draws an Archimedean Spiral using polar coordinates. If the &amp;quot;EXPORT&amp;quot; variable is true, the sketch will spit-out an SVG file of the drawn spiral. My motivation for making this was so I could cut-out a spiral with my wife's Cricut Maker and hang something more interesting above my son's bassinet than empty white ceiling.
+Example SVG files
 {: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Fridge Magnet Simulator</title>
-      <link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link>
-      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid>
-      <description>
-        
-          
-            Launch this sketch is a new window (recommended)Launch p5.js web editorThis is a virtual simulation of the magnets on my girlfriend&#39;s fridge.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Orbiting Pixels Utility</title>
-      <link>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</link>
-      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</guid>
-      <description>
-        
-          
-            Launch this sketch is a new window (recommended)Launch p5.js web editorThis program works by creating a grid of evenly-spaced points. Each points has a corresponding object that rotates about that point and is assigned characteristics such as rotation radius, shape, and color that corresponds to the same x and y position of a source image. The phase of each object&#39;s rotation to the brightness value of the source image&#39;s corresponding pixel.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Ulam Spiral</title>
-      <link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link>
-      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid>
-      <description>
-        
-          
-            Launch this sketch is a new window (recommended)Launch p5.js web editorThe Ulam Spiral or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanislaw Ulam in 1963 and popularized in Martin Gardner&#39;s Mathematical Games column in Scientific American a short time later. It is constructed by writing the positive integers in a square spiral and specially marking the prime numbers.
-What I&#39;ve done differently is allowed for iterating every integer in the grid forwards or backwards to search for long, connected diaganal lines of prime numbers in the grid.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Merge Sort using WEBGL</title>
-      <link>https://trimad.github.io/post/2018-02-05-merge-sort/</link>
-      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid>
-      <description>
-        
-          
-            This is a (perhaps overkill) 3D WEBGL visualization of Merge Sort using the WEBGL rendering mode.
-Launch this sketch is a new window (recommended)Launch the p5.js editorControls- ENTER = play sorting animation- LEFT_ARROW = step backwards- RIGHT_ARROW = step forwards- SCROLL_UP = zoom in- SCROLL_DOWN = zoom out
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>10PRINT Image Filter</title>
-      <link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link>
-      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid>
-      <description>
-        
-          
-            This sketch is a browser-based image filtering utility inspired by 10PRINT. The UI allows users to produce faithful looking interpretations of 10PRINT, 10PRINT patterns that look hand-drawn, and the user can even create an explosive shit-mess of scribbles, if they so choose to.
-Launch this sketch is a new window (recommended)Launch p5.js web editor
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Insertion Sort using WEBGL</title>
-      <link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link>
-      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid>
-      <description>
-        
-          
-            This is a (perhaps overkill) 3D WEBGL visualization of Insertion Sort using the WEBGL rendering mode.
-click mouse in iframe to beginControls- MOUSE = pan around- ENTER = play sorting animation- LEFT_ARROW = step backwards- RIGHT_ARROW = step forwards- SCROLL_UP = zoom in- SCROLL_DOWN = zoom outLaunch this sketch is a new window (recommended)Launch the p5.js editor
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Simple 2D Terrain Generation Using Perlin Noise</title>
-      <link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link>
-      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid>
-      <description>
-        
-          
-            click mouse in iframe to generate a new mapThis sketch maps perlin noise between a value of 0 and 255 across a grid. Values greater than or equal to 100 are&#34;grass&#34;, values between 75 and 100 are &#34;sand&#34;, and values less than or equal to 75 are &#34;water&#34;.Click here to render a fullscreen mapLaunch the p5.js editor
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Arrays</title>
-      <link>https://trimad.github.io/post/2016-12-13-arrays/</link>
-      <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2016-12-13-arrays/</guid>
-      <description>
-        
-          
-            View FullscreenView In p5.js EditorClick on them circles homes
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }</description></item><item><title>Fridge Magnet Simulator</title><link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link><pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid><description>
+Launch this sketch is a new window (recommended)
+Launch p5.js web editor
+This is a virtual simulation of the magnets on my girlfriend's fridge.</description></item><item><title>Orbiting Pixels Utility</title><link>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</link><pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</guid><description>
+Launch this sketch is a new window (recommended)
+Launch p5.js web editor
+This program works by creating a grid of evenly-spaced points. Each points has a corresponding object that rotates about that point and is assigned characteristics such as rotation radius, shape, and color that corresponds to the same x and y position of a source image. The phase of each object's rotation to the brightness value of the source image's corresponding pixel.</description></item><item><title>Ulam Spiral</title><link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link><pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid><description>
+Launch this sketch is a new window (recommended)
+Launch p5.js web editor
+The Ulam Spiral or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanislaw Ulam in 1963 and popularized in Martin Gardner's Mathematical Games column in Scientific American a short time later. It is constructed by writing the positive integers in a square spiral and specially marking the prime numbers.
+What I've done differently is allowed for iterating every integer in the grid forwards or backwards to search for long, connected diaganal lines of prime numbers in the grid.</description></item><item><title>Merge Sort using WEBGL</title><link>https://trimad.github.io/post/2018-02-05-merge-sort/</link><pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid><description>
+This is a (perhaps overkill) 3D WEBGL visualization of Merge Sort using the WEBGL rendering mode.
+Launch this sketch is a new window (recommended)
+Launch the p5.js editor
+Controls
+- ENTER = play sorting animation
+- LEFT_ARROW = step backwards
+- RIGHT_ARROW = step forwards
+- SCROLL_UP = zoom in
+- SCROLL_DOWN = zoom out</description></item><item><title>10PRINT Image Filter</title><link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link><pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid><description>
+This sketch is a browser-based image filtering utility inspired by 10PRINT. The UI allows users to produce faithful looking interpretations of 10PRINT, 10PRINT patterns that look hand-drawn, and the user can even create an explosive shit-mess of scribbles, if they so choose to.
+Launch this sketch is a new window (recommended)
+Launch p5.js web editor</description></item><item><title>Insertion Sort using WEBGL</title><link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link><pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid><description>
+This is a (perhaps overkill) 3D WEBGL visualization of Insertion Sort using the WEBGL rendering mode.
+click mouse in iframe to begin
+Controls
+- MOUSE = pan around
+- ENTER = play sorting animation
+- LEFT_ARROW = step backwards
+- RIGHT_ARROW = step forwards
+- SCROLL_UP = zoom in
+- SCROLL_DOWN = zoom out
+Launch this sketch is a new window (recommended)
+Launch the p5.js editor</description></item><item><title>Simple 2D Terrain Generation Using Perlin Noise</title><link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link><pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid><description>
+This sketch maps perlin noise between a value of 0 and 255 across a grid. Values greater than or equal to 100 are "grass", values between 75 and 100 are "sand", and values less than or equal to 75 are "water".</description></item><item><title>Arrays</title><link>https://trimad.github.io/post/2016-12-13-arrays/</link><pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2016-12-13-arrays/</guid><description>
+This is something I made when I was learning about Arrays of Objects.</description></item></channel></rss>

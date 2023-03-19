@@ -1,79 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ai on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/ai/</link>
-    <description>Recent content in ai on Hugo Grimoire</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>OpenAI Whisper</title>
-      <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>
-      <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid>
-      <description>
-        
-          
-            Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
-GitHub RepositoryInstallation1pip install git+https://github.com/openai/whisper.git Fix CUDA not detecting GPUWhisper will default to the CPU if a GPU is not detected, which is considerably slower.1pip uninstall torch 2pip install torch torchvision torchaudio --extra-index-url https://download.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>FILM</title>
-      <link>https://trimad.github.io/post/2023-02-10-film/</link>
-      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2023-02-10-film/</guid>
-      <description>
-        
-          
-            GitHub RepositorySetup GPU environmentThe Windows setup instructions in the GitHub repository are wrong or outdated. Tensorflow kept trying to use the CPU instead of the GPU until I installed CUDA and CUDNN this way:1conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 2python -m pip install &amp;#34;tensorflow&amp;lt;2.11&amp;#34; 3pip install protobuf==3.20.3 UsageActivate the Conda environment:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ai on Hugo Grimoire</title><link>https://trimad.github.io/tags/ai/</link><description>Recent content in ai on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI Whisper</title><link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid><description>
+Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+GitHub Repository
+Installation
+1pip install git+https://github.com/openai/whisper.git Fix CUDA not detecting GPU
+Whisper will default to the CPU if a GPU is not detected, which is considerably slower.
+1pip uninstall torch 2pip install torch torchvision torchaudio --extra-index-url https://download.</description></item><item><title>FILM</title><link>https://trimad.github.io/post/2023-02-10-film/</link><pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-10-film/</guid><description>
+GitHub Repository
+Setup GPU environment
+The Windows setup instructions in the GitHub repository are wrong or outdated. Tensorflow kept trying to use the CPU instead of the GPU until I installed CUDA and CUDNN this way:
+1conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 2python -m pip install &amp;#34;tensorflow&amp;lt;2.11&amp;#34; 3pip install protobuf==3.20.3 Usage
+Activate the Conda environment:
 1conda activate frame_interpolation From the Conda Shell, cd to the FILM directory:
-1cd C:\Users\trima\frame-interpolation Open File Explorer at this directory and copy the frames you want to interpolate to the &amp;quot;photos&amp;quot; folder.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>MiDaS</title>
-      <link>https://trimad.github.io/post/2023-02-10-midas/</link>
-      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2023-02-10-midas/</guid>
-      <description>
-        
-          
-            GitHub RepositoryDuring installation, I ran into an issue where the CUDA package wasn&#39;t found. Had to modify environment.yaml to:
-1name: midas-py310 2channels: 3 - pytorch 4 - defaults 5dependencies: 6 - nvidia::cuda-toolkit=11.7.0 7 - python=3.10.8 8 - pytorch::pytorch=1.13.0 9 - torchvision=0.14.0 10 - pip=22.3.1 11 - numpy=1.23.4 12 - pip: 13 - opencv-python==4.6.0.66 14 - imutils==0.5.4 15 - timm==0.6.12 16 - einops==0.6.0 Commands that were helpful for troubleshooting CUDA:
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Stable Diffusion Scripts</title>
-      <link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link>
-      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid>
-      <description>
-        
-          
-            Data GroomingNumbering PNG files in a folder in sequence1import os 2import pathlib 3 4collection = os.getcwd() 5for i, filename in enumerate(os.listdir(collection)): 6 file_extension = pathlib.Path(filename).suffix 7 if file_extension == &amp;#34;.png&amp;#34;: 8 new_filename = f&amp;#34;{str(i).zfill(4)}.png&amp;#34; 9 old_path = os.path.join(collection, filename) 10 new_path = os.path.join(collection, new_filename) 11 os.rename(old_path, new_path) This code block is a Python script that does the following:
-Imports the os and pathlib modules. Defines a variable collection which is set to the current working directory.
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+1cd C:\Users\trima\frame-interpolation Open File Explorer at this directory and copy the frames you want to interpolate to the &amp;quot;photos&amp;quot; folder.</description></item><item><title>MiDaS</title><link>https://trimad.github.io/post/2023-02-10-midas/</link><pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-10-midas/</guid><description>
+GitHub Repository
+During installation, I ran into an issue where the CUDA package wasn't found. Had to modify environment.yaml to:
+1name: midas-py310 2channels: 3 - pytorch 4 - defaults 5dependencies: 6 - nvidia::cuda-toolkit=11.7.0 7 - python=3.10.8 8 - pytorch::pytorch=1.13.0 9 - torchvision=0.14.0 10 - pip=22.3.1 11 - numpy=1.23.4 12 - pip: 13 - opencv-python==4.6.0.66 14 - imutils==0.5.4 15 - timm==0.6.12 16 - einops==0.6.0 Commands that were helpful for troubleshooting CUDA:</description></item><item><title>Stable Diffusion Scripts</title><link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link><pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid><description>
+Data Grooming Numbering PNG files in a folder in sequence 1import os 2import pathlib 3 4try: 5 collection = os.getcwd() 6 num_files_renamed = 0 7 for i, filename in enumerate(os.listdir(collection)): 8 file_extension = pathlib.Path(filename).suffix 9 if file_extension == &amp;#34;.png&amp;#34; or file_extension == &amp;#34;.jpg&amp;#34;: 10 new_filename = f&amp;#34;{str(i).zfill(5)}.png&amp;#34; 11 old_path = os.path.join(collection, filename) 12 new_path = os.path.join(collection, new_filename) 13 os.rename(old_path, new_path) 14 num_files_renamed += 1 15 print(f&amp;#34;Renamed file {filename} to {new_filename}&amp;#34;) 16 print(f&amp;#34;Renamed {num_files_renamed} files.</description></item></channel></rss>
