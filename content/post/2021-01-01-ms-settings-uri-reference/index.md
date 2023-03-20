@@ -4,6 +4,8 @@ author: Tristan Madden
 categories: [Windows, reference]
 tags: []
 date: 2021-01-01
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 Knowing the URI Scheme is useful because you can jump straight to specific settings menus using 🪟+R.
 <script src="https://gist.github.com/Trimad/90392b242945f937e14136471036996a.js"></script>

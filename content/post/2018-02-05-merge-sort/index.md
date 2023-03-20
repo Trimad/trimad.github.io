@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [JavaScript,p5.js]
 tags: [sorting, merge sort, interactive]
 date: 2018-02-05
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 This is a (perhaps overkill) 3D WEBGL visualization of <a href="https://en.wikipedia.org/wiki/Merge_sort">Merge Sort</a> using the WEBGL rendering mode. 
 <div class="iframe-wrapper-1-1">

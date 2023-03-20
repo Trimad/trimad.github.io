@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [JavaScript,p5.js]
 tags: [processing, interactive]
 date: 2018-11-16
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 
 <div class="iframe-wrapper-1-1">

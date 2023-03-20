@@ -5,6 +5,8 @@ categories: [Java, Processing]
 tags: [animation]
 date: 2018-12-30
 summary: "Here's my take on... Daniel Shiffman's take on... Beesandbomb's take on the cube wave."
+usePageBundles: true
+thumbnail: "thumbnail.png"
 ---
 Here's my take on... Daniel Shiffman's take on... Beesandbomb's take on the cube wave.
 

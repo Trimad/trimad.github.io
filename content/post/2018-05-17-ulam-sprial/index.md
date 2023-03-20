@@ -4,6 +4,8 @@ author: Tristan Madden
 categories: [Javascript, p5.js]
 tags: [prime numbers, processing, interactive]
 date: 2018-05-17
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 
 <div class="iframe-wrapper-1-1">

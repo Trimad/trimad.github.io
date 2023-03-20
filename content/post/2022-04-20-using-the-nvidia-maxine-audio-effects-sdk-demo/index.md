@@ -6,6 +6,8 @@ lastmod: 2023-02-25
 categories: [NVIDIA, Maxine]
 tags: [audio, sound, SDK]
 summary: This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine Windows Audio Effects SDK.
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 
 This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine Windows Audio Effects SDK.

@@ -56,10 +56,10 @@
     
     <item>
       <title>Mastering Time with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-02-02-all-about-time/</link>
+      <link>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
       <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-02-all-about-time/</guid>
+      <guid>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
       <description>
         
           
@@ -186,10 +186,10 @@ The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quo
     
     <item>
       <title>Enable AutoAdminLogon with PowerShell</title>
-      <link>https://trimad.github.io/post/2019-08-19-autoadminlogon/</link>
+      <link>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-19-autoadminlogon/</guid>
+      <guid>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</guid>
       <description>
         
           

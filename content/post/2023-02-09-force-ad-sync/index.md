@@ -5,6 +5,8 @@ date: 2023-02-09
 tags: [Azure, M365]
 title: Force domain controller to sync with AzureAD
 summary: PowerShell script that forces an AD sync with AzureAD
+usePageBundles: true
+thumbnail: "thumbnail.png"
 ---
 This PowerShell script performs the following actions:
 

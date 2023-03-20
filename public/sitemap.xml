@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://trimad.github.io/</loc>
-    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/</loc>
-    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/</loc>
-    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/powershell/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
@@ -18,7 +18,7 @@
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/</loc>
-    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/windows/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
@@ -27,7 +27,7 @@
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/cmd/</loc>
-    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/firewall/</loc>
     <lastmod>2023-03-07T00:00:00+00:00</lastmod>
@@ -101,16 +101,22 @@
     <loc>https://trimad.github.io/post/2023-02-07-purge-emails/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/drivers/</loc>
-    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2023-02-06-uninstall-drivers/</loc>
-    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/categories/depth-map/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/post/2023-02-10-film/</loc>
+    <loc>https://trimad.github.io/tags/drivers/</loc>
+    <lastmod>2023-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/post/2023-02-06-midas/</loc>
+    <lastmod>2023-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</loc>
+    <lastmod>2023-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/video/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/post/2023-02-05-film/</loc>
     <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/images/</loc>
@@ -119,19 +125,13 @@
     <loc>https://trimad.github.io/categories/interpolation/</loc>
     <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/post/2023-02-10-midas/</loc>
-    <lastmod>2023-02-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/categories/stable-diffusion/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-05-stable-diffusion/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/video/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2023-02-02-all-about-time/</loc>
+    <loc>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/systeminfo/</loc>
@@ -326,7 +326,7 @@
     <loc>https://trimad.github.io/tags/gsuite/</loc>
     <lastmod>2019-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/post/2019-08-19-autoadminlogon/</loc>
+    <loc>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</loc>
     <lastmod>2019-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/regedit/</loc>
@@ -398,15 +398,6 @@
     <loc>https://trimad.github.io/tags/lorenz-system/</loc>
     <lastmod>2018-11-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</loc>
-    <lastmod>2018-11-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/processing/</loc>
-    <lastmod>2023-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</loc>
-    <lastmod>2023-02-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/post/2018-06-28-barnsley-fern/</loc>
     <lastmod>2018-06-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -418,6 +409,9 @@
   </url><url>
     <loc>https://trimad.github.io/tags/prime-numbers/</loc>
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/processing/</loc>
+    <lastmod>2018-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2018-05-17-ulam-sprial/</loc>
     <lastmod>2018-05-17T00:00:00+00:00</lastmod>
@@ -437,36 +431,6 @@
     <loc>https://trimad.github.io/post/2018-05-01-uva-11045/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/bitset/</loc>
-    <lastmod>2018-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/dag/</loc>
-    <lastmod>2018-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/directed-acyclic-graph/</loc>
-    <lastmod>2018-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/topological-sort/</loc>
-    <lastmod>2018-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-04-26-uva-10305/</loc>
-    <lastmod>2018-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/disjoint-set/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-04-23-uva-572/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/kattis/</loc>
-    <lastmod>2023-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-04-20-kattis-grid/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-04-11-java-turbo-reader/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/tags/kruskals-algorithm/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -475,84 +439,6 @@
   </url><url>
     <loc>https://trimad.github.io/tags/minimum-spanning-tree/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/string/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/3n&#43;1/</loc>
-    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/collatz-conjecture/</loc>
-    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</loc>
-    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-04-09-uva-1112/</loc>
-    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</loc>
-    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/prims-algorithm/</loc>
-    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</loc>
-    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/c&#43;&#43;/</loc>
-    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/android/</loc>
-    <lastmod>2018-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-03-12-att-hackathon/</loc>
-    <lastmod>2018-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/merge-sort/</loc>
-    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-02-05-merge-sort/</loc>
-    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/sorting/</loc>
-    <lastmod>2023-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/10print/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-01-31-10print-image-filter/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/insertion-sort/</loc>
-    <lastmod>2018-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-01-28-insertion-sort/</loc>
-    <lastmod>2018-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</loc>
-    <lastmod>2018-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</loc>
-    <lastmod>2018-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2017-11-18-flippy-tiles/</loc>
-    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/perlin-noise/</loc>
-    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/juno/</loc>
-    <lastmod>2017-11-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</loc>
-    <lastmod>2017-11-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/jupiter/</loc>
-    <lastmod>2017-11-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/space/</loc>
-    <lastmod>2017-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2017-11-09-uva-10550/</loc>
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>
@@ -584,6 +470,9 @@
     <loc>https://trimad.github.io/post/2017-10-05-uva-10110/</loc>
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://trimad.github.io/tags/kattis/</loc>
+    <lastmod>2023-03-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://trimad.github.io/post/2017-09-15-kattis-parking2/</loc>
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -606,6 +495,9 @@
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2017-07-18-counting-sort/</loc>
+    <lastmod>2023-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/sorting/</loc>
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/javascript/</loc>

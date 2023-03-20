@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [Java,Processing]
 tags: [juno,jupiter,space]
 date: 2017-11-12
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 <!-- This is a program I wrote last November that assembles raw image data coming from the Juno Spacecraft. When I started, I thought it would be cool if this program ran in a browser window. When I finished, I was certain that this program should have been a desktop application. The final images this program produces are quite large; well over 20mb, showing the individual red, green, blue, and composite brightness data. Here's a <a href="https://www.missionjuno.swri.edu/junocam/processing">block of text ripped from the JunoCam website</a> that does a good job of explaining why these images need to be reconstructed:
 

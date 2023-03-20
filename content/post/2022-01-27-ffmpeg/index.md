@@ -7,6 +7,8 @@ lastmod: 2023-03-16
 tags: [audio, video]
 title: ffmpeg
 toc: true
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 
 ffmpeg is a complete, cross-platform solution to record, convert and stream audio and video.

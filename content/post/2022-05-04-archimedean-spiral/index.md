@@ -4,6 +4,8 @@ author: Tristan Madden
 date: 2022-05-04
 categories: [JavaScript, p5.js]
 tags: [spiral, interactive]
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 
  <iframe width=100% height=1024px src="https://editor.p5js.org/Berkanan/full/LjPig4gu_"></iframe>

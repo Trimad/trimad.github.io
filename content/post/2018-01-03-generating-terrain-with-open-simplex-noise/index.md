@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [Java, Processing]
 tags: [open simplex noise]
 date: 2018-01-03
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 
 <!-- 

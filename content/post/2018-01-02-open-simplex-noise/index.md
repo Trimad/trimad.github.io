@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [Java, Processing]
 tags: [open simplex noise]
 date: 2018-01-02
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 <!-- <div class="iframe-wrapper-16-9">
 <iframe src="https://www.youtube.com/embed/iux8QU8PXaA" allowfullscreen>

@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [Java,Coding Challenge]
 tags: [kattis]
 date: 2018-04-20
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 Solved using a non-recursive version of <a href="https://en.wikipedia.org/wiki/Breadth-first_search">BFS</a>. Runs in pretty good time.
 

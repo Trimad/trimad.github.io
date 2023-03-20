@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [JavaScript,p5.js]
 tags: [sorting, insertion sort, interactive]
 date: 2018-01-28
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 This is a (perhaps overkill) 3D WEBGL visualization of Insertion Sort using the WEBGL rendering mode.
 

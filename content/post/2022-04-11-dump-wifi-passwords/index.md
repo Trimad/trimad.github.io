@@ -4,6 +4,8 @@ author: Tristan Madden
 categories: [PowerShell]
 tags: [netsh, passwords, reports]
 date: 2022-04-11
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 
 This script uses the Windows command-line tool "netsh" to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named "output.csv". Finally, the script opens the "output.csv" file.

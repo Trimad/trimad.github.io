@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [Java,Coding Challenge]
 tags: [uva, dag, directed acyclic graph, topological sort, bitset]
 date: 2018-04-26
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 <!-- This problem presents a <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAG</a> and the solution requires implementing a topological sort. I noticed that a <a href="https://en.wikipedia.org/wiki/Topological_sorting">topological sort</a> can be implemented using only boolean arrays so I used this as an opportunity to finally get around to using Java's BitSet class. The virtual judge run time was 0.050s.
 

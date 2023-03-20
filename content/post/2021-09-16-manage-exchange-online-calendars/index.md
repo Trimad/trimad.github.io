@@ -5,6 +5,8 @@ categories: [PowerShell, ExchangeOnlineManagement]
 tags: [calendars, M365]
 date: 2021-09-16
 lastmod: 2023-02-08
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 
 ```PowerShell

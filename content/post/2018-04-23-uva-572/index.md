@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [Java,Coding Challenge]
 tags: [uva, disjoint set]
 date: 2018-04-23
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 
 <!-- 

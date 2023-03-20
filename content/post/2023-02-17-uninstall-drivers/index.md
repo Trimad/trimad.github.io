@@ -2,9 +2,11 @@
 author: Tristan Madden
 categories: [CMD]
 date: 2023-02-06
-lastmod: 2023-03-17
+lastmod: 2023-02-17
 tags: [drivers]
 title: Uninstall Third-Party Drivers with CMD
+usePageBundles: true
+thumbnail: "thumbnail.png"
 ---
 
 You can uninstall third-party drivers (such as the WAVES MaxxAudio Pro driver) from the Command Prompt (CMD) by using the "pnputil.exe" utility. Here's the basic process:

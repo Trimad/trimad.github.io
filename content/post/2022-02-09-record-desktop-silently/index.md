@@ -4,6 +4,8 @@ author: Tristan Madden
 categories: [VBScript, Batchfile]
 tags: [ffmpeg]
 date: 2022-02-09
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 
 Place these 3 files in any directory and run update.vbs to begin recording a Windows session silently.

@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [Java, Processing]
 tags: [android]
 date: 2018-03-12
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 <!-- ![Desktop View](https://res.cloudinary.com/deiub7j41/image/upload/v1648776904/image_28-08-2019-06-32-53_dnkt4s.jpg)
 

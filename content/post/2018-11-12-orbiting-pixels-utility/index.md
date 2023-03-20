@@ -5,6 +5,9 @@ categories: [JavaScript,p5.js]
 tags: [processing, interactive]
 date: 2018-11-12
 lastmod: 2023-02-22
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 <iframe width=100% height=1024px src="https://editor.p5js.org/Berkanan/full/P61irisoa"></iframe>
 

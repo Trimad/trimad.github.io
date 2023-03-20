@@ -1,11 +1,13 @@
 ---
 author: Tristan Madden
 categories: [Depth Map]
-date: 2023-02-05
+date: 2023-02-06
 featured: true
 lastmod: 2023-02-06
 tags: [ai, video]
 title: MiDaS
+usePageBundles: true
+thumbnail: "thumbnail.png"
 ---
 
 <h3><a href="https://github.com/isl-org/MiDaS">GitHub Repository</a></h3>

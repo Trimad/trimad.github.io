@@ -4,6 +4,8 @@ author: Tristan Madden
 categories: [Java]
 tags: [distance]
 date: 2018-06-28
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 - Distance formula 1 execution time: 2224ms
 - Distance formula 2 execution time: 4ms

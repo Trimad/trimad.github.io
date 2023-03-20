@@ -4,6 +4,8 @@ author: Tristan Madden
 categories: [CMD, Batchfile]
 tags: [robocopy]
 date: 2019-02-28
+usePageBundles: true
+thumbnail: "thumbnail.png"
 ---
 
 This batch file utilizes robocopy to mirror a list of files contained within "targets.txt" in the same directory. 

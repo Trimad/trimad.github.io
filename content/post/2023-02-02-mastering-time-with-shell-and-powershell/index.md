@@ -7,6 +7,8 @@ tags: [time, systeminfo, wmic, Win32_OperatingSystem, tzutil]
 date: 2023-02-02
 lastmod: 2023-03-14
 toc: true
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 
 Explore an array of shell and PowerShell commands focused on time management, including last boot-up time, system boot time, and time zone adjustments.

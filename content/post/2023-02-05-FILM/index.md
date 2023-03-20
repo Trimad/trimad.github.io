@@ -4,8 +4,11 @@ categories: [Interpolation]
 date: 2023-02-05
 featured: true
 lastmod: 2023-02-27
+summery: "\"The official Tensorflow 2 implementation of our high quality frame interpolation neural network. We present a unified single-network approach that doesn't use additional pre-trained networks, like optical flow or depth, and yet achieve state-of-the-art results. We use a multi-scale feature extractor that shares the same convolution weights across the scales. Our model is trainable from frame triplets alone.\""
 tags: [ai, video]
 title: FILM
+thumbnail: "thumbnail.png"
+usePageBundles: true
 ---
 
 <h3><a href="https://github.com/google-research/frame-interpolation">GitHub Repository</a></h3>

@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [JavaScript,p5.js]
 tags: [10PRINT, interactive]
 date: 2018-01-31
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 <div class="iframe-wrapper-1-1">
     <iframe src="https://editor.p5js.org/Berkanan/full/YDIQkPqbb"></iframe>

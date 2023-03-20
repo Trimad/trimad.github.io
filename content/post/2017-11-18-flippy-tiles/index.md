@@ -4,6 +4,9 @@ author: Tristan Madden
 categories: [Java, Processing]
 tags: [perlin noise]
 date: 2017-11-18
+usePageBundles: true
+thumbnail: "thumbnail.png"
+draft: true
 ---
 <!-- 
 Simple animation of tiles flipping. They can flip randomly or they can be flipped by applying Perlin Noise. 
