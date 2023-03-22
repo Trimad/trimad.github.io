@@ -2,7 +2,7 @@
 author: Tristan Madden
 categories: [Shell]
 date: 2023-02-22
-lastmod: 2023-03-20
+lastmod: 2023-03-22
 tags: [net]
 title: net user
 thumbnail: "thumbnail.png"
@@ -16,7 +16,7 @@ The "net user" command is a Command Prompt (Shell) command used to manage user a
 ## Add a user
 
 ```Shell
-net user xeroxlocal Xerox2022!!!! /add
+net user <username> <password> /add
 ```
 
 ## Add user to group
