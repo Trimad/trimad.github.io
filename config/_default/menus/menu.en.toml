@@ -17,7 +17,7 @@
 [[main]]
   parent = "Links"
   name = "TikTok"
-  url = "https://www.tiktok.com/@kill3d2d3th/"
+  url = "https://www.tiktok.com/@kill3d2deth"
 [[main]]
   parent = "Links"
   name = "p5.js"
@@ -33,11 +33,11 @@
 #[[social]]
 #  name = "facebook"
 #  weight = 2
-#  url = "https://www.tiktok.com/@kill3d2d3th/"
+#  url = ""
 #  [[social]]
 #  name = "instagram"
 #  weight = 3
-#  url = "https://www.tiktok.com/@kill3d2d3th/"
+#  url = ""
   [[social]]
   name = "youtube"
   weight = 2
@@ -46,6 +46,11 @@
   name = "rss"
   weight = 3
   url = "index.xml"
+[[social]]
+  name = "twitter"
+  type = "social"
+  weight = 1
+  url = "https://twitter.com/KILL3D2DETH"
 
 # other supported social links
 # name = "youtube"
