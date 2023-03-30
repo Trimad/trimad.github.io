@@ -1,2 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>images on Hugo Grimoire</title><link>https://trimad.github.io/tags/images/</link><description>Recent content in images on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/images/index.xml" rel="self" type="application/rss+xml"/><item><title>Stable Diffusion Scripts</title><link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link><pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid><description>
-Stable Diffusion is an image generation technique that uses a diffusion process to iteratively generate images. It starts with a noise image and applies a series of transformations to it, where each transformation adds a little bit of noise to the image. These transformations are repeated over multiple time steps, and the amount of noise added is gradually decreased over time. This process smooths out the noise and generates a high-quality image. The stability of the diffusion process is maintained by scaling the added noise based on the image's current state, preventing the image from diverging or collapsing into a uniform color. Stable Diffusion is a powerful and versatile image generation technique that can produce realistic, high-resolution images with fine details and a wide range of styles.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>images on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/images/</link>
+    <description>Recent content in images on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/images/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stable Diffusion Scripts</title>
+      <link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid>
+      <description>
+        
+          
+            Stable Diffusion is an image generation technique that uses a diffusion process to iteratively generate images. It starts with a noise image and applies a series of transformations to it, where each transformation adds a little bit of noise to the image. These transformations are repeated over multiple time steps, and the amount of noise added is gradually decreased over time. This process smooths out the noise and generates a high-quality image. The stability of the diffusion process is maintained by scaling the added noise based on the image&#39;s current state, preventing the image from diverging or collapsing into a uniform color. Stable Diffusion is a powerful and versatile image generation technique that can produce realistic, high-resolution images with fine details and a wide range of styles.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
