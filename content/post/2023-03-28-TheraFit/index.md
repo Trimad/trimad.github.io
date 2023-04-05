@@ -6,12 +6,13 @@ draft: true
 summary: "An exploration of ways to match clients to therapists during an intake."
 tags: [Google App Script]
 thumbnail: "thumbnail.png"
-title: "Matching Clients to Therapists"
+title: "TheraFit"
 toc: false
 usePageBundles: true
 ---
 
 {{< rawhtml >}}
+
 <style>
 .row {
   display: flex;
@@ -25,6 +26,7 @@ usePageBundles: true
 }
 </style>
 
+<h2> Questionnaire Flow</h2>
 
 <div class="row">
   <div class="column">
@@ -70,3 +72,24 @@ usePageBundles: true
 
 {{< /rawhtml >}}
 
+<h2>Google Sheets API Stuff</h2>
+<h3>Configure the OAuth consent screen and add test users</h3>
+https://console.cloud.google.com/apis/credentials/consent
+
+<h3>Create an OAuth client ID</h3>
+https://console.cloud.google.com/apis/credentials
+
+<h2>Creating the Anaconda Environment</h2>
+
+```Python
+conda create --name questionnaire python=3.8
+conda activate questionnaire
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib gradio pandas
+```
+
+<h2>Using the Program</h2>
+
+```Shell
+cd C:\Users\50567920\Documents\GitHub\Questionnaire
+python3 run.py
+```

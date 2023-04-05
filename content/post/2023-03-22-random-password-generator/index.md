@@ -12,7 +12,7 @@ usePageBundles: true
 ---
 
 {{< rawhtml >}}
-    <hr>
+      <hr>
       <div id="passwords"></div>
       <hr>
       <div id="worse-passwords"></div>
