@@ -73,7 +73,7 @@ This PowerShell script performs the following actions:
 ```PowerShell
 Import-Module ActiveDirectory
  
-$disabledUsersOU = "OU=DisabledUsers,OU=AFO Sites,DC=afo,DC=com"
+$disabledUsersOU = "OU=DisabledUsers,OU= Sites,DC=,DC="
 $users = Get-ADUser -SearchBase $disabledUsersOU -Filter * -Properties msExchHideFromAddressLists | sort
  
 foreach ($user in $users) {
