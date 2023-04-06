@@ -57,6 +57,29 @@ foreach ($contact in $contacts) {
 
 ### Users
 
+* Retrieves a list of users from the "DisabledUsers" organizational unit (OU) in Active Directory, including their 'msExchHideFromAddressLists' property.
+* Iterates through each user in the list and checks the value of their 'msExchHideFromAddressLists' property.
+* Outputs a message for each user, indicating whether they have the 'msExchHideFromAddressLists' attribute set and, if so, whether they are hidden from address lists.
+
+```PowerShell
+Import-Module ActiveDirectory
+
+$disabledUsersOU = "OU=DisabledUsers,OU=,DC=,DC="
+$users = Get-ADUser -SearchBase $disabledUsersOU -Filter * -Properties msExchHideFromAddressLists
+
+foreach ($user in $users) {
+    $userDN = $user.DistinguishedName
+    $hideFromAddressLists = $user.msExchHideFromAddressLists
+    if ([string]::IsNullOrEmpty($hideFromAddressLists)) {
+        Write-Host "User $($user.name) does not have the 'msExchHideFromAddressLists' attribute"
+    } else {
+        Write-Host "User $($user.name) is hidden from address lists: $($hideFromAddressLists)"
+    }
+}
+
+```
+
+
 * Retrieves and sorts users from the "DisabledUsers" OU in Active Directory, including their 'msExchHideFromAddressLists' property.
 * Iterates through each user, evaluating the value of their 'msExchHideFromAddressLists' property.
 * Sets or updates the 'msExchHideFromAddressLists' attribute to 'True' for users who don't have it set or have it set to 'False', and outputs corresponding messages; for users with the attribute already set to 'True', the script outputs an informative message.
