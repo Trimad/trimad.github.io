@@ -156,7 +156,17 @@
 </span>
   <span class="post_date">
     Apr 5, 2023</span>
-  <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='https://trimad.github.io/tags/msexchhidefromaddresslists/' title="msExchHideFromAddressLists" class="post_tag button button_translucent">msExchHideFromAddressLists
+   · 
+  <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+  <span class="last_mod">
+    
+    <i>last modified Apr 6, 2023&nbsp;</i>
+  </span>
+  <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='https://trimad.github.io/tags/msexchhidefromaddresslists/' title="msExchHideFromAddressLists" class="post_tag button button_translucent">msExchHideFromAddressLists
     </a><a href='https://trimad.github.io/tags/activedirectory/' title="ActiveDirectory" class="post_tag button button_translucent">ActiveDirectory
     </a><a href='https://trimad.github.io/tags/exchangeonlinemanagement/' title="ExchangeOnlineManagement" class="post_tag button button_translucent">ExchangeOnlineManagement
     </a>
@@ -202,7 +212,7 @@
     <li><a href="#from-activedirectory">From ActiveDirectory</a>
       <ul>
         <li><a href="#contacts">Contacts</a></li>
-        <li><a href="#contacts-that-are-members-of-a-particular-distribution-list">Contacts that are members of a particular Distribution List</a></li>
+        <li><a href="#users">Users</a></li>
       </ul>
     </li>
     <li><a href="#from-exchangeonlinemanagement">From ExchangeOnlineManagement</a>
@@ -236,28 +246,51 @@
 </span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="nb">Write-Host</span> <span class="s2">&#34;Contact </span><span class="p">$(</span><span class="nv">$contact</span><span class="p">.</span><span class="n">name</span><span class="p">)</span><span class="s2"> is hidden from address lists: </span><span class="p">$(</span><span class="nv">$hideFromAddressLists</span><span class="p">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h3 id="contacts-that-are-members-of-a-particular-distribution-list">Contacts that are members of a particular Distribution List</h3>
-<p>This PowerShell script performs the following actions:</p>
+</span></span></code></pre></div><p>This PowerShell script performs the following actions:</p>
 <ul>
 <li>It installs and imports the ExchangeOnlineManagement module, which is required to manage Exchange Online.</li>
 <li>It connects to Exchange Online to allow further management.</li>
 <li>It retrieves the distinguished name of a distribution list called &quot;external users&quot; and finds all contacts belonging to this list.</li>
 <li>For each contact found, it updates their properties to hide them from address lists.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">ExchangeOnlineManagement</span> <span class="c"># if not installed already</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nb">Import-Module</span> <span class="n">ExchangeOnlineManagement</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="nb">Connect-ExchangeOnline</span>
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="c"># Get the distinguished name of the &#34;external users&#34; distribution list</span>
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="nv">$externalUsersDL</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-ADGroup</span> <span class="n">-Filter</span> <span class="p">{</span><span class="n">name</span> <span class="o">-eq</span> <span class="s2">&#34;external users&#34;</span><span class="p">}).</span><span class="n">DistinguishedName</span>
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl"> 
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="c"># Get all contacts that belong to the &#34;external users&#34; distribution list</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="nv">$contacts</span> <span class="p">=</span> <span class="nb">Get-ADObject</span> <span class="n">-Filter</span> <span class="p">{</span><span class="n">objectClass</span> <span class="o">-eq</span> <span class="s2">&#34;contact&#34;</span> <span class="o">-and</span> <span class="n">memberOf</span> <span class="o">-eq</span> <span class="nv">$externalUsersDL</span><span class="p">}</span> <span class="p">|</span> <span class="nb">sort
-</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="nb"></span> 
-</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$contact</span> <span class="k">in</span> <span class="nv">$contacts</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="nv">$contactDN</span> <span class="p">=</span> <span class="nv">$contact</span><span class="p">.</span><span class="n">DistinguishedName</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">    <span class="nv">$hideFromAddressLists</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-ADObject</span> <span class="n">-Identity</span> <span class="nv">$contactDN</span> <span class="n">-Properties</span> <span class="nb">Set-ADObject</span> <span class="n">-Identity</span> <span class="nv">$contactDN</span> <span class="o">-Replace</span> <span class="p">@{</span><span class="n">msExchHideFromAddressLists</span><span class="p">=</span><span class="nv">$true</span><span class="p">}</span>
-</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nb">Import-Module</span> <span class="n">ActiveDirectory</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="c"># Get the distinguished name of the &#34;external users&#34; distribution list</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nv">$externalUsersDL</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-ADGroup</span> <span class="n">-Filter</span> <span class="p">{</span><span class="n">name</span> <span class="o">-eq</span> <span class="s2">&#34;external users&#34;</span><span class="p">}).</span><span class="n">DistinguishedName</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"> 
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="c"># Get all contacts that belong to the &#34;external users&#34; distribution list</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="nv">$contacts</span> <span class="p">=</span> <span class="nb">Get-ADObject</span> <span class="n">-Filter</span> <span class="p">{</span><span class="n">objectClass</span> <span class="o">-eq</span> <span class="s2">&#34;contact&#34;</span> <span class="o">-and</span> <span class="n">memberOf</span> <span class="o">-eq</span> <span class="nv">$externalUsersDL</span><span class="p">}</span> <span class="p">|</span> <span class="nb">sort
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="nb"></span> 
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$contact</span> <span class="k">in</span> <span class="nv">$contacts</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="nv">$contactDN</span> <span class="p">=</span> <span class="nv">$contact</span><span class="p">.</span><span class="n">DistinguishedName</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    <span class="nv">$hideFromAddressLists</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-ADObject</span> <span class="n">-Identity</span> <span class="nv">$contactDN</span> <span class="n">-Properties</span> <span class="nb">Set-ADObject</span> <span class="n">-Identity</span> <span class="nv">$contactDN</span> <span class="o">-Replace</span> <span class="p">@{</span><span class="n">msExchHideFromAddressLists</span><span class="p">=</span><span class="nv">$true</span><span class="p">}</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="users">Users</h3>
+<p>This PowerShell script performs the following actions:</p>
+<ul>
+<li>Imports the Active Directory module, which enables the script to interact with AD objects like users and groups.</li>
+<li>Retrieves a list of users from the &quot;DisabledUsers&quot; organizational unit (OU) in the Active Directory, including their 'msExchHideFromAddressLists' property, and sorts them.</li>
+<li>Iterates through each user in the list and checks the value of their 'msExchHideFromAddressLists' property.</li>
+<li>Depending on the property value, the script either sets or updates the 'msExchHideFromAddressLists' attribute to 'True' and outputs a corresponding message; if it's already set to 'True', the script simply outputs a message indicating this.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nb">Import-Module</span> <span class="n">ActiveDirectory</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"> 
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="nv">$disabledUsersOU</span> <span class="p">=</span> <span class="s2">&#34;OU=DisabledUsers,OU=AFO Sites,DC=afo,DC=com&#34;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-ADUser</span> <span class="n">-SearchBase</span> <span class="nv">$disabledUsersOU</span> <span class="n">-Filter</span> <span class="p">*</span> <span class="n">-Properties</span> <span class="n">msExchHideFromAddressLists</span> <span class="p">|</span> <span class="nb">sort
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="nb"></span> 
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$user</span> <span class="k">in</span> <span class="nv">$users</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="nv">$userDN</span> <span class="p">=</span> <span class="nv">$user</span><span class="p">.</span><span class="n">DistinguishedName</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="nv">$hideFromAddressLists</span> <span class="p">=</span> <span class="nv">$user</span><span class="p">.</span><span class="n">msExchHideFromAddressLists</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="no">[string]</span><span class="p">::</span><span class="n">IsNullOrEmpty</span><span class="p">(</span><span class="nv">$hideFromAddressLists</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">        <span class="nb">Set-ADUser</span> <span class="n">-Identity</span> <span class="nv">$userDN</span> <span class="n">-Add</span> <span class="p">@{</span><span class="n">msExchHideFromAddressLists</span><span class="p">=</span><span class="nv">$true</span><span class="p">}</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="nb">Write-Host</span> <span class="s2">&#34;User </span><span class="p">$(</span><span class="nv">$user</span><span class="p">.</span><span class="n">name</span><span class="p">)</span><span class="s2"> did not have the &#39;msExchHideFromAddressLists&#39; attribute and it has been set to &#39;True&#39;&#34;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="p">}</span> <span class="k">elseif</span> <span class="p">(!</span><span class="nv">$hideFromAddressLists</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">        <span class="nb">Set-ADUser</span> <span class="n">-Identity</span> <span class="nv">$userDN</span> <span class="o">-Replace</span> <span class="p">@{</span><span class="n">msExchHideFromAddressLists</span><span class="p">=</span><span class="nv">$true</span><span class="p">}</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        <span class="nb">Write-Host</span> <span class="s2">&#34;User </span><span class="p">$(</span><span class="nv">$user</span><span class="p">.</span><span class="n">name</span><span class="p">)</span><span class="s2"> had the &#39;msExchHideFromAddressLists&#39; attribute set to &#39;False&#39; and it has been set to &#39;True&#39;&#34;</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">        <span class="nb">Write-Host</span> <span class="s2">&#34;User </span><span class="p">$(</span><span class="nv">$user</span><span class="p">.</span><span class="n">name</span><span class="p">)</span><span class="s2"> already has the &#39;msExchHideFromAddressLists&#39; attribute set to &#39;True&#39;&#34;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h2 id="from-exchangeonlinemanagement">From ExchangeOnlineManagement</h2>
 <h3 id="contacts-1">Contacts</h3>
 <p>This PowerShell script performs the following actions:</p>
@@ -344,10 +377,10 @@
     <h2 class="mt-4">Recently Modified</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://trimad.github.io/post/2023-02-15-decode-phishing-emails/" class="nav-link" title="Decode Phishing Emails">Decode Phishing Emails</a>
+        <a href="https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/" class="nav-link" title="Hiding users from GAL">Hiding users from GAL</a>
       </li>
       <li>
-        <a href="https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/" class="nav-link" title="Hiding users from GAL">Hiding users from GAL</a>
+        <a href="https://trimad.github.io/post/2023-02-15-decode-phishing-emails/" class="nav-link" title="Decode Phishing Emails">Decode Phishing Emails</a>
       </li>
       <li>
         <a href="https://trimad.github.io/post/2023-02-07-purge-emails/" class="nav-link" title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a>

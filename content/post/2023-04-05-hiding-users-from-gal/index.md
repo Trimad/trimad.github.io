@@ -2,6 +2,7 @@
 author: Tristan Madden
 categories: [Exchange]
 date: 2023-04-05
+lastmod: 2023-04-06
 draft: false
 summary: "Scripts for hiding users from the Global Address List"
 tags: [msExchHideFromAddressLists, ActiveDirectory, ExchangeOnlineManagement]
@@ -38,7 +39,6 @@ foreach ($contact in $contacts) {
 }
 ```
 
-### Contacts that are members of a particular Distribution List
 This PowerShell script performs the following actions:
 
 * It installs and imports the ExchangeOnlineManagement module, which is required to manage Exchange Online.
@@ -47,9 +47,7 @@ This PowerShell script performs the following actions:
 * For each contact found, it updates their properties to hide them from address lists.
 
 ```PowerShell
-Install-Module -Name ExchangeOnlineManagement # if not installed already
-Import-Module ExchangeOnlineManagement
-Connect-ExchangeOnline
+Import-Module ActiveDirectory
 
 # Get the distinguished name of the "external users" distribution list
 $externalUsersDL = (Get-ADGroup -Filter {name -eq "external users"}).DistinguishedName
@@ -60,6 +58,36 @@ $contacts = Get-ADObject -Filter {objectClass -eq "contact" -and memberOf -eq $e
 foreach ($contact in $contacts) {
     $contactDN = $contact.DistinguishedName
     $hideFromAddressLists = (Get-ADObject -Identity $contactDN -Properties Set-ADObject -Identity $contactDN -Replace @{msExchHideFromAddressLists=$true}
+}
+```
+
+### Users
+
+This PowerShell script performs the following actions:
+
+* Imports the Active Directory module, which enables the script to interact with AD objects like users and groups.
+* Retrieves a list of users from the "DisabledUsers" organizational unit (OU) in the Active Directory, including their 'msExchHideFromAddressLists' property, and sorts them.
+* Iterates through each user in the list and checks the value of their 'msExchHideFromAddressLists' property.
+* Depending on the property value, the script either sets or updates the 'msExchHideFromAddressLists' attribute to 'True' and outputs a corresponding message; if it's already set to 'True', the script simply outputs a message indicating this.
+
+```PowerShell
+Import-Module ActiveDirectory
+ 
+$disabledUsersOU = "OU=DisabledUsers,OU=AFO Sites,DC=afo,DC=com"
+$users = Get-ADUser -SearchBase $disabledUsersOU -Filter * -Properties msExchHideFromAddressLists | sort
+ 
+foreach ($user in $users) {
+    $userDN = $user.DistinguishedName
+    $hideFromAddressLists = $user.msExchHideFromAddressLists
+    if ([string]::IsNullOrEmpty($hideFromAddressLists)) {
+        Set-ADUser -Identity $userDN -Add @{msExchHideFromAddressLists=$true}
+        Write-Host "User $($user.name) did not have the 'msExchHideFromAddressLists' attribute and it has been set to 'True'"
+    } elseif (!$hideFromAddressLists) {
+        Set-ADUser -Identity $userDN -Replace @{msExchHideFromAddressLists=$true}
+        Write-Host "User $($user.name) had the 'msExchHideFromAddressLists' attribute set to 'False' and it has been set to 'True'"
+    } else {
+        Write-Host "User $($user.name) already has the 'msExchHideFromAddressLists' attribute set to 'True'"
+    }
 }
 ```
 
