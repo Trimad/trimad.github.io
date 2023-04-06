@@ -16,12 +16,9 @@ usePageBundles: true
 
 ### Contacts
 
-This PowerShell script does the following:
-
-* Imports the Active Directory module to enable interaction with Active Directory objects.
-* Retrieves all contact objects in Active Directory and sorts them alphabetically.
-* Loops through each contact, checking if the 'msExchHideFromAddressLists' attribute is set or not.
-* Prints a message for each contact, indicating if they are hidden from address lists or if the attribute is not set.
+* Retrieves a sorted list of contacts in the Active Directory by filtering objects with the "contact" objectClass.
+* Iterates through each contact, obtaining their DistinguishedName and the 'msExchHideFromAddressLists' property value.
+* Outputs a message indicating whether the 'msExchHideFromAddressLists' attribute is present for each contact and whether the contact is hidden from address lists.
 
 ```PowerShell
 Import-Module ActiveDirectory
@@ -39,12 +36,9 @@ foreach ($contact in $contacts) {
 }
 ```
 
-This PowerShell script performs the following actions:
-
-* It installs and imports the ExchangeOnlineManagement module, which is required to manage Exchange Online.
-* It connects to Exchange Online to allow further management.
-* It retrieves the distinguished name of a distribution list called "external users" and finds all contacts belonging to this list.
-* For each contact found, it updates their properties to hide them from address lists.
+* Retrieves the distinguished name of the "external users" distribution list in Active Directory.
+* Obtains a sorted list of contacts that belong to the "external users" distribution list.
+* Iterates through each contact and sets the 'msExchHideFromAddressLists' attribute to 'True', effectively hiding them from address lists.
 
 ```PowerShell
 Import-Module ActiveDirectory
@@ -63,12 +57,9 @@ foreach ($contact in $contacts) {
 
 ### Users
 
-This PowerShell script performs the following actions:
-
-* Imports the Active Directory module, which enables the script to interact with AD objects like users and groups.
-* Retrieves a list of users from the "DisabledUsers" organizational unit (OU) in the Active Directory, including their 'msExchHideFromAddressLists' property, and sorts them.
-* Iterates through each user in the list and checks the value of their 'msExchHideFromAddressLists' property.
-* Depending on the property value, the script either sets or updates the 'msExchHideFromAddressLists' attribute to 'True' and outputs a corresponding message; if it's already set to 'True', the script simply outputs a message indicating this.
+* Retrieves and sorts users from the "DisabledUsers" OU in Active Directory, including their 'msExchHideFromAddressLists' property.
+* Iterates through each user, evaluating the value of their 'msExchHideFromAddressLists' property.
+* Sets or updates the 'msExchHideFromAddressLists' attribute to 'True' for users who don't have it set or have it set to 'False', and outputs corresponding messages; for users with the attribute already set to 'True', the script outputs an informative message.
 
 ```PowerShell
 Import-Module ActiveDirectory
@@ -95,12 +86,9 @@ foreach ($user in $users) {
 
 ### Contacts
 
-This PowerShell script performs the following actions:
-
-* It installs and imports the Exchange Online Management module, which is used to manage Microsoft Exchange Online.
-* It connects to Exchange Online to access the necessary data and functions.
-* It retrieves a list of members from the "External Users" distribution group.
-* For each member in the list, it displays their name and the current 'HiddenFromAddressListsEnabled' status, then sets the 'HiddenFromAddressListsEnabled' property to true, hiding the user from address lists.
+* Retrieves members of the "External Users" distribution group using the Get-DistributionGroupMember cmdlet.
+* Iterates through each member, retrieves their Name and HiddenFromAddressListsEnabled properties using the Get-MailContact cmdlet, and outputs this information.
+* Updates the HiddenFromAddressListsEnabled property of each member to 'True' using the Set-MailContact cmdlet.
 
 ```PowerShell
 Install-Module -Name ExchangeOnlineManagement # if not installed already
