@@ -16,9 +16,9 @@ usePageBundles: true
 
 ### Contacts
 
-* Retrieves a sorted list of contacts in the Active Directory by filtering objects with the "contact" objectClass.
-* Iterates through each contact, obtaining their DistinguishedName and the 'msExchHideFromAddressLists' property value.
-* Outputs a message indicating whether the 'msExchHideFromAddressLists' attribute is present for each contact and whether the contact is hidden from address lists.
+1. Retrieves a sorted list of contacts in the Active Directory by filtering objects with the "contact" objectClass.
+2. Iterates through each contact, obtaining their DistinguishedName and the 'msExchHideFromAddressLists' property value.
+3. Outputs a message indicating whether the 'msExchHideFromAddressLists' attribute is present for each contact and whether the contact is hidden from address lists.
 
 ```PowerShell
 Import-Module ActiveDirectory
@@ -36,9 +36,9 @@ foreach ($contact in $contacts) {
 }
 ```
 
-* Retrieves the distinguished name of the "external users" distribution list in Active Directory.
-* Obtains a sorted list of contacts that belong to the "external users" distribution list.
-* Iterates through each contact and sets the 'msExchHideFromAddressLists' attribute to 'True', effectively hiding them from address lists.
+1. Retrieves the distinguished name of the "external users" distribution list in Active Directory.
+2. Obtains a sorted list of contacts that belong to the "external users" distribution list.
+3. Iterates through each contact and sets the 'msExchHideFromAddressLists' attribute to 'True', effectively hiding them from address lists.
 
 ```PowerShell
 Import-Module ActiveDirectory
@@ -57,9 +57,9 @@ foreach ($contact in $contacts) {
 
 ### Users
 
-* Retrieves a list of users from the "DisabledUsers" organizational unit (OU) in Active Directory, including their 'msExchHideFromAddressLists' property.
-* Iterates through each user in the list and checks the value of their 'msExchHideFromAddressLists' property.
-* Outputs a message for each user, indicating whether they have the 'msExchHideFromAddressLists' attribute set and, if so, whether they are hidden from address lists.
+1. Retrieves a list of users from the "DisabledUsers" organizational unit (OU) in Active Directory, including their 'msExchHideFromAddressLists' property.
+2. Iterates through each user in the list and checks the value of their 'msExchHideFromAddressLists' property.
+3. Outputs a message for each user, indicating whether they have the 'msExchHideFromAddressLists' attribute set and, if so, whether they are hidden from address lists.
 
 ```PowerShell
 Import-Module ActiveDirectory
@@ -80,9 +80,9 @@ foreach ($user in $users) {
 ```
 
 
-* Retrieves and sorts users from the "DisabledUsers" OU in Active Directory, including their 'msExchHideFromAddressLists' property.
-* Iterates through each user, evaluating the value of their 'msExchHideFromAddressLists' property.
-* Sets or updates the 'msExchHideFromAddressLists' attribute to 'True' for users who don't have it set or have it set to 'False', and outputs corresponding messages; for users with the attribute already set to 'True', the script outputs an informative message.
+1. Retrieves and sorts users from the "DisabledUsers" OU in Active Directory, including their 'msExchHideFromAddressLists' property.
+2. Iterates through each user, evaluating the value of their 'msExchHideFromAddressLists' property.
+3. Sets or updates the 'msExchHideFromAddressLists' attribute to 'True' for users who don't have it set or have it set to 'False', and outputs corresponding messages; for users with the attribute already set to 'True', the script outputs an informative message.
 
 ```PowerShell
 Import-Module ActiveDirectory
@@ -109,9 +109,9 @@ foreach ($user in $users) {
 
 ### Contacts
 
-* Retrieves members of the "External Users" distribution group using the Get-DistributionGroupMember cmdlet.
-* Iterates through each member, retrieves their Name and HiddenFromAddressListsEnabled properties using the Get-MailContact cmdlet, and outputs this information.
-* Updates the HiddenFromAddressListsEnabled property of each member to 'True' using the Set-MailContact cmdlet.
+1. Retrieves members of the "External Users" distribution group using the Get-DistributionGroupMember cmdlet.
+2. Iterates through each member, retrieves their Name and HiddenFromAddressListsEnabled properties using the Get-MailContact cmdlet, and outputs this information.
+3. Updates the HiddenFromAddressListsEnabled property of each member to 'True' using the Set-MailContact cmdlet.
 
 ```PowerShell
 Install-Module -Name ExchangeOnlineManagement # if not installed already
