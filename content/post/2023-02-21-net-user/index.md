@@ -2,7 +2,7 @@
 author: Tristan Madden
 categories: [Shell]
 date: 2023-02-22
-lastmod: 2023-03-22
+lastmod: 2023-04-11
 tags: [net]
 title: net user
 thumbnail: "thumbnail.png"
@@ -22,7 +22,7 @@ net user <username> <password> /add
 ## Add user to group
 
 ```Shell
-net localgroup <groupname> <domain>/<username> /add
+net localgroup <groupname> <domain>\<username> /add
 ```
 
 ## Check if account is locked
