@@ -11,6 +11,10 @@ thumbnail: "thumbnail.png"
 toc: true
 ---
 
+## Tenany Allow/Block List
+
+<a href="https://security.microsoft.com/tenantAllowBlockList">https://security.microsoft.com/tenantAllowBlockList</a>
+
 ## Content Search
 
 <a href="https://compliance.microsoft.com/contentsearchv2?viewid=search">https://compliance.microsoft.com/contentsearchv2?viewid=search</a>
