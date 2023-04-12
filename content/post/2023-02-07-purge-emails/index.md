@@ -2,7 +2,7 @@
 author: Tristan Madden
 categories: [ExchangeOnlineManagement]
 date: 2023-02-07
-lastmod: 2023-04-10
+lastmod: 2023-04-12
 tags: [purge, hard delete, M365]
 title: Purge emails with ExchangeOnlineManagement
 summary: This PowerShell script imports the Exchange Online Management module and connects to Exchange Online, performs a "hard delete" of phishing emails by using a compliance search action, and then disconnects from Exchange Online PowerShell without a confirmation prompt or any notification text.
@@ -11,12 +11,12 @@ thumbnail: "thumbnail.png"
 toc: true
 ---
 
-## Tenany Allow/Block List
-
+## Tenant Allow/Block List
+Block external email addresses or domains to prevent sending or receiving emails, to or from users in your organization.
 <a href="https://security.microsoft.com/tenantAllowBlockList">https://security.microsoft.com/tenantAllowBlockList</a>
 
 ## Content Search
-
+Define Content Search criteria that contain only the emails that you would like to purge from your organization.
 <a href="https://compliance.microsoft.com/contentsearchv2?viewid=search">https://compliance.microsoft.com/contentsearchv2?viewid=search</a>
 
 ## Purge
@@ -36,7 +36,6 @@ Get-ComplianceSearch | Sort-Object JobEndTime # if you don't see your content se
 ```
 
 ### Perform a "hard delete" of the content search
-
 
 {{% notice warning "WARNING" %}}
 This cannot be undone!
