@@ -50,6 +50,7 @@ fallBackOgImage = "images/thumbnail.png"
 
 # Logo image
 #logo = "logos/logo2.png"
+#logo = "images/smolfrog.gif"
 
 # center logo on navbar
 #centerLogo = false # Set to "true" for centering or "false" for left aligned.
@@ -132,7 +133,7 @@ languageMenuName = "🌐"
 # website author
 [author]
 name = "Tristan Madden"
-photo = "images/blondie.gif" #include this if you would like to show the author photo on the sidebar
+photo = "images/smolfrog.gif" #include this if you would like to show the author photo on the sidebar
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.

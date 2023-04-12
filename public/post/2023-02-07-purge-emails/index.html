@@ -39,9 +39,15 @@
 <meta property="og:description" content="This PowerShell script imports the Exchange Online Management module and connects to Exchange Online, performs a &quot;hard delete&quot; of phishing emails by …" />
 <meta property="og:image" content="https://trimad.github.io/post/2023-02-07-purge-emails/thumbnail.png" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://trimad.github.io/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://trimad.github.io/icons/favicon-32x32.png">
-<link rel="manifest" href="https://trimad.github.io/icons/site.webmanifest">
+
+
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
 <link rel="canonical" href="https://trimad.github.io/post/2023-02-07-purge-emails/">
 
@@ -164,7 +170,7 @@
 </span>
   <span class="last_mod">
     
-    <i>last modified Mar 30, 2023&nbsp;</i>
+    <i>last modified Apr 12, 2023&nbsp;</i>
   </span>
   <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://trimad.github.io/tags/purge/' title="purge" class="post_tag button button_translucent">purge
     </a><a href='https://trimad.github.io/tags/hard-delete/' title="hard delete" class="post_tag button button_translucent">hard delete
@@ -209,6 +215,7 @@
       <h2>Overview</h2>
       <nav id="TableOfContents">
   <ul>
+    <li><a href="#tenant-allowblock-list">Tenant Allow/Block List</a></li>
     <li><a href="#content-search">Content Search</a></li>
     <li><a href="#purge">Purge</a>
       <ul>
@@ -223,15 +230,19 @@
 </nav>
     </div>
     
-    <div class="post_body"><h2 id="content-search">Content Search</h2>
-<p><a href="https://compliance.microsoft.com/contentsearchv2?viewid=search"><a href="https://compliance.microsoft.com/contentsearchv2?viewid=search">https://compliance.microsoft.com/contentsearchv2?viewid=search</a></a></p>
+    <div class="post_body"><h2 id="tenant-allowblock-list">Tenant Allow/Block List</h2>
+<p>Block external email addresses or domains to prevent sending or receiving emails, to or from users in your organization.
+<a href="https://security.microsoft.com/tenantAllowBlockList"><a href="https://security.microsoft.com/tenantAllowBlockList">https://security.microsoft.com/tenantAllowBlockList</a></a></p>
+<h2 id="content-search">Content Search</h2>
+<p>Define Content Search criteria that contain only the emails that you would like to purge from your organization.
+<a href="https://compliance.microsoft.com/contentsearchv2?viewid=search"><a href="https://compliance.microsoft.com/contentsearchv2?viewid=search">https://compliance.microsoft.com/contentsearchv2?viewid=search</a></a></p>
 <h2 id="purge">Purge</h2>
 <h3 id="connect-to-exchangeonlinemanagement">Connect to ExchangeOnlineManagement</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">ExchangeOnlineManagement</span> <span class="c"># if not installed already</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">Import-Module</span> <span class="n">ExchangeOnlineManagement</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">Connect-IPPSSession</span>
 </span></span></code></pre></div><h3 id="confirm-that-your-content-search-is-valid">Confirm that your content search is valid</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Get-ComplianceSearch</span> <span class="c"># if you don&#39;t see your content search on this list something is wrong</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Get-ComplianceSearch</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">JobEndTime</span> <span class="c"># if you don&#39;t see your content search on this list something is wrong</span>
 </span></span></code></pre></div><h3 id="perform-a-hard-delete-of-the-content-search">Perform a &quot;hard delete&quot; of the content search</h3>
 
 <div class="notices warning">
@@ -276,7 +287,7 @@
   </div>
 
     <div class="author_header">
-      <img src="https://trimad.github.io/images/blondie.gif" alt="Tristan Madden photo">
+      <img src="https://trimad.github.io/images/smolfrog.gif" alt="Tristan Madden photo">
       <h2>Tristan Madden</h2>
     </div>
     <div class="author_bio">
@@ -311,22 +322,22 @@
     <h2 class="mt-4">Recently Modified</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://trimad.github.io/post/2023-02-07-purge-emails/" class="nav-link" title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a>
+      </li>
+      <li>
+        <a href="https://trimad.github.io/post/2023-02-21-net-user/" class="nav-link" title="net user">net user</a>
+      </li>
+      <li>
         <a href="https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/" class="nav-link" title="Hiding users from GAL">Hiding users from GAL</a>
       </li>
       <li>
         <a href="https://trimad.github.io/post/2023-02-15-decode-phishing-emails/" class="nav-link" title="Decode Phishing Emails">Decode Phishing Emails</a>
       </li>
       <li>
-        <a href="https://trimad.github.io/post/2023-02-07-purge-emails/" class="nav-link" title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a>
-      </li>
-      <li>
         <a href="https://trimad.github.io/post/2023-02-05-film/" class="nav-link" title="FILM">FILM</a>
       </li>
       <li>
         <a href="https://trimad.github.io/post/2023-03-22-random-password-generator/" class="nav-link" title="Random Password Generator">Random Password Generator</a>
-      </li>
-      <li>
-        <a href="https://trimad.github.io/post/2023-02-21-net-user/" class="nav-link" title="net user">net user</a>
       </li>
       <li>
         <a href="https://trimad.github.io/post/2023-02-05-stable-diffusion/" class="nav-link" title="Stable Diffusion Scripts">Stable Diffusion Scripts</a>
