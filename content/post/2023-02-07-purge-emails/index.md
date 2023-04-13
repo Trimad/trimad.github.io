@@ -2,7 +2,7 @@
 author: Tristan Madden
 categories: [ExchangeOnlineManagement]
 date: 2023-02-07
-lastmod: 2023-04-12
+lastmod: 2023-04-13
 tags: [purge, hard delete, M365]
 title: Purge emails with ExchangeOnlineManagement
 summary: This PowerShell script imports the Exchange Online Management module and connects to Exchange Online, performs a "hard delete" of phishing emails by using a compliance search action, and then disconnects from Exchange Online PowerShell without a confirmation prompt or any notification text.
@@ -23,10 +23,12 @@ Define Content Search criteria that contain only the emails that you would like 
 
 ### Connect to ExchangeOnlineManagement
 
+_In an admin elevated PowerShell session_
 ```PowerShell
-Install-Module -Name ExchangeOnlineManagement # if not installed already
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+Install-Module -Name ExchangeOnlineManagement # If not installed already
 Import-Module ExchangeOnlineManagement
-Connect-IPPSSession
+Connect-IPPSSession # This will launch a Modern Authentication Window
 ```
 
 ### Confirm that your content search is valid
