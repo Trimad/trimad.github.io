@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [Shell]
+categories: [AI]
 date: 2023-02-24
 featured: true
 tags: [AI, audio]

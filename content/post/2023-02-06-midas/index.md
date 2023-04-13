@@ -1,10 +1,10 @@
 ---
 author: Tristan Madden
-categories: [Depth Map]
+categories: [ai]
 date: 2023-02-06
 featured: true
 lastmod: 2023-02-06
-tags: [ai, video]
+tags: [ai, video, depth map]
 title: MiDaS
 usePageBundles: true
 thumbnail: "thumbnail.png"
