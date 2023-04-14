@@ -23,10 +23,10 @@ Define Content Search criteria that contain only the emails that you would like 
 
 ### Connect to ExchangeOnlineManagement
 
-_In an admin elevated PowerShell session_
+_In an admin elevated PowerShell session:_
 ```PowerShell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-Install-Module -Name ExchangeOnlineManagement # If not installed already
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned # If not already. You only need to do this once.
+Install-Module -Name ExchangeOnlineManagement # If not installed already. You only need to do this once.
 Import-Module ExchangeOnlineManagement
 Connect-IPPSSession # This will launch a Modern Authentication Window
 ```
