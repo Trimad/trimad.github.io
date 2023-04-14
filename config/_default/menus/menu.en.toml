@@ -10,18 +10,18 @@
 
 # Submenus are done this way: parent -> identifier
 
-[[main]]
-  name = "Links"
-  identifier = "Links"
-  weight = -107
-[[main]]
-  parent = "Links"
-  name = "TikTok"
-  url = "https://www.tiktok.com/@kill3d2deth"
-[[main]]
-  parent = "Links"
-  name = "p5.js"
-  url = "https://editor.p5js.org/Berkanan/sketches"
+# [[main]]
+#  name = "Links"
+#  identifier = "Links"
+#  weight = -107
+# [[main]]
+#  parent = "Links"
+#  name = "TikTok"
+#  url = "https://www.tiktok.com/@kill3d2deth"
+# [[main]]
+#  parent = "Links"
+#  name = "p5.js"
+#  url = "https://editor.p5js.org/Berkanan/sketches"
 
 # social menu links
 
@@ -38,19 +38,19 @@
 #  name = "instagram"
 #  weight = 3
 #  url = ""
-  [[social]]
-  name = "youtube"
-  weight = 2
-  url = "https://www.youtube.com/channel/UCsZ-kpWb24L1GYzQYlbHxMw"
+#  [[social]]
+#  name = "youtube"
+#  weight = 2
+#  url = "https://www.youtube.com/channel/UCsZ-kpWb24L1GYzQYlbHxMw"
 [[social]]
   name = "rss"
   weight = 3
   url = "index.xml"
 [[social]]
-  name = "twitter"
-  type = "social"
-  weight = 1
-  url = "https://twitter.com/KILL3D2DETH"
+#  name = "twitter"
+#  type = "social"
+#  weight = 1
+#  url = "https://twitter.com/KILL3D2DETH"
 
 # other supported social links
 # name = "youtube"
