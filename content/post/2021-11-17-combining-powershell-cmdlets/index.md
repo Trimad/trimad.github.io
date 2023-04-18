@@ -1,8 +1,8 @@
 ---
 title: Combining PowerShell Cmdlets
 author: Tristan Madden
-categories: [PowerShell, ExchangeOnlineManagement]
-tags: [azure, reports, active directory]
+categories: [PowerShell]
+tags: [azure, reports, active directory, ExchangeOnlineManagement]
 date: 2021-11-17
 thumbnail: "thumbnail.png"
 usePageBundles: true

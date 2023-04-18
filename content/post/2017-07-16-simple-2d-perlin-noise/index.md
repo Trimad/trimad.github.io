@@ -1,6 +1,6 @@
 ---
 author: "Tristan Madden"
-categories: ["JavaScript"]
+categories: ["JavaScript","p5.js"]
 date: "2017-07-16"
 tags: ["interactive","JavaScript","p5.js"]
 lastmod: "2023-03-09"

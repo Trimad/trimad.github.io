@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [Stable Diffusion]
+categories: [JavaScript, Python]
 date: 2023-02-05
 featured: true
 featureImage: "thumbnail.gif"

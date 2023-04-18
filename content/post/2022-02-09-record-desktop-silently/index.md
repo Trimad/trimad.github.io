@@ -1,8 +1,8 @@
 ---
 title: Record Desktop Silently
 author: Tristan Madden
-categories: [VBScript, Batchfile]
-tags: [ffmpeg]
+categories: [Shell]
+tags: [ffmpeg, VBScript, bat]
 date: 2022-02-09
 thumbnail: "thumbnail.png"
 usePageBundles: true

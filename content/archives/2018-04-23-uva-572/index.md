@@ -1,8 +1,8 @@
 ---
 title: UVa Online Judge Challenge "572"
 author: Tristan Madden
-categories: [Java,Coding Challenge]
-tags: [uva, disjoint set]
+categories: [Java]
+tags: [uva, coding challenge, disjoint set]
 date: 2018-04-23
 usePageBundles: true
 thumbnail: "thumbnail.png"

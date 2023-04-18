@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [Windows]
+categories: [Shell, PowerShell]
 date: 2023-03-09
 lastmod: 2023-03-09
 summary: "Useful tools for when that got dang Windows just ain't acting right. 😤"

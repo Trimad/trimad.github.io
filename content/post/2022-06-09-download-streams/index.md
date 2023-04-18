@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [Video]
+categories: [Shell]
 date: 2022-06-09
 tags: [download, ffmpeg]
 title: Download Streams

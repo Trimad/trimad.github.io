@@ -5,7 +5,23 @@
     <link>https://trimad.github.io/tags/net/</link>
     <description>Recent content in net on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>net use</title>
+      <link>https://trimad.github.io/post/2023-04-13-net-use/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-04-13-net-use/</guid>
+      <description>
+        
+          
+            Connects a computer to or disconnects a computer from a shared resource, or displays information about computer connections. The command also controls persistent net connections. Used without parameters, net use retrieves a list of network connections.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>net user</title>
       <link>https://trimad.github.io/post/2023-02-21-net-user/</link>

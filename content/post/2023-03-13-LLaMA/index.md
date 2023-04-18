@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [AI]
+categories: [python]
 date: 2023-03-13
 draft: true
 summary: "This is my tentative workflow for getting Facebook's LLaMA working with text-generation-webui."

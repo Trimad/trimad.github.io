@@ -1,8 +1,8 @@
 ---
 title: UVa Online Judge Challenge "11045"
 author: Tristan Madden
-categories: [Java,Coding Challenge]
-tags: [uva, maximum flow, bipartite graph]
+categories: [Java]
+tags: [uva, maximum flow, bipartite graph, coding challenge]
 date: 2018-05-01
 usePageBundles: true
 featureImage: "uva11045.jpg"

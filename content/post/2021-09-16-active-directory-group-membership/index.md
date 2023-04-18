@@ -1,7 +1,7 @@
 ---
 title: Active Directory Group Membership
 author: Tristan Madden
-categories: [PowerShell, Active Directory]
+categories: [PowerShell]
 tags: [active directory, domain, reports]
 date: 2021-09-16
 thumbnail: "thumbnail.png"

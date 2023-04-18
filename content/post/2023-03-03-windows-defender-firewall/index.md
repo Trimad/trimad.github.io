@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [CMD]
+categories: [Shell]
 date: 2023-03-03
 lastmod: 2023-03-07
 tags: [netsh, firewall]

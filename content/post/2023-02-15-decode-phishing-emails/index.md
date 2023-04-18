@@ -1,8 +1,8 @@
 ---
 author: Tristan Madden
-categories: [Python]
+categories: [JavaScript, Python]
 date: 2023-02-15
-lastmod: 2023-04-06
+lastmod: 2023-04-14
 summary: I've notice that a lot of phishing emails use hexadecimal strings to obfuscate their JavaScript. These are some Python scripts useful for identifying where form actions are POSTing to. 
 tags: [phishing]
 title: Decode Phishing Emails
@@ -15,11 +15,11 @@ usePageBundles: true
 
 This p5.js script is designed to find and decode base64-encoded strings that are nested within one another. The script has several functions that work together to achieve this goal:
 
-isBase64(str): This function checks if a given string str is a valid base64-encoded string. It uses a regular expression to test the string and the atob() function to try decoding the string. If the decoding is successful, the function returns true; otherwise, it returns false.
+`isBase64(str)`: This function checks if a given string str is a valid base64-encoded string. It uses a regular expression to test the string and the `atob()` function to try decoding the string. If the decoding is successful, the function returns true; otherwise, it returns false.
 
-decode(str): This function takes a string str and trims any single or double quotes from the beginning and end of the string. Then, if the trimmed string is a valid base64-encoded string, it decodes the string using the atob() function and returns the decoded string; otherwise, it returns null.
+`decode(str)`: This function takes a string str and trims any single or double quotes from the beginning and end of the string. Then, if the trimmed string is a valid base64-encoded string, it decodes the string using the `atob()` function and returns the decoded string; otherwise, it returns null.
 
-repeatedlyDecode(str): This function recursively decodes any base64-encoded strings found within the given string str. It first checks if str is a valid base64-encoded string. If it is, the function decodes the string and then uses a regular expression to find any substrings that are surrounded by single or double quotes. The function then adds these quoted substrings to the matches array along with their decoded values and recursively calls the repeatedlyDecode() function for each of these quoted substrings.
+`repeatedlyDecode(str)`: This function recursively decodes any base64-encoded strings found within the given string str. It first checks if str is a valid base64-encoded string. If it is, the function decodes the string and then uses a regular expression to find any substrings that are surrounded by single or double quotes. The function then adds these quoted substrings to the matches array along with their decoded values and recursively calls the `repeatedlyDecode()` function for each of these quoted substrings.
 
 ```JavaScript
 let input =
@@ -81,9 +81,9 @@ function isBase64(str) {
 
 ## HEX strings
 
-In this program, the re module is used to perform regular expression matching and replacement. The decode_hex function is defined to take a regular expression match object as input, extract the hexadecimal string from the match, decode it to regular ASCII characters, and return the decoded string.
+In this program, the `re` module is used to perform regular expression matching and replacement. The decode_hex function is defined to take a regular expression match object as input, extract the hexadecimal string from the match, decode it to regular ASCII characters, and return the decoded string.
 
-The with statement is used to open the input.html file and read its contents into the content variable. The re.sub function is then used to replace all occurrences of the regular expression r'\\x[0-9a-fA-F]{2}' with the result of calling the decode_hex function on each match. This regular expression matches any sequence of characters that starts with \\x and is followed by two hexadecimal digits.
+The with statement is used to open the input.html file and read its contents into the content variable. The `re.sub` function is then used to replace all occurrences of the regular expression `r'\\x[0-9a-fA-F]{2}'` with the result of calling the `decode_hex` function on each match. This regular expression matches any sequence of characters that starts with \\x and is followed by two hexadecimal digits.
 
 The resulting decoded content is written to an output.html file using the open function and the 'w' write mode.
 
@@ -107,9 +107,9 @@ with open('output.html', 'w') as file:
 
 ## URI-encoded
 
-This script defines a custom function called url_decode() that takes a URL-encoded string as input and returns the decoded string. The url_decode() function uses a while loop to iterate through the input string character by character. If a percent sign is encountered, the function uses the int() function to convert the following two characters to a hexadecimal value, and then uses the chr() function to convert the hexadecimal value to an ASCII character. If there is an invalid literal for int(), the function simply adds the three characters to the output string as-is. The url_decode() function then returns the decoded string.
+This script defines a custom function called `url_decode()` that takes a URL-encoded string as input and returns the decoded string. The `url_decode()` function uses a while loop to iterate through the input string character by character. If a percent sign is encountered, the function uses the `int()` function to convert the following two characters to a hexadecimal value, and then uses the `chr()` function to convert the hexadecimal value to an ASCII character. If there is an invalid literal for `int()`, the function simply adds the three characters to the output string as-is. The `url_decode()` function then returns the decoded string.
 
-The rest of the script is similar to the previous example. It loads the input HTML file, decodes the URL-encoded characters using the url_decode() function, and writes the decoded HTML to a new file named decoded.html. Note that this script also assumes that the input HTML file is named output.html and is in the same directory as the Python script. You may need to adjust the file paths in the script to match your specific use case.
+The rest of the script is similar to the previous example. It loads the input HTML file, decodes the URL-encoded characters using the `url_decode()` function, and writes the decoded HTML to a new file named decoded.html. Note that this script also assumes that the input HTML file is named output.html and is in the same directory as the Python script. You may need to adjust the file paths in the script to match your specific use case.
 
 ```Python
 # Custom function to decode URL-encoded characters

@@ -1,8 +1,8 @@
 ---
 title: Kattis Challenge "Parking"
 author: Tristan Madden
-categories: [Java,Coding Challenge]
-tags: [kattis]
+categories: [Java]
+tags: [kattis, coding challenge]
 date: 2017-09-15
 lastmod: 2023-03-10
 thumbnail: "thumbnail.png"

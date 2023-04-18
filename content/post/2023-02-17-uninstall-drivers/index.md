@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [CMD]
+categories: [Shell]
 date: 2023-02-06
 lastmod: 2023-02-17
 tags: [drivers]

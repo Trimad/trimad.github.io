@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [JavaScript]
+categories: [nodejs]
 date: 2023-03-23
 draft: true
 summary: "An exploration of ways to match clients to therapists during an intake."

@@ -1,10 +1,10 @@
 ---
 author: Tristan Madden
-categories: [Java, Coding Challenge]
+categories: [Java]
 date: 2017-08-18
 lastmod: 2023-03-10
 summary: "\"You are in charge of a server that needs to run some submitted tasks on a first-come, first-served basis. Each day, you can dedicate the server to run these tasks for at most minutes. Given the time each task takes, you want to know how many of them will be finished today.\""
-tags: [kattis]
+tags: [kattis, coding challenge]
 thumbnail: "thumbnail.png"
 title: Kattis Challenge "Server"
 toc: false

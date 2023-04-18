@@ -1,7 +1,7 @@
 ---
 title: Download YouTube Videos
 author: Tristan Madden
-categories: [CMD]
+categories: [Shell]
 tags: [download, youtube-dl, yt-dlp]
 date: 2022-04-16
 lastmod: 2023-03-03

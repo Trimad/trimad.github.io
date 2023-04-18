@@ -1,7 +1,7 @@
 ---
 title: Daily Donation Report
 author: Tristan Madden
-categories: [JavaScript,Google Apps Script]
+categories: [JavaScript]
 tags: [google forms, gsuite, reports]
 date: 2019-08-25
 thumbnail: "thumbnail.png"

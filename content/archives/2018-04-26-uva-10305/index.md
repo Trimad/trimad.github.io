@@ -1,8 +1,8 @@
 ---
 title: UVa Online Judge Challenge "10305"
 author: Tristan Madden
-categories: [Java,Coding Challenge]
-tags: [uva, dag, directed acyclic graph, topological sort, bitset]
+categories: [Java]
+tags: [uva, dag, directed acyclic graph, topological sort, bitset, coding challenge]
 date: 2018-04-26
 usePageBundles: true
 thumbnail: "thumbnail.png"

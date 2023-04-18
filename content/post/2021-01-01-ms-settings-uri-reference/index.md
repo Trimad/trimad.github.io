@@ -2,6 +2,7 @@
 title: Windows 10/11 ms-settings URI Scheme Reference
 author: Tristan Madden
 categories: [Windows, reference]
+draft: true
 tags: []
 date: 2021-01-01
 thumbnail: "thumbnail.png"

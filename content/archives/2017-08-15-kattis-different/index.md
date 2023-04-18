@@ -1,10 +1,10 @@
 ---
 author: Tristan Madden
-categories: [Java, Coding Challenge]
+categories: [Java]
 date: 2017-08-15
 lastmod: 2023-03-10
 summary: "\"Write a program that computes the difference between non-negative integers.\""
-tags: [kattis]
+tags: [kattis, coding challenge]
 thumbnail: "thumbnail.png"
 title: Kattis Challenge "A Different Problem"
 toc: false

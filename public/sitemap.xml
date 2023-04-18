@@ -3,30 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://trimad.github.io/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/ai/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/categories/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/llama/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <loc>https://trimad.github.io/tags/drives/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/net/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/post/2023-04-13-net-use/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/printers/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/categories/shell/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/ai/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/animation/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/categories/python/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/video/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/activedirectory/</loc>
-    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/exchange/</loc>
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/exchangeonlinemanagement/</loc>
@@ -38,8 +56,11 @@
     <loc>https://trimad.github.io/tags/msexchhidefromaddresslists/</loc>
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://trimad.github.io/categories/powershell/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://trimad.github.io/categories/javascript/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/passwords/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
@@ -53,14 +74,8 @@
     <loc>https://trimad.github.io/tags/shell/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/windows/</loc>
-    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/post/2023-03-03-windows-remediation/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/cmd/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/firewall/</loc>
     <lastmod>2023-03-07T00:00:00+00:00</lastmod>
@@ -71,17 +86,11 @@
     <loc>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</loc>
     <lastmod>2023-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/ai/</loc>
-    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/tags/audio/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-24-openai-whisper/</loc>
     <lastmod>2023-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/shell/</loc>
-    <lastmod>2023-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-22-laps/</loc>
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
@@ -92,23 +101,14 @@
     <loc>https://trimad.github.io/post/2023-02-23-microsoftteams/</loc>
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/powershell/</loc>
-    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/net/</loc>
-    <lastmod>2023-04-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/post/2023-02-21-net-user/</loc>
     <lastmod>2023-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</loc>
-    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/phishing/</loc>
-    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/python/</loc>
-    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/azure/</loc>
     <lastmod>2023-02-09T00:00:00+00:00</lastmod>
@@ -117,21 +117,18 @@
     <lastmod>2023-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/m365/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/exchangeonlinemanagement/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/hard-delete/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/purge/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-07-purge-emails/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/depth-map/</loc>
+    <loc>https://trimad.github.io/tags/depth-map/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/drivers/</loc>
@@ -143,19 +140,10 @@
     <loc>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</loc>
     <lastmod>2023-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/tags/video/</loc>
-    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/post/2023-02-05-film/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/images/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/interpolation/</loc>
-    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/stable-diffusion/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2023-02-05-stable-diffusion/</loc>
@@ -188,23 +176,14 @@
     <loc>https://trimad.github.io/tags/ffmpeg/</loc>
     <lastmod>2022-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/video/</loc>
-    <lastmod>2022-06-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/tags/animation/</loc>
+    <loc>https://trimad.github.io/categories/c#/</loc>
     <lastmod>2022-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/fractal/</loc>
     <lastmod>2022-05-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/java/</loc>
-    <lastmod>2023-03-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/post/2022-05-14-logistic-map/</loc>
     <lastmod>2022-05-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/processing/</loc>
-    <lastmod>2023-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</loc>
     <lastmod>2022-05-04T00:00:00+00:00</lastmod>
@@ -217,12 +196,6 @@
   </url><url>
     <loc>https://trimad.github.io/tags/spiral/</loc>
     <lastmod>2022-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/maxine/</loc>
-    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/nvidia/</loc>
-    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</loc>
     <lastmod>2023-02-25T00:00:00+00:00</lastmod>
@@ -248,17 +221,14 @@
     <loc>https://trimad.github.io/tags/reports/</loc>
     <lastmod>2022-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/batchfile/</loc>
+    <loc>https://trimad.github.io/tags/bat/</loc>
     <lastmod>2022-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</loc>
     <lastmod>2022-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/vbscript/</loc>
+    <loc>https://trimad.github.io/tags/vbscript/</loc>
     <lastmod>2022-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/ffmpeg/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2022-01-27-ffmpeg/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
@@ -268,9 +238,6 @@
   </url><url>
     <loc>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/active-directory/</loc>
-    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
@@ -290,22 +257,19 @@
     <loc>https://trimad.github.io/tags/office/</loc>
     <lastmod>2021-07-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://trimad.github.io/categories/java/</loc>
+    <lastmod>2023-03-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://trimad.github.io/tags/k-means/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2021-05-18-k-means-clustering/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/reference/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/post/2021-01-01-ms-settings-uri-reference/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+    <loc>https://trimad.github.io/categories/processing/</loc>
+    <lastmod>2023-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/appx/</loc>
-    <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/appx/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</loc>
@@ -323,16 +287,7 @@
     <loc>https://trimad.github.io/post/2019-08-25-buddhabrot/</loc>
     <lastmod>2019-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/c#/</loc>
-    <lastmod>2019-08-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://trimad.github.io/post/2019-08-25-daily-donation-report/</loc>
-    <lastmod>2019-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/fractal/</loc>
-    <lastmod>2019-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://trimad.github.io/categories/google-apps-script/</loc>
     <lastmod>2019-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/google-forms/</loc>
@@ -395,7 +350,7 @@
     <loc>https://trimad.github.io/tags/bipartite-graph/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://trimad.github.io/categories/coding-challenge/</loc>
+    <loc>https://trimad.github.io/tags/coding-challenge/</loc>
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/tags/maximum-flow/</loc>
@@ -415,6 +370,21 @@
   </url><url>
     <loc>https://trimad.github.io/tags/minimum-spanning-tree/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/3n&#43;1/</loc>
+    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/tags/collatz-conjecture/</loc>
+    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</loc>
+    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://trimad.github.io/categories/c&#43;&#43;/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://trimad.github.io/archives/2017-11-09-uva-10550/</loc>
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>

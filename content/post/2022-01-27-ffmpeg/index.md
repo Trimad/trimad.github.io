@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [CMD, ffmpeg]
+categories: [Shell]
 date: 2022-01-27
 featured: true
 lastmod: 2023-03-16

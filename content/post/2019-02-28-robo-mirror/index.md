@@ -1,8 +1,8 @@
 ---
 title: Robo Mirror
 author: Tristan Madden
-categories: [CMD, Batchfile]
-tags: [robocopy]
+categories: [Shell]
+tags: [robocopy, bat]
 date: 2019-02-28
 usePageBundles: true
 thumbnail: "thumbnail.png"

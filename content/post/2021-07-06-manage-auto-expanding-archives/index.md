@@ -1,8 +1,8 @@
 ---
 title: Managing Auto-Expanding Archives
 author: Tristan Madden
-categories: [PowerShell, ExchangeOnlineManagement]
-tags: [office, reports]
+categories: [PowerShell]
+tags: [office, reports, ExchangeOnlineManagement]
 date: 2021-07-06
 thumbnail: "thumbnail.png"
 usePageBundles: true

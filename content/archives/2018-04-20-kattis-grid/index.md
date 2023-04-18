@@ -1,8 +1,8 @@
 ---
 title: Kattis Challenge "Grid"
 author: Tristan Madden
-categories: [Java,Coding Challenge]
-tags: [kattis]
+categories: [Java]
+tags: [kattis, coding challenge]
 date: 2018-04-20
 usePageBundles: true
 thumbnail: "thumbnail.png"

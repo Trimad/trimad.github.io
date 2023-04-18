@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [ai]
+categories: [python]
 date: 2023-02-06
 featured: true
 lastmod: 2023-02-06

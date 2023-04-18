@@ -1,8 +1,8 @@
 ---
 title: UVa Online Judge Challenge "11172"
 author: Tristan Madden
-categories: [Java,Coding Challenge]
-tags: [uva]
+categories: [Java]
+tags: [uva, coding challenge]
 date: 2017-08-24
 lastmod: 2023-03-10
 thumbnail: "thumbnail.png"

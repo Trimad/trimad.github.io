@@ -1,7 +1,7 @@
 ---
 
 author: Tristan Madden
-categories: [Java,Processing]
+categories: [C#]
 date: 2022-05-14
 tags: [animation, fractal]
 title: Logistic Map

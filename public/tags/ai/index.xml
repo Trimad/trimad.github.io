@@ -5,7 +5,23 @@
     <link>https://trimad.github.io/tags/ai/</link>
     <description>Recent content in ai on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thin Plate Spline Motion Model</title>
+      <link>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</guid>
+      <description>
+        
+          
+            This is my tentative workflow for using this repository to animate static images using a driving video.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>OpenAI Whisper</title>
       <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>

@@ -1,6 +1,6 @@
 ---
 author: Tristan Madden
-categories: [Exchange]
+categories: [PowerShell]
 date: 2023-04-05
 lastmod: 2023-04-06
 draft: false

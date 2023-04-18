@@ -1,7 +1,7 @@
 ---
 title: Remove-AppxPackage
 author: Tristan Madden
-categories: [PowerShell, Appx]
+categories: [PowerShell]
 tags: [appx]
 date: 2019-08-28
 thumbnail: "thumbnail.png"

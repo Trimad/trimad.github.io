@@ -1,8 +1,8 @@
 ---
 title: Kattis Challenge "Line Them Up"
 author: Tristan Madden
-categories: [Java,Coding Challenge]
-tags: [kattis]
+categories: [Java]
+tags: [kattis, coding challenge]
 date: 2017-08-18
 lastmod: 2023-03-10
 summary: "\"An eccentric coach asks players on the team to line up alphabetically at the start of practice. The coach does not tell the players whether they need to line up in increasing or decreasing order, so they guess. If they guess wrong, the coach makes them run laps before practice. Given a list of names, you are to determine if the list is in increasing alphabetical order, decreasing alphabetical order or neither.\""
