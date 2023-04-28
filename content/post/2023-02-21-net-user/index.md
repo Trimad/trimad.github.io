@@ -16,13 +16,13 @@ The "net user" command is a Command Prompt (Shell) command used to manage user a
 ## Add a user
 
 ```Shell
-net user <username> <password> /add
+net user USERNAME PASSWORD /add
 ```
 
 ## Add user to group
 
 ```Shell
-net localgroup <groupname> <domain>\<username> /add
+net localgroup GROUPNAME DOMAIN\USERNAME /add
 ```
 
 ## Check if account is locked
@@ -30,21 +30,27 @@ net localgroup <groupname> <domain>\<username> /add
 _The find is case sensitive:_
 
 ```Shell
-net user /domain <username> | find "Account active"
+net user /domain USERNAME | find "Account active"
 ```
 
 ## Reset password
 _Domain_
 ```Shell
-net user <username> <password> /domain /active:Yes
+net user USERNAME PASSWORD /domain /active:Yes
 ```
 _Local_
 ```Shell
-net user <username> <password>
+net user USERNAME PASSWORD
 ```
 
 ## Unlock account
 
 ```Shell
-Net user <username> /domain /active:yes
+net user USERNAME /domain /active:yes
+```
+
+## Lock an account
+
+```Shell
+net user USERNAME PASSWORD /domain /active:no
 ```
