@@ -12,10 +12,10 @@
 </span></span></code></pre></div><h3>Exception for a port</h3>These rules allow incoming TCP traffic on ports 10004 and 10005. Again, the "dir=in" parameter specifies that the rules apply to inbound traffic, "action=allow" allows the traffic through, and "enable=yes" ensures that the rules are enabled.<div class=highlight><pre tabindex=0 class=chroma><code class=language-Shell data-lang=Shell><span class=line><span class=ln>1</span><span class=cl>netsh advfirewall firewall add rule <span class=nv>name</span><span class=o>=</span><span class=s2>&#34;10004&#34;</span> <span class=nv>dir</span><span class=o>=</span>in <span class=nv>action</span><span class=o>=</span>allow <span class=nv>protocol</span><span class=o>=</span>TCP <span class=nv>localport</span><span class=o>=</span><span class=m>10004</span> <span class=nv>enable</span><span class=o>=</span>yes
 </span></span><span class=line><span class=ln>2</span><span class=cl>netsh advfirewall firewall add rule <span class=nv>name</span><span class=o>=</span><span class=s2>&#34;10005&#34;</span> <span class=nv>dir</span><span class=o>=</span>in <span class=nv>action</span><span class=o>=</span>allow <span class=nv>protocol</span><span class=o>=</span>TCP <span class=nv>localport</span><span class=o>=</span><span class=m>10005</span> <span class=nv>enable</span><span class=o>=</span>yes
 </span></span></code></pre></div></div><div class=post_comments></div></article><aside class=sidebar><section class=sidebar_inner><br><div class=search><input type=search class="search_field form_field" placeholder=Search... id=find autocomplete=off data-scope=post>
-<label for=find class=search_label><svg class="icon"><title>search</title><use xlink:href="#search"/></svg></label><div class="search_results results"></div></div><div class=author_header><img src=https://trimad.github.io/images/smolfrog.gif alt="Tristan Madden photo"><h2>Tristan Madden</h2></div><div class=author_bio>The impediment to action advances action. What stands in the way becomes the way.</div><a href=https://trimad.github.io/about/ class="button mt-1" role=button title='Read More'>Read More</a><h2 class=mt-4>Featured Posts</h2><ul><li><a href=https://trimad.github.io/post/exetomsi/ class=nav-link title=EXEtoMSI>EXEtoMSI</a></li><li><a href=https://trimad.github.io/post/2023-02-24-openai-whisper/ class=nav-link title="OpenAI Whisper">OpenAI Whisper</a></li><li><a href=https://trimad.github.io/post/2023-02-06-midas/ class=nav-link title=MiDaS>MiDaS</a></li><li><a href=https://trimad.github.io/post/2023-02-05-film/ class=nav-link title=FILM>FILM</a></li><li><a href=https://trimad.github.io/post/2023-02-05-stable-diffusion/ class=nav-link title="Stable Diffusion Scripts">Stable Diffusion Scripts</a></li><li><a href=https://trimad.github.io/post/2022-01-27-ffmpeg/ class=nav-link title=ffmpeg>ffmpeg</a></li></ul><h2 class=mt-4>Recently Modified</h2><ul class=flex-column><li><a href=https://trimad.github.io/post/exetomsi/ class=nav-link title=EXEtoMSI>EXEtoMSI</a></li><li><a href=https://trimad.github.io/post/2023-02-15-decode-phishing-emails/ class=nav-link title="Decode Phishing Emails">Decode Phishing Emails</a></li><li><a href=https://trimad.github.io/post/2023-04-13-net-use/ class=nav-link title="net use">net use</a></li><li><a href=https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/ class=nav-link title="Thin Plate Spline Motion Model">Thin Plate Spline Motion Model</a></li><li><a href=https://trimad.github.io/post/2023-02-07-purge-emails/ class=nav-link title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a></li><li><a href=https://trimad.github.io/post/2023-02-21-net-user/ class=nav-link title="net user">net user</a></li><li><a href=https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/ class=nav-link title="Hiding users from GAL">Hiding users from GAL</a></li><li><a href=https://trimad.github.io/post/2023-02-05-film/ class=nav-link title=FILM>FILM</a></li></ul><div><h2 class="mt-4 taxonomy" id=categories-section>Categories</h2><nav class=tags_nav><a href=https://trimad.github.io/categories/java/ class="post_tag button button_translucent" title=java>JAVA
+<label for=find class=search_label><svg class="icon"><title>search</title><use xlink:href="#search"/></svg></label><div class="search_results results"></div></div><div class=author_header><img src=https://trimad.github.io/images/smolfrog.gif alt="Tristan Madden photo"><h2>Tristan Madden</h2></div><div class=author_bio>The impediment to action advances action. What stands in the way becomes the way.</div><a href=https://trimad.github.io/about/ class="button mt-1" role=button title='Read More'>Read More</a><h2 class=mt-4>Featured Posts</h2><ul><li><a href=https://trimad.github.io/post/2023-02-24-openai-whisper/ class=nav-link title="OpenAI Whisper">OpenAI Whisper</a></li><li><a href=https://trimad.github.io/post/2023-02-06-midas/ class=nav-link title=MiDaS>MiDaS</a></li><li><a href=https://trimad.github.io/post/2023-02-05-film/ class=nav-link title=FILM>FILM</a></li><li><a href=https://trimad.github.io/post/2023-02-05-stable-diffusion/ class=nav-link title="Stable Diffusion Scripts">Stable Diffusion Scripts</a></li><li><a href=https://trimad.github.io/post/2022-01-27-ffmpeg/ class=nav-link title=ffmpeg>ffmpeg</a></li></ul><h2 class=mt-4>Recently Modified</h2><ul class=flex-column><li><a href=https://trimad.github.io/post/2023-05-02-acl/ class=nav-link title=ACL>ACL</a></li><li><a href=https://trimad.github.io/post/2023-02-15-decode-phishing-emails/ class=nav-link title="Decode Phishing Emails">Decode Phishing Emails</a></li><li><a href=https://trimad.github.io/post/2023-04-13-net-use/ class=nav-link title="net use">net use</a></li><li><a href=https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/ class=nav-link title="Thin Plate Spline Motion Model">Thin Plate Spline Motion Model</a></li><li><a href=https://trimad.github.io/post/2023-02-07-purge-emails/ class=nav-link title="Purge emails with ExchangeOnlineManagement">Purge emails with ExchangeOnlineManagement</a></li><li><a href=https://trimad.github.io/post/2023-02-21-net-user/ class=nav-link title="net user">net user</a></li><li><a href=https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/ class=nav-link title="Hiding users from GAL">Hiding users from GAL</a></li><li><a href=https://trimad.github.io/post/2023-02-05-film/ class=nav-link title=FILM>FILM</a></li></ul><div><h2 class="mt-4 taxonomy" id=categories-section>Categories</h2><nav class=tags_nav><a href=https://trimad.github.io/categories/java/ class="post_tag button button_translucent" title=java>JAVA
 <span class=button_tally>21</span></a>
 <a href=https://trimad.github.io/categories/powershell/ class="post_tag button button_translucent" title=powershell>POWERSHELL
-<span class=button_tally>15</span></a>
+<span class=button_tally>16</span></a>
 <a href=https://trimad.github.io/categories/shell/ class="post_tag button button_translucent" title=shell>SHELL
 <span class=button_tally>12</span></a>
 <a href=https://trimad.github.io/categories/javascript/ class="post_tag button button_translucent" title=javascript>JAVASCRIPT
@@ -23,7 +23,7 @@
 <a href=https://trimad.github.io/categories/processing/ class="post_tag button button_translucent" title=processing>PROCESSING
 <span class=button_tally>8</span></a>
 <a href=https://trimad.github.io/categories/python/ class="post_tag button button_translucent" title=python>PYTHON
-<span class=button_tally>7</span></a>
+<span class=button_tally>6</span></a>
 <a href=https://trimad.github.io/categories/p5.js/ class="post_tag button button_translucent" title=p5.js>P5.JS
 <span class=button_tally>4</span></a>
 <a href=https://trimad.github.io/categories/masm/ class="post_tag button button_translucent" title=masm>MASM
@@ -79,6 +79,8 @@
 <span class=button_tally>2</span></a>
 <a href=https://trimad.github.io/tags/3n+1/ class="post_tag button button_translucent" title=3n+1>3N+1
 <span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/acl/ class="post_tag button button_translucent" title=acl>ACL
+<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/activedirectory/ class="post_tag button button_translucent" title=activedirectory>ACTIVEDIRECTORY
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/appx/ class="post_tag button button_translucent" title=appx>APPX
@@ -100,8 +102,6 @@
 <a href=https://trimad.github.io/tags/drivers/ class="post_tag button button_translucent" title=drivers>DRIVERS
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/drives/ class="post_tag button button_translucent" title=drives>DRIVES
-<span class=button_tally>1</span></a>
-<a href=https://trimad.github.io/tags/exe/ class="post_tag button button_translucent" title=exe>EXE
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/fibonacci/ class="post_tag button button_translucent" title=fibonacci>FIBONACCI
 <span class=button_tally>1</span></a>
@@ -131,13 +131,13 @@
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/msexchhidefromaddresslists/ class="post_tag button button_translucent" title=msexchhidefromaddresslists>MSEXCHHIDEFROMADDRESSLISTS
 <span class=button_tally>1</span></a>
-<a href=https://trimad.github.io/tags/msi/ class="post_tag button button_translucent" title=msi>MSI
-<span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/office/ class="post_tag button button_translucent" title=office>OFFICE
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/open-simplex-noise/ class="post_tag button button_translucent" title=open-simplex-noise>OPEN-SIMPLEX-NOISE
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/p5.js/ class="post_tag button button_translucent" title=p5.js>P5.JS
+<span class=button_tally>1</span></a>
+<a href=https://trimad.github.io/tags/permissions/ class="post_tag button button_translucent" title=permissions>PERMISSIONS
 <span class=button_tally>1</span></a>
 <a href=https://trimad.github.io/tags/phishing/ class="post_tag button button_translucent" title=phishing>PHISHING
 <span class=button_tally>1</span></a>

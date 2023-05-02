@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EXE on Hugo Grimoire</title><link>https://trimad.github.io/tags/exe/</link><description>Recent content in EXE on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 28 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/exe/index.xml" rel="self" type="application/rss+xml"/><item><title>EXEtoMSI</title><link>https://trimad.github.io/post/exetomsi/</link><pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/exetomsi/</guid><description>
-Clone the Git Repository GitHub Repository 1git clone dghdfjkghjk Change directorties to the repository you just cloned
-1cd C:\Users\User\Documents\GitHub\EXEtoMSI Environment Setup Create a Conda environment
-1conda create --name EXEtoMSI python=2.7 Import requirements
-1pip install -r requirements.txt List all installed packages to confirm WiX.py is installed successfully
-1conda list -n EXEtoMSI Prepare your template Replace PUT-GUID-HERE with a GUID that's been randomly generated: 1powershell -Command &amp;#34;[guid]::NewGuid().ToString()&amp;#34; Replace YOUR_APP_NAME with the name of your application, in this case EXEtoMSI 1&amp;lt;?</description></item></channel></rss>
