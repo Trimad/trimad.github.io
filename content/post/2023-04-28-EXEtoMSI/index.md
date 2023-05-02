@@ -2,6 +2,7 @@
 author: Tristan Madden
 categories: [python]
 date: 2023-04-28
+draft: true
 featured: true
 lastmod: 2023-04-28
 summery: 
@@ -14,7 +15,7 @@ usePageBundles: true
 
 ## Clone the Git Repository
 
-<h3><a href="https://github.com/google-research/frame-interpolation">GitHub Repository</a></h3>
+<h3><a href="">GitHub Repository</a></h3>
 
 ```Shell
 git clone dghdfjkghjk
@@ -28,8 +29,9 @@ cd C:\Users\User\Documents\GitHub\EXEtoMSI
 
 ## Environment Setup
 
-_Create a Conda environment_
+_Create a Conda environment:_
 
+WiX.py hasn't been updated in ages and doesn't work with Python 3.
 ```Shell
 conda create --name EXEtoMSI python=2.7
 ```
@@ -48,13 +50,17 @@ conda list -n EXEtoMSI
 
 ## Prepare your template
 
-1. Replace `PUT-GUID-HERE` with a GUID that's been randomly generated:
+1. Replace `PUT-GUID-HERE` with a GUID that's been randomly generated.
 
 ```PowerShell
 powershell -Command "[guid]::NewGuid().ToString()"
 ```
 
-1. Replace `YOUR_APP_NAME` with the name of your application, in this case `EXEtoMSI`
+2. Replace `YOUR_APP_NAME` with the name of your application, in this case `EXEtoMSI`.
+
+3. Replace `PATH_TO_YOUR_EXE` with the absolute path of the installer.
+
+4. Replace `YOUR_COMPANY_NAME` with the application's company name.
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>

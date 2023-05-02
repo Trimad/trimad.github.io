@@ -6,7 +6,7 @@ draft: false
 tags: [acl, permissions]
 title: ACL
 thumbnail: "thumbnail.png"
-summary: 
+summary: A collection of PowerShell scripts useful for managing the Access Control List (ACL)
 usePageBundles: true
 toc: true
 ---
