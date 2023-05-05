@@ -11,8 +11,11 @@ usePageBundles: true
 toc: true
 ---
 
-## Setup Environment
+## Download prerequisites
+1. [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+2. [Git](https://git-scm.com/download/win)
 
+## Setup Environment
 ### Clone the git repo
 
 ```Shell
@@ -37,7 +40,9 @@ conda activate IF
 
 ### Install requirements
 ```Shell
-pip install -r requirements.txt
+pip install -r requirements.txt --upgrade
+pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
+pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu117 #bitsandbytes doesn't support cu118 yet
 ```
 
 ## Setup Program
@@ -45,7 +50,8 @@ pip install -r requirements.txt
 ### Download the model weights from Hugging Face
 To keep things tidy I put them in a folder called cache.
 ```Shell
-cd C:\Users\trima\Documents\GitHub\IF\cache
+mkdir cache
+cd cache
 ```
 ```Shell
 git clone https://huggingface.co/DeepFloyd/IF-I-XL-v1.0.git
@@ -56,37 +62,58 @@ git clone https://huggingface.co/DeepFloyd/IF-II-L-v1.0.git
 ```Shell
 git clone https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler.git
 ```
-### Run Deep Floyd IF
 
+* IF-I-XL-v1.0.git is ~262 GB
+* IF-II-L-v1 is ~182 GB
+* stable-diffusion-x4-upscaler is ~26.1 GB
+
+## Run Deep Floyd IF
+Put the code below in a file called run.py. Run it in Anaconda Prompt with `python run.py`
 ```Python
+
+import gc
+import torch
+import time
+
+torch.cuda.set_per_process_memory_fraction(0.5)
+
+def flush():
+    gc.collect()
+    torch.cuda.empty_cache()
+
 from diffusers import DiffusionPipeline
 from diffusers.utils import pt_to_pil
-import torch
 
 # stage 1
-stage_1 = DiffusionPipeline.from_pretrained('./cache/models--DeepFloyd--IF-II-L-v1.0', variant="fp16", torch_dtype=torch.float16)
-stage_1.enable_model_cpu_offload()
+stage_1 = DiffusionPipeline.from_pretrained("./IF-I-XL-v1.0", variant="fp16", torch_dtype=torch.float16, safety_checker=None)
 
 # stage 2
-stage_2 = DiffusionPipeline.from_pretrained(
-    './cache/models--DeepFloyd--IF-I-XL-v1.0', text_encoder=None, variant="fp16", torch_dtype=torch.float16
-)
-stage_2.enable_model_cpu_offload()
+stage_2 = DiffusionPipeline.from_pretrained('./IF-II-L-v1.0', text_encoder=None, variant="fp16", torch_dtype=torch.float16, safety_checker=None)
 
 # stage 3
-stage_3 = DiffusionPipeline.from_pretrained('./cache/models--DeepFloyd--IF-I-XL-v1.0', torch_dtype=torch.float16)
+stage_3 = DiffusionPipeline.from_pretrained('./stable-diffusion-x4-upscaler', torch_dtype=torch.float16, safety_checker=None)
+
+# Memory management
+stage_1.enable_sequential_cpu_offload()
+stage_2.enable_model_cpu_offload()
 stage_3.enable_model_cpu_offload()
 
-prompt = 'a photo of a kangaroo wearing an orange hoodie and blue sunglasses standing in front of the eiffel tower holding a sign that says "very deep learning"'
+# prompt
+prompt = 'an anime girl wearing a shirt that says "hello world"'
 
 # text embeds
 prompt_embeds, negative_embeds = stage_1.encode_prompt(prompt)
 
-generator = torch.manual_seed(0)
+# seed settings
+time_seed = int(time.time())
+generator = torch.manual_seed(time_seed)
 
 # stage 1
 image = stage_1(prompt_embeds=prompt_embeds, negative_prompt_embeds=negative_embeds, generator=generator, output_type="pt").images
 pt_to_pil(image)[0].save("./if_stage_I.png")
+
+del stage_1
+flush()
 
 # stage 2
 image = stage_2(
@@ -94,8 +121,11 @@ image = stage_2(
 ).images
 pt_to_pil(image)[0].save("./if_stage_II.png")
 
+del stage_2
+flush()
+
 # stage 3
 image = stage_3(prompt=prompt, image=image, generator=generator, noise_level=100).images
 image[0].save("./if_stage_III.png")
-
 ```
+
