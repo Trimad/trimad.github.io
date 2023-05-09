@@ -2,11 +2,12 @@
 author: Tristan Madden
 categories: [Python, Shell]
 date: 2023-05-03
+lastmod: 2023-05-09
 draft: false
 tags: [ai, images]
 title: Deep Floyd IF
 thumbnail: "thumbnail.png"
-summary: My tentative work flow for running Deep Floyd IF locally with all safety features removed.
+summary: My tentative work flow for running Deep Floyd IF locally for image generation.
 usePageBundles: true
 toc: true
 ---
@@ -48,27 +49,30 @@ pip3 install --pre torch torchvision torchaudio --index-url https://download.pyt
 ## Setup Program
 
 ### Download the model weights from Hugging Face
-To keep things tidy I put them in a folder called cache.
-```Shell
-mkdir cache
-cd cache
-```
+
+{{% notice warning "WARNING" %}}
+IF-I-XL-v1.0 is ~262 GB
+{{% /notice %}}
 ```Shell
 git clone https://huggingface.co/DeepFloyd/IF-I-XL-v1.0.git
 ```
+{{% notice warning "WARNING" %}}
+IF-II-L-v1 is ~182 GB
+{{% /notice %}}
 ```Shell
 git clone https://huggingface.co/DeepFloyd/IF-II-L-v1.0.git
 ```
+{{% notice warning "WARNING" %}}
+stable-diffusion-x4-upscaler is ~26.1 GB
+{{% /notice %}}
 ```Shell
 git clone https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler.git
 ```
 
-* IF-I-XL-v1.0.git is ~262 GB
-* IF-II-L-v1 is ~182 GB
-* stable-diffusion-x4-upscaler is ~26.1 GB
 
 ## Run Deep Floyd IF
 Put the code below in a file called run.py. Run it in Anaconda Prompt with `python run.py`
+
 ```Python
 
 import gc
@@ -129,3 +133,10 @@ image = stage_3(prompt=prompt, image=image, generator=generator, noise_level=100
 image[0].save("./if_stage_III.png")
 ```
 
+## Conclusion
+
+My takeaways from Deep Floyd IF:
+* The 16GB of VRAM in my RTX 4080 isn't enough to run the third stage, so the largest output this implementation can make is 256x256
+* Deep Floyd IF has extremely slow inference times, upwards of two mintues per 256x256 image. I've played around a bit with memory management but don't know enough about Pytorch to get VRAM usage under 16GB. I got stage 3 working in CPU mode only, which sent inference times soaring over 40 minutes per 1024x1024 image.
+* Community adoption has been slow, probably because of slow inference times
+* Not really seeing an advantage of this over Stable Diffusion + ControlNet

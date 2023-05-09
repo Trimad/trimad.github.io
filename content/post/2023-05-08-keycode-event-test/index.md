@@ -2,10 +2,11 @@
 author: Tristan Madden
 categories: [JavaScript]
 date: 2023-05-08
+lastmod: 2023-05-09
 draft: false
 summary: "This diagnostic tool allows you to type into a text area and logs keyboard events, providing valuable information such as key codes, key names, and modifier keys (Alt, Ctrl, Shift, Meta). As you interact with the text area, the captured event data will be displayed in real-time. This can be particularly useful for debugging and understanding the nuances of keyboard events in your application."
 tags: []
-thumbnail: "thumbnail.png"
+thumbnail: "thumbnail.gif"
 title: "Key Event Tester"
 toc: false
 usePageBundles: true
@@ -27,6 +28,10 @@ This diagnostic tool allows you to type into a text area and logs keyboard event
 <script>
     const textArea = document.getElementById("textArea");
 
+    function scrollToBottom() {
+        textArea.scrollTop = textArea.scrollHeight;
+    }
+
     function processKeyEvent(eventType, event) {
         event.preventDefault();
         let keyCode = event.keyCode || event.which;
@@ -37,6 +42,7 @@ This diagnostic tool allows you to type into a text area and logs keyboard event
         let metaKey = event.metaKey ? "Meta" : "";
         let modifiers = [altKey, ctrlKey, shiftKey, metaKey].filter(Boolean).join(", ");
         textArea.value += eventType + " - KeyCode: " + keyCode + " (" + key + ")" + (modifiers ? " - Modifiers: " + modifiers : "") + "\n";
+        scrollToBottom();
     }
 
     textArea.addEventListener("keydown", function(event) {
