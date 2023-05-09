@@ -3,6 +3,7 @@ author: Tristan Madden
 categories: [JavaScript]
 date: 2023-03-22
 draft: false
+featured: true
 summary: "Randomly generated passwords. Refresh the page for new passwords."
 tags: [passwords]
 thumbnail: "thumbnail.png"
