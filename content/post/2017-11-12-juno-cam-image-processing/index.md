@@ -1,14 +1,15 @@
 ---
 title: Juno Cam Image Processing
 author: Tristan Madden
-categories: [Java,Processing]
+categories: [Java, Processing]
 tags: [juno,jupiter,space]
 date: 2017-11-12
 usePageBundles: true
-thumbnail: "thumbnail.png"
-draft: true
+thumbnail: "thumbnail.jpg"
+featureImage: "thumbnail.jpg"
+draft: false
 ---
-<!-- This is a program I wrote last November that assembles raw image data coming from the Juno Spacecraft. When I started, I thought it would be cool if this program ran in a browser window. When I finished, I was certain that this program should have been a desktop application. The final images this program produces are quite large; well over 20mb, showing the individual red, green, blue, and composite brightness data. Here's a <a href="https://www.missionjuno.swri.edu/junocam/processing">block of text ripped from the JunoCam website</a> that does a good job of explaining why these images need to be reconstructed:
+This is a program I wrote last November that assembles raw image data coming from the Juno Spacecraft. When I started, I thought it would be cool if this program ran in a browser window. When I finished, I was certain that this program should have been a desktop application. The final images this program produces are quite large; well over 20mb, showing the individual red, green, blue, and composite brightness data. Here's a <a href="https://www.missionjuno.swri.edu/junocam/processing">block of text ripped from the JunoCam website</a> that does a good job of explaining why these images need to be reconstructed:
 
 > Like previous MSSS cameras (e.g., Mars Reconnaissance Orbiter’s Mars Color Imager) Junocam is a "pushframe" imager. The detector has multiple filter strips, each with a different bandpass, bonded directly to its photoactive surface. Each strip extends the entire width of the detector, but only a fraction of its height; Junocam's filter strips are 1600 pixels wide and about 155 rows high. The filter strips are scanned across the target by spacecraft rotation. At the nominal spin rate of 2 RPM, frames are acquired about every 400 milliseconds. Junocam has four filters: three visible (red/green/blue) and a narrowband "methane" filter centered at about 890 nm.
 
@@ -18,4 +19,4 @@ draft: true
 
 <h2><a href="https://www.missionjuno.swri.edu/junocam/processing?id=2560">View on NASA website</a></h2>
 
-<h2><a href="https://github.com/Trimad/Juno_Cam">GitHub Repository</a></h2> -->
+<h2><a href="https://github.com/Trimad/Juno_Cam">GitHub Repository</a></h2>
