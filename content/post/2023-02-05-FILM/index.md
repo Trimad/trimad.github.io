@@ -3,39 +3,64 @@ author: Tristan Madden
 categories: [python]
 date: 2023-02-05
 featured: true
-lastmod: 2023-03-30
-summery: "\"The official Tensorflow 2 implementation of our high quality frame interpolation neural network. We present a unified single-network approach that doesn't use additional pre-trained networks, like optical flow or depth, and yet achieve state-of-the-art results. We use a multi-scale feature extractor that shares the same convolution weights across the scales. Our model is trainable from frame triplets alone.\""
+featureImage: interpolated.gif
+lastmod: 2023-05-11
+summary: "*\"The official Tensorflow 2 implementation of our high quality frame interpolation neural network. We present a unified single-network approach that doesn't use additional pre-trained networks, like optical flow or depth, and yet achieve state-of-the-art results. We use a multi-scale feature extractor that shares the same convolution weights across the scales. Our model is trainable from frame triplets alone.\"*"
 tags: [ai, video]
 toc: true
 title: FILM
-thumbnail: "thumbnail.png"
+thumbnail: interpolated.gif
 usePageBundles: true
 ---
 
-<h3><a href="https://github.com/google-research/frame-interpolation">GitHub Repository</a></h3>
+*\"The official Tensorflow 2 implementation of our high quality frame interpolation neural network. We present a unified single-network approach that doesn't use additional pre-trained networks, like optical flow or depth, and yet achieve state-of-the-art results. We use a multi-scale feature extractor that shares the same convolution weights across the scales. Our model is trainable from frame triplets alone.\"*
 
-## GPU Bug Fix
-The Windows setup instructions in the GitHub repository are wrong or outdated. Tensorflow kept trying to use the CPU instead of the GPU until I installed CUDA and CUDNN this way:
+## Prerequisites
 
+### Miniconda
+
+<a href="https://docs.conda.io/en/latest/miniconda.html" title="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a>
+
+### Git
+
+<a href="https://git-scm.com/download/win" title="https://git-scm.com/download/win">https://git-scm.com/download/win</a>
+
+## Setup
+
+Get Frame Interpolation source codes:
 ```Shell
-conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
-python -m pip install "tensorflow<2.11"
-pip install protobuf==3.20.3
+git clone https://github.com/google-research/frame-interpolation.git
 ```
+cd into the cloned git repository, for example:
+```Shell
+cd C:\Users\trima\Documents\GitHub\frame-interpolation
+```
+
+Create the Miniconda virtual environment:
+```Shell
+conda create -n frame-interpolation pip python=3.9
+```
+Activate the Minionda environment:
+```Shell
+conda activate frame-interpolation
+```
+Install requirements:
+```Shell
+pip install -r requirements.txt
+```
+```Shell
+conda install -c anaconda cudnn
+```
+
+
 
 ## Usage
 
-Activate the Conda environment:
 
-```Shell
-conda activate frame_interpolation
-```
 
 From the Conda Shell, cd to the FILM directory:
 
-```Shell
-cd C:\Users\trima\frame-interpolation
-```
+
 
 Open File Explorer at this directory and copy the frames you want to interpolate to the "photos" folder.
 
