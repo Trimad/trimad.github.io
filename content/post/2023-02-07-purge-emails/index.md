@@ -2,6 +2,7 @@
 author: Tristan Madden
 categories: [PowerShell]
 date: 2023-02-07
+featured: true
 lastmod: 2023-04-13
 tags: [purge, hard delete, M365]
 title: Purge emails with ExchangeOnlineManagement
