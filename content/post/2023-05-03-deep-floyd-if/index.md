@@ -43,7 +43,6 @@ conda activate IF
 ```Shell
 pip install -r requirements.txt --upgrade
 pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
-pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu117 #bitsandbytes doesn't support cu118 yet
 ```
 
 ## Setup Program

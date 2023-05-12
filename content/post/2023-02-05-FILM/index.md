@@ -8,7 +8,7 @@ lastmod: 2023-05-11
 summary: "*\"The official Tensorflow 2 implementation of our high quality frame interpolation neural network. We present a unified single-network approach that doesn't use additional pre-trained networks, like optical flow or depth, and yet achieve state-of-the-art results. We use a multi-scale feature extractor that shares the same convolution weights across the scales. Our model is trainable from frame triplets alone.\"*"
 tags: [ai, video]
 toc: true
-title: FILM
+title: Frame Interpolation Large Motion (FILM)
 thumbnail: interpolated.gif
 usePageBundles: true
 ---
@@ -40,7 +40,7 @@ Create the Miniconda virtual environment:
 ```Shell
 conda create -n frame-interpolation pip python=3.9
 ```
-Activate the Minionda environment:
+Activate the Miniconda virtual environment:
 ```Shell
 conda activate frame-interpolation
 ```
