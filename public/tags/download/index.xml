@@ -1,42 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>download on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/download/</link>
-    <description>Recent content in download on Hugo Grimoire</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/download/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Download Streams</title>
-      <link>https://trimad.github.io/post/2022-06-09-download-streams/</link>
-      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid>
-      <description>
-        
-          
-            This is my tentative work flow for downloading movie streams online. The gist of what I&#39;ve learned about this process is that every HTTP Live Stream (HLS) begins with an .m3u8 playlist with a MIME type of x-mpegURL or vnd.apple.mpegURL. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Download YouTube Videos</title>
-      <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
-      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid>
-      <description>
-        
-          
-            yt-dlpyt-dlp is a free and open-source command-line tool for downloading videos and audio from YouTube and other video hosting sites. It is a fork of youtube-dl with additional features and improvements, including better performance and more frequent updates. Unlike youtube-dl, which has faced various legal challenges and takedowns, yt-dlp is actively maintained and regularly updated to ensure compatibility with the latest changes in video hosting sites.GitHub Repository Download the Windows executableDownload a YouTube video with default settings:
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>download on Hugo Grimoire</title><link>https://trimad.github.io/tags/download/</link><description>Recent content in download on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 09 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Download Streams</title><link>https://trimad.github.io/post/2022-06-09-download-streams/</link><pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid><description>
+This is my tentative work flow for downloading movie streams online. The gist of what I've learned about this process is that every HTTP Live Stream (HLS) begins with an .m3u8 playlist with a MIME type of x-mpegURL or vnd.apple.mpegURL. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page.</description></item><item><title>Download YouTube Videos</title><link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link><pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid><description>
+yt-dlp
+yt-dlp is a free and open-source command-line tool for downloading videos and audio from YouTube and other video hosting sites. It is a fork of youtube-dl with additional features and improvements, including better performance and more frequent updates. Unlike youtube-dl, which has faced various legal challenges and takedowns, yt-dlp is actively maintained and regularly updated to ensure compatibility with the latest changes in video hosting sites.
+GitHub Repository Download the Windows executable
+Download a YouTube video with default settings:</description></item></channel></rss>
