@@ -2,20 +2,16 @@
 author: Tristan Madden
 categories: [Python]
 date: 2023-06-24
+lastmod: 2023-07-13
 featured: false
-summary: "Decorative QR code ideas. Generated with Stable Diffusion."
-tags: [ai, images, video]
+summary: "Python script for generating a QR code."
+tags: [images]
 thumbnail: "thumbnail.png"
 title: QR Codes
-toc: true
 usePageBundles: true
 ---
 
-## Generate a QR code with Python
-
-This script uses the qrcode library: https://pypi.org/project/qrcode/
-
-* It's important that the QR code be generated with Level H error correction because Stable Diffusion is going to introduce a lot of corruption.
+* This script uses the qrcode library: https://pypi.org/project/qrcode/
 * The QR code spec recommends a minimum border padding of 4.
 
 ```Python
@@ -70,5 +66,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```

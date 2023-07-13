@@ -2,6 +2,7 @@
 author: Tristan Madden
 categories: [Python]
 date: 2023-05-24
+lastmod: 2023-07-13
 featured: true
 summary: "This is a cheat sheet of animations showing what the various 3D translation and rotation settings do in Deforum Stable Diffusion."
 tags: [ai, images, video]
