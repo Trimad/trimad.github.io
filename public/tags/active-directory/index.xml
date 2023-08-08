@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>active directory on Hugo Grimoire</title><link>https://trimad.github.io/tags/active-directory/</link><description>Recent content in active directory on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/active-directory/index.xml" rel="self" type="application/rss+xml"/><item><title>Combining PowerShell Cmdlets</title><link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link><pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid><description>
-I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the ExchangeOnlineManagement module, and other data only from the AzureAD module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.</description></item><item><title>Get Group Membership</title><link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link><pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid><description>
-Scripts useful for getting group membership. Run them from an admin-elevated Windows PowerShell ISE script pane.
-ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdlets for AD operations 2Import-Module ActiveDirectory 3 4# Get all Active Directory groups, sorted by name. The -filter * returns all groups. 5$groups = (Get-ADGroup -filter * | Sort Name) 6 7# Store the total number of groups for progress tracking 8$totalgroups = $groups.Count 9 10# Initialize a counter for tracking the current group number 11$i = 1 12 13# Initialize an empty array to hold the output data 14$output = @() 15 16# Loop through each group 17foreach ($group in $groups) { 18 # Increment the counter 19 $i++ 20 # Display the current processing progress in the console 21 Write-Progress -activity &amp;#34;Processing $($group.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>active directory on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/active-directory/</link>
+    <description>Recent content in active directory on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/active-directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combining PowerShell Cmdlets</title>
+      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <description>
+        
+          
+            I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the ExchangeOnlineManagement module, and other data only from the AzureAD module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get Group Membership</title>
+      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
+      <description>
+        
+          
+            Scripts useful for getting group membership. Run them from an admin-elevated Windows PowerShell ISE script pane.
+ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdlets for AD operations 2Import-Module ActiveDirectory 3 4# Get all Active Directory groups, sorted by name. The -filter * returns all groups. 5$groups = (Get-ADGroup -filter * | Sort Name) 6 7# Store the total number of groups for progress tracking 8$totalgroups = $groups.Count 9 10# Initialize a counter for tracking the current group number 11$i = 1 12 13# Initialize an empty array to hold the output data 14$output = @() 15 16# Loop through each group 17foreach ($group in $groups) { 18 # Increment the counter 19 $i++ 20 # Display the current processing progress in the console 21 Write-Progress -activity &amp;#34;Processing $($group.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

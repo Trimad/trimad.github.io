@@ -21,7 +21,7 @@ In this post, I'll walk you through the process of mapping a network drive using
 $networkDriveLetter = "Z:"
 $networkPath = "\\servername\sharename"
 $userSID = "S-1-5-21-xxxxxxxxxx-xxxxxxxxxx-xxxxxxxxx-xxxx" # Replace with the user's SID
-$netUseKeyPath = "HKU:\$userSID\Network\$($networkDriveLetter.TrimEnd(':'))"
+$netUseKeyPath = "Registry::\HKEY_USERS\$userSID\Network\$($networkDriveLetter.TrimEnd(':'))"
 
 # Check if network drive registry key already exists
 if(Test-Path -Path $netUseKeyPath) {
@@ -36,6 +36,7 @@ if(Test-Path -Path $netUseKeyPath) {
 
     Write-Host "Network drive mapped successfully in the registry."
 }
+
 ```
 
 Please remember to replace "S-1-5-21-xxxxxxxxxx-xxxxxxxxxx-xxxxxxxxx-xxxx" with the SID of the user you're modifying the registry for.
@@ -51,6 +52,12 @@ $strSID.Value
 ```
 
 Replace "domainname" and "username" with the respective values for your user.
+
+Alternatively, this can be condensed into a one-liner:
+
+```PowerShell
+(New-Object System.Security.Principal.NTAccount("domainname", "username")).Translate([System.Security.Principal.SecurityIdentifier]).Value
+```
 
 ## Post Mapping Procedure
 

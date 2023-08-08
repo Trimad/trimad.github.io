@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10PRINT on Hugo Grimoire</title><link>https://trimad.github.io/tags/10print/</link><description>Recent content in 10PRINT on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/10print/index.xml" rel="self" type="application/rss+xml"/><item><title>10PRINT Image Filter</title><link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link><pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid><description>
-This sketch is a browser-based image filtering utility inspired by 10PRINT. The UI allows users to produce faithful looking interpretations of 10PRINT, 10PRINT patterns that look hand-drawn, and users can even create an explosive shit-mess of scribbles, if they so wish.
-Launch this sketch is a new window (recommended)
-Launch p5.js web editor</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>10PRINT on Hugo Grimoire</title>
+    <link>https://trimad.github.io/tags/10print/</link>
+    <description>Recent content in 10PRINT on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/10print/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10PRINT Image Filter</title>
+      <link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid>
+      <description>
+        
+          
+            This sketch is a browser-based image filtering utility inspired by 10PRINT. The UI allows users to produce faithful looking interpretations of 10PRINT, 10PRINT patterns that look hand-drawn, and users can even create an explosive shit-mess of scribbles, if they so wish.
+Launch this sketch is a new window (recommended)Launch p5.js web editor
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

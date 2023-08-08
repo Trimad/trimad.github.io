@@ -1,26 +1,255 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shell on Hugo Grimoire</title><link>https://trimad.github.io/categories/shell/</link><description>Recent content in Shell on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 24 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/shell/index.xml" rel="self" type="application/rss+xml"/><item><title>Join workstation to Active Directory</title><link>https://trimad.github.io/post/2023-07-13-join-active-directory/</link><pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-07-13-join-active-directory/</guid><description>
-One-liners that can join a workstation to AD.</description></item><item><title>Deep Floyd IF</title><link>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</link><pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</guid><description>
-My tentative work flow for running Deep Floyd IF locally for image generation.</description></item><item><title>net use</title><link>https://trimad.github.io/post/2023-04-13-net-use/</link><pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-04-13-net-use/</guid><description>
-Connects a computer to or disconnects a computer from a shared resource, or displays information about computer connections. The command also controls persistent net connections. Used without parameters, net use retrieves a list of network connections.</description></item><item><title>Windows Remediation</title><link>https://trimad.github.io/post/2023-03-03-windows-remediation/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-03-03-windows-remediation/</guid><description>
-Useful tools for when that got dang Windows just ain't acting right. 😤</description></item><item><title>Windows Defender Firewall</title><link>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</link><pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</guid><description>
-Examples of rules are commonly used in network setups where specific programs or ports need to be allowed through the firewall to ensure that they can communicate with other devices or software.</description></item><item><title>net user</title><link>https://trimad.github.io/post/2023-02-21-net-user/</link><pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-21-net-user/</guid><description>
-The "net user" command is a Command Prompt (Shell) command used to manage user accounts on a Windows operating system. It can be used to create, modify, or delete user accounts, as well as to change passwords and manage group memberships.</description></item><item><title>Uninstall Third-Party Drivers with CMD</title><link>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</link><pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</guid><description>
-You can uninstall third-party drivers (such as the WAVES MaxxAudio Pro driver) from the Command Prompt (CMD) by using the &amp;quot;pnputil.exe&amp;quot; utility. Here's the basic process:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on Hugo Grimoire</title>
+    <link>https://trimad.github.io/categories/shell/</link>
+    <description>Recent content in Shell on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mapping Network Drives Using PowerShell and SID</title>
+      <link>https://trimad.github.io/post/2023-07-20-mapped-drives/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-07-20-mapped-drives/</guid>
+      <description>
+        
+          
+            This blog post discusses a PowerShell script that can map a network drive using a Security Identifier (SID), even without being logged in as that user.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Join a Workstation to Active Directory with Shell and PowerShell</title>
+      <link>https://trimad.github.io/post/2023-07-13-join-active-directory/</link>
+      <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-07-13-join-active-directory/</guid>
+      <description>
+        
+          
+            This post presents one-liner commands using Shell and PowerShell to add a workstation to Active Directory.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Deep Floyd IF</title>
+      <link>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</link>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</guid>
+      <description>
+        
+          
+            My tentative work flow for running Deep Floyd IF locally for image generation.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>net use</title>
+      <link>https://trimad.github.io/post/2023-04-13-net-use/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-04-13-net-use/</guid>
+      <description>
+        
+          
+            Connects a computer to or disconnects a computer from a shared resource, or displays information about computer connections. The command also controls persistent net connections. Used without parameters, net use retrieves a list of network connections.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Windows Remediation</title>
+      <link>https://trimad.github.io/post/2023-03-03-windows-remediation/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-03-03-windows-remediation/</guid>
+      <description>
+        
+          
+            Useful tools for when that got dang Windows just ain&#39;t acting right. 😤
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Windows Defender Firewall</title>
+      <link>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</guid>
+      <description>
+        
+          
+            Examples of rules are commonly used in network setups where specific programs or ports need to be allowed through the firewall to ensure that they can communicate with other devices or software.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>net user</title>
+      <link>https://trimad.github.io/post/2023-02-21-net-user/</link>
+      <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-21-net-user/</guid>
+      <description>
+        
+          
+            The &#34;net user&#34; command is a Command Prompt (Shell) command used to manage user accounts on a Windows operating system. It can be used to create, modify, or delete user accounts, as well as to change passwords and manage group memberships.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Uninstall Third-Party Drivers with CMD</title>
+      <link>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</guid>
+      <description>
+        
+          
+            You can uninstall third-party drivers (such as the WAVES MaxxAudio Pro driver) from the Command Prompt (CMD) by using the &amp;quot;pnputil.exe&amp;quot; utility. Here&#39;s the basic process:
 Open Command Prompt as administrator: Press the Windows key + X, and then select &amp;quot;Command Prompt (Admin)&amp;quot;.
 Type the following command and press Enter:
-1pnputil.exe -e 2# or export the list to a file 3pnputil.exe -e &amp;gt; !drivers.csv This command lists all the third-party drivers installed on your system.</description></item><item><title>Mastering Time with Shell and PowerShell</title><link>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid><description>
-Discover an array of shell and PowerShell commands related to time management, such as checking the last boot-up time, system boot time, and changing the time zone.</description></item><item><title>Download Streams</title><link>https://trimad.github.io/post/2022-06-09-download-streams/</link><pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid><description>
-This is my tentative work flow for downloading movie streams online. The gist of what I've learned about this process is that every HTTP Live Stream (HLS) begins with an .m3u8 playlist with a MIME type of x-mpegURL or vnd.apple.mpegURL. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page.</description></item><item><title>NVIDIA Maxine Windows Audio Effects SDK</title><link>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link><pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid><description>
-This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine Windows Audio Effects SDK.</description></item><item><title>Download YouTube Videos</title><link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link><pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid><description>
-yt-dlp
-yt-dlp is a free and open-source command-line tool for downloading videos and audio from YouTube and other video hosting sites. It is a fork of youtube-dl with additional features and improvements, including better performance and more frequent updates. Unlike youtube-dl, which has faced various legal challenges and takedowns, yt-dlp is actively maintained and regularly updated to ensure compatibility with the latest changes in video hosting sites.
-GitHub Repository Download the Windows executable
-Download a YouTube video with default settings:</description></item><item><title>Record Desktop Silently</title><link>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</link><pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</guid><description>
-Place these 3 files in any directory and run update.vbs to begin recording a Windows session silently.
-Github Repository
-update.exe This file is just ffmpeg that's been renamed to be slightly more inconspicuous in Task Manager. update.bat There are two lines to this batch file. The first line deletes &amp;quot;output.mp4&amp;quot; if it already exists in the same directory. The framerate in frames per second of the recording is set here following the &amp;quot;-framerate&amp;quot; flag The amount of time in seconds to record is set here following the &amp;quot;-t&amp;quot; flag output.</description></item><item><title>ffmpeg</title><link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link><pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-01-27-ffmpeg/</guid><description>
-ffmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
-ffmpeg Download
-ffmpeg Documentation
-Audio Processing Convert to 8kHz, single-channel PCM 1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 8000 -ac 1 output.wav Convert to 16kHz, single-channel PCM 1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 16000 -ac 1 output.wav Convert to 48kHz, single-channel PCM 1ffmpeg -i input.mp3 -ar 48000 -ac 1 output.wav Video Processing Add Music to a Video 1ffmpeg -i video.mp4 -i music.</description></item><item><title>Robo Mirror</title><link>https://trimad.github.io/post/2019-02-28-robo-mirror/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-02-28-robo-mirror/</guid><description>
-This batch file utilizes robocopy to mirror a list of files contained within &amp;quot;targets.txt&amp;quot; in the same directory.</description></item></channel></rss>
+1pnputil.exe -e 2# or export the list to a file 3pnputil.exe -e &amp;gt; !drivers.csv This command lists all the third-party drivers installed on your system.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mastering Time with Shell and PowerShell</title>
+      <link>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
+      <description>
+        
+          
+            Discover an array of shell and PowerShell commands related to time management, such as checking the last boot-up time, system boot time, and changing the time zone.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Download Streams</title>
+      <link>https://trimad.github.io/post/2022-06-09-download-streams/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid>
+      <description>
+        
+          
+            This is my tentative work flow for downloading movie streams online. The gist of what I&#39;ve learned about this process is that every HTTP Live Stream (HLS) begins with an .m3u8 playlist with a MIME type of x-mpegURL or vnd.apple.mpegURL. This playlist lists a series of .ts files that are streamed one at a time and decoded so your browser is not burdened with downloading the entire movie every time you refresh the page.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>NVIDIA Maxine Windows Audio Effects SDK</title>
+      <link>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
+      <description>
+        
+          
+            This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine Windows Audio Effects SDK.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Download YouTube Videos</title>
+      <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid>
+      <description>
+        
+          
+            yt-dlpyt-dlp is a free and open-source command-line tool for downloading videos and audio from YouTube and other video hosting sites. It is a fork of youtube-dl with additional features and improvements, including better performance and more frequent updates. Unlike youtube-dl, which has faced various legal challenges and takedowns, yt-dlp is actively maintained and regularly updated to ensure compatibility with the latest changes in video hosting sites.GitHub Repository Download the Windows executableDownload a YouTube video with default settings:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Record Desktop Silently</title>
+      <link>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</guid>
+      <description>
+        
+          
+            Place these 3 files in any directory and run update.vbs to begin recording a Windows session silently.
+Github Repositoryupdate.exe This file is just ffmpeg that&#39;s been renamed to be slightly more inconspicuous in Task Manager. update.bat There are two lines to this batch file. The first line deletes &amp;quot;output.mp4&amp;quot; if it already exists in the same directory. The framerate in frames per second of the recording is set here following the &amp;quot;-framerate&amp;quot; flag The amount of time in seconds to record is set here following the &amp;quot;-t&amp;quot; flag output.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2022-01-27-ffmpeg/</guid>
+      <description>
+        
+          
+            ffmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
+ffmpeg Downloadffmpeg DocumentationAudio Processing Convert to 8kHz, single-channel PCM 1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 8000 -ac 1 output.wav Convert to 16kHz, single-channel PCM 1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 16000 -ac 1 output.wav Convert to 48kHz, single-channel PCM 1ffmpeg -i input.mp3 -ar 48000 -ac 1 output.wav Video Processing Add Music to a Video 1ffmpeg -i video.mp4 -i music.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Robo Mirror</title>
+      <link>https://trimad.github.io/post/2019-02-28-robo-mirror/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trimad.github.io/post/2019-02-28-robo-mirror/</guid>
+      <description>
+        
+          
+            This batch file utilizes robocopy to mirror a list of files contained within &amp;quot;targets.txt&amp;quot; in the same directory.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
