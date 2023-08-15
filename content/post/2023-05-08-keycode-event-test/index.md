@@ -7,7 +7,7 @@ draft: false
 featured: true
 summary: "This diagnostic tool allows you to type into a text area and logs keyboard events, providing valuable information such as key codes, key names, and modifier keys (Alt, Ctrl, Shift, Meta). As you interact with the text area, the captured event data will be displayed in real-time. This can be particularly useful for debugging and understanding the nuances of keyboard events in your application."
 tags: []
-thumbnail: "thumbnail.gif"
+thumbnail: "thumbnail.png"
 title: "Key Event Tester"
 toc: false
 usePageBundles: true
