@@ -25,6 +25,7 @@ C:\Users\<you>\AppData\Local\Microsoft\WindowsApps\python.exe
 followed by:
 ```Shell
 cd C:\Users\<you>\AppData\Local\Programs\Python\Python311\python.exe
+pip install networkx
 ```
 ## Python Script
 
