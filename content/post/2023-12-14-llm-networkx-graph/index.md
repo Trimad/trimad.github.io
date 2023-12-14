@@ -5,14 +5,19 @@ date: 2023-12-14
 #lastmod: 2023-10-17
 draft: false
 featured: true
-summary: ""
+summary: "This is a work in progress exploration of generating knowledge graphs with LLMs, inspired by a post I read on towardsdatascience.com."
 tags: [Python]
 thumbnail: "thumbnail.png"
-title: "Generating Graphs with LLM"
+title: "Generate Knowledge Graphs with LLMs"
 toc: true
 usePageBundles: true
 ---
 
+* The <a href="https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a">original post</a>.
+
+* The model being used is <a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2">mistralai/Mistral-7B-Instruct-v0.2</a>.
+
+* The UI I'm using for inference is oobabooga's <a href="https://github.com/oobabooga/text-generation-webui">text-generation-webui</a>.
 
 ## Input
 
@@ -400,4 +405,87 @@ hobbit­girls.
         "edge": "Hobbits were numerous and prosperous in the past."
     }
 ]
+```
+
+## Visualize Graph
+
+This script assumes `graph.json` exists in the same directory.
+
+```python
+import json
+import os
+import random
+from pyvis.network import Network
+import networkx as nx
+
+def generate_random_color():
+    """Generate a random hex color."""
+    return "#{:06x}".format(random.randint(0, 0xFFFFFF))
+
+# Path to the JSON file
+file_path = os.path.join(os.path.dirname(__file__), 'graph.json')
+
+# Load data from JSON file
+with open(file_path, 'r') as file:
+    data = json.load(file)
+
+# Create a NetworkX graph
+G = nx.Graph()
+
+# Add nodes and edges from the data
+for item in data:
+    G.add_node(item["node_1"])
+    G.add_node(item["node_2"])
+    G.add_edge(item["node_1"], item["node_2"], title=item["edge"])
+
+# Detect communities
+communities_generator = nx.community.girvan_newman(G)
+top_level_communities = next(communities_generator)
+next_level_communities = next(communities_generator)
+communities = sorted(map(sorted, next_level_communities))
+
+# Create a PyVis network from the NetworkX graph
+net = Network(height="1100px", width='100%', notebook=False, select_menu=True)
+
+# Assign different random colors to different communities
+for community in communities:
+    color = generate_random_color()
+    for node in community:
+        net.add_node(node, node, color=color)
+
+# Add edges
+for edge in G.edges(data=True):
+    net.add_edge(edge[0], edge[1], title=edge[2]['title'])
+
+# Add additional options for better visualization
+net.set_options("""
+var options = {
+  "nodes": {
+    "font": {
+      "size": 14
+    }
+  },
+  "edges": {
+    "color": {
+      "inherit": true
+    },
+    "smooth": false
+  },
+  "physics": {
+    "barnesHut": {
+      "gravitationalConstant": -80000,
+      "centralGravity": 0.3,
+      "springLength": 200,
+      "springConstant": 0.04,
+      "damping": 0.09,
+      "avoidOverlap": 0.1
+    },
+    "minVelocity": 0.75
+  }
+}
+""")
+
+# Save the network
+#net.show("network.html")
+net.write_html("network.html", local=True, notebook=False, open_browser=True)
 ```
