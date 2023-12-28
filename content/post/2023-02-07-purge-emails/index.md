@@ -58,7 +58,7 @@ Get-ComplianceSearch | Sort-Object JobEndTime # Retrieve and sort compliance sea
 New-ComplianceSearchAction -SearchName "name_of_content_search" -Purge -PurgeType HardDelete # Perform a hard delete of the search results.
 ```
 
-**Status Check:** Monitor the progress of the hard delete operation. The names of purge actions are typically appended with _Purge.
+**Status Check:** Monitor the progress of the hard delete operation. The names of purge actions are typically appended with `_Purge`.
 
 ```PowerShell
 Get-ComplianceSearchAction -Identity "name_of_content_search_Purge" | Format-List # Check the status of the purge operation.
