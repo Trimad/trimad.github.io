@@ -20,7 +20,7 @@ usePageBundles: true
 * The UI I'm using for inference is oobabooga's <a href="https://github.com/oobabooga/text-generation-webui">text-generation-webui</a>.
 
 ## Input
-
+I am using the first page of The Hobbit as a test input.
 ```
 In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the
 ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down
@@ -410,6 +410,14 @@ hobbit­girls.
 ## Visualize Graph
 
 This script assumes `graph.json` exists in the same directory.
+
+### Install dependencies
+```
+pip install networkx
+```
+```
+pip install pyvis
+```
 
 ```python
 import json
