@@ -5,7 +5,7 @@ date: 2024-02-05
 #lastmod: 2023-10-17
 draft: false
 featured: true
-summary: ""
+summary: "Short scripts for image-to-text, text-to-sound, etc."
 tags: [Python]
 thumbnail: "thumbnail.png"
 title: "Local AI API"
@@ -13,7 +13,7 @@ toc: true
 usePageBundles: true
 ---
 
-## ITT
+## Image To Text
 
 ### Model
 
@@ -101,11 +101,11 @@ POST <a href="http://127.0.0.1:5000/itt">http://127.0.0.1:5000/itt</a>
 - Code: HTTP 400 Bad Request
 - Content: A JSON object containing an error message.
 
-## STT
+## Sound To Text
 ...
-## TTI
+## Text To Image
 ...
-## TTS
+## Text To Sound
 
 ### Model
 
@@ -190,7 +190,7 @@ POST <a href="http://127.0.0.1:5000/tts">http://127.0.0.1:5000/tts</a>
 - Code: HTTP 400 Bad Request
 - Content: A plain text message indicating an invalid request.
 
-## TTT
+## Text To Text
 
 ### Model
 

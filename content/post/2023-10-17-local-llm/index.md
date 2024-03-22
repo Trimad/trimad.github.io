@@ -3,7 +3,7 @@ author: Tristan Madden
 categories: [Python]
 date: 2023-10-17
 lastmod: 2023-10-17
-draft: false
+draft: true
 featured: true
 summary: ""
 tags: [Python]
