@@ -2,62 +2,64 @@
 author: Tristan Madden
 categories: [Python]
 date: 2023-03-23
-lastmod: 2023-09-07
+lastmod: 2024-02-10
 draft: false
 featured: true
-summary: "TheraFit is a personal project and Large Language Model approach to matching clients to therapists."
+summary: "TheraFit is a personal project utilizing a Large Language Model to enhance the process of matching clients with therapists."
 tags: [Python]
 thumbnail: "thumbnail.png"
 title: "TheraFit"
 toc: true
 usePageBundles: true
 ---
-TheraFit is a personal project and Large Language Model approach to matching clients to therapists.
-## Environment Setup
-Clone the <a href="https://github.com/Trimad/TheraFit">Git repository</a>.
-```shell
-git clone https://github.com/Trimad/TheraFit
-```
-Install <a href="https://docs.conda.io/projects/miniconda/en/latest">Miniconda</a>.
 
+TheraFit is a personal project that leverages a Large Language Model to optimize the process of matching clients with therapists.
 
-### Create the environment
-```shell
-conda create --name therafit --file environment.txt
-```
-```shell
-conda activate therafit
-```
-### Install pip requirements
-```shell
-pip3 install -r requirements.txt
-```
+## Google Sheets API Integration
 
-### Install the Windows version of bitsandbytes
-```shell
-python -m pip install bitsandbytes --prefer-binary --extra-index-url=https://jllllll.github.io/bitsandbytes-windows-webui 
-```
+### Configure the OAuth Consent Screen and Add Test Users
 
-### Force reinstall torch until it works
-```shell
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 --force-reinstall
-```
+[Configure OAuth Consent Screen](https://console.cloud.google.com/apis/credentials/consent)
 
-## Test the Environment
-Use the test script included in the Git repo. 
+### Create an OAuth Client ID
+
+[Create OAuth Client ID](https://console.cloud.google.com/apis/credentials)
+
+## Dummy Data
+
+[Clinician Google Form](https://docs.google.com/forms/d/1Yme6uV67ytb9-2j_-qnwDC57ODVpimZjKXp-qvYOnOk/edit)
+
+[Client Google Form](https://docs.google.com/forms/d/1mYu0uyOR8SXyCWs7v4lFeNH8q5FQCjjoAGbvMEJ_arI/edit)
+
+[Questionnaire Spreadsheet](https://docs.google.com/spreadsheets/d/1ACpGIUQ_EA42Ym_yDxNpb81DWHLXSTX1jHzq7cnNxdI/edit#gid=1038865900)
+
+## Setup Environment
+
+### [Git Repository](https://github.com/Trimad/TheraFit)
+
 ```shell
-python test.py
-```
-If the environment is configured correctly, Torch, Transformers, Gradio and Accelerate should all return True.
-```shell
-C:\Users\Tristan\Documents\GitHub\TheraFit>python test.py
-Torch (CUDA availability): True
-Transformers: True
-Gradio: True
-Accelerate: True
+git clone https://github.com/Trimad/TheraFit.git
+cd TheraFit
+python -m venv venv
+venv\Scripts\activate
+python.exe -m pip install --upgrade pip
+pip install -r requirements.txt
+
 ```
 
-## Run Therafit
+## LLM Model Backend
+
+I've retired my custom LLM backend I'd made for <a href="https://huggingface.co/stabilityai/StableBeluga-7B">stabilityai/StableBeluga-7B</a>. I am now using <a href="https://lmstudio.ai/">LM Studio</a>, as it's become polished enough to be a "set it and forget it" solution for running an LLM backend.
+
+This is my favored model for TheraFit right now: <a href="https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B">teknium/OpenHermes-2.5-Mistral-7B</a>
+
+## Usage
+
+To use the application, ensure LM Studio is running. Then, activate the virtual environment and execute the Python script as follows:
+
 ```shell
-python run.py
+venv\Scripts\activate
+python TheraFit.py
 ```
+If everything is set up correctly, the app will be accessible at this URL:
+<a href="http://127.0.0.1:7860">http://127.0.0.1:7860</a>

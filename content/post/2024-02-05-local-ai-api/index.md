@@ -109,10 +109,10 @@ POST <a href="http://127.0.0.1:5000/itt">http://127.0.0.1:5000/itt</a>
 
 ### Model
 
-Repository: <a href="git clone https://github.com/coqui-ai/TTS.git">Coqui-AI/TTS on GitHub</a>
+Repository: <a href="https://github.com/coqui-ai/TTS.git">Coqui-AI/TTS on GitHub</a>
 
 ```
-git clone git clone https://github.com/coqui-ai/TTS.git
+git clone https://github.com/coqui-ai/TTS.git
 cd TTS
 python -m venv venv
 venv\Scripts\activate
