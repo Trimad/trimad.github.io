@@ -36,7 +36,6 @@ toc: true
 
 **Action:** Establish a connection to Exchange Online Management using an elevated PowerShell session.
 
-
 ```PowerShell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned # If not already set.
 Install-Module -Name ExchangeOnlineManagement # If not installed.
@@ -49,7 +48,9 @@ Connect-IPPSSession # Launches a Modern Authentication Window.
 **Confirmation:** Ensure that your content search in the Compliance Center is valid. If the search name isn't visible, it might still be processing.
 
 ```PowerShell
-Get-ComplianceSearch | Sort-Object JobEndTime # Retrieve and sort compliance searches by job end time.
+Get-ComplianceSearch | Sort-Object JobEndTime # Retrieve and sort all compliance searches by job end time.
+# or
+Get-ComplianceSearch -Identity "05297487" | Select-Object * # Retrieveall stats of only one content search that you know the name of.
 ```
 
 **Action:** Execute a "hard delete" on the identified content based on your search.
