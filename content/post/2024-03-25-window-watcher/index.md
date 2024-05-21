@@ -13,11 +13,18 @@ toc: true
 usePageBundles: true
 ---
 
+
+Github Repository: <a href="https://github.com/vikhyat/moondream">Window Watcher</a>
+
 ## Server-Side
 
 ### Setup Environment
 
-Repository: <a href="https://github.com/vikhyat/moondream">Moondream on GitHub</a>
+I am using the moondream2 model for fast inference. 
+
+Model Repository: <a href="https://github.com/vikhyat/moondream">Moondream on GitHub</a>
+
+Take the server.py script from this repo: Github Repository: <a href="https://github.com/vikhyat/moondream">Window Watcher</a>
 
 ```
 git clone https://github.com/vikhyat/moondream.git
@@ -105,6 +112,3 @@ POST `http://127.0.0.1:5000/itt`
 
 ### Client-Side Script
 
-```python
-#stub
-```

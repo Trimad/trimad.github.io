@@ -78,6 +78,9 @@ Disconnect-ExchangeOnline # Disconnect from Exchange Online Management.
 **Action:** Run the following PowerShell script to extract inbox rules for a list of specified user email addresses.
 
 ```powershell
+Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline # Launches a Modern Authentication Window.
+
 # Define an array of user email addresses
 $userEmails = @(
     'example-one@contoso.com',
