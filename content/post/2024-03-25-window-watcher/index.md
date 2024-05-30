@@ -13,7 +13,6 @@ toc: true
 usePageBundles: true
 ---
 
-
 Github Repository: <a href="https://github.com/vikhyat/moondream">Window Watcher</a>
 
 ## Server-Side
