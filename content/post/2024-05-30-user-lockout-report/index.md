@@ -4,7 +4,7 @@ categories: [PowerShell]
 date: 2024-05-30
 draft: false
 featured: false
-summary: "Generate an HTML diagnostics report for user lockouts in Active Directory Module for Windows PowerShell. Don't forget to run this script as administrator."
+summary: "This PowerShell script generates an HTML diagnostics report for user lockouts in the Active Directory. The script imports the Active Directory module and retrieves all user accounts that are not disabled. It fetches password-related properties and calculates the password age and expiration details for each user. The results are filtered, sorted, and converted into an HTML report with CSS styling for better readability. The final HTML report is saved to a file and opened in the default web browser."
 tags: [PowerShell]
 thumbnail: "thumbnail.png"
 title: "User Lockout Report"
@@ -12,7 +12,7 @@ toc: true
 usePageBundles: true
 ---
 
-Generate an HTML diagnostics report for user lockouts in Active Directory Module for Windows PowerShell. Don't forget to run this script as administrator. 
+This PowerShell script generates an HTML diagnostics report for user lockouts in the Active Directory. The script imports the Active Directory module and retrieves all user accounts that are not disabled. It fetches password-related properties and calculates the password age and expiration details for each user. The results are filtered, sorted, and converted into an HTML report with CSS styling for better readability. The final HTML report is saved to a file and opened in the default web browser.
 
 ```PowerShell
 # Import the Active Directory module
@@ -24,7 +24,14 @@ $users = Get-ADUser -Filter * -Property pwdLastSet, Enabled, LockedOut, Password
 # Get the result of `net accounts`
 $netAccounts = net accounts
 $maxPwdAgeLine = $netAccounts | Select-String -Pattern "Maximum password age"
-$maxPwdAge = [int]($maxPwdAgeLine -split "\s+")[4] # Extract the number of days from the line
+$maxPwdAgeValue = ($maxPwdAgeLine -split "\s+")[4] # Extract the value from the line
+
+# Handle the "Unlimited" case
+if ($maxPwdAgeValue -eq "Unlimited") {
+    $maxPwdAge = [int]::MaxValue
+} else {
+    $maxPwdAge = [int]$maxPwdAgeValue
+}
 
 # Create a custom object to store the results
 $results = @()
@@ -90,5 +97,5 @@ $htmlPath = "pwdLastSet.html"
 $htmlContent | Out-File -FilePath $htmlPath
 
 # Open the HTML file in the default browser
-Start-Process $htmlPath
+Start-Process "powershell.exe" -ArgumentList "Start-Process $htmlPath"
 ```
