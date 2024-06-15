@@ -211,3 +211,42 @@ print("All visualizations saved.")
 ```
 
 This approach provides a clear and structured method for administrators to audit and visualize folder permissions in their environment.
+
+This came in handy for visualizing the bitwise mask:
+
+```powershell
+[System.Enum]::GetValues([System.Security.AccessControl.FileSystemRights]) | ForEach-Object {
+    [PSCustomObject]@{
+        Name = $_
+        Value = [int]$_
+    }
+} | Format-Table -AutoSize
+```
+
+The result is:
+
+```
+                    ReadData       1
+                    ReadData       1
+                 CreateFiles       2
+                 CreateFiles       2
+                  AppendData       4
+                  AppendData       4
+      ReadExtendedAttributes       8
+     WriteExtendedAttributes      16
+                 ExecuteFile      32
+                 ExecuteFile      32
+DeleteSubdirectoriesAndFiles      64
+              ReadAttributes     128
+             WriteAttributes     256
+                       Write     278
+                      Delete   65536
+             ReadPermissions  131072
+                        Read  131209
+              ReadAndExecute  131241
+                      Modify  197055
+           ChangePermissions  262144
+               TakeOwnership  524288
+                 Synchronize 1048576
+                 FullControl 2032127
+```
