@@ -2,7 +2,8 @@
 author: Tristan Madden
 categories: [Visualization]
 date: 2024-06-01
-draft: false
+lastmod: 2024-06-20
+draft: true
 featured: false
 summary: "Useful scripts for visualizing Subnets."
 tags: [network, security]
