@@ -9,8 +9,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -21,12 +23,21 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build
+      - name: Cache Hugo resources
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/hugo
+            resources/_gen
+          key: ${{ runner.os }}-hugoresources-${{ hashFiles('**/*.scss', '**/*.md') }}
+          restore-keys: |
+            ${{ runner.os }}-hugoresources-
+
+      - name: Build site
         run: hugo --minify
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
