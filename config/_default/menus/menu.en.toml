@@ -1,9 +1,15 @@
 [[main]]
   name = "Home"
   url = ""
-  weight = -110
+  weight = -100
 
+  [[main]]
+  name = "TheraFit"
+  url = "/therafit/"
+  weight = -50
+  
 [[main]]
   name = "Archives"
-  url = "archives"
-  weight = -108
+  url = "/archives/"
+  weight = 0
+

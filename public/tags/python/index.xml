@@ -71,21 +71,5 @@
       </description>
     </item>
     
-    <item>
-      <title>TheraFit</title>
-      <link>http://localhost:1313/post/2023-03-28-therafit/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/2023-03-28-therafit/</guid>
-      <description>
-        
-          
-            TheraFit is a personal project utilizing a Large Language Model to enhance the process of matching clients with therapists.
-          
-          
-        
-      </description>
-    </item>
-    
   </channel>
 </rss>

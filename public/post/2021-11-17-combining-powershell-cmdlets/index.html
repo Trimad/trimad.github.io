@@ -83,11 +83,14 @@
     <a href="http://localhost:1313/" class="nav_item" title="Home">Home </a>
   </div>
   <div class="nav_parent">
-    <a href="http://localhost:1313/archives" class="nav_item" title="Archives">Archives </a>
+    <a href="http://localhost:1313/therafit/" class="nav_item" title="TheraFit">TheraFit </a>
+  </div>
+  <div class="nav_parent">
+    <a href="http://localhost:1313/archives/" class="nav_item" title="Archives">Archives </a>
   </div>
       
       <div class="nav_parent">
-        <a href="#" class="nav_item">🌐</a>
+        
         <div class="nav_sub">
           <span class="nav_child"></span>
           
@@ -164,8 +167,7 @@
 
     <div class="post_body"><p>I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the <a href="https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps">ExchangeOnlineManagement</a> module, and other data only from the <a href="https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0">AzureAD</a> module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.</p>
 <script src="https://gist.github.com/Trimad/23d1f60c518fda9b4265edfe0456d8d9.js"></script>
-    </div>
-<div class="post_comments">
+    </div><div class="post_comments">
   
   
   
@@ -202,6 +204,7 @@
       <a href='http://localhost:1313/about/' class="button mt-1" role="button" title='Read More'>Read More</a>
 
     
+      
     
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
@@ -920,10 +923,13 @@
   </symbol>
 </svg>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 <footer class="footer">
     <div class="footer_inner wrap pale">
       <img src='http://localhost:1313/icons/apple-touch-icon.png' class="icon icon_2 transparent" alt="Hugo Grimoire">
-      <a class="to_top" href="#documentTop">
+      <p>Copyright&nbsp;2019 -&nbsp;<span class="year"></span>&nbsp;HUGO GRIMOIRE. All Rights Reserved.</p><a class="to_top" href="#documentTop">
   <svg class="icon">
   <title>to-top</title>
   <use xlink:href="#to-top"></use>
