@@ -1,0 +1,3 @@
+[submodule "themes/hugo-clarity-new"]
+	path = themes/hugo-clarity-new
+	url = https://github.com/chipzoller/hugo-clarity
