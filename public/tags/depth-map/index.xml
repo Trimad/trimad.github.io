@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>depth map on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/depth-map/</link>
-    <description>Recent content in depth map on Hugo Grimoire</description>
+    <title>Depth Map on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/depth-map/</link>
+    <description>Recent content in Depth Map on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/depth-map/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/depth-map/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MiDaS</title>
-      <link>https://trimad.github.io/post/2023-02-06-midas/</link>
+      <link>http://localhost:1313/post/2023-02-06-midas/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-06-midas/</guid>
+      <guid>http://localhost:1313/post/2023-02-06-midas/</guid>
       <description>
         
           

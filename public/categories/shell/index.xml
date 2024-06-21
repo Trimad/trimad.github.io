@@ -2,16 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell on Hugo Grimoire</title>
-    <link>https://trimad.github.io/categories/shell/</link>
+    <link>http://localhost:1313/categories/shell/</link>
     <description>Recent content in Shell on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/shell/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mapping Network Drives Using PowerShell and SID</title>
-      <link>https://trimad.github.io/post/2023-07-20-mapped-drives/</link>
+      <link>http://localhost:1313/post/2023-07-20-mapped-drives/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-20-mapped-drives/</guid>
+      <guid>http://localhost:1313/post/2023-07-20-mapped-drives/</guid>
       <description>
         
           
@@ -24,10 +25,10 @@
     
     <item>
       <title>Join a Workstation to Active Directory with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-07-13-join-active-directory/</link>
+      <link>http://localhost:1313/post/2023-07-13-join-active-directory/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-13-join-active-directory/</guid>
+      <guid>http://localhost:1313/post/2023-07-13-join-active-directory/</guid>
       <description>
         
           
@@ -40,10 +41,10 @@
     
     <item>
       <title>Deep Floyd IF</title>
-      <link>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</link>
+      <link>http://localhost:1313/post/2023-05-03-deep-floyd-if/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</guid>
+      <guid>http://localhost:1313/post/2023-05-03-deep-floyd-if/</guid>
       <description>
         
           
@@ -56,10 +57,10 @@
     
     <item>
       <title>net use</title>
-      <link>https://trimad.github.io/post/2023-04-13-net-use/</link>
+      <link>http://localhost:1313/post/2023-04-13-net-use/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-13-net-use/</guid>
+      <guid>http://localhost:1313/post/2023-04-13-net-use/</guid>
       <description>
         
           
@@ -72,10 +73,10 @@
     
     <item>
       <title>Windows Remediation</title>
-      <link>https://trimad.github.io/post/2023-03-03-windows-remediation/</link>
+      <link>http://localhost:1313/post/2023-03-03-windows-remediation/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-03-windows-remediation/</guid>
+      <guid>http://localhost:1313/post/2023-03-03-windows-remediation/</guid>
       <description>
         
           
@@ -88,10 +89,10 @@
     
     <item>
       <title>Windows Defender Firewall</title>
-      <link>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</link>
+      <link>http://localhost:1313/post/2023-03-03-windows-defender-firewall/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</guid>
+      <guid>http://localhost:1313/post/2023-03-03-windows-defender-firewall/</guid>
       <description>
         
           
@@ -104,10 +105,10 @@
     
     <item>
       <title>net user</title>
-      <link>https://trimad.github.io/post/2023-02-21-net-user/</link>
+      <link>http://localhost:1313/post/2023-02-21-net-user/</link>
       <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-21-net-user/</guid>
+      <guid>http://localhost:1313/post/2023-02-21-net-user/</guid>
       <description>
         
           
@@ -120,10 +121,10 @@
     
     <item>
       <title>Uninstall Third-Party Drivers with CMD</title>
-      <link>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</link>
+      <link>http://localhost:1313/post/2023-02-17-uninstall-drivers/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</guid>
+      <guid>http://localhost:1313/post/2023-02-17-uninstall-drivers/</guid>
       <description>
         
           
@@ -139,10 +140,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Mastering Time with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
+      <link>http://localhost:1313/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
       <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
+      <guid>http://localhost:1313/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
       <description>
         
           
@@ -155,10 +156,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Download Streams</title>
-      <link>https://trimad.github.io/post/2022-06-09-download-streams/</link>
+      <link>http://localhost:1313/post/2022-06-09-download-streams/</link>
       <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid>
+      <guid>http://localhost:1313/post/2022-06-09-download-streams/</guid>
       <description>
         
           
@@ -171,10 +172,10 @@ Type the following command and press Enter:
     
     <item>
       <title>NVIDIA Maxine Windows Audio Effects SDK</title>
-      <link>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
+      <link>http://localhost:1313/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
+      <guid>http://localhost:1313/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
       <description>
         
           
@@ -187,10 +188,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Download YouTube Videos</title>
-      <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
+      <link>http://localhost:1313/post/2022-04-16-downloading-youtube-videos/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid>
+      <guid>http://localhost:1313/post/2022-04-16-downloading-youtube-videos/</guid>
       <description>
         
           
@@ -203,10 +204,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Record Desktop Silently</title>
-      <link>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</link>
+      <link>http://localhost:1313/post/2022-02-09-record-desktop-silently/</link>
       <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</guid>
+      <guid>http://localhost:1313/post/2022-02-09-record-desktop-silently/</guid>
       <description>
         
           
@@ -220,10 +221,10 @@ Github Repositoryupdate.exe This file is just ffmpeg that&#39;s been renamed to
     
     <item>
       <title>ffmpeg</title>
-      <link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link>
+      <link>http://localhost:1313/post/2022-01-27-ffmpeg/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-01-27-ffmpeg/</guid>
+      <guid>http://localhost:1313/post/2022-01-27-ffmpeg/</guid>
       <description>
         
           
@@ -237,10 +238,10 @@ ffmpeg Downloadffmpeg DocumentationAudio Processing Convert to 8kHz, single-ch
     
     <item>
       <title>Robo Mirror</title>
-      <link>https://trimad.github.io/post/2019-02-28-robo-mirror/</link>
+      <link>http://localhost:1313/post/2019-02-28-robo-mirror/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-02-28-robo-mirror/</guid>
+      <guid>http://localhost:1313/post/2019-02-28-robo-mirror/</guid>
       <description>
         
           

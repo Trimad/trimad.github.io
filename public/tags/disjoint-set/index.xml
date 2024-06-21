@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>disjoint set on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/disjoint-set/</link>
-    <description>Recent content in disjoint set on Hugo Grimoire</description>
+    <title>Disjoint Set on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/disjoint-set/</link>
+    <description>Recent content in Disjoint Set on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/disjoint-set/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/disjoint-set/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

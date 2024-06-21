@@ -2,16 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PowerShell on Hugo Grimoire</title>
-    <link>https://trimad.github.io/categories/powershell/</link>
+    <link>http://localhost:1313/categories/powershell/</link>
     <description>Recent content in PowerShell on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 30 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>User Lockout Report</title>
+      <link>http://localhost:1313/post/2024-05-30-user-lockout-report/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-05-30-user-lockout-report/</guid>
+      <description>
+        
+          
+            This PowerShell script generates an HTML diagnostics report for user lockouts in the Active Directory. The script imports the Active Directory module and retrieves all user accounts that are not disabled. It fetches password-related properties and calculates the password age and expiration details for each user. The results are filtered, sorted, and converted into an HTML report with CSS styling for better readability. The final HTML report is saved to a file and opened in the default web browser.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Take Control</title>
+      <link>http://localhost:1313/post/2024-01-02-take-control/</link>
+      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-01-02-take-control/</guid>
+      <description>
+        
+          
+            Steps to take when Take Control isn&#39;t working.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PSWindowsUpdate</title>
+      <link>http://localhost:1313/post/2023-10-10-pswindowsupdate/</link>
+      <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-10-10-pswindowsupdate/</guid>
+      <description>
+        
+          
+            Install Windows Updates with the PSWindowsUpdate PowerShell module.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Mapping Network Drives Using PowerShell and SID</title>
-      <link>https://trimad.github.io/post/2023-07-20-mapped-drives/</link>
+      <link>http://localhost:1313/post/2023-07-20-mapped-drives/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-20-mapped-drives/</guid>
+      <guid>http://localhost:1313/post/2023-07-20-mapped-drives/</guid>
       <description>
         
           
@@ -24,10 +73,10 @@
     
     <item>
       <title>Join a Workstation to Active Directory with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-07-13-join-active-directory/</link>
+      <link>http://localhost:1313/post/2023-07-13-join-active-directory/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-13-join-active-directory/</guid>
+      <guid>http://localhost:1313/post/2023-07-13-join-active-directory/</guid>
       <description>
         
           
@@ -40,10 +89,10 @@
     
     <item>
       <title>ACL</title>
-      <link>https://trimad.github.io/post/2023-05-02-acl/</link>
+      <link>http://localhost:1313/post/2023-05-02-acl/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-02-acl/</guid>
+      <guid>http://localhost:1313/post/2023-05-02-acl/</guid>
       <description>
         
           
@@ -56,10 +105,10 @@
     
     <item>
       <title>Hiding users from GAL</title>
-      <link>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</link>
+      <link>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</guid>
+      <guid>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</guid>
       <description>
         
           
@@ -72,10 +121,10 @@
     
     <item>
       <title>Windows Remediation</title>
-      <link>https://trimad.github.io/post/2023-03-03-windows-remediation/</link>
+      <link>http://localhost:1313/post/2023-03-03-windows-remediation/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-03-windows-remediation/</guid>
+      <guid>http://localhost:1313/post/2023-03-03-windows-remediation/</guid>
       <description>
         
           
@@ -88,10 +137,10 @@
     
     <item>
       <title>Microsoft LAPS (Local Administrator Password Solution)</title>
-      <link>https://trimad.github.io/post/2023-02-22-laps/</link>
+      <link>http://localhost:1313/post/2023-02-22-laps/</link>
       <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-22-laps/</guid>
+      <guid>http://localhost:1313/post/2023-02-22-laps/</guid>
       <description>
         
           
@@ -104,10 +153,10 @@
     
     <item>
       <title>MicrosoftTeams PowerShell module</title>
-      <link>https://trimad.github.io/post/2023-02-23-microsoftteams/</link>
+      <link>http://localhost:1313/post/2023-02-23-microsoftteams/</link>
       <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-23-microsoftteams/</guid>
+      <guid>http://localhost:1313/post/2023-02-23-microsoftteams/</guid>
       <description>
         
           
@@ -120,10 +169,10 @@
     
     <item>
       <title>Force domain controller to sync with AzureAD</title>
-      <link>https://trimad.github.io/post/2023-02-09-force-ad-sync/</link>
+      <link>http://localhost:1313/post/2023-02-09-force-ad-sync/</link>
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-09-force-ad-sync/</guid>
+      <guid>http://localhost:1313/post/2023-02-09-force-ad-sync/</guid>
       <description>
         
           
@@ -135,15 +184,15 @@
     </item>
     
     <item>
-      <title>Purge emails with ExchangeOnlineManagement</title>
-      <link>https://trimad.github.io/post/2023-02-07-purge-emails/</link>
+      <title>Handling Hacked Accounts and Purging Emails in M365</title>
+      <link>http://localhost:1313/post/2023-02-07-purge-emails/</link>
       <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-07-purge-emails/</guid>
+      <guid>http://localhost:1313/post/2023-02-07-purge-emails/</guid>
       <description>
         
           
-            This PowerShell script imports the Exchange Online Management module and connects to Exchange Online, performs a &#34;hard delete&#34; of phishing emails by using a compliance search action, and then disconnects from Exchange Online PowerShell without a confirmation prompt or any notification text.
+            This blog post is an evolving work flow for managing hacked accounts using the ExchangeOnlineManagement PowerShell module. I&#39;ll share my personal experiences using PowerShell, particularly focusing on remediation techniques like purging phishing emails and securing compromised accounts.
           
           
         
@@ -152,10 +201,10 @@
     
     <item>
       <title>Mastering Time with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
+      <link>http://localhost:1313/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
       <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
+      <guid>http://localhost:1313/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
       <description>
         
           
@@ -168,10 +217,10 @@
     
     <item>
       <title>Dump WiFi Passwords</title>
-      <link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link>
+      <link>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</link>
       <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid>
+      <guid>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</guid>
       <description>
         
           
@@ -185,10 +234,10 @@ The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quo
     
     <item>
       <title>Combining PowerShell Cmdlets</title>
-      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <link>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <guid>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</guid>
       <description>
         
           
@@ -201,10 +250,10 @@ The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quo
     
     <item>
       <title>Get Group Membership</title>
-      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
+      <link>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</guid>
       <description>
         
           
@@ -218,10 +267,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Managing Exchange Calendars</title>
-      <link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link>
+      <link>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</guid>
       <description>
         
           
@@ -235,10 +284,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Managing Auto-Expanding Archives</title>
-      <link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link>
+      <link>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</link>
       <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid>
+      <guid>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</guid>
       <description>
         
           
@@ -251,10 +300,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Remote Reboot With SMTP Status</title>
-      <link>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</link>
+      <link>http://localhost:1313/post/2019-08-28-remote-reboot-with-smtp-status/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</guid>
+      <guid>http://localhost:1313/post/2019-08-28-remote-reboot-with-smtp-status/</guid>
       <description>
         
           
@@ -267,10 +316,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Remove-AppxPackage</title>
-      <link>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</link>
+      <link>http://localhost:1313/post/2019-08-28-remove-appx-packages/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</guid>
+      <guid>http://localhost:1313/post/2019-08-28-remove-appx-packages/</guid>
       <description>
         
           
@@ -283,10 +332,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Enable AutoAdminLogon with PowerShell</title>
-      <link>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</link>
+      <link>http://localhost:1313/post/2019-08-19-enable-autoadminlogon/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</guid>
+      <guid>http://localhost:1313/post/2019-08-19-enable-autoadminlogon/</guid>
       <description>
         
           

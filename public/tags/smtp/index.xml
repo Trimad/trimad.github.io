@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>smtp on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/smtp/</link>
-    <description>Recent content in smtp on Hugo Grimoire</description>
+    <title>Smtp on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/smtp/</link>
+    <description>Recent content in Smtp on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/smtp/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/smtp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Remote Reboot With SMTP Status</title>
-      <link>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</link>
+      <link>http://localhost:1313/post/2019-08-28-remote-reboot-with-smtp-status/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</guid>
+      <guid>http://localhost:1313/post/2019-08-28-remote-reboot-with-smtp-status/</guid>
       <description>
         
           

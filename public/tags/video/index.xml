@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>video on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/video/</link>
-    <description>Recent content in video on Hugo Grimoire</description>
+    <title>Video on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/video/</link>
+    <description>Recent content in Video on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 24 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PSWindowsUpdate</title>
+      <link>http://localhost:1313/post/2023-10-10-pswindowsupdate/</link>
+      <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-10-10-pswindowsupdate/</guid>
+      <description>
+        
+          
+            Install Windows Updates with the PSWindowsUpdate PowerShell module.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Join a Workstation to Active Directory with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-07-13-join-active-directory/</link>
+      <link>http://localhost:1313/post/2023-07-13-join-active-directory/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-13-join-active-directory/</guid>
+      <guid>http://localhost:1313/post/2023-07-13-join-active-directory/</guid>
       <description>
         
           
@@ -24,10 +41,10 @@
     
     <item>
       <title>Deforum Cheat Sheet</title>
-      <link>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</link>
+      <link>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</guid>
+      <guid>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</guid>
       <description>
         
           
@@ -40,10 +57,10 @@
     
     <item>
       <title>Thin Plate Spline Motion Model</title>
-      <link>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</link>
+      <link>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</guid>
+      <guid>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</guid>
       <description>
         
           
@@ -56,10 +73,10 @@
     
     <item>
       <title>MiDaS</title>
-      <link>https://trimad.github.io/post/2023-02-06-midas/</link>
+      <link>http://localhost:1313/post/2023-02-06-midas/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-06-midas/</guid>
+      <guid>http://localhost:1313/post/2023-02-06-midas/</guid>
       <description>
         
           
@@ -73,10 +90,10 @@
     
     <item>
       <title>Frame Interpolation Large Motion (FILM)</title>
-      <link>https://trimad.github.io/post/2023-02-05-film/</link>
+      <link>http://localhost:1313/post/2023-02-05-film/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-05-film/</guid>
+      <guid>http://localhost:1313/post/2023-02-05-film/</guid>
       <description>
         
           
@@ -89,10 +106,10 @@
     
     <item>
       <title>Stable Diffusion Scripts</title>
-      <link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link>
+      <link>http://localhost:1313/post/2023-02-05-stable-diffusion/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid>
+      <guid>http://localhost:1313/post/2023-02-05-stable-diffusion/</guid>
       <description>
         
           
@@ -105,10 +122,10 @@
     
     <item>
       <title>ffmpeg</title>
-      <link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link>
+      <link>http://localhost:1313/post/2022-01-27-ffmpeg/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-01-27-ffmpeg/</guid>
+      <guid>http://localhost:1313/post/2022-01-27-ffmpeg/</guid>
       <description>
         
           

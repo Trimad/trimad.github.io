@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fractal on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/fractal/</link>
-    <description>Recent content in fractal on Hugo Grimoire</description>
+    <title>Fractal on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/fractal/</link>
+    <description>Recent content in Fractal on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/fractal/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 14 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/fractal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Logistic Map</title>
-      <link>https://trimad.github.io/post/2022-05-14-logistic-map/</link>
+      <link>http://localhost:1313/post/2022-05-14-logistic-map/</link>
       <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-05-14-logistic-map/</guid>
+      <guid>http://localhost:1313/post/2022-05-14-logistic-map/</guid>
       <description>
         
           
@@ -24,10 +25,10 @@
     
     <item>
       <title>Buddhabrot</title>
-      <link>https://trimad.github.io/post/2019-08-25-buddhabrot/</link>
+      <link>http://localhost:1313/post/2019-08-25-buddhabrot/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-25-buddhabrot/</guid>
+      <guid>http://localhost:1313/post/2019-08-25-buddhabrot/</guid>
       <description>
         
           
@@ -40,10 +41,10 @@
     
     <item>
       <title>Barnsley Fern</title>
-      <link>https://trimad.github.io/post/2018-06-28-barnsley-fern/</link>
+      <link>http://localhost:1313/post/2018-06-28-barnsley-fern/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-06-28-barnsley-fern/</guid>
+      <guid>http://localhost:1313/post/2018-06-28-barnsley-fern/</guid>
       <description>
         
           

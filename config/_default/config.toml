@@ -3,13 +3,13 @@
 baseurl = "https://trimad.github.io/"  # Include trailing slash
 title = "Hugo Grimoire"  # Edit directly from config/_default/languages.toml # alternatively, uncomment this and remove `title` entry from the aforemention file.
 # canonifyurls = true
-paginate = 10
+paginate = 16
 theme = "hugo-clarity"
-disqusShortname = ""
+#disqusShortname = ""
 
 DefaultContentLanguage = "en"
 # [languages]
-#config/_default/languages.toml
+# config/_default/languages.toml
 
 # [menus]
 # config/_default/menus/menu.xx.toml

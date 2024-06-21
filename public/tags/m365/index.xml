@@ -2,16 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>M365 on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/m365/</link>
+    <link>http://localhost:1313/tags/m365/</link>
     <description>Recent content in M365 on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/m365/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 09 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/m365/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Force domain controller to sync with AzureAD</title>
-      <link>https://trimad.github.io/post/2023-02-09-force-ad-sync/</link>
+      <link>http://localhost:1313/post/2023-02-09-force-ad-sync/</link>
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-09-force-ad-sync/</guid>
+      <guid>http://localhost:1313/post/2023-02-09-force-ad-sync/</guid>
       <description>
         
           
@@ -23,15 +24,15 @@
     </item>
     
     <item>
-      <title>Purge emails with ExchangeOnlineManagement</title>
-      <link>https://trimad.github.io/post/2023-02-07-purge-emails/</link>
+      <title>Handling Hacked Accounts and Purging Emails in M365</title>
+      <link>http://localhost:1313/post/2023-02-07-purge-emails/</link>
       <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-07-purge-emails/</guid>
+      <guid>http://localhost:1313/post/2023-02-07-purge-emails/</guid>
       <description>
         
           
-            This PowerShell script imports the Exchange Online Management module and connects to Exchange Online, performs a &#34;hard delete&#34; of phishing emails by using a compliance search action, and then disconnects from Exchange Online PowerShell without a confirmation prompt or any notification text.
+            This blog post is an evolving work flow for managing hacked accounts using the ExchangeOnlineManagement PowerShell module. I&#39;ll share my personal experiences using PowerShell, particularly focusing on remediation techniques like purging phishing emails and securing compromised accounts.
           
           
         
@@ -40,10 +41,10 @@
     
     <item>
       <title>Managing Exchange Calendars</title>
-      <link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link>
+      <link>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</guid>
       <description>
         
           

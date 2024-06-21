@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>animation on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/animation/</link>
-    <description>Recent content in animation on Hugo Grimoire</description>
+    <title>Animation on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/animation/</link>
+    <description>Recent content in Animation on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/animation/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/animation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thin Plate Spline Motion Model</title>
-      <link>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</link>
+      <link>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</guid>
+      <guid>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</guid>
       <description>
         
           
@@ -24,10 +25,10 @@
     
     <item>
       <title>Logistic Map</title>
-      <link>https://trimad.github.io/post/2022-05-14-logistic-map/</link>
+      <link>http://localhost:1313/post/2022-05-14-logistic-map/</link>
       <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-05-14-logistic-map/</guid>
+      <guid>http://localhost:1313/post/2022-05-14-logistic-map/</guid>
       <description>
         
           
@@ -40,10 +41,10 @@
     
     <item>
       <title>k-means Clustering</title>
-      <link>https://trimad.github.io/post/2021-05-18-k-means-clustering/</link>
+      <link>http://localhost:1313/post/2021-05-18-k-means-clustering/</link>
       <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-05-18-k-means-clustering/</guid>
+      <guid>http://localhost:1313/post/2021-05-18-k-means-clustering/</guid>
       <description>
         
           
@@ -56,10 +57,10 @@
     
     <item>
       <title>Buddhabrot</title>
-      <link>https://trimad.github.io/post/2019-08-25-buddhabrot/</link>
+      <link>http://localhost:1313/post/2019-08-25-buddhabrot/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-25-buddhabrot/</guid>
+      <guid>http://localhost:1313/post/2019-08-25-buddhabrot/</guid>
       <description>
         
           
@@ -72,10 +73,10 @@
     
     <item>
       <title>Blending Textures With Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2019-08-18-blending-textures-with-open-simplex-noise/</link>
       <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid>
       <description>
         
           
@@ -88,10 +89,10 @@
     
     <item>
       <title>Cube Wave</title>
-      <link>https://trimad.github.io/post/2018-12-30-cube-wave/</link>
+      <link>http://localhost:1313/post/2018-12-30-cube-wave/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-12-30-cube-wave/</guid>
+      <guid>http://localhost:1313/post/2018-12-30-cube-wave/</guid>
       <description>
         
           
@@ -104,10 +105,10 @@
     
     <item>
       <title>Lorenz Doll</title>
-      <link>https://trimad.github.io/post/2018-11-21-lorenz-doll/</link>
+      <link>http://localhost:1313/post/2018-11-21-lorenz-doll/</link>
       <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-21-lorenz-doll/</guid>
+      <guid>http://localhost:1313/post/2018-11-21-lorenz-doll/</guid>
       <description>
         
           
@@ -120,10 +121,10 @@
     
     <item>
       <title>Barnsley Fern</title>
-      <link>https://trimad.github.io/post/2018-06-28-barnsley-fern/</link>
+      <link>http://localhost:1313/post/2018-06-28-barnsley-fern/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-06-28-barnsley-fern/</guid>
+      <guid>http://localhost:1313/post/2018-06-28-barnsley-fern/</guid>
       <description>
         
           

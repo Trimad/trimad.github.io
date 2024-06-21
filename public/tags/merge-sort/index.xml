@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>merge sort on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/merge-sort/</link>
-    <description>Recent content in merge sort on Hugo Grimoire</description>
+    <title>Merge Sort on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/merge-sort/</link>
+    <description>Recent content in Merge Sort on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/merge-sort/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/merge-sort/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Merge Sort using WEBGL</title>
-      <link>https://trimad.github.io/post/2018-02-05-merge-sort/</link>
+      <link>http://localhost:1313/post/2018-02-05-merge-sort/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid>
+      <guid>http://localhost:1313/post/2018-02-05-merge-sort/</guid>
       <description>
         
           

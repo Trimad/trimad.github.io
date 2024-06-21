@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>calendars on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/calendars/</link>
-    <description>Recent content in calendars on Hugo Grimoire</description>
+    <title>Calendars on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/calendars/</link>
+    <description>Recent content in Calendars on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/calendars/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/calendars/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Managing Exchange Calendars</title>
-      <link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link>
+      <link>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</guid>
       <description>
         
           

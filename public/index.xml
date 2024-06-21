@@ -2,16 +2,209 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Grimoire</title>
-    <link>https://trimad.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DNS Records</title>
+      <link>http://localhost:1313/post/2024-06-06-dns-records/</link>
+      <pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-06-06-dns-records/</guid>
+      <description>
+        
+          
+            A cheat sheet with a comprehensive list of options for DNS records
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Visualizing Folder Permissions</title>
+      <link>http://localhost:1313/post/2024-06-01-visualizing-folder-permissions/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-06-01-visualizing-folder-permissions/</guid>
+      <description>
+        
+          
+            Generate a treemap of user permissions for a given folder and all subfolders.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User Lockout Report</title>
+      <link>http://localhost:1313/post/2024-05-30-user-lockout-report/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-05-30-user-lockout-report/</guid>
+      <description>
+        
+          
+            This PowerShell script generates an HTML diagnostics report for user lockouts in the Active Directory. The script imports the Active Directory module and retrieves all user accounts that are not disabled. It fetches password-related properties and calculates the password age and expiration details for each user. The results are filtered, sorted, and converted into an HTML report with CSS styling for better readability. The final HTML report is saved to a file and opened in the default web browser.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Window Watcher</title>
+      <link>http://localhost:1313/post/2024-03-25-window-watcher/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-03-25-window-watcher/</guid>
+      <description>
+        
+          
+            Use a machine vision model to watch a window.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Change DNS Remotely</title>
+      <link>http://localhost:1313/post/2024-03-21-change-dns-remotely/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-03-21-change-dns-remotely/</guid>
+      <description>
+        
+          
+            Steps that are useful for unbricking a network with a bad DNS config remotely.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Take Control</title>
+      <link>http://localhost:1313/post/2024-01-02-take-control/</link>
+      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-01-02-take-control/</guid>
+      <description>
+        
+          
+            Steps to take when Take Control isn&#39;t working.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Local AI API</title>
+      <link>http://localhost:1313/post/2024-02-05-local-ai-api/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-02-05-local-ai-api/</guid>
+      <description>
+        
+          
+            Short scripts for image-to-text, text-to-sound, etc.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate Knowledge Graphs with LLMs</title>
+      <link>http://localhost:1313/post/2023-12-14-pyvis-knowledge-graphs/</link>
+      <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-12-14-pyvis-knowledge-graphs/</guid>
+      <description>
+        
+          
+            This is a work in progress exploration of generating knowledge graphs with LLMs, inspired by a post I read on towardsdatascience.com.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PSWindowsUpdate</title>
+      <link>http://localhost:1313/post/2023-10-10-pswindowsupdate/</link>
+      <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-10-10-pswindowsupdate/</guid>
+      <description>
+        
+          
+            Install Windows Updates with the PSWindowsUpdate PowerShell module.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Gmail Photo Downloader</title>
+      <link>http://localhost:1313/post/2023-09-11-picture-auto-downloader/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-09-11-picture-auto-downloader/</guid>
+      <description>
+        
+          
+            This is a Google Apps Script I wrote that automatically downloads pictures embedded in a daily email I receive from my son&#39;s daycare to a Google Drive folder.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Disco Ball</title>
+      <link>http://localhost:1313/post/2023-08-24-disco-ball/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-08-24-disco-ball/</guid>
+      <description>
+        
+          
+            Wife needed a black and white PNG/SVG of a Disco Ball. Yep.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Python networkx Library</title>
+      <link>http://localhost:1313/post/2023-08-15-networkx/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-08-15-networkx/</guid>
+      <description>
+        
+          
+            A Python script for visualizing nodes with the networkx library.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Mapping Network Drives Using PowerShell and SID</title>
-      <link>https://trimad.github.io/post/2023-07-20-mapped-drives/</link>
+      <link>http://localhost:1313/post/2023-07-20-mapped-drives/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-20-mapped-drives/</guid>
+      <guid>http://localhost:1313/post/2023-07-20-mapped-drives/</guid>
       <description>
         
           
@@ -24,10 +217,10 @@
     
     <item>
       <title>Join a Workstation to Active Directory with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-07-13-join-active-directory/</link>
+      <link>http://localhost:1313/post/2023-07-13-join-active-directory/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-13-join-active-directory/</guid>
+      <guid>http://localhost:1313/post/2023-07-13-join-active-directory/</guid>
       <description>
         
           
@@ -40,10 +233,10 @@
     
     <item>
       <title>QR Codes</title>
-      <link>https://trimad.github.io/post/2023-06-24-qr/</link>
+      <link>http://localhost:1313/post/2023-06-24-qr/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-06-24-qr/</guid>
+      <guid>http://localhost:1313/post/2023-06-24-qr/</guid>
       <description>
         
           
@@ -56,10 +249,10 @@
     
     <item>
       <title>Deforum Cheat Sheet</title>
-      <link>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</link>
+      <link>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</guid>
+      <guid>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</guid>
       <description>
         
           
@@ -72,10 +265,10 @@
     
     <item>
       <title>Yahoo Finance API via RapidAPI</title>
-      <link>https://trimad.github.io/post/2023-05-11-rapidapi/</link>
+      <link>http://localhost:1313/post/2023-05-11-rapidapi/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-11-rapidapi/</guid>
+      <guid>http://localhost:1313/post/2023-05-11-rapidapi/</guid>
       <description>
         
           
@@ -88,10 +281,10 @@
     
     <item>
       <title>Key Event Tester</title>
-      <link>https://trimad.github.io/post/2023-05-08-keycode-event-test/</link>
+      <link>http://localhost:1313/post/2023-05-08-keycode-event-test/</link>
       <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-08-keycode-event-test/</guid>
+      <guid>http://localhost:1313/post/2023-05-08-keycode-event-test/</guid>
       <description>
         
           
@@ -104,10 +297,10 @@
     
     <item>
       <title>Deep Floyd IF</title>
-      <link>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</link>
+      <link>http://localhost:1313/post/2023-05-03-deep-floyd-if/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</guid>
+      <guid>http://localhost:1313/post/2023-05-03-deep-floyd-if/</guid>
       <description>
         
           
@@ -120,10 +313,10 @@
     
     <item>
       <title>ACL</title>
-      <link>https://trimad.github.io/post/2023-05-02-acl/</link>
+      <link>http://localhost:1313/post/2023-05-02-acl/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-02-acl/</guid>
+      <guid>http://localhost:1313/post/2023-05-02-acl/</guid>
       <description>
         
           
@@ -136,10 +329,10 @@
     
     <item>
       <title>net use</title>
-      <link>https://trimad.github.io/post/2023-04-13-net-use/</link>
+      <link>http://localhost:1313/post/2023-04-13-net-use/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-13-net-use/</guid>
+      <guid>http://localhost:1313/post/2023-04-13-net-use/</guid>
       <description>
         
           
@@ -152,10 +345,10 @@
     
     <item>
       <title>Thin Plate Spline Motion Model</title>
-      <link>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</link>
+      <link>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</guid>
+      <guid>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</guid>
       <description>
         
           
@@ -168,10 +361,10 @@
     
     <item>
       <title>Hiding users from GAL</title>
-      <link>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</link>
+      <link>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</guid>
+      <guid>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</guid>
       <description>
         
           
@@ -183,11 +376,27 @@
     </item>
     
     <item>
+      <title>TheraFit</title>
+      <link>http://localhost:1313/post/2023-03-28-therafit/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-03-28-therafit/</guid>
+      <description>
+        
+          
+            TheraFit is a personal project utilizing a Large Language Model to enhance the process of matching clients with therapists.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Random Password Generator</title>
-      <link>https://trimad.github.io/post/2023-03-22-random-password-generator/</link>
+      <link>http://localhost:1313/post/2023-03-22-random-password-generator/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-22-random-password-generator/</guid>
+      <guid>http://localhost:1313/post/2023-03-22-random-password-generator/</guid>
       <description>
         
           
@@ -200,10 +409,10 @@
     
     <item>
       <title>Windows Remediation</title>
-      <link>https://trimad.github.io/post/2023-03-03-windows-remediation/</link>
+      <link>http://localhost:1313/post/2023-03-03-windows-remediation/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-03-windows-remediation/</guid>
+      <guid>http://localhost:1313/post/2023-03-03-windows-remediation/</guid>
       <description>
         
           
@@ -216,10 +425,10 @@
     
     <item>
       <title>Windows Defender Firewall</title>
-      <link>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</link>
+      <link>http://localhost:1313/post/2023-03-03-windows-defender-firewall/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</guid>
+      <guid>http://localhost:1313/post/2023-03-03-windows-defender-firewall/</guid>
       <description>
         
           
@@ -232,10 +441,10 @@
     
     <item>
       <title>OpenAI Whisper</title>
-      <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>
+      <link>http://localhost:1313/post/2023-02-24-openai-whisper/</link>
       <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid>
+      <guid>http://localhost:1313/post/2023-02-24-openai-whisper/</guid>
       <description>
         
           
@@ -248,10 +457,10 @@
     
     <item>
       <title>Microsoft LAPS (Local Administrator Password Solution)</title>
-      <link>https://trimad.github.io/post/2023-02-22-laps/</link>
+      <link>http://localhost:1313/post/2023-02-22-laps/</link>
       <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-22-laps/</guid>
+      <guid>http://localhost:1313/post/2023-02-22-laps/</guid>
       <description>
         
           
@@ -264,10 +473,10 @@
     
     <item>
       <title>MicrosoftTeams PowerShell module</title>
-      <link>https://trimad.github.io/post/2023-02-23-microsoftteams/</link>
+      <link>http://localhost:1313/post/2023-02-23-microsoftteams/</link>
       <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-23-microsoftteams/</guid>
+      <guid>http://localhost:1313/post/2023-02-23-microsoftteams/</guid>
       <description>
         
           
@@ -280,10 +489,10 @@
     
     <item>
       <title>net user</title>
-      <link>https://trimad.github.io/post/2023-02-21-net-user/</link>
+      <link>http://localhost:1313/post/2023-02-21-net-user/</link>
       <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-21-net-user/</guid>
+      <guid>http://localhost:1313/post/2023-02-21-net-user/</guid>
       <description>
         
           
@@ -296,10 +505,10 @@
     
     <item>
       <title>Decode Phishing Emails</title>
-      <link>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</link>
+      <link>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</guid>
+      <guid>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</guid>
       <description>
         
           
@@ -312,10 +521,10 @@
     
     <item>
       <title>Force domain controller to sync with AzureAD</title>
-      <link>https://trimad.github.io/post/2023-02-09-force-ad-sync/</link>
+      <link>http://localhost:1313/post/2023-02-09-force-ad-sync/</link>
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-09-force-ad-sync/</guid>
+      <guid>http://localhost:1313/post/2023-02-09-force-ad-sync/</guid>
       <description>
         
           
@@ -327,15 +536,15 @@
     </item>
     
     <item>
-      <title>Purge emails with ExchangeOnlineManagement</title>
-      <link>https://trimad.github.io/post/2023-02-07-purge-emails/</link>
+      <title>Handling Hacked Accounts and Purging Emails in M365</title>
+      <link>http://localhost:1313/post/2023-02-07-purge-emails/</link>
       <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-07-purge-emails/</guid>
+      <guid>http://localhost:1313/post/2023-02-07-purge-emails/</guid>
       <description>
         
           
-            This PowerShell script imports the Exchange Online Management module and connects to Exchange Online, performs a &#34;hard delete&#34; of phishing emails by using a compliance search action, and then disconnects from Exchange Online PowerShell without a confirmation prompt or any notification text.
+            This blog post is an evolving work flow for managing hacked accounts using the ExchangeOnlineManagement PowerShell module. I&#39;ll share my personal experiences using PowerShell, particularly focusing on remediation techniques like purging phishing emails and securing compromised accounts.
           
           
         
@@ -344,10 +553,10 @@
     
     <item>
       <title>MiDaS</title>
-      <link>https://trimad.github.io/post/2023-02-06-midas/</link>
+      <link>http://localhost:1313/post/2023-02-06-midas/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-06-midas/</guid>
+      <guid>http://localhost:1313/post/2023-02-06-midas/</guid>
       <description>
         
           
@@ -361,10 +570,10 @@
     
     <item>
       <title>Uninstall Third-Party Drivers with CMD</title>
-      <link>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</link>
+      <link>http://localhost:1313/post/2023-02-17-uninstall-drivers/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</guid>
+      <guid>http://localhost:1313/post/2023-02-17-uninstall-drivers/</guid>
       <description>
         
           
@@ -380,10 +589,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Frame Interpolation Large Motion (FILM)</title>
-      <link>https://trimad.github.io/post/2023-02-05-film/</link>
+      <link>http://localhost:1313/post/2023-02-05-film/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-05-film/</guid>
+      <guid>http://localhost:1313/post/2023-02-05-film/</guid>
       <description>
         
           
@@ -396,10 +605,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Stable Diffusion Scripts</title>
-      <link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link>
+      <link>http://localhost:1313/post/2023-02-05-stable-diffusion/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid>
+      <guid>http://localhost:1313/post/2023-02-05-stable-diffusion/</guid>
       <description>
         
           
@@ -412,10 +621,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Mastering Time with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
+      <link>http://localhost:1313/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
       <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
+      <guid>http://localhost:1313/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
       <description>
         
           
@@ -428,10 +637,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Download Streams</title>
-      <link>https://trimad.github.io/post/2022-06-09-download-streams/</link>
+      <link>http://localhost:1313/post/2022-06-09-download-streams/</link>
       <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid>
+      <guid>http://localhost:1313/post/2022-06-09-download-streams/</guid>
       <description>
         
           
@@ -444,10 +653,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Logistic Map</title>
-      <link>https://trimad.github.io/post/2022-05-14-logistic-map/</link>
+      <link>http://localhost:1313/post/2022-05-14-logistic-map/</link>
       <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-05-14-logistic-map/</guid>
+      <guid>http://localhost:1313/post/2022-05-14-logistic-map/</guid>
       <description>
         
           
@@ -460,10 +669,10 @@ Type the following command and press Enter:
     
     <item>
       <title>Archimedean Spiral</title>
-      <link>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</link>
+      <link>http://localhost:1313/post/2022-05-04-archimedean-spiral/</link>
       <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</guid>
+      <guid>http://localhost:1313/post/2022-05-04-archimedean-spiral/</guid>
       <description>
         
           
@@ -478,10 +687,10 @@ Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;qu
     
     <item>
       <title>NVIDIA Maxine Windows Audio Effects SDK</title>
-      <link>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
+      <link>http://localhost:1313/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
+      <guid>http://localhost:1313/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
       <description>
         
           
@@ -494,10 +703,10 @@ Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;qu
     
     <item>
       <title>Download YouTube Videos</title>
-      <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
+      <link>http://localhost:1313/post/2022-04-16-downloading-youtube-videos/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid>
+      <guid>http://localhost:1313/post/2022-04-16-downloading-youtube-videos/</guid>
       <description>
         
           
@@ -510,10 +719,10 @@ Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;qu
     
     <item>
       <title>Dump WiFi Passwords</title>
-      <link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link>
+      <link>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</link>
       <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid>
+      <guid>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</guid>
       <description>
         
           
@@ -527,10 +736,10 @@ The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quo
     
     <item>
       <title>Record Desktop Silently</title>
-      <link>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</link>
+      <link>http://localhost:1313/post/2022-02-09-record-desktop-silently/</link>
       <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</guid>
+      <guid>http://localhost:1313/post/2022-02-09-record-desktop-silently/</guid>
       <description>
         
           
@@ -544,10 +753,10 @@ Github Repositoryupdate.exe This file is just ffmpeg that&#39;s been renamed to
     
     <item>
       <title>ffmpeg</title>
-      <link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link>
+      <link>http://localhost:1313/post/2022-01-27-ffmpeg/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-01-27-ffmpeg/</guid>
+      <guid>http://localhost:1313/post/2022-01-27-ffmpeg/</guid>
       <description>
         
           
@@ -561,10 +770,10 @@ ffmpeg Downloadffmpeg DocumentationAudio Processing Convert to 8kHz, single-ch
     
     <item>
       <title>Combining PowerShell Cmdlets</title>
-      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <link>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <guid>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</guid>
       <description>
         
           
@@ -577,10 +786,10 @@ ffmpeg Downloadffmpeg DocumentationAudio Processing Convert to 8kHz, single-ch
     
     <item>
       <title>Get Group Membership</title>
-      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
+      <link>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</guid>
       <description>
         
           
@@ -594,10 +803,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Managing Exchange Calendars</title>
-      <link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link>
+      <link>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</guid>
       <description>
         
           
@@ -611,10 +820,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Managing Auto-Expanding Archives</title>
-      <link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link>
+      <link>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</link>
       <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid>
+      <guid>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</guid>
       <description>
         
           
@@ -627,10 +836,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>k-means Clustering</title>
-      <link>https://trimad.github.io/post/2021-05-18-k-means-clustering/</link>
+      <link>http://localhost:1313/post/2021-05-18-k-means-clustering/</link>
       <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-05-18-k-means-clustering/</guid>
+      <guid>http://localhost:1313/post/2021-05-18-k-means-clustering/</guid>
       <description>
         
           
@@ -643,10 +852,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Remote Reboot With SMTP Status</title>
-      <link>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</link>
+      <link>http://localhost:1313/post/2019-08-28-remote-reboot-with-smtp-status/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</guid>
+      <guid>http://localhost:1313/post/2019-08-28-remote-reboot-with-smtp-status/</guid>
       <description>
         
           
@@ -659,10 +868,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Remove-AppxPackage</title>
-      <link>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</link>
+      <link>http://localhost:1313/post/2019-08-28-remove-appx-packages/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</guid>
+      <guid>http://localhost:1313/post/2019-08-28-remove-appx-packages/</guid>
       <description>
         
           
@@ -675,10 +884,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Buddhabrot</title>
-      <link>https://trimad.github.io/post/2019-08-25-buddhabrot/</link>
+      <link>http://localhost:1313/post/2019-08-25-buddhabrot/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-25-buddhabrot/</guid>
+      <guid>http://localhost:1313/post/2019-08-25-buddhabrot/</guid>
       <description>
         
           
@@ -691,10 +900,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Daily Donation Report</title>
-      <link>https://trimad.github.io/post/2019-08-25-daily-donation-report/</link>
+      <link>http://localhost:1313/post/2019-08-25-daily-donation-report/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-25-daily-donation-report/</guid>
+      <guid>http://localhost:1313/post/2019-08-25-daily-donation-report/</guid>
       <description>
         
           
@@ -707,10 +916,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Enable AutoAdminLogon with PowerShell</title>
-      <link>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</link>
+      <link>http://localhost:1313/post/2019-08-19-enable-autoadminlogon/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</guid>
+      <guid>http://localhost:1313/post/2019-08-19-enable-autoadminlogon/</guid>
       <description>
         
           
@@ -723,10 +932,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Blending Textures With Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2019-08-18-blending-textures-with-open-simplex-noise/</link>
       <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid>
       <description>
         
           
@@ -739,10 +948,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Robo Mirror</title>
-      <link>https://trimad.github.io/post/2019-02-28-robo-mirror/</link>
+      <link>http://localhost:1313/post/2019-02-28-robo-mirror/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-02-28-robo-mirror/</guid>
+      <guid>http://localhost:1313/post/2019-02-28-robo-mirror/</guid>
       <description>
         
           
@@ -755,10 +964,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Cube Wave</title>
-      <link>https://trimad.github.io/post/2018-12-30-cube-wave/</link>
+      <link>http://localhost:1313/post/2018-12-30-cube-wave/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-12-30-cube-wave/</guid>
+      <guid>http://localhost:1313/post/2018-12-30-cube-wave/</guid>
       <description>
         
           
@@ -771,10 +980,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Lorenz Doll</title>
-      <link>https://trimad.github.io/post/2018-11-21-lorenz-doll/</link>
+      <link>http://localhost:1313/post/2018-11-21-lorenz-doll/</link>
       <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-21-lorenz-doll/</guid>
+      <guid>http://localhost:1313/post/2018-11-21-lorenz-doll/</guid>
       <description>
         
           
@@ -787,10 +996,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Fridge Magnet Simulator</title>
-      <link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link>
+      <link>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</link>
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid>
+      <guid>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</guid>
       <description>
         
           
@@ -803,10 +1012,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Orbiting Pixels Utility</title>
-      <link>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</link>
+      <link>http://localhost:1313/post/2018-11-12-orbiting-pixels-utility/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</guid>
+      <guid>http://localhost:1313/post/2018-11-12-orbiting-pixels-utility/</guid>
       <description>
         
           
@@ -819,10 +1028,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Barnsley Fern</title>
-      <link>https://trimad.github.io/post/2018-06-28-barnsley-fern/</link>
+      <link>http://localhost:1313/post/2018-06-28-barnsley-fern/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-06-28-barnsley-fern/</guid>
+      <guid>http://localhost:1313/post/2018-06-28-barnsley-fern/</guid>
       <description>
         
           
@@ -835,10 +1044,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Comparing Java Distance Functions</title>
-      <link>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</link>
+      <link>http://localhost:1313/post/2018-04-17-comparing-java-distance-functions/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</guid>
+      <guid>http://localhost:1313/post/2018-04-17-comparing-java-distance-functions/</guid>
       <description>
         
           
@@ -851,10 +1060,10 @@ ActiveDirectory 1# Import the Active Directory PowerShell module to provide cmdl
     
     <item>
       <title>Ulam Spiral</title>
-      <link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link>
+      <link>http://localhost:1313/post/2018-05-17-ulam-sprial/</link>
       <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid>
+      <guid>http://localhost:1313/post/2018-05-17-ulam-sprial/</guid>
       <description>
         
           
@@ -868,10 +1077,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>Faster Java String Inputs</title>
-      <link>https://trimad.github.io/post/2018-04-11-java-turbo-reader/</link>
+      <link>http://localhost:1313/post/2018-04-11-java-turbo-reader/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-11-java-turbo-reader/</guid>
+      <guid>http://localhost:1313/post/2018-04-11-java-turbo-reader/</guid>
       <description>
         
           
@@ -884,10 +1093,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>Kruskal&#39;s Algorithm Visualized With Processing</title>
-      <link>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</link>
+      <link>http://localhost:1313/post/2018-04-11-kruskal-algorithm-processing/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</guid>
+      <guid>http://localhost:1313/post/2018-04-11-kruskal-algorithm-processing/</guid>
       <description>
         
           
@@ -900,10 +1109,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>Collatz Conjecture &#43; Unit Circle</title>
-      <link>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</link>
+      <link>http://localhost:1313/post/2018-04-09-collatz-conjecture-unit-circle/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</guid>
+      <guid>http://localhost:1313/post/2018-04-09-collatz-conjecture-unit-circle/</guid>
       <description>
         
           
@@ -916,10 +1125,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>Minimum Spanning Tree Visualized</title>
-      <link>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</link>
+      <link>http://localhost:1313/post/2018-04-07-minimum-spanning-tree-visualized/</link>
       <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</guid>
+      <guid>http://localhost:1313/post/2018-04-07-minimum-spanning-tree-visualized/</guid>
       <description>
         
           
@@ -932,10 +1141,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>Basic Prime Checker, C&#43;&#43;</title>
-      <link>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</link>
+      <link>http://localhost:1313/post/2018-03-24-basic-prime-checker/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</guid>
+      <guid>http://localhost:1313/post/2018-03-24-basic-prime-checker/</guid>
       <description>
         
           
@@ -948,10 +1157,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>AT&amp;T Hackathon</title>
-      <link>https://trimad.github.io/post/2018-03-12-att-hackathon/</link>
+      <link>http://localhost:1313/post/2018-03-12-att-hackathon/</link>
       <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-03-12-att-hackathon/</guid>
+      <guid>http://localhost:1313/post/2018-03-12-att-hackathon/</guid>
       <description>
         
           
@@ -964,10 +1173,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>Merge Sort using WEBGL</title>
-      <link>https://trimad.github.io/post/2018-02-05-merge-sort/</link>
+      <link>http://localhost:1313/post/2018-02-05-merge-sort/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid>
+      <guid>http://localhost:1313/post/2018-02-05-merge-sort/</guid>
       <description>
         
           
@@ -980,10 +1189,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>10PRINT Image Filter</title>
-      <link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link>
+      <link>http://localhost:1313/post/2018-01-31-10print-image-filter/</link>
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid>
+      <guid>http://localhost:1313/post/2018-01-31-10print-image-filter/</guid>
       <description>
         
           
@@ -997,10 +1206,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Insertion Sort using WEBGL</title>
-      <link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link>
+      <link>http://localhost:1313/post/2018-01-28-insertion-sort/</link>
       <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid>
+      <guid>http://localhost:1313/post/2018-01-28-insertion-sort/</guid>
       <description>
         
           
@@ -1013,10 +1222,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Generating Terrain with Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2018-01-03-generating-terrain-with-open-simplex-noise/</link>
       <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2018-01-03-generating-terrain-with-open-simplex-noise/</guid>
       <description>
         
           
@@ -1029,10 +1238,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2018-01-02-open-simplex-noise/</link>
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2018-01-02-open-simplex-noise/</guid>
       <description>
         
           
@@ -1045,10 +1254,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Flipping Tiles</title>
-      <link>https://trimad.github.io/post/2017-11-18-flippy-tiles/</link>
+      <link>http://localhost:1313/post/2017-11-18-flippy-tiles/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-11-18-flippy-tiles/</guid>
+      <guid>http://localhost:1313/post/2017-11-18-flippy-tiles/</guid>
       <description>
         
           
@@ -1061,10 +1270,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Juno Cam Image Processing</title>
-      <link>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</link>
+      <link>http://localhost:1313/post/2017-11-12-juno-cam-image-processing/</link>
       <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</guid>
+      <guid>http://localhost:1313/post/2017-11-12-juno-cam-image-processing/</guid>
       <description>
         
           
@@ -1077,10 +1286,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Demonstrating Procedures and Console Output</title>
-      <link>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</link>
+      <link>http://localhost:1313/post/2017-10-24-demonstrating-procedures-and-console-output/</link>
       <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</guid>
+      <guid>http://localhost:1313/post/2017-10-24-demonstrating-procedures-and-console-output/</guid>
       <description>
         
           
@@ -1093,10 +1302,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Sieve of Eratosthenes</title>
-      <link>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</link>
+      <link>http://localhost:1313/post/2017-10-17-sieve-of-eratosthenes/</link>
       <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</guid>
+      <guid>http://localhost:1313/post/2017-10-17-sieve-of-eratosthenes/</guid>
       <description>
         
           
@@ -1109,10 +1318,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Nth Fibonacci Number</title>
-      <link>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</link>
+      <link>http://localhost:1313/post/2017-10-07-nth-fibonacci-number/</link>
       <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</guid>
+      <guid>http://localhost:1313/post/2017-10-07-nth-fibonacci-number/</guid>
       <description>
         
           
@@ -1125,10 +1334,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Counting Sort</title>
-      <link>https://trimad.github.io/post/2017-07-18-counting-sort/</link>
+      <link>http://localhost:1313/post/2017-07-18-counting-sort/</link>
       <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-07-18-counting-sort/</guid>
+      <guid>http://localhost:1313/post/2017-07-18-counting-sort/</guid>
       <description>
         
           
@@ -1141,10 +1350,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Simple 2D Terrain Generation Using Perlin Noise</title>
-      <link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link>
+      <link>http://localhost:1313/post/2017-07-16-simple-2d-perlin-noise/</link>
       <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid>
+      <guid>http://localhost:1313/post/2017-07-16-simple-2d-perlin-noise/</guid>
       <description>
         
           
@@ -1157,10 +1366,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Arrays</title>
-      <link>https://trimad.github.io/post/2016-12-13-arrays/</link>
+      <link>http://localhost:1313/post/2016-12-13-arrays/</link>
       <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2016-12-13-arrays/</guid>
+      <guid>http://localhost:1313/post/2016-12-13-arrays/</guid>
       <description>
         
           

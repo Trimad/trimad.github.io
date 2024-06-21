@@ -2,16 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ExchangeOnlineManagement on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/exchangeonlinemanagement/</link>
+    <link>http://localhost:1313/tags/exchangeonlinemanagement/</link>
     <description>Recent content in ExchangeOnlineManagement on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/exchangeonlinemanagement/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/exchangeonlinemanagement/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hiding users from GAL</title>
-      <link>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</link>
+      <link>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</guid>
+      <guid>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</guid>
       <description>
         
           
@@ -23,11 +24,27 @@
     </item>
     
     <item>
+      <title>Handling Hacked Accounts and Purging Emails in M365</title>
+      <link>http://localhost:1313/post/2023-02-07-purge-emails/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-07-purge-emails/</guid>
+      <description>
+        
+          
+            This blog post is an evolving work flow for managing hacked accounts using the ExchangeOnlineManagement PowerShell module. I&#39;ll share my personal experiences using PowerShell, particularly focusing on remediation techniques like purging phishing emails and securing compromised accounts.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Combining PowerShell Cmdlets</title>
-      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <link>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <guid>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</guid>
       <description>
         
           
@@ -40,10 +57,10 @@
     
     <item>
       <title>Managing Exchange Calendars</title>
-      <link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link>
+      <link>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</guid>
       <description>
         
           
@@ -57,10 +74,10 @@
     
     <item>
       <title>Managing Auto-Expanding Archives</title>
-      <link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link>
+      <link>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</link>
       <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid>
+      <guid>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</guid>
       <description>
         
           

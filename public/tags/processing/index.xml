@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>processing on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/processing/</link>
-    <description>Recent content in processing on Hugo Grimoire</description>
+    <title>Processing on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/processing/</link>
+    <description>Recent content in Processing on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/processing/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fridge Magnet Simulator</title>
-      <link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link>
+      <link>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</link>
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid>
+      <guid>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</guid>
       <description>
         
           
@@ -24,10 +25,10 @@
     
     <item>
       <title>Ulam Spiral</title>
-      <link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link>
+      <link>http://localhost:1313/post/2018-05-17-ulam-sprial/</link>
       <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid>
+      <guid>http://localhost:1313/post/2018-05-17-ulam-sprial/</guid>
       <description>
         
           

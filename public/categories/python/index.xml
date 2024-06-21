@@ -1,17 +1,98 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on Hugo Grimoire</title>
-    <link>https://trimad.github.io/categories/python/</link>
-    <description>Recent content in python on Hugo Grimoire</description>
+    <title>Python on Hugo Grimoire</title>
+    <link>http://localhost:1313/categories/python/</link>
+    <description>Recent content in Python on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 24 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Window Watcher</title>
+      <link>http://localhost:1313/post/2024-03-25-window-watcher/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-03-25-window-watcher/</guid>
+      <description>
+        
+          
+            Use a machine vision model to watch a window.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Change DNS Remotely</title>
+      <link>http://localhost:1313/post/2024-03-21-change-dns-remotely/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-03-21-change-dns-remotely/</guid>
+      <description>
+        
+          
+            Steps that are useful for unbricking a network with a bad DNS config remotely.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Local AI API</title>
+      <link>http://localhost:1313/post/2024-02-05-local-ai-api/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-02-05-local-ai-api/</guid>
+      <description>
+        
+          
+            Short scripts for image-to-text, text-to-sound, etc.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate Knowledge Graphs with LLMs</title>
+      <link>http://localhost:1313/post/2023-12-14-pyvis-knowledge-graphs/</link>
+      <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-12-14-pyvis-knowledge-graphs/</guid>
+      <description>
+        
+          
+            This is a work in progress exploration of generating knowledge graphs with LLMs, inspired by a post I read on towardsdatascience.com.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Python networkx Library</title>
+      <link>http://localhost:1313/post/2023-08-15-networkx/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-08-15-networkx/</guid>
+      <description>
+        
+          
+            A Python script for visualizing nodes with the networkx library.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>QR Codes</title>
-      <link>https://trimad.github.io/post/2023-06-24-qr/</link>
+      <link>http://localhost:1313/post/2023-06-24-qr/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-06-24-qr/</guid>
+      <guid>http://localhost:1313/post/2023-06-24-qr/</guid>
       <description>
         
           
@@ -24,10 +105,10 @@
     
     <item>
       <title>Deforum Cheat Sheet</title>
-      <link>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</link>
+      <link>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</guid>
+      <guid>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</guid>
       <description>
         
           
@@ -40,10 +121,10 @@
     
     <item>
       <title>Deep Floyd IF</title>
-      <link>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</link>
+      <link>http://localhost:1313/post/2023-05-03-deep-floyd-if/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</guid>
+      <guid>http://localhost:1313/post/2023-05-03-deep-floyd-if/</guid>
       <description>
         
           
@@ -56,10 +137,10 @@
     
     <item>
       <title>Thin Plate Spline Motion Model</title>
-      <link>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</link>
+      <link>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</guid>
+      <guid>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</guid>
       <description>
         
           
@@ -71,11 +152,27 @@
     </item>
     
     <item>
+      <title>TheraFit</title>
+      <link>http://localhost:1313/post/2023-03-28-therafit/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-03-28-therafit/</guid>
+      <description>
+        
+          
+            TheraFit is a personal project utilizing a Large Language Model to enhance the process of matching clients with therapists.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>OpenAI Whisper</title>
-      <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>
+      <link>http://localhost:1313/post/2023-02-24-openai-whisper/</link>
       <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid>
+      <guid>http://localhost:1313/post/2023-02-24-openai-whisper/</guid>
       <description>
         
           
@@ -88,10 +185,10 @@
     
     <item>
       <title>Decode Phishing Emails</title>
-      <link>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</link>
+      <link>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</guid>
+      <guid>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</guid>
       <description>
         
           
@@ -104,10 +201,10 @@
     
     <item>
       <title>MiDaS</title>
-      <link>https://trimad.github.io/post/2023-02-06-midas/</link>
+      <link>http://localhost:1313/post/2023-02-06-midas/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-06-midas/</guid>
+      <guid>http://localhost:1313/post/2023-02-06-midas/</guid>
       <description>
         
           
@@ -121,10 +218,10 @@
     
     <item>
       <title>Frame Interpolation Large Motion (FILM)</title>
-      <link>https://trimad.github.io/post/2023-02-05-film/</link>
+      <link>http://localhost:1313/post/2023-02-05-film/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-05-film/</guid>
+      <guid>http://localhost:1313/post/2023-02-05-film/</guid>
       <description>
         
           
@@ -137,10 +234,10 @@
     
     <item>
       <title>Stable Diffusion Scripts</title>
-      <link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link>
+      <link>http://localhost:1313/post/2023-02-05-stable-diffusion/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid>
+      <guid>http://localhost:1313/post/2023-02-05-stable-diffusion/</guid>
       <description>
         
           

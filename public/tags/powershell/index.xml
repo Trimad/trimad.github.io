@@ -2,16 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PowerShell on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/powershell/</link>
+    <link>http://localhost:1313/tags/powershell/</link>
     <description>Recent content in PowerShell on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 30 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>User Lockout Report</title>
+      <link>http://localhost:1313/post/2024-05-30-user-lockout-report/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-05-30-user-lockout-report/</guid>
+      <description>
+        
+          
+            This PowerShell script generates an HTML diagnostics report for user lockouts in the Active Directory. The script imports the Active Directory module and retrieves all user accounts that are not disabled. It fetches password-related properties and calculates the password age and expiration details for each user. The results are filtered, sorted, and converted into an HTML report with CSS styling for better readability. The final HTML report is saved to a file and opened in the default web browser.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Take Control</title>
+      <link>http://localhost:1313/post/2024-01-02-take-control/</link>
+      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-01-02-take-control/</guid>
+      <description>
+        
+          
+            Steps to take when Take Control isn&#39;t working.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Mapping Network Drives Using PowerShell and SID</title>
-      <link>https://trimad.github.io/post/2023-07-20-mapped-drives/</link>
+      <link>http://localhost:1313/post/2023-07-20-mapped-drives/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-20-mapped-drives/</guid>
+      <guid>http://localhost:1313/post/2023-07-20-mapped-drives/</guid>
       <description>
         
           
@@ -24,10 +57,10 @@
     
     <item>
       <title>Windows Remediation</title>
-      <link>https://trimad.github.io/post/2023-03-03-windows-remediation/</link>
+      <link>http://localhost:1313/post/2023-03-03-windows-remediation/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-03-windows-remediation/</guid>
+      <guid>http://localhost:1313/post/2023-03-03-windows-remediation/</guid>
       <description>
         
           

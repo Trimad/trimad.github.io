@@ -2,16 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on Hugo Grimoire</title>
-    <link>https://trimad.github.io/categories/javascript/</link>
+    <link>http://localhost:1313/categories/javascript/</link>
     <description>Recent content in JavaScript on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gmail Photo Downloader</title>
+      <link>http://localhost:1313/post/2023-09-11-picture-auto-downloader/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-09-11-picture-auto-downloader/</guid>
+      <description>
+        
+          
+            This is a Google Apps Script I wrote that automatically downloads pictures embedded in a daily email I receive from my son&#39;s daycare to a Google Drive folder.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Disco Ball</title>
+      <link>http://localhost:1313/post/2023-08-24-disco-ball/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-08-24-disco-ball/</guid>
+      <description>
+        
+          
+            Wife needed a black and white PNG/SVG of a Disco Ball. Yep.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Yahoo Finance API via RapidAPI</title>
-      <link>https://trimad.github.io/post/2023-05-11-rapidapi/</link>
+      <link>http://localhost:1313/post/2023-05-11-rapidapi/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-11-rapidapi/</guid>
+      <guid>http://localhost:1313/post/2023-05-11-rapidapi/</guid>
       <description>
         
           
@@ -24,10 +57,10 @@
     
     <item>
       <title>Key Event Tester</title>
-      <link>https://trimad.github.io/post/2023-05-08-keycode-event-test/</link>
+      <link>http://localhost:1313/post/2023-05-08-keycode-event-test/</link>
       <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-08-keycode-event-test/</guid>
+      <guid>http://localhost:1313/post/2023-05-08-keycode-event-test/</guid>
       <description>
         
           
@@ -40,10 +73,10 @@
     
     <item>
       <title>Random Password Generator</title>
-      <link>https://trimad.github.io/post/2023-03-22-random-password-generator/</link>
+      <link>http://localhost:1313/post/2023-03-22-random-password-generator/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-22-random-password-generator/</guid>
+      <guid>http://localhost:1313/post/2023-03-22-random-password-generator/</guid>
       <description>
         
           
@@ -56,10 +89,10 @@
     
     <item>
       <title>Decode Phishing Emails</title>
-      <link>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</link>
+      <link>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</guid>
+      <guid>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</guid>
       <description>
         
           
@@ -72,10 +105,10 @@
     
     <item>
       <title>Stable Diffusion Scripts</title>
-      <link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link>
+      <link>http://localhost:1313/post/2023-02-05-stable-diffusion/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid>
+      <guid>http://localhost:1313/post/2023-02-05-stable-diffusion/</guid>
       <description>
         
           
@@ -88,10 +121,10 @@
     
     <item>
       <title>Archimedean Spiral</title>
-      <link>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</link>
+      <link>http://localhost:1313/post/2022-05-04-archimedean-spiral/</link>
       <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</guid>
+      <guid>http://localhost:1313/post/2022-05-04-archimedean-spiral/</guid>
       <description>
         
           
@@ -106,10 +139,10 @@ Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;qu
     
     <item>
       <title>Daily Donation Report</title>
-      <link>https://trimad.github.io/post/2019-08-25-daily-donation-report/</link>
+      <link>http://localhost:1313/post/2019-08-25-daily-donation-report/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-25-daily-donation-report/</guid>
+      <guid>http://localhost:1313/post/2019-08-25-daily-donation-report/</guid>
       <description>
         
           
@@ -122,10 +155,10 @@ Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;qu
     
     <item>
       <title>Fridge Magnet Simulator</title>
-      <link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link>
+      <link>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</link>
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid>
+      <guid>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</guid>
       <description>
         
           
@@ -138,10 +171,10 @@ Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;qu
     
     <item>
       <title>Orbiting Pixels Utility</title>
-      <link>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</link>
+      <link>http://localhost:1313/post/2018-11-12-orbiting-pixels-utility/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</guid>
+      <guid>http://localhost:1313/post/2018-11-12-orbiting-pixels-utility/</guid>
       <description>
         
           
@@ -154,10 +187,10 @@ Example SVG files{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;qu
     
     <item>
       <title>Ulam Spiral</title>
-      <link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link>
+      <link>http://localhost:1313/post/2018-05-17-ulam-sprial/</link>
       <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid>
+      <guid>http://localhost:1313/post/2018-05-17-ulam-sprial/</guid>
       <description>
         
           
@@ -171,10 +204,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>Merge Sort using WEBGL</title>
-      <link>https://trimad.github.io/post/2018-02-05-merge-sort/</link>
+      <link>http://localhost:1313/post/2018-02-05-merge-sort/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid>
+      <guid>http://localhost:1313/post/2018-02-05-merge-sort/</guid>
       <description>
         
           
@@ -187,10 +220,10 @@ What I&#39;ve done differently is allowed for iterating every integer in the gri
     
     <item>
       <title>10PRINT Image Filter</title>
-      <link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link>
+      <link>http://localhost:1313/post/2018-01-31-10print-image-filter/</link>
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid>
+      <guid>http://localhost:1313/post/2018-01-31-10print-image-filter/</guid>
       <description>
         
           
@@ -204,10 +237,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Insertion Sort using WEBGL</title>
-      <link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link>
+      <link>http://localhost:1313/post/2018-01-28-insertion-sort/</link>
       <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid>
+      <guid>http://localhost:1313/post/2018-01-28-insertion-sort/</guid>
       <description>
         
           
@@ -220,10 +253,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Simple 2D Terrain Generation Using Perlin Noise</title>
-      <link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link>
+      <link>http://localhost:1313/post/2017-07-16-simple-2d-perlin-noise/</link>
       <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid>
+      <guid>http://localhost:1313/post/2017-07-16-simple-2d-perlin-noise/</guid>
       <description>
         
           
@@ -236,10 +269,10 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
     
     <item>
       <title>Arrays</title>
-      <link>https://trimad.github.io/post/2016-12-13-arrays/</link>
+      <link>http://localhost:1313/post/2016-12-13-arrays/</link>
       <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2016-12-13-arrays/</guid>
+      <guid>http://localhost:1313/post/2016-12-13-arrays/</guid>
       <description>
         
           
