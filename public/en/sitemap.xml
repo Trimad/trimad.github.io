@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -14,6 +14,9 @@
                 hreflang="en"
                 href="http://localhost:1313/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/supportme/</loc>
+    <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
@@ -674,6 +677,9 @@
     <loc>http://localhost:1313/archives/2017-08-18-kattis-server/</loc>
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/archives/2017-08-15-kattis-different/</loc>
     <lastmod>2023-03-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -691,8 +697,6 @@
   </url><url>
     <loc>http://localhost:1313/post/2016-12-13-arrays/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url><url>

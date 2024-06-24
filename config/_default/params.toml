@@ -124,7 +124,7 @@ languageMenuName = "🌐"
 
 # The year when ths website was created, this value is used in the copyright
 # notice of the footer.
- since = 2019
+ since = 2017
 
 # Show related content at the end of an article based on the 'series' taxonomy. Can be set in post front matter.
 showRelatedInArticle = false
