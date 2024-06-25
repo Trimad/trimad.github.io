@@ -4,7 +4,7 @@ categories: [DNS]
 date: 2024-06-06
 draft: false
 featured: false
-summary: "A cheat sheet with a comprehensive list of options for DNS records"
+summary: "A cheat sheet with a comprehensive list of options for DNS records."
 tags: [DNS]
 thumbnail: "thumbnail.png"
 title: "DNS Records"
