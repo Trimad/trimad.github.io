@@ -1,11 +1,11 @@
 ---
 author: Tristan Madden
-categories: [Shell]
+categories: [Shell, PowerShell]
 date: 2024-06-25
 draft: false
 featured: false
 summary: "Different methods of obtaining the public IP address of a computer."
-tags: [DNS]
+tags: [ip]
 thumbnail: "thumbnail.png"
 title: "Get Public IP"
 toc: true
