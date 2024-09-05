@@ -6,7 +6,23 @@
     <description>Recent content in Posts on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get Public IP</title>
+      <link>http://localhost:1313/post/2024-07-30-batch-compress-images/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-07-30-batch-compress-images/</guid>
+      <description>
+        
+          
+            This Python script gradually reduces the quality and colors of all .png&#39;s in the same directory until a target size is reached.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Get Public IP</title>
       <link>http://localhost:1313/post/2024-06-24-get-public-ip/</link>

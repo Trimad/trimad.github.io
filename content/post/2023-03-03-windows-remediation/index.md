@@ -28,6 +28,20 @@ DISM /Online /Cleanup-Image /CheckHealth
 DISM /Online /Cleanup-Image /RestoreHealth
 ```
 
+#### ISO
+There are circumstances where 
+1. Download a Windows ISO from here: https://www.microsoft.com/en-us/software-download/windows10
+2. Mount the ISO and navigate to sources and copy install.esd to a local directory.
+3. Open a command prompt and get the index of the correct image using:
+```shell
+dism /Get-WimInfo /WimFile:install.esd
+```
+4. Take note of the index, and convert install.esd to install.wim:
+```shell
+dism /export-image /SourceImageFile:install.esd /SourceIndex:6 /DestinationImageFile:install.wim /Compress:max /CheckIntegrity
+```
+
+
 ## SFC
 The "sfc /scannow" command is a Windows utility used to scan system files for integrity violations and repair any issues it finds. It stands for System File Checker and can help resolve issues with missing or corrupted system files. Running this command requires administrator privileges and may take several minutes to complete.
 
