@@ -2,6 +2,7 @@
 author: Tristan Madden
 categories: [PowerShell]
 date: 2024-05-30
+lastmod: 2024-06-28
 draft: false
 featured: false
 summary: "This PowerShell script generates an HTML diagnostics report for user lockouts in the Active Directory. The script imports the Active Directory module and retrieves all user accounts that are not disabled. It fetches password-related properties and calculates the password age and expiration details for each user. The results are filtered, sorted, and converted into an HTML report with CSS styling for better readability. The final HTML report is saved to a file and opened in the default web browser."
@@ -19,7 +20,7 @@ This PowerShell script generates an HTML diagnostics report for user lockouts in
 Import-Module ActiveDirectory
 
 # Get all users who are not disabled
-$users = Get-ADUser -Filter * -Property pwdLastSet, Enabled, LockedOut, PasswordExpired
+$users = Get-ADUser -Filter * -Property pwdLastSet, Enabled, LockedOut, PasswordExpired, WhenCreated, LastLogonDate
 
 # Get the result of `net accounts`
 $netAccounts = net accounts
@@ -55,6 +56,8 @@ foreach ($user in $users) {
         Enabled                   = $user.Enabled
         LockedOut                 = $user.LockedOut
         PasswordExpired           = $user.PasswordExpired
+        WhenCreated               = $user.WhenCreated
+        LastSignIn                = $user.LastLogonDate
     }
 }
 
@@ -65,7 +68,7 @@ $filteredResults = $results | Where-Object { $_.pwdLastSet -ne $null }
 $sortedResults = $filteredResults | Sort-Object -Property pwdLastSet -Descending
 
 # Convert the results to HTML
-$html = $sortedResults | ConvertTo-Html -Property UserName, pwdLastSet, DaysSincePwdLastSet, DaysUntilPwdExpiration, Enabled, LockedOut, PasswordExpired -Title "User Password Status" -PreContent "<h1>User Password Status</h1>"
+$html = $sortedResults | ConvertTo-Html -Property UserName, pwdLastSet, DaysSincePwdLastSet, DaysUntilPwdExpiration, Enabled, LockedOut, PasswordExpired, WhenCreated, LastSignIn -Title "User Password Status" -PreContent "<h1>User Password Status</h1>"
 
 # Add CSS for table styling
 $style = @"

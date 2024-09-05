@@ -181,7 +181,7 @@
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nb">Import-Module</span> <span class="n">ActiveDirectory</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="c"># Get all users who are not disabled</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">*</span> <span class="n">-Property</span> <span class="n">pwdLastSet</span><span class="p">,</span> <span class="n">Enabled</span><span class="p">,</span> <span class="n">LockedOut</span><span class="p">,</span> <span class="n">PasswordExpired</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">*</span> <span class="n">-Property</span> <span class="n">pwdLastSet</span><span class="p">,</span> <span class="n">Enabled</span><span class="p">,</span> <span class="n">LockedOut</span><span class="p">,</span> <span class="n">PasswordExpired</span><span class="p">,</span> <span class="n">WhenCreated</span><span class="p">,</span> <span class="n">LastLogonDate</span>
 </span></span><span class="line"><span class="ln"> 6</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="c"># Get the result of `net accounts`</span>
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="nv">$netAccounts</span> <span class="p">=</span> <span class="n">net</span> <span class="n">accounts</span>
@@ -217,49 +217,51 @@
 </span></span><span class="line"><span class="ln">38</span><span class="cl">        <span class="n">Enabled</span>                   <span class="p">=</span> <span class="nv">$user</span><span class="p">.</span><span class="py">Enabled</span>
 </span></span><span class="line"><span class="ln">39</span><span class="cl">        <span class="n">LockedOut</span>                 <span class="p">=</span> <span class="nv">$user</span><span class="p">.</span><span class="py">LockedOut</span>
 </span></span><span class="line"><span class="ln">40</span><span class="cl">        <span class="n">PasswordExpired</span>           <span class="p">=</span> <span class="nv">$user</span><span class="p">.</span><span class="py">PasswordExpired</span>
-</span></span><span class="line"><span class="ln">41</span><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="ln">42</span><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="ln">43</span><span class="cl">
-</span></span><span class="line"><span class="ln">44</span><span class="cl"><span class="c"># Filter out users with pwdLastSet set to null</span>
-</span></span><span class="line"><span class="ln">45</span><span class="cl"><span class="nv">$filteredResults</span> <span class="p">=</span> <span class="nv">$results</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="py">pwdLastSet</span> <span class="o">-ne</span> <span class="vm">$null</span> <span class="p">}</span>
-</span></span><span class="line"><span class="ln">46</span><span class="cl">
-</span></span><span class="line"><span class="ln">47</span><span class="cl"><span class="c"># Sort the results by pwdLastSet in descending order</span>
-</span></span><span class="line"><span class="ln">48</span><span class="cl"><span class="nv">$sortedResults</span> <span class="p">=</span> <span class="nv">$filteredResults</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">-Property</span> <span class="n">pwdLastSet</span> <span class="n">-Descending</span>
-</span></span><span class="line"><span class="ln">49</span><span class="cl">
-</span></span><span class="line"><span class="ln">50</span><span class="cl"><span class="c"># Convert the results to HTML</span>
-</span></span><span class="line"><span class="ln">51</span><span class="cl"><span class="nv">$html</span> <span class="p">=</span> <span class="nv">$sortedResults</span> <span class="p">|</span> <span class="nb">ConvertTo-Html</span> <span class="n">-Property</span> <span class="n">UserName</span><span class="p">,</span> <span class="n">pwdLastSet</span><span class="p">,</span> <span class="n">DaysSincePwdLastSet</span><span class="p">,</span> <span class="n">DaysUntilPwdExpiration</span><span class="p">,</span> <span class="n">Enabled</span><span class="p">,</span> <span class="n">LockedOut</span><span class="p">,</span> <span class="n">PasswordExpired</span> <span class="n">-Title</span> <span class="s2">&#34;User Password Status&#34;</span> <span class="n">-PreContent</span> <span class="s2">&#34;&lt;h1&gt;User Password Status&lt;/h1&gt;&#34;</span>
-</span></span><span class="line"><span class="ln">52</span><span class="cl">
-</span></span><span class="line"><span class="ln">53</span><span class="cl"><span class="c"># Add CSS for table styling</span>
-</span></span><span class="line"><span class="ln">54</span><span class="cl"><span class="nv">$style</span> <span class="p">=</span> <span class="sh">@&#34;
-</span></span></span><span class="line"><span class="ln">55</span><span class="cl"><span class="sh">    &lt;style&gt;
-</span></span></span><span class="line"><span class="ln">56</span><span class="cl"><span class="sh">        table {
-</span></span></span><span class="line"><span class="ln">57</span><span class="cl"><span class="sh">            width: 100%;
-</span></span></span><span class="line"><span class="ln">58</span><span class="cl"><span class="sh">            border-collapse: collapse;
-</span></span></span><span class="line"><span class="ln">59</span><span class="cl"><span class="sh">        }
-</span></span></span><span class="line"><span class="ln">60</span><span class="cl"><span class="sh">        table, th, td {
-</span></span></span><span class="line"><span class="ln">61</span><span class="cl"><span class="sh">            border: 1px solid black;
-</span></span></span><span class="line"><span class="ln">62</span><span class="cl"><span class="sh">        }
-</span></span></span><span class="line"><span class="ln">63</span><span class="cl"><span class="sh">        th, td {
-</span></span></span><span class="line"><span class="ln">64</span><span class="cl"><span class="sh">            padding: 1px;
-</span></span></span><span class="line"><span class="ln">65</span><span class="cl"><span class="sh">            text-align: left;
-</span></span></span><span class="line"><span class="ln">66</span><span class="cl"><span class="sh">        }
-</span></span></span><span class="line"><span class="ln">67</span><span class="cl"><span class="sh">        th {
-</span></span></span><span class="line"><span class="ln">68</span><span class="cl"><span class="sh">            background-color: #f2f2f2;
-</span></span></span><span class="line"><span class="ln">69</span><span class="cl"><span class="sh">        }
-</span></span></span><span class="line"><span class="ln">70</span><span class="cl"><span class="sh">        tr:nth-child(even) {
-</span></span></span><span class="line"><span class="ln">71</span><span class="cl"><span class="sh">            background-color: #f9f9f9;
-</span></span></span><span class="line"><span class="ln">72</span><span class="cl"><span class="sh">        }
-</span></span></span><span class="line"><span class="ln">73</span><span class="cl"><span class="sh">    &lt;/style&gt;
-</span></span></span><span class="line"><span class="ln">74</span><span class="cl"><span class="sh">&#34;@</span>
-</span></span><span class="line"><span class="ln">75</span><span class="cl">
-</span></span><span class="line"><span class="ln">76</span><span class="cl"><span class="nv">$htmlContent</span> <span class="p">=</span> <span class="s2">&#34;</span><span class="nv">$style$html</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">41</span><span class="cl">        <span class="n">WhenCreated</span>               <span class="p">=</span> <span class="nv">$user</span><span class="p">.</span><span class="py">WhenCreated</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl">        <span class="n">LastSignIn</span>                <span class="p">=</span> <span class="nv">$user</span><span class="p">.</span><span class="py">LastLogonDate</span>
+</span></span><span class="line"><span class="ln">43</span><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="ln">44</span><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="ln">45</span><span class="cl">
+</span></span><span class="line"><span class="ln">46</span><span class="cl"><span class="c"># Filter out users with pwdLastSet set to null</span>
+</span></span><span class="line"><span class="ln">47</span><span class="cl"><span class="nv">$filteredResults</span> <span class="p">=</span> <span class="nv">$results</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="py">pwdLastSet</span> <span class="o">-ne</span> <span class="vm">$null</span> <span class="p">}</span>
+</span></span><span class="line"><span class="ln">48</span><span class="cl">
+</span></span><span class="line"><span class="ln">49</span><span class="cl"><span class="c"># Sort the results by pwdLastSet in descending order</span>
+</span></span><span class="line"><span class="ln">50</span><span class="cl"><span class="nv">$sortedResults</span> <span class="p">=</span> <span class="nv">$filteredResults</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">-Property</span> <span class="n">pwdLastSet</span> <span class="n">-Descending</span>
+</span></span><span class="line"><span class="ln">51</span><span class="cl">
+</span></span><span class="line"><span class="ln">52</span><span class="cl"><span class="c"># Convert the results to HTML</span>
+</span></span><span class="line"><span class="ln">53</span><span class="cl"><span class="nv">$html</span> <span class="p">=</span> <span class="nv">$sortedResults</span> <span class="p">|</span> <span class="nb">ConvertTo-Html</span> <span class="n">-Property</span> <span class="n">UserName</span><span class="p">,</span> <span class="n">pwdLastSet</span><span class="p">,</span> <span class="n">DaysSincePwdLastSet</span><span class="p">,</span> <span class="n">DaysUntilPwdExpiration</span><span class="p">,</span> <span class="n">Enabled</span><span class="p">,</span> <span class="n">LockedOut</span><span class="p">,</span> <span class="n">PasswordExpired</span><span class="p">,</span> <span class="n">WhenCreated</span><span class="p">,</span> <span class="n">LastSignIn</span> <span class="n">-Title</span> <span class="s2">&#34;User Password Status&#34;</span> <span class="n">-PreContent</span> <span class="s2">&#34;&lt;h1&gt;User Password Status&lt;/h1&gt;&#34;</span>
+</span></span><span class="line"><span class="ln">54</span><span class="cl">
+</span></span><span class="line"><span class="ln">55</span><span class="cl"><span class="c"># Add CSS for table styling</span>
+</span></span><span class="line"><span class="ln">56</span><span class="cl"><span class="nv">$style</span> <span class="p">=</span> <span class="sh">@&#34;
+</span></span></span><span class="line"><span class="ln">57</span><span class="cl"><span class="sh">    &lt;style&gt;
+</span></span></span><span class="line"><span class="ln">58</span><span class="cl"><span class="sh">        table {
+</span></span></span><span class="line"><span class="ln">59</span><span class="cl"><span class="sh">            width: 100%;
+</span></span></span><span class="line"><span class="ln">60</span><span class="cl"><span class="sh">            border-collapse: collapse;
+</span></span></span><span class="line"><span class="ln">61</span><span class="cl"><span class="sh">        }
+</span></span></span><span class="line"><span class="ln">62</span><span class="cl"><span class="sh">        table, th, td {
+</span></span></span><span class="line"><span class="ln">63</span><span class="cl"><span class="sh">            border: 1px solid black;
+</span></span></span><span class="line"><span class="ln">64</span><span class="cl"><span class="sh">        }
+</span></span></span><span class="line"><span class="ln">65</span><span class="cl"><span class="sh">        th, td {
+</span></span></span><span class="line"><span class="ln">66</span><span class="cl"><span class="sh">            padding: 1px;
+</span></span></span><span class="line"><span class="ln">67</span><span class="cl"><span class="sh">            text-align: left;
+</span></span></span><span class="line"><span class="ln">68</span><span class="cl"><span class="sh">        }
+</span></span></span><span class="line"><span class="ln">69</span><span class="cl"><span class="sh">        th {
+</span></span></span><span class="line"><span class="ln">70</span><span class="cl"><span class="sh">            background-color: #f2f2f2;
+</span></span></span><span class="line"><span class="ln">71</span><span class="cl"><span class="sh">        }
+</span></span></span><span class="line"><span class="ln">72</span><span class="cl"><span class="sh">        tr:nth-child(even) {
+</span></span></span><span class="line"><span class="ln">73</span><span class="cl"><span class="sh">            background-color: #f9f9f9;
+</span></span></span><span class="line"><span class="ln">74</span><span class="cl"><span class="sh">        }
+</span></span></span><span class="line"><span class="ln">75</span><span class="cl"><span class="sh">    &lt;/style&gt;
+</span></span></span><span class="line"><span class="ln">76</span><span class="cl"><span class="sh">&#34;@</span>
 </span></span><span class="line"><span class="ln">77</span><span class="cl">
-</span></span><span class="line"><span class="ln">78</span><span class="cl"><span class="c"># Save the HTML file</span>
-</span></span><span class="line"><span class="ln">79</span><span class="cl"><span class="nv">$htmlPath</span> <span class="p">=</span> <span class="s2">&#34;pwdLastSet.html&#34;</span>
-</span></span><span class="line"><span class="ln">80</span><span class="cl"><span class="nv">$htmlContent</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="nv">$htmlPath</span>
-</span></span><span class="line"><span class="ln">81</span><span class="cl">
-</span></span><span class="line"><span class="ln">82</span><span class="cl"><span class="c"># Open the HTML file in the default browser</span>
-</span></span><span class="line"><span class="ln">83</span><span class="cl"><span class="nb">Start-Process</span> <span class="s2">&#34;powershell.exe&#34;</span> <span class="n">-ArgumentList</span> <span class="s2">&#34;Start-Process </span><span class="nv">$htmlPath</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">78</span><span class="cl"><span class="nv">$htmlContent</span> <span class="p">=</span> <span class="s2">&#34;</span><span class="nv">$style$html</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">79</span><span class="cl">
+</span></span><span class="line"><span class="ln">80</span><span class="cl"><span class="c"># Save the HTML file</span>
+</span></span><span class="line"><span class="ln">81</span><span class="cl"><span class="nv">$htmlPath</span> <span class="p">=</span> <span class="s2">&#34;pwdLastSet.html&#34;</span>
+</span></span><span class="line"><span class="ln">82</span><span class="cl"><span class="nv">$htmlContent</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="nv">$htmlPath</span>
+</span></span><span class="line"><span class="ln">83</span><span class="cl">
+</span></span><span class="line"><span class="ln">84</span><span class="cl"><span class="c"># Open the HTML file in the default browser</span>
+</span></span><span class="line"><span class="ln">85</span><span class="cl"><span class="nb">Start-Process</span> <span class="s2">&#34;powershell.exe&#34;</span> <span class="n">-ArgumentList</span> <span class="s2">&#34;Start-Process </span><span class="nv">$htmlPath</span><span class="s2">&#34;</span>
 </span></span></code></pre></div>
     </div><div class="post_comments">
   
@@ -309,7 +311,7 @@
         <a href="http://localhost:1313/post/2024-03-25-window-watcher/" class="nav-link" title="Window Watcher">Window Watcher</a>
       </li>
       <li>
-        <a href="http://localhost:1313/post/2024-03-21-change-dns-remotely/" class="nav-link" title="Change DNS Remotely">Change DNS Remotely</a>
+        <a href="http://localhost:1313/post/2024-03-21-change-dns-remotely/" class="nav-link" title="Mastering DNS Configuration: Remote and Local Techniques">Mastering DNS Configuration: Remote and Local Techniques</a>
       </li>
       <li>
         <a href="http://localhost:1313/post/2024-01-02-take-control/" class="nav-link" title="Take Control">Take Control</a>
@@ -329,6 +331,9 @@
     </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
+      <li>
+        <a href="http://localhost:1313/post/2024-06-24-get-public-ip/" class="nav-link" title="Get Public IP">Get Public IP</a>
+      </li>
       <li>
         <a href="http://localhost:1313/post/2024-06-06-dns-records/" class="nav-link" title="DNS Records">DNS Records</a>
       </li>
@@ -350,9 +355,6 @@
       <li>
         <a href="http://localhost:1313/post/2023-07-20-mapped-drives/" class="nav-link" title="Mapping Network Drives Using PowerShell and SID">Mapping Network Drives Using PowerShell and SID</a>
       </li>
-      <li>
-        <a href="http://localhost:1313/post/2023-07-13-join-active-directory/" class="nav-link" title="Join a Workstation to Active Directory with Shell and PowerShell">Join a Workstation to Active Directory with Shell and PowerShell</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
@@ -364,7 +366,7 @@
         
         <a href='http://localhost:1313/categories/powershell/' class="post_tag button button_translucent" title="powershell">
           POWERSHELL
-          <span class="button_tally">21</span>
+          <span class="button_tally">22</span>
         </a>
         
         <a href='http://localhost:1313/categories/javascript/' class="post_tag button button_translucent" title="javascript">
@@ -372,18 +374,18 @@
           <span class="button_tally">17</span>
         </a>
         
-        <a href='http://localhost:1313/categories/python/' class="post_tag button button_translucent" title="python">
-          PYTHON
-          <span class="button_tally">15</span>
-        </a>
-        
         <a href='http://localhost:1313/categories/shell/' class="post_tag button button_translucent" title="shell">
           SHELL
-          <span class="button_tally">15</span>
+          <span class="button_tally">16</span>
         </a>
         
         <a href='http://localhost:1313/categories/processing/' class="post_tag button button_translucent" title="processing">
           PROCESSING
+          <span class="button_tally">14</span>
+        </a>
+        
+        <a href='http://localhost:1313/categories/python/' class="post_tag button button_translucent" title="python">
+          PYTHON
           <span class="button_tally">14</span>
         </a>
         
@@ -412,6 +414,11 @@
           <span class="button_tally">1</span>
         </a>
         
+        <a href='http://localhost:1313/categories/networking/' class="post_tag button button_translucent" title="networking">
+          NETWORKING
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='http://localhost:1313/categories/nodejs/' class="post_tag button button_translucent" title="nodejs">
           NODEJS
           <span class="button_tally">1</span>
@@ -419,6 +426,11 @@
         
         <a href='http://localhost:1313/categories/security/' class="post_tag button button_translucent" title="security">
           SECURITY
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='http://localhost:1313/categories/system-administration/' class="post_tag button button_translucent" title="system administration">
+          SYSTEM ADMINISTRATION
           <span class="button_tally">1</span>
         </a>
         
@@ -478,8 +490,8 @@
           <span class="button_tally">5</span>
         </a>
         
-        <a href='http://localhost:1313/tags/python/' class="post_tag button button_translucent" title="python">
-          PYTHON
+        <a href='http://localhost:1313/tags/powershell/' class="post_tag button button_translucent" title="powershell">
+          POWERSHELL
           <span class="button_tally">5</span>
         </a>
         
@@ -488,8 +500,8 @@
           <span class="button_tally">5</span>
         </a>
         
-        <a href='http://localhost:1313/tags/powershell/' class="post_tag button button_translucent" title="powershell">
-          POWERSHELL
+        <a href='http://localhost:1313/tags/python/' class="post_tag button button_translucent" title="python">
+          PYTHON
           <span class="button_tally">4</span>
         </a>
         
@@ -545,6 +557,11 @@
         
         <a href='http://localhost:1313/tags/bat/' class="post_tag button button_translucent" title="bat">
           BAT
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/dns/' class="post_tag button button_translucent" title="dns">
+          DNS
           <span class="button_tally">2</span>
         </a>
         
@@ -648,6 +665,11 @@
           <span class="button_tally">1</span>
         </a>
         
+        <a href='http://localhost:1313/tags/command-line/' class="post_tag button button_translucent" title="command line">
+          COMMAND LINE
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='http://localhost:1313/tags/counting-sort/' class="post_tag button button_translucent" title="counting sort">
           COUNTING SORT
           <span class="button_tally">1</span>
@@ -675,11 +697,6 @@
         
         <a href='http://localhost:1313/tags/distance/' class="post_tag button button_translucent" title="distance">
           DISTANCE
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='http://localhost:1313/tags/dns/' class="post_tag button button_translucent" title="dns">
-          DNS
           <span class="button_tally">1</span>
         </a>
         
@@ -743,6 +760,11 @@
           <span class="button_tally">1</span>
         </a>
         
+        <a href='http://localhost:1313/tags/ip/' class="post_tag button button_translucent" title="ip">
+          IP
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='http://localhost:1313/tags/javascript/' class="post_tag button button_translucent" title="javascript">
           JAVASCRIPT
           <span class="button_tally">1</span>
@@ -795,6 +817,11 @@
         
         <a href='http://localhost:1313/tags/network-drives/' class="post_tag button button_translucent" title="network drives">
           NETWORK DRIVES
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/networking/' class="post_tag button button_translucent" title="networking">
+          NETWORKING
           <span class="button_tally">1</span>
         </a>
         
@@ -915,6 +942,11 @@
         
         <a href='http://localhost:1313/tags/win32_operatingsystem/' class="post_tag button button_translucent" title="win32_operatingsystem">
           WIN32_OPERATINGSYSTEM
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
           <span class="button_tally">1</span>
         </a>
         

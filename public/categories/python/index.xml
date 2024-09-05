@@ -24,22 +24,6 @@
     </item>
     
     <item>
-      <title>Change DNS Remotely</title>
-      <link>http://localhost:1313/post/2024-03-21-change-dns-remotely/</link>
-      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/2024-03-21-change-dns-remotely/</guid>
-      <description>
-        
-          
-            Steps that are useful for unbricking a network with a bad DNS config remotely.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Local AI API</title>
       <link>http://localhost:1313/post/2024-02-05-local-ai-api/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>

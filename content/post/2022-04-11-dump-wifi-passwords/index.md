@@ -12,4 +12,33 @@ This script uses the Windows command-line tool "netsh" to retrieve information a
 
 The script uses the "Invoke-Item" command to open the "output.csv" file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer. It opens the file in the default application associated with the .csv file type on the system, typically it will be opened in excel or similar spreadsheet software.
 
-<script src="https://gist.github.com/Trimad/1829b942568540b704b9ec21cfe99279.js"></script>
+```powershell
+$cmd= @(netsh wlan show profile)
+$profiles = @()
+foreach ($line in $cmd)
+{
+$skip = 27
+if($line -Match "All User Profile")
+    {
+$line = $line.SubString($skip, $line.Length-$skip)
+  $profiles += $line
+    }
+}
+$output = foreach ($profile in $profiles)
+{
+$skip = 29
+  $info = @(netsh wlan show profile $profile key=clear)
+  foreach ($line in $info)
+  {
+  if($line -Match "Key Content")
+    {
+        New-Object -TypeName PSObject -Property @{
+            SSID = $profile
+            Password = $line.SubString($skip, $line.Length-$skip)
+        }
+    }
+  }
+}
+$output | Export-Csv output.csv -NoTypeInformation
+Invoke-Item "output.csv"
+```
