@@ -15,6 +15,9 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/post/2024-07-30-batch-compress-images/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -27,9 +30,6 @@
                 hreflang="en"
                 href="http://localhost:1313/categories/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/post/2024-07-30-batch-compress-images/</loc>
-    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/pil/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>

@@ -176,7 +176,11 @@
         <h2>Overview</h2>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#dism">DISM</a></li>
+    <li><a href="#dism">DISM</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
     <li><a href="#sfc">SFC</a></li>
     <li><a href="#dll-hell">DLL Hell</a></li>
     <li><a href="#windows-apps">Windows Apps</a></li>
@@ -198,6 +202,18 @@
 <li>If there are any corrupt or missing files after performing one of the scans mentioned above, you can repair them automatically. Your computer will need to be connected to the Internet for the files to be automatically restored.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">DISM</span> <span class="p">/</span><span class="n">Online</span> <span class="p">/</span><span class="nb">Cleanup-Image</span> <span class="p">/</span><span class="n">RestoreHealth</span>
+</span></span></code></pre></div><h4 id="iso">ISO</h4>
+<p>There are circumstances where</p>
+<ol>
+<li>Download a Windows ISO from here: <a href="https://www.microsoft.com/en-us/software-download/windows10">https://www.microsoft.com/en-us/software-download/windows10</a></li>
+<li>Mount the ISO and navigate to sources and copy install.esd to a local directory.</li>
+<li>Open a command prompt and get the index of the correct image using:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">dism /Get-WimInfo /WimFile:install.esd
+</span></span></code></pre></div><ol start="4">
+<li>Take note of the index, and convert install.esd to install.wim:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">dism /export-image /SourceImageFile:install.esd /SourceIndex:6 /DestinationImageFile:install.wim /Compress:max /CheckIntegrity
 </span></span></code></pre></div><h2 id="sfc">SFC</h2>
 <p>The &quot;sfc /scannow&quot; command is a Windows utility used to scan system files for integrity violations and repair any issues it finds. It stands for System File Checker and can help resolve issues with missing or corrupted system files. Running this command requires administrator privileges and may take several minutes to complete.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="ln">1</span><span class="cl">sfc /scannow
@@ -285,7 +301,7 @@ Permalink for latest supported x64 version. The X64 Redistributable package cont
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="http://localhost:1313/post/2024-07-30-batch-compress-images/" class="nav-link" title="Get Public IP">Get Public IP</a>
+        <a href="http://localhost:1313/post/2024-07-30-batch-compress-images/" class="nav-link" title="Batch Compress Images">Batch Compress Images</a>
       </li>
       <li>
         <a href="http://localhost:1313/post/2024-06-24-get-public-ip/" class="nav-link" title="Get Public IP">Get Public IP</a>
