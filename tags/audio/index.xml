@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Audio on Hugo Grimoire</title><link>https://trimad.github.io/tags/audio/</link><description>Recent content in Audio on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/audio/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI Whisper</title><link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid><description>
 Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.</description></item><item><title>NVIDIA Maxine Windows Audio Effects SDK</title><link>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link><pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid><description>
 This is my tentative workflow for cleaning-up poor audio using the NVIDIA Maxine Windows Audio Effects SDK.</description></item><item><title>ffmpeg</title><link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link><pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-01-27-ffmpeg/</guid><description>
-ffmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
-ffmpeg Download ffmpeg Documentation Audio Processing Convert to 8kHz, single-channel PCM 1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 8000 -ac 1 output.wav Convert to 16kHz, single-channel PCM 1ffmpeg -i &amp;#34;input.mp3&amp;#34; -ar 16000 -ac 1 output.wav Convert to 48kHz, single-channel PCM 1ffmpeg -i input.mp3 -ar 48000 -ac 1 output.wav Video Processing Add Music to a Video 1ffmpeg -i video.mp4 -i music.</description></item></channel></rss>
+&lt;p>ffmpeg is a complete, cross-platform solution to record, convert and stream audio and video.&lt;/p>
+&lt;h2>&lt;a href="https://www.ffmpeg.org/download.html#build-windows">ffmpeg Download&lt;/a>&lt;/h2>
+&lt;h2>&lt;a href="https://ffmpeg.org/ffmpeg.html">ffmpeg Documentation
+&lt;/a>&lt;/h2>
+&lt;h2 id="audio-processing">Audio Processing&lt;/h2>
+&lt;h3 id="convert-to-8khz-single-channel-pcm">Convert to 8kHz, single-channel PCM&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Shell" data-lang="Shell">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ffmpeg -i &lt;span class="s2">&amp;#34;input.mp3&amp;#34;&lt;/span> -ar &lt;span class="m">8000&lt;/span> -ac &lt;span class="m">1&lt;/span> output.wav
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="convert-to-16khz-single-channel-pcm">Convert to 16kHz, single-channel PCM&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Shell" data-lang="Shell">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ffmpeg -i &lt;span class="s2">&amp;#34;input.mp3&amp;#34;&lt;/span> -ar &lt;span class="m">16000&lt;/span> -ac &lt;span class="m">1&lt;/span> output.wav
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="convert-to-48khz-single-channel-pcm">Convert to 48kHz, single-channel PCM&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Shell" data-lang="Shell">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ffmpeg -i input.mp3 -ar &lt;span class="m">48000&lt;/span> -ac &lt;span class="m">1&lt;/span> output.wav
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="video-processing">Video Processing&lt;/h2>
+&lt;h3 id="add-music-to-a-video">Add Music to a Video&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Shell" data-lang="Shell">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ffmpeg -i video.mp4 -i music.mp3 -codec copy -shortest output.mp4
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;dl>
+&lt;dt>-i video.mp4&lt;/dt>
+&lt;dd>Select “video.mp4” as an input file from the same directory.&lt;/dd>
+&lt;dt>-i music.mp3&lt;/dt>
+&lt;dd>Select “music.mp4” as an input file from the same directory.&lt;/dd>
+&lt;dt>-codec copy&lt;/dt>
+&lt;dd>Specifies that we are not re-encoding anything.&lt;/dd>
+&lt;dt>-shortest&lt;/dt>
+&lt;dd>Use this flag if the video length is shorter than the audio length. Otherwise, use no flag at all here.&lt;/dd>
+&lt;/dl>
+&lt;h3 id="assemble-images-into-a-video">Assemble images into a video&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Shell" data-lang="Shell">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ffmpeg -framerate &lt;span class="m">60&lt;/span> -s 2560x1440 -i %04d.png output.mp4
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;dl>
+&lt;dt>-framerate 60&lt;/dt>
+&lt;dd>Set the frame rate to 60FPS.&lt;/dd>
+&lt;dt>-s 2560x1440&lt;/dt>
+&lt;dd>Set the video resolution to 2560x1440 pixels.&lt;/dd>
+&lt;dt>-i %04d.png&lt;/dt>
+&lt;dd>This flag assumes there is a folder of .png files in the same directory named in the format 0001.png, 0002.png, etc. It will load all images following this naming convention as inputs to be processed.&lt;/dd>
+&lt;/dl>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Shell" data-lang="Shell">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&amp;gt;ffmpeg -start_number &lt;span class="m">0140&lt;/span> -i %04d.png interpolated-0.mp4
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="re-encode-video-for-youtube">Re-encode Video For YouTube&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Shell" data-lang="Shell">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ffmpeg -i transition.mp4 -c:v libx264 -preset slow -crf &lt;span class="m">18&lt;/span> -c:a copy -pix_fmt yuv420p transition.mkv
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;dl>
+&lt;dt>-i transition.mp4&lt;/dt>
+&lt;dd>Select &amp;quot;transition.mp4&amp;quot; as the input file.&lt;/dd>
+&lt;dt>-c:v libx264&lt;/dt>
+&lt;dd>set the video codec to H.264&lt;/dd>
+&lt;dt>-preset slow&lt;/dt>
+&lt;dd>A preset is a collection of options that will provide a certain encoding speed to compression ratio. A slower preset will provide better compression (compression is quality per filesize). This means that, for example, if you target a certain file size or constant bit rate, you will achieve better quality with a slower preset. Similarly, for constant quality encoding, you will simply save bitrate by choosing a slower preset. Use the slowest preset that you have patience for. The available presets in descending order of speed are:&lt;/dd>
+&lt;/dl>
+&lt;ul>
+&lt;li>ultrafast&lt;/li>
+&lt;li>superfast&lt;/li>
+&lt;li>veryfast&lt;/li>
+&lt;li>faster&lt;/li>
+&lt;li>fast&lt;/li>
+&lt;li>medium (default preset)&lt;/li>
+&lt;li>slow&lt;/li>
+&lt;li>slower&lt;/li>
+&lt;li>veryslow&lt;/li>
+&lt;/ul>
+&lt;dl>
+&lt;dt>-crf 18&lt;/dt>
+&lt;dd>Constant Rate Factor (CRF). The range of the CRF scale is 0–51, where 0 is lossless, 23 is the default, and 51 is worst quality possible. A lower value generally leads to higher quality, and a subjectively sane range is 17–28. Consider 17 or 18 to be visually lossless or nearly so; it should look the same or nearly the same as the input but it isn't technically lossless.&lt;/dd>
+&lt;dt>-c:a copy&lt;/dt>
+&lt;dd>Copy the audio codec from that of the input file to the output file&lt;/dd>
+&lt;dt>-pix_fmt yuv420p&lt;/dt>
+&lt;dd>This flag is only needed for your output to work in QuickTime, Windows Media player and other offline media players. These players only support the YUV planar color space with 4:2:0 chroma subsampling for H.264 video. Otherwise, depending on your source, ffmpeg may output to a pixel format that may be incompatible with these players.&lt;/dd>
+&lt;/dl>
+&lt;h2>Video Filters&lt;/h2>
+&lt;h3 id="stack-two-videos-side-by-side">Stack two videos side-by-side&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Shell" data-lang="Shell">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ffmpeg -i &lt;span class="s2">&amp;#34;left.mp4&amp;#34;&lt;/span> -i &lt;span class="s2">&amp;#34;right.mp4&amp;#34;&lt;/span> -filter_complex hstack output.mp4
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This command uses the ffmpeg software to combine two video files, &amp;quot;left.mp4&amp;quot; and &amp;quot;right.mp4&amp;quot;, into a single output video file &amp;quot;output.mp4&amp;quot;. The &amp;quot;-i&amp;quot; option specifies the input video files. The &amp;quot;-filter_complex&amp;quot; option applies the &amp;quot;hstack&amp;quot; filter, which horizontally stacks the two input videos side by side to form a single output video.&lt;/p></description></item></channel></rss>
