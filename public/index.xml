@@ -16,8 +16,8 @@
       <description>
         
           
-            Managing different versions of Microsoft Office on Windows can be critical, especially when troubleshooting compatibility issues or performing specific tasks that require a certain version. One useful tool for this is officec2rclient.exe, which allows you to roll back or update the installed Office version. Below, I&#39;ll cover essential steps and commands you can use to manage Microsoft Office versions efficiently.
-Rolling Back to a Specific Microsoft Office Version Sometimes you may need to roll back to an earlier version of Office, especially if an update introduces bugs or compatibility issues.
+            Managing different versions of Microsoft 365 (M365) on Windows is crucial, especially when troubleshooting compatibility issues or performing tasks that require a specific version. This guide will walk you through checking your current M365 build, consulting the Office version history, and using officec2rclient.exe along with PowerShell commands to manage your Office versions efficiently.
+Checking Your Current M365 Build Before making any changes, it&#39;s essential to know which version of Microsoft Office you currently have installed.
           
           
         
@@ -1407,22 +1407,6 @@ Launch this sketch is a new window (recommended)Launch p5.js web editor
         
           
             This is something I made when I was learning about Arrays of Objects.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/post/2024-09-10-windows-activation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/2024-09-10-windows-activation/</guid>
-      <description>
-        
-          
-            Check License Status 1wmic path SoftwareLicensingProduct where &amp;#34;PartialProductKey is not null&amp;#34; get Name, LicenseStatus License Status Codes: 0: Unlicensed 1: Licensed 2: Out-of-Box Grace Period 3: Out-of-Tolerance Grace Period 4: Non-Genuine Grace Period 5: Notification 6: Extended Grace
           
           
         

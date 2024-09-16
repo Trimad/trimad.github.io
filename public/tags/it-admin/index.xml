@@ -16,8 +16,8 @@
       <description>
         
           
-            Managing different versions of Microsoft Office on Windows can be critical, especially when troubleshooting compatibility issues or performing specific tasks that require a certain version. One useful tool for this is officec2rclient.exe, which allows you to roll back or update the installed Office version. Below, I&#39;ll cover essential steps and commands you can use to manage Microsoft Office versions efficiently.
-Rolling Back to a Specific Microsoft Office Version Sometimes you may need to roll back to an earlier version of Office, especially if an update introduces bugs or compatibility issues.
+            Managing different versions of Microsoft 365 (M365) on Windows is crucial, especially when troubleshooting compatibility issues or performing tasks that require a specific version. This guide will walk you through checking your current M365 build, consulting the Office version history, and using officec2rclient.exe along with PowerShell commands to manage your Office versions efficiently.
+Checking Your Current M365 Build Before making any changes, it&#39;s essential to know which version of Microsoft Office you currently have installed.
           
           
         

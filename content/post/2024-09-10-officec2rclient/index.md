@@ -7,87 +7,156 @@ tags: ["Microsoft Office", "OfficeC2RClient", "Version Management", "IT Admin"]
 toc: true
 ---
 
-Managing different versions of Microsoft Office on Windows can be critical, especially when troubleshooting compatibility issues or performing specific tasks that require a certain version. One useful tool for this is `officec2rclient.exe`, which allows you to roll back or update the installed Office version. Below, I'll cover essential steps and commands you can use to manage Microsoft Office versions efficiently.
+Managing different versions of Microsoft 365 (M365) on Windows is crucial, especially when troubleshooting compatibility issues or performing tasks that require a specific version. This guide will walk you through checking your current M365 build, consulting the Office version history, and using `officec2rclient.exe` along with PowerShell commands to manage your Office versions efficiently.
 
-## Rolling Back to a Specific Microsoft Office Version
+## Checking Your Current M365 Build
 
-Sometimes you may need to roll back to an earlier version of Office, especially if an update introduces bugs or compatibility issues. Here's how you can roll back to specific versions:
+Before making any changes, it's essential to know which version of Microsoft Office you currently have installed.
 
-### Rolling Back to Version 2407 (Current Channel)
+### Using an Office Application
 
-To roll back to version `16.0.17830.20166`:
+1. Open any Office application (e.g., Word, Excel).
+2. Click on **File** > **Account**.
+3. Under **Product Information**, look for **About Word/Excel/etc.** to see the version and build number.
 
-```bash
-cd "C:\Program Files\Common Files\Microsoft Shared\ClickToRun" && officec2rclient.exe /update user updatetoversion=16.0.17830.20166
-```
+### Using PowerShell
 
-### Rolling Back to Version 2406 (Current Channel)
-
-For version `16.0.17726.20160`, use the following command:
-
-```bash
-cd "C:\Program Files\Common Files\Microsoft Shared\ClickToRun" && officec2rclient.exe /update user updatetoversion=16.0.17726.20160
-```
-
-> **Tip**: It's always good practice to disable automatic updates before rolling back, to prevent the system from automatically upgrading after you’ve downgraded.
-
-## Checking the Installed Office Version
-
-To check which version of Microsoft Office is currently installed, you can run the following PowerShell command:
+You can also check the installed Office version using PowerShell:
 
 ```powershell
 Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration" | Select-Object -Property VersionToReport
 ```
 
-Or if you're using PowerShell from the command line:
+Or from the command prompt:
 
-```bash
-powershell.exe -c "Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration' | Select-Object -Property VersionToReport"
+```cmd
+powershell.exe -Command "Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration' | Select-Object -Property VersionToReport"
 ```
 
-## Managing the Microsoft Office Click-to-Run Service
+## Consulting the Office Version History
 
-The Click-to-Run service manages Office installations and updates. Sometimes, you'll need to stop or disable this service before performing certain actions, like rolling back or installing specific versions of Office.
+To decide which version you might want to roll back to or update, it's helpful to consult the official Office version history:
 
-### Stopping the Click-to-Run Service
+- Visit the Microsoft Office version history page to view a list of all released builds, along with their release dates and details.
 
-To stop the service:
+## Rolling Back or Updating Microsoft Office Versions
 
-```bash
-sc stop ClickToRunSvc
+Once you've identified the target version, you can use `officec2rclient.exe` to roll back or update your Office installation.
+
+### Rolling Back to a Specific Version
+
+#### Example: Rolling Back to Version 16.0.17830.20166
+
+To roll back to version 16.0.17830.20166:
+
+```cmd
+cd "C:\Program Files\Common Files\Microsoft Shared\ClickToRun"
+officec2rclient.exe /update user updatetoversion=16.0.17830.20166
 ```
 
-### Checking the Status of the Click-to-Run Service
+#### Example: Rolling Back to Version 16.0.17726.20160
 
-To check whether the service is running:
+For version 16.0.17726.20160, run:
 
-```bash
+```cmd
+cd "C:\Program Files\Common Files\Microsoft Shared\ClickToRun"
+officec2rclient.exe /update user updatetoversion=16.0.17726.20160
+```
+
+**Important:** Before rolling back, disable automatic updates to prevent the system from upgrading after you've downgraded.
+
+## Managing Automatic Updates
+
+### Disabling Automatic Updates
+
+#### Using Office Application Settings
+
+1. Open any Office application.
+2. Go to **File** > **Account**.
+3. Click on **Update Options** and select **Disable Updates**.
+
+#### Using PowerShell
+
+To disable updates via PowerShell:
+
+```powershell
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate" -Name "enableautomaticupdates" -Value 0 -Type DWord
+```
+
+### Re-enabling Automatic Updates
+
+#### Using Office Application Settings
+
+1. Open any Office application.
+2. Go to **File** > **Account**.
+3. Click on **Update Options** and select **Enable Updates**.
+
+#### Using PowerShell
+
+```powershell
+Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate" -Name "enableautomaticupdates"
+```
+
+## Managing the Click-to-Run Service
+
+The Click-to-Run service handles Office installations and updates. You might need to manage this service when rolling back versions.
+
+### Checking the Service Status
+
+To check if the service is running:
+
+```cmd
 sc query ClickToRunSvc
 ```
 
-### Disabling the Click-to-Run Service
+### Stopping the Service
 
-If you need to disable the service to prevent it from restarting:
+To stop the service:
 
-```bash
+```cmd
+sc stop ClickToRunSvc
+```
+
+### Disabling the Service
+
+To prevent the service from starting automatically:
+
+```cmd
 sc config ClickToRunSvc start= disabled
 ```
 
-> **Note**: Disabling this service will prevent future updates. Be sure to re-enable it when you're ready to update Office again.
+**Note:** Disabling this service stops future updates. Re-enable it when you're ready to update Office again.
 
-## Useful Hacks and Tips
+### Re-enabling the Service
 
-Here are some additional tips for managing Microsoft Office versions effectively:
+To re-enable and start the service:
 
-- **Backup Your Office Settings**: Before rolling back to a previous version, it’s a good idea to backup your Office settings, especially if you’ve customized the interface or added macros.
-  
-- **Re-enabling Updates**: Once you're satisfied with the rollback or if you want to receive future updates, you can re-enable automatic updates by resetting the Click-to-Run service:
+```cmd
+sc config ClickToRunSvc start= demand
+sc start ClickToRunSvc
+```
 
-    ```bash
-    sc config ClickToRunSvc start= demand
-    sc start ClickToRunSvc
-    ```
+## Additional PowerShell Commands
 
-- **Monitor Version Changes**: Microsoft releases frequent updates for Office, and it's easy to lose track of which version you're on. Keep a log of the versions and dates when you update or roll back to better manage the lifecycle of your Office installations.
+### Forcing an Online Repair
 
-For more details on Office version history, visit the official [Microsoft Office version history page](https://learn.microsoft.com/en-us/officeupdates/update-history-microsoft365-apps-by-date).
+If you're experiencing issues, performing an online repair can help:
+
+```cmd
+cd "C:\Program Files\Common Files\Microsoft Shared\ClickToRun"
+officec2rclient.exe /repair user displaylevel=false
+```
+
+### Clearing the Update Cache
+
+To clear the Office update cache:
+
+```powershell
+Remove-Item -Path "C:\ProgramData\Microsoft\ClickToRun\Download" -Recurse -Force
+```
+
+## Best Practices and Tips
+
+- **Backup Settings:** Before making changes, back up your Office settings, especially if you have custom configurations or macros.
+- **Monitor Updates:** Keep track of your Office versions and update history to manage installations effectively.
+- **Stay Informed:** Regularly check the Office release notes for updates on new features and fixes.
