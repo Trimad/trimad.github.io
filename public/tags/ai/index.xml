@@ -1,12 +1,156 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ai on Hugo Grimoire</title><link>https://trimad.github.io/tags/ai/</link><description>Recent content in Ai on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>PSWindowsUpdate</title><link>https://trimad.github.io/post/2023-10-10-pswindowsupdate/</link><pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-10-10-pswindowsupdate/</guid><description>
-Install Windows Updates with the PSWindowsUpdate PowerShell module.</description></item><item><title>Join a Workstation to Active Directory with Shell and PowerShell</title><link>https://trimad.github.io/post/2023-07-13-join-active-directory/</link><pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-07-13-join-active-directory/</guid><description>
-This post presents one-liner commands using Shell and PowerShell to add a workstation to Active Directory.</description></item><item><title>Deforum Cheat Sheet</title><link>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</link><pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</guid><description>
-This is a cheat sheet of animations showing what the various 3D translation and rotation settings do in Deforum Stable Diffusion.</description></item><item><title>Deep Floyd IF</title><link>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</link><pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</guid><description>
-My tentative work flow for running Deep Floyd IF locally for image generation.</description></item><item><title>Thin Plate Spline Motion Model</title><link>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</link><pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</guid><description>
-This is my tentative workflow for using this repository to animate static images using a driving video.</description></item><item><title>OpenAI Whisper</title><link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid><description>
-Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.</description></item><item><title>MiDaS</title><link>https://trimad.github.io/post/2023-02-06-midas/</link><pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-06-midas/</guid><description>
-GitHub Repository
-During installation, I ran into an issue where the CUDA package wasn't found. Had to modify environment.yaml to:
-1name: midas-py310 2channels: 3 - pytorch 4 - defaults 5dependencies: 6 - nvidia::cuda-toolkit=11.7.0 7 - python=3.10.8 8 - pytorch::pytorch=1.13.0 9 - torchvision=0.14.0 10 - pip=22.3.1 11 - numpy=1.23.4 12 - pip: 13 - opencv-python==4.6.0.66 14 - imutils==0.5.4 15 - timm==0.6.12 16 - einops==0.6.0 Commands that were helpful for troubleshooting CUDA:</description></item><item><title>Frame Interpolation Large Motion (FILM)</title><link>https://trimad.github.io/post/2023-02-05-film/</link><pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-05-film/</guid><description>
-*"The official Tensorflow 2 implementation of our high quality frame interpolation neural network. We present a unified single-network approach that doesn't use additional pre-trained networks, like optical flow or depth, and yet achieve state-of-the-art results. We use a multi-scale feature extractor that shares the same convolution weights across the scales. Our model is trainable from frame triplets alone."*</description></item><item><title>Stable Diffusion Scripts</title><link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link><pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid><description>
-Stable Diffusion is an image generation technique that uses a diffusion process to iteratively generate images. It starts with a noise image and applies a series of transformations to it, where each transformation adds a little bit of noise to the image. These transformations are repeated over multiple time steps, and the amount of noise added is gradually decreased over time. This process smooths out the noise and generates a high-quality image. The stability of the diffusion process is maintained by scaling the added noise based on the image's current state, preventing the image from diverging or collapsing into a uniform color. Stable Diffusion is a powerful and versatile image generation technique that can produce realistic, high-resolution images with fine details and a wide range of styles.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/ai/</link>
+    <description>Recent content in Ai on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PSWindowsUpdate</title>
+      <link>http://localhost:1313/post/2023-10-10-pswindowsupdate/</link>
+      <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-10-10-pswindowsupdate/</guid>
+      <description>
+        
+          
+            Install Windows Updates with the PSWindowsUpdate PowerShell module.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Join a Workstation to Active Directory with Shell and PowerShell</title>
+      <link>http://localhost:1313/post/2023-07-13-join-active-directory/</link>
+      <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-07-13-join-active-directory/</guid>
+      <description>
+        
+          
+            This post presents one-liner commands using Shell and PowerShell to add a workstation to Active Directory.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Deforum Cheat Sheet</title>
+      <link>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</link>
+      <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</guid>
+      <description>
+        
+          
+            This is a cheat sheet of animations showing what the various 3D translation and rotation settings do in Deforum Stable Diffusion.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Deep Floyd IF</title>
+      <link>http://localhost:1313/post/2023-05-03-deep-floyd-if/</link>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-05-03-deep-floyd-if/</guid>
+      <description>
+        
+          
+            My tentative work flow for running Deep Floyd IF locally for image generation.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Thin Plate Spline Motion Model</title>
+      <link>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</guid>
+      <description>
+        
+          
+            This is my tentative workflow for using this repository to animate static images using a driving video.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenAI Whisper</title>
+      <link>http://localhost:1313/post/2023-02-24-openai-whisper/</link>
+      <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-24-openai-whisper/</guid>
+      <description>
+        
+          
+            Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>MiDaS</title>
+      <link>http://localhost:1313/post/2023-02-06-midas/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-06-midas/</guid>
+      <description>
+        
+          
+            GitHub RepositoryDuring installation, I ran into an issue where the CUDA package wasn&#39;t found. Had to modify environment.yaml to:
+1name: midas-py310 2channels: 3 - pytorch 4 - defaults 5dependencies: 6 - nvidia::cuda-toolkit=11.7.0 7 - python=3.10.8 8 - pytorch::pytorch=1.13.0 9 - torchvision=0.14.0 10 - pip=22.3.1 11 - numpy=1.23.4 12 - pip: 13 - opencv-python==4.6.0.66 14 - imutils==0.5.4 15 - timm==0.6.12 16 - einops==0.6.0 Commands that were helpful for troubleshooting CUDA:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Frame Interpolation Large Motion (FILM)</title>
+      <link>http://localhost:1313/post/2023-02-05-film/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-05-film/</guid>
+      <description>
+        
+          
+            *&#34;The official Tensorflow 2 implementation of our high quality frame interpolation neural network. We present a unified single-network approach that doesn&#39;t use additional pre-trained networks, like optical flow or depth, and yet achieve state-of-the-art results. We use a multi-scale feature extractor that shares the same convolution weights across the scales. Our model is trainable from frame triplets alone.&#34;*
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stable Diffusion Scripts</title>
+      <link>http://localhost:1313/post/2023-02-05-stable-diffusion/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-05-stable-diffusion/</guid>
+      <description>
+        
+          
+            Stable Diffusion is an image generation technique that uses a diffusion process to iteratively generate images. It starts with a noise image and applies a series of transformations to it, where each transformation adds a little bit of noise to the image. These transformations are repeated over multiple time steps, and the amount of noise added is gradually decreased over time. This process smooths out the noise and generates a high-quality image. The stability of the diffusion process is maintained by scaling the added noise based on the image&#39;s current state, preventing the image from diverging or collapsing into a uniform color. Stable Diffusion is a powerful and versatile image generation technique that can produce realistic, high-resolution images with fine details and a wide range of styles.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

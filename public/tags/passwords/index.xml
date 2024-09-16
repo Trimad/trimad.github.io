@@ -1,5 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Passwords on Hugo Grimoire</title><link>https://trimad.github.io/tags/passwords/</link><description>Recent content in Passwords on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/passwords/index.xml" rel="self" type="application/rss+xml"/><item><title>Random Password Generator</title><link>https://trimad.github.io/post/2023-03-22-random-password-generator/</link><pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-03-22-random-password-generator/</guid><description>
-Randomly generated passwords. Refresh the page for new passwords.</description></item><item><title>Microsoft LAPS (Local Administrator Password Solution)</title><link>https://trimad.github.io/post/2023-02-22-laps/</link><pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-22-laps/</guid><description>
-Microsoft LAPS (Local Administrator Password Solution) is a tool designed to securely manage local administrator account passwords on Windows domain-joined computers. It automates password generation and rotation, and stores passwords in a secure manner, providing greater control and security over local accounts.</description></item><item><title>Dump WiFi Passwords</title><link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid><description>
-This script uses the Windows command-line tool &amp;quot;netsh&amp;quot; to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named &amp;quot;output.csv&amp;quot;. Finally, the script opens the &amp;quot;output.csv&amp;quot; file.
-The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quot;output.csv&amp;quot; file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Passwords on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/passwords/</link>
+    <description>Recent content in Passwords on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/passwords/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random Password Generator</title>
+      <link>http://localhost:1313/post/2023-03-22-random-password-generator/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-03-22-random-password-generator/</guid>
+      <description>
+        
+          
+            Randomly generated passwords. Refresh the page for new passwords.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Microsoft LAPS (Local Administrator Password Solution)</title>
+      <link>http://localhost:1313/post/2023-02-22-laps/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-22-laps/</guid>
+      <description>
+        
+          
+            Microsoft LAPS (Local Administrator Password Solution) is a tool designed to securely manage local administrator account passwords on Windows domain-joined computers. It automates password generation and rotation, and stores passwords in a secure manner, providing greater control and security over local accounts.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump WiFi Passwords</title>
+      <link>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</guid>
+      <description>
+        
+          
+            This script uses the Windows command-line tool &amp;quot;netsh&amp;quot; to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named &amp;quot;output.csv&amp;quot;. Finally, the script opens the &amp;quot;output.csv&amp;quot; file.
+The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quot;output.csv&amp;quot; file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
