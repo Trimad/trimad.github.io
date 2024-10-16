@@ -6,7 +6,23 @@
     <description>Recent content on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restart IIS Application Pools with PowerShell</title>
+      <link>http://localhost:1313/post/2024-10-16-restart-iis-application/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-10-16-restart-iis-application/</guid>
+      <description>
+        
+          
+            A PowerShell script I put together to stop and start an IIS application pool, with logging.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Managing Microsoft Office Versions with OfficeC2RClient</title>
       <link>http://localhost:1313/post/2024-09-10-officec2rclient/</link>

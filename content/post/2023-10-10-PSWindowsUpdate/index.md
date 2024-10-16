@@ -2,6 +2,7 @@
 author: Tristan Madden
 categories: [powershell]
 date: 2023-10-10
+lastmod: 2024-09-20
 featured: false
 summary: "Install Windows Updates with the PSWindowsUpdate PowerShell module."
 tags: [ai, images, video]
