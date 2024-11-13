@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yt-Dlp on Hugo Grimoire</title><link>https://trimad.github.io/tags/yt-dlp/</link><description>Recent content in Yt-Dlp on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/yt-dlp/index.xml" rel="self" type="application/rss+xml"/><item><title>Download YouTube Videos</title><link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link><pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid><description>
-yt-dlp
+&lt;h2>yt-dlp&lt;/h2>
 yt-dlp is a free and open-source command-line tool for downloading videos and audio from YouTube and other video hosting sites. It is a fork of youtube-dl with additional features and improvements, including better performance and more frequent updates. Unlike youtube-dl, which has faced various legal challenges and takedowns, yt-dlp is actively maintained and regularly updated to ensure compatibility with the latest changes in video hosting sites.
-GitHub Repository Download the Windows executable
-Download a YouTube video with default settings:</description></item></channel></rss>
+&lt;h3>&lt;a href="https://github.com/yt-dlp/yt-dlp">GitHub Repository&lt;/a> &lt;/h3>
+&lt;h3>&lt;a href="https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe">Download the Windows executable&lt;/a>&lt;/h3>
+&lt;p>&lt;em>Download a YouTube video with default settings:&lt;/em>&lt;/p></description></item></channel></rss>
