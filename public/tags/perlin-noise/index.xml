@@ -1,27 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Perlin Noise on Hugo Grimoire</title>
-    <link>http://localhost:1313/tags/perlin-noise/</link>
-    <description>Recent content in Perlin Noise on Hugo Grimoire</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/perlin-noise/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Flipping Tiles</title>
-      <link>http://localhost:1313/post/2017-11-18-flippy-tiles/</link>
-      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/2017-11-18-flippy-tiles/</guid>
-      <description>
-        
-          
-            Simple animation of tiles flipping. They can flip randomly or they can be flipped by applying Perlin Noise.
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Perlin Noise on Hugo Grimoire</title><link>https://trimad.github.io/tags/perlin-noise/</link><description>Recent content in Perlin Noise on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/perlin-noise/index.xml" rel="self" type="application/rss+xml"/><item><title>Flipping Tiles</title><link>https://trimad.github.io/post/2017-11-18-flippy-tiles/</link><pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2017-11-18-flippy-tiles/</guid><description>
+Simple animation of tiles flipping. They can flip randomly or they can be flipped by applying Perlin Noise.</description></item></channel></rss>

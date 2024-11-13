@@ -52,7 +52,7 @@ def main():
     img = create_qr_code(data, box_size, border)
 
     # Define the size of squares
-    position_pattern = 8*box_size+((border-1)*box_size)
+    position_pattern = 8*box_size+((border-1)*box_size)``
 
     # Define coordinates for 8x8 squares at the corners and an additional 5x5 square
     squares = [
