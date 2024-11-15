@@ -1,10 +1,10 @@
-
 ---
 title: "Managing Microsoft Office Versions with OfficeC2RClient"
 date: 2024-09-10
 draft: false
 tags: ["Microsoft Office", "OfficeC2RClient", "Version Management", "IT Admin"]
 toc: true
+thumbnail: "thumbnail.png"
 ---
 
 Managing different versions of Microsoft 365 (M365) on Windows is crucial, especially when troubleshooting compatibility issues or performing tasks that require a specific version. This guide will walk you through checking your current M365 build, consulting the Office version history, and using `officec2rclient.exe` along with PowerShell commands to manage your Office versions efficiently.
