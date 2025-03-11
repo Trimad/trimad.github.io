@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Hugo Grimoire</title>
-    <link>http://localhost:1313/categories/python/</link>
+    <link>https://trimad.github.io/categories/python/</link>
     <description>Recent content in Python on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Batch Compress Images</title>
-      <link>http://localhost:1313/post/2024-07-30-batch-compress-images/</link>
+      <link>https://trimad.github.io/post/2024-07-30-batch-compress-images/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2024-07-30-batch-compress-images/</guid>
+      <guid>https://trimad.github.io/post/2024-07-30-batch-compress-images/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Window Watcher</title>
-      <link>http://localhost:1313/post/2024-03-25-window-watcher/</link>
+      <link>https://trimad.github.io/post/2024-03-25-window-watcher/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2024-03-25-window-watcher/</guid>
+      <guid>https://trimad.github.io/post/2024-03-25-window-watcher/</guid>
       <description>
         
           
@@ -41,10 +41,10 @@
     
     <item>
       <title>Local AI API</title>
-      <link>http://localhost:1313/post/2024-02-05-local-ai-api/</link>
+      <link>https://trimad.github.io/post/2024-02-05-local-ai-api/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2024-02-05-local-ai-api/</guid>
+      <guid>https://trimad.github.io/post/2024-02-05-local-ai-api/</guid>
       <description>
         
           
@@ -57,10 +57,10 @@
     
     <item>
       <title>Generate Knowledge Graphs with LLMs</title>
-      <link>http://localhost:1313/post/2023-12-14-pyvis-knowledge-graphs/</link>
+      <link>https://trimad.github.io/post/2023-12-14-pyvis-knowledge-graphs/</link>
       <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-12-14-pyvis-knowledge-graphs/</guid>
+      <guid>https://trimad.github.io/post/2023-12-14-pyvis-knowledge-graphs/</guid>
       <description>
         
           
@@ -73,10 +73,10 @@
     
     <item>
       <title>Python networkx Library</title>
-      <link>http://localhost:1313/post/2023-08-15-networkx/</link>
+      <link>https://trimad.github.io/post/2023-08-15-networkx/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-08-15-networkx/</guid>
+      <guid>https://trimad.github.io/post/2023-08-15-networkx/</guid>
       <description>
         
           
@@ -89,10 +89,10 @@
     
     <item>
       <title>QR Codes</title>
-      <link>http://localhost:1313/post/2023-06-24-qr/</link>
+      <link>https://trimad.github.io/post/2023-06-24-qr/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-06-24-qr/</guid>
+      <guid>https://trimad.github.io/post/2023-06-24-qr/</guid>
       <description>
         
           
@@ -105,10 +105,10 @@
     
     <item>
       <title>Deforum Cheat Sheet</title>
-      <link>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</link>
+      <link>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</guid>
+      <guid>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</guid>
       <description>
         
           
@@ -121,10 +121,10 @@
     
     <item>
       <title>Deep Floyd IF</title>
-      <link>http://localhost:1313/post/2023-05-03-deep-floyd-if/</link>
+      <link>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-05-03-deep-floyd-if/</guid>
+      <guid>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</guid>
       <description>
         
           
@@ -137,10 +137,10 @@
     
     <item>
       <title>Thin Plate Spline Motion Model</title>
-      <link>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</link>
+      <link>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</guid>
+      <guid>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</guid>
       <description>
         
           
@@ -153,10 +153,10 @@
     
     <item>
       <title>OpenAI Whisper</title>
-      <link>http://localhost:1313/post/2023-02-24-openai-whisper/</link>
+      <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>
       <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-02-24-openai-whisper/</guid>
+      <guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid>
       <description>
         
           
@@ -169,10 +169,10 @@
     
     <item>
       <title>Decode Phishing Emails</title>
-      <link>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</link>
+      <link>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</guid>
+      <guid>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</guid>
       <description>
         
           
@@ -185,10 +185,10 @@
     
     <item>
       <title>MiDaS</title>
-      <link>http://localhost:1313/post/2023-02-06-midas/</link>
+      <link>https://trimad.github.io/post/2023-02-06-midas/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-02-06-midas/</guid>
+      <guid>https://trimad.github.io/post/2023-02-06-midas/</guid>
       <description>
         
           
@@ -219,10 +219,10 @@
     
     <item>
       <title>Frame Interpolation Large Motion (FILM)</title>
-      <link>http://localhost:1313/post/2023-02-05-film/</link>
+      <link>https://trimad.github.io/post/2023-02-05-film/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-02-05-film/</guid>
+      <guid>https://trimad.github.io/post/2023-02-05-film/</guid>
       <description>
         
           
@@ -235,10 +235,10 @@
     
     <item>
       <title>Stable Diffusion Scripts</title>
-      <link>http://localhost:1313/post/2023-02-05-stable-diffusion/</link>
+      <link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-02-05-stable-diffusion/</guid>
+      <guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid>
       <description>
         
           

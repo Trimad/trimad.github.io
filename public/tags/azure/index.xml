@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Azure on Hugo Grimoire</title>
-    <link>http://localhost:1313/tags/azure/</link>
+    <link>https://trimad.github.io/tags/azure/</link>
     <description>Recent content in Azure on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Force domain controller to sync with AzureAD</title>
-      <link>http://localhost:1313/post/2023-02-09-force-ad-sync/</link>
+      <link>https://trimad.github.io/post/2023-02-09-force-ad-sync/</link>
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-02-09-force-ad-sync/</guid>
+      <guid>https://trimad.github.io/post/2023-02-09-force-ad-sync/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Combining PowerShell Cmdlets</title>
-      <link>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
       <description>
         
           
@@ -42,10 +42,10 @@
     
     <item>
       <title>Get Group Membership</title>
-      <link>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</link>
+      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</guid>
+      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
       <description>
         
           

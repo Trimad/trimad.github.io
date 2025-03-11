@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Distance on Hugo Grimoire</title>
-    <link>http://localhost:1313/tags/distance/</link>
+    <link>https://trimad.github.io/tags/distance/</link>
     <description>Recent content in Distance on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/distance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/distance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comparing Java Distance Functions</title>
-      <link>http://localhost:1313/post/2018-04-17-comparing-java-distance-functions/</link>
+      <link>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-04-17-comparing-java-distance-functions/</guid>
+      <guid>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</guid>
       <description>
         
           

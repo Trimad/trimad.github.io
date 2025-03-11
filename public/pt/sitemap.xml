@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pt/categories/</loc>
+    <loc>https://trimad.github.io/pt/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://trimad.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/categories/"
+                href="https://trimad.github.io/pt/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/</loc>
+    <loc>https://trimad.github.io/pt/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://trimad.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/"
+                href="https://trimad.github.io/pt/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/series/</loc>
+    <loc>https://trimad.github.io/pt/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://trimad.github.io/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/series/"
+                href="https://trimad.github.io/pt/series/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/tags/</loc>
+    <loc>https://trimad.github.io/pt/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://trimad.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/tags/"
+                href="https://trimad.github.io/pt/tags/"
                 />
   </url>
 </urlset>

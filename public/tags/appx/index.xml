@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Appx on Hugo Grimoire</title>
-    <link>http://localhost:1313/tags/appx/</link>
+    <link>https://trimad.github.io/tags/appx/</link>
     <description>Recent content in Appx on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/appx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/appx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Remove-AppxPackage</title>
-      <link>http://localhost:1313/post/2019-08-28-remove-appx-packages/</link>
+      <link>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-08-28-remove-appx-packages/</guid>
+      <guid>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</guid>
       <description>
         
           

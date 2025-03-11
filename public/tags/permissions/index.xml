@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Permissions on Hugo Grimoire</title>
-    <link>http://localhost:1313/tags/permissions/</link>
+    <link>https://trimad.github.io/tags/permissions/</link>
     <description>Recent content in Permissions on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/permissions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/permissions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visualizing Folder Permissions</title>
-      <link>http://localhost:1313/post/2024-06-01-visualizing-folder-permissions/</link>
+      <link>https://trimad.github.io/post/2024-06-01-visualizing-folder-permissions/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2024-06-01-visualizing-folder-permissions/</guid>
+      <guid>https://trimad.github.io/post/2024-06-01-visualizing-folder-permissions/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>ACL</title>
-      <link>http://localhost:1313/post/2023-05-02-acl/</link>
+      <link>https://trimad.github.io/post/2023-05-02-acl/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-05-02-acl/</guid>
+      <guid>https://trimad.github.io/post/2023-05-02-acl/</guid>
       <description>
         
           

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prime Numbers on Hugo Grimoire</title>
-    <link>http://localhost:1313/tags/prime-numbers/</link>
+    <link>https://trimad.github.io/tags/prime-numbers/</link>
     <description>Recent content in Prime Numbers on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/prime-numbers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/prime-numbers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ulam Spiral</title>
-      <link>http://localhost:1313/post/2018-05-17-ulam-sprial/</link>
+      <link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link>
       <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-05-17-ulam-sprial/</guid>
+      <guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid>
       <description>
         
           
@@ -31,10 +31,10 @@
     
     <item>
       <title>Basic Prime Checker, C&#43;&#43;</title>
-      <link>http://localhost:1313/post/2018-03-24-basic-prime-checker/</link>
+      <link>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-03-24-basic-prime-checker/</guid>
+      <guid>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</guid>
       <description>
         
           
@@ -47,10 +47,10 @@
     
     <item>
       <title>Sieve of Eratosthenes</title>
-      <link>http://localhost:1313/post/2017-10-17-sieve-of-eratosthenes/</link>
+      <link>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</link>
       <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2017-10-17-sieve-of-eratosthenes/</guid>
+      <guid>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</guid>
       <description>
         
           

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Phishing on Hugo Grimoire</title>
-    <link>http://localhost:1313/tags/phishing/</link>
+    <link>https://trimad.github.io/tags/phishing/</link>
     <description>Recent content in Phishing on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/phishing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/phishing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decode Phishing Emails</title>
-      <link>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</link>
+      <link>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</guid>
+      <guid>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</guid>
       <description>
         
           
