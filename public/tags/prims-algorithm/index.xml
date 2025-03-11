@@ -1,2 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prim's Algorithm on Hugo Grimoire</title><link>https://trimad.github.io/tags/prims-algorithm/</link><description>Recent content in Prim's Algorithm on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/prims-algorithm/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimum Spanning Tree Visualized</title><link>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</link><pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</guid><description>
-&lt;p>I'm working on a few programs that I will be using using to visualize algorithms on procedurally generated terrain. This particular program visualizes a minimum spanning tree using &lt;a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm">Prim's Algorithm&lt;/a> on random walkers. The terrain is 128x128 tiles, each containing 4 vertices on the negative y-axis that I applied a &lt;a href="https://en.wikipedia.org/wiki/Perlin_noise">Perlin Noise&lt;/a> height map to. The map projection is orthographic, so all objects with the same dimension appear the same size, regardless of whether they are near or far from the camera. The frames were rendered at 1920x1080 resolution.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prim&#39;s Algorithm on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/prims-algorithm/</link>
+    <description>Recent content in Prim&#39;s Algorithm on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/prims-algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minimum Spanning Tree Visualized</title>
+      <link>http://localhost:1313/post/2018-04-07-minimum-spanning-tree-visualized/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018-04-07-minimum-spanning-tree-visualized/</guid>
+      <description>
+        
+          
+            &lt;p&gt;I&#39;m working on a few programs that I will be using using to visualize algorithms on procedurally generated terrain. This particular program visualizes a minimum spanning tree using &lt;a href=&#34;https://en.wikipedia.org/wiki/Prim%27s_algorithm&#34;&gt;Prim&#39;s Algorithm&lt;/a&gt; on random walkers. The terrain is 128x128 tiles, each containing 4 vertices on the negative y-axis that I applied a &lt;a href=&#34;https://en.wikipedia.org/wiki/Perlin_noise&#34;&gt;Perlin Noise&lt;/a&gt; height map to. The map projection is orthographic, so all objects with the same dimension appear the same size, regardless of whether they are near or far from the camera. The frames were rendered at 1920x1080 resolution.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

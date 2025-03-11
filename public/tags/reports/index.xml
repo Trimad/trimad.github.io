@@ -1,123 +1,208 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reports on Hugo Grimoire</title><link>https://trimad.github.io/tags/reports/</link><description>Recent content in Reports on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/reports/index.xml" rel="self" type="application/rss+xml"/><item><title>Dump WiFi Passwords</title><link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid><description>
-&lt;p>This script uses the Windows command-line tool &amp;quot;netsh&amp;quot; to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named &amp;quot;output.csv&amp;quot;. Finally, the script opens the &amp;quot;output.csv&amp;quot; file.&lt;/p>
-&lt;p>The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quot;output.csv&amp;quot; file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer. It opens the file in the default application associated with the .csv file type on the system, typically it will be opened in excel or similar spreadsheet software.&lt;/p></description></item><item><title>Combining PowerShell Cmdlets</title><link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link><pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid><description>
-&lt;p>I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the &lt;a href="https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps">ExchangeOnlineManagement&lt;/a> module, and other data only from the &lt;a href="https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0">AzureAD&lt;/a> module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.&lt;/p>
-&lt;script src="https://gist.github.com/Trimad/23d1f60c518fda9b4265edfe0456d8d9.js">&lt;/script></description></item><item><title>Get Group Membership</title><link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link><pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid><description>
-&lt;p>Scripts useful for getting group membership. Run them from an admin-elevated Windows PowerShell ISE script pane.&lt;/p>
-&lt;h2 id="activedirectory">ActiveDirectory&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-PowerShell" data-lang="PowerShell">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="c"># Import the Active Directory PowerShell module to provide cmdlets for AD operations&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="nb">Import-Module&lt;/span> &lt;span class="n">ActiveDirectory&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="c"># Get all Active Directory groups, sorted by name. The -filter * returns all groups.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="nv">$groups&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">Get-ADGroup&lt;/span> &lt;span class="n">-filter&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">Sort &lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="c"># Store the total number of groups for progress tracking&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">&lt;span class="nv">$totalgroups&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nv">$groups&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Count&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="c"># Initialize a counter for tracking the current group number&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="nv">$i&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mf">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="c"># Initialize an empty array to hold the output data&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">&lt;span class="nv">$output&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="vm">@&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">&lt;span class="c"># Loop through each group&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">&lt;span class="k">foreach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$group&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="nv">$groups&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl"> &lt;span class="c"># Increment the counter&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"> &lt;span class="nv">$i&lt;/span>&lt;span class="p">++&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl"> &lt;span class="c"># Display the current processing progress in the console&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl"> &lt;span class="nb">Write-Progress&lt;/span> &lt;span class="n">-activity&lt;/span> &lt;span class="s2">&amp;#34;Processing &lt;/span>&lt;span class="p">$(&lt;/span>&lt;span class="nv">$group&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="n">-status&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$i&lt;/span>&lt;span class="s2"> out of &lt;/span>&lt;span class="nv">$totalgroups&lt;/span>&lt;span class="s2"> groups&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl"> &lt;span class="c"># Get the members of the current group&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> &lt;span class="nv">$groupMembers&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">Get-ADGroupMember&lt;/span> &lt;span class="n">-Identity&lt;/span> &lt;span class="nv">$group&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl"> &lt;span class="c"># Loop through each member of the current group&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl"> &lt;span class="k">foreach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$member&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="nv">$groupMembers&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl"> &lt;span class="c"># Create a new PSObject to hold the details&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">29&lt;/span>&lt;span class="cl"> &lt;span class="nv">$object&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">new-object&lt;/span> &lt;span class="n">PSObject&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">30&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">31&lt;/span>&lt;span class="cl"> &lt;span class="c"># Add all properties of the group to the object&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl"> &lt;span class="nv">$group&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">PSObject&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Properties&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="k">foreach&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl"> &lt;span class="nv">$object&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">Add-Member&lt;/span> &lt;span class="n">-MemberType&lt;/span> &lt;span class="n">NoteProperty&lt;/span> &lt;span class="n">-Name&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Group_&amp;#34;&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="nv">$_&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">-Value&lt;/span> &lt;span class="nv">$_&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Value&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">35&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">36&lt;/span>&lt;span class="cl"> &lt;span class="c"># Add all properties of the member to the object&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">37&lt;/span>&lt;span class="cl"> &lt;span class="nv">$member&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">PSObject&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Properties&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="k">foreach&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">38&lt;/span>&lt;span class="cl"> &lt;span class="nv">$object&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">Add-Member&lt;/span> &lt;span class="n">-MemberType&lt;/span> &lt;span class="n">NoteProperty&lt;/span> &lt;span class="n">-Name&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Member_&amp;#34;&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="nv">$_&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">-Value&lt;/span> &lt;span class="nv">$_&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Value&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">39&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">40&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">41&lt;/span>&lt;span class="cl"> &lt;span class="c"># Add the object to the output array&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">42&lt;/span>&lt;span class="cl"> &lt;span class="nv">$output&lt;/span> &lt;span class="p">+=&lt;/span> &lt;span class="nv">$object&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">43&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">44&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">45&lt;/span>&lt;span class="cl"> &lt;span class="c"># Exit the loop early for debugging purposes after processing 10 groups&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">46&lt;/span>&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$i&lt;/span> &lt;span class="o">-eq&lt;/span> &lt;span class="mf">10&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="k">break&lt;/span>&lt;span class="p">;}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">47&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">48&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">49&lt;/span>&lt;span class="cl">&lt;span class="c"># Define the file path for the output CSV file at the root of the file system&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">50&lt;/span>&lt;span class="cl">&lt;span class="nv">$csvFilePath&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;C:\output.csv&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">51&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">52&lt;/span>&lt;span class="cl">&lt;span class="c"># Export the data in the output array to a CSV file, omitting the type information&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">53&lt;/span>&lt;span class="cl">&lt;span class="nv">$output&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">Export-Csv&lt;/span> &lt;span class="nv">$csvFilePath&lt;/span> &lt;span class="n">-NoTypeInformation&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">54&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">55&lt;/span>&lt;span class="cl">&lt;span class="c"># Open the newly created CSV file in the default CSV file handler (typically Excel or a text editor)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">56&lt;/span>&lt;span class="cl">&lt;span class="nb">Start-Process&lt;/span> &lt;span class="n">-FilePath&lt;/span> &lt;span class="nv">$csvFilePath&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="connect-azuread">Connect-AzureAD&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-PowerShell" data-lang="PowerShell">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="c"># Connect to Azure Active Directory (Azure AD)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="nb">Connect-AzureAD&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="c"># Get all Azure AD groups&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="nv">$groups&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">Get-AzureADGroup&lt;/span> &lt;span class="n">-All&lt;/span> &lt;span class="vm">$true&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="c"># Initialize an empty array to hold the results&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">&lt;span class="nv">$resultsarray&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="vm">@&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="c"># Get the total number of groups for progress tracking&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="nv">$totalgroups&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nv">$groups&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Count&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="c"># Initialize a counter for the loop&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">&lt;span class="nv">$i&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mf">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">&lt;span class="c"># For each group in the array of groups&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">&lt;span class="k">ForEach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$group&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="nv">$groups&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl"> &lt;span class="nv">$i&lt;/span>&lt;span class="p">++&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl"> &lt;span class="c"># Display a progress bar in the console&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl"> &lt;span class="nb">Write-Progress&lt;/span> &lt;span class="n">-activity&lt;/span> &lt;span class="s2">&amp;#34;Processing &lt;/span>&lt;span class="nv">$group&lt;/span>&lt;span class="s2">.DisplayName&amp;#34;&lt;/span> &lt;span class="n">-status&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$i&lt;/span>&lt;span class="s2"> out of &lt;/span>&lt;span class="nv">$totalgroups&lt;/span>&lt;span class="s2"> groups&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl"> &lt;span class="c"># Get all members of the current group&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> &lt;span class="nv">$members&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">Get-AzureADGroupMember&lt;/span> &lt;span class="n">-ObjectId&lt;/span> &lt;span class="nv">$group&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">ObjectId&lt;/span> &lt;span class="n">-All&lt;/span> &lt;span class="vm">$true&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl"> &lt;span class="c"># For each member in the array of members&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl"> &lt;span class="k">ForEach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$member&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="nv">$members&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl"> &lt;span class="c"># Create a new PSObject to hold the details&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">29&lt;/span>&lt;span class="cl"> &lt;span class="nv">$object&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">new-object&lt;/span> &lt;span class="n">PSObject&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">30&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">31&lt;/span>&lt;span class="cl"> &lt;span class="c"># Add properties to the object for the group and member details&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl"> &lt;span class="nv">$group&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">PSObject&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Properties&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">ForEach-Object&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl"> &lt;span class="nv">$object&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">add-member&lt;/span> &lt;span class="n">-membertype&lt;/span> &lt;span class="n">NoteProperty&lt;/span> &lt;span class="n">-name&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Group &amp;#34;&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="nv">$_&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">-Value&lt;/span> &lt;span class="nv">$_&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Value&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">35&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">36&lt;/span>&lt;span class="cl"> &lt;span class="nv">$member&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">PSObject&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Properties&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">ForEach-Object&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">37&lt;/span>&lt;span class="cl"> &lt;span class="nv">$object&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">add-member&lt;/span> &lt;span class="n">-membertype&lt;/span> &lt;span class="n">NoteProperty&lt;/span> &lt;span class="n">-name&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Member &amp;#34;&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="nv">$_&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">-Value&lt;/span> &lt;span class="nv">$_&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">Value&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">38&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">39&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">40&lt;/span>&lt;span class="cl"> &lt;span class="c"># Add the object to the results array&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">41&lt;/span>&lt;span class="cl"> &lt;span class="nv">$resultsarray&lt;/span> &lt;span class="p">+=&lt;/span> &lt;span class="nv">$object&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">42&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">43&lt;/span>&lt;span class="cl"> &lt;span class="c"># Break after processing 10 groups for debugging. Remove or adjust this for actual run.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">44&lt;/span>&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$i&lt;/span> &lt;span class="o">-eq&lt;/span> &lt;span class="mf">10&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="k">break&lt;/span>&lt;span class="p">;}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">45&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">46&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">47&lt;/span>&lt;span class="cl">&lt;span class="c"># Define the output path for the CSV file&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">48&lt;/span>&lt;span class="cl">&lt;span class="nv">$csvFilePath&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;C:\output.csv&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">49&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">50&lt;/span>&lt;span class="cl">&lt;span class="c"># Export the results array to a CSV file, without type information&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">51&lt;/span>&lt;span class="cl">&lt;span class="nv">$resultsarray&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">Export-Csv&lt;/span> &lt;span class="nv">$csvFilePath&lt;/span> &lt;span class="n">-NoTypeInformation&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">52&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">53&lt;/span>&lt;span class="cl">&lt;span class="c"># Open the CSV file automatically with the default associated application&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">54&lt;/span>&lt;span class="cl">&lt;span class="nb">Start-Process&lt;/span> &lt;span class="n">-FilePath&lt;/span> &lt;span class="nv">$csvFilePath&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Managing Auto-Expanding Archives</title><link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link><pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid><description>
-&lt;p>Managing auto-expanding archives via the &lt;a href="https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps">ExchangeOnlineManagement&lt;/a> module is a pain in my ass. This Github Gist is an aggregate of scripts I've written that allow me to administrate this mailbox feature effectively.&lt;/p>
-&lt;script src="https://gist.github.com/Trimad/a5e8441d1cc5767df7826e43a4402eaa.js">&lt;/script></description></item><item><title>Daily Donation Report</title><link>https://trimad.github.io/post/2019-08-25-daily-donation-report/</link><pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2019-08-25-daily-donation-report/</guid><description>
-&lt;p>This Google Apps Script aggregates data submitted by Google Forms, puts it in .xlsx format and sends it in an HTML formatted email.&lt;/p>
-&lt;script src="https://gist.github.com/Trimad/a7a659c6b54e87ebd2d75724b007afb8.js">&lt;/script></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reports on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/reports/</link>
+    <description>Recent content in Reports on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/reports/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dump WiFi Passwords</title>
+      <link>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</guid>
+      <description>
+        
+          
+            &lt;p&gt;This script uses the Windows command-line tool &amp;quot;netsh&amp;quot; to retrieve information about wireless network profiles that have been previously connected to on the computer. It then parses the information to extract the SSID (name) and password for each profile, and outputs that information to a CSV file named &amp;quot;output.csv&amp;quot;. Finally, the script opens the &amp;quot;output.csv&amp;quot; file.&lt;/p&gt;
+&lt;p&gt;The script uses the &amp;quot;Invoke-Item&amp;quot; command to open the &amp;quot;output.csv&amp;quot; file, which is the PowerShell command equivalent of double-clicking on a file in Windows Explorer. It opens the file in the default application associated with the .csv file type on the system, typically it will be opened in excel or similar spreadsheet software.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Combining PowerShell Cmdlets</title>
+      <link>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <description>
+        
+          
+            &lt;p&gt;I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&#34;&gt;ExchangeOnlineManagement&lt;/a&gt; module, and other data only from the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0&#34;&gt;AzureAD&lt;/a&gt; module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Trimad/23d1f60c518fda9b4265edfe0456d8d9.js&#34;&gt;&lt;/script&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get Group Membership</title>
+      <link>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Scripts useful for getting group membership. Run them from an admin-elevated Windows PowerShell ISE script pane.&lt;/p&gt;
+&lt;h2 id=&#34;activedirectory&#34;&gt;ActiveDirectory&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-PowerShell&#34; data-lang=&#34;PowerShell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Import the Active Directory PowerShell module to provide cmdlets for AD operations&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Import-Module&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ActiveDirectory&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Get all Active Directory groups, sorted by name. The -filter * returns all groups.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$groups&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Get-ADGroup&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-filter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Sort &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Store the total number of groups for progress tracking&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$totalgroups&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$groups&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Count&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Initialize a counter for tracking the current group number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Initialize an empty array to hold the output data&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$output&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Loop through each group&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$group&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$groups&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# Increment the counter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;++&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# Display the current processing progress in the console&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;Write-Progress&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-activity&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Processing &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;$(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-status&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; out of &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$totalgroups&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; groups&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# Get the members of the current group&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$groupMembers&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-ADGroupMember&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Identity&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$group&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# Loop through each member of the current group&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$member&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$groupMembers&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c&#34;&gt;# Create a new PSObject to hold the details&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;new-object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;PSObject&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c&#34;&gt;# Add all properties of the group to the object&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;PSObject&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Properties&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;33&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nv&#34;&gt;$object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Add-Member&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-MemberType&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;NoteProperty&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Name&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Group_&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Value&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;34&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;36&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c&#34;&gt;# Add all properties of the member to the object&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;37&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$member&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;PSObject&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Properties&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;38&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nv&#34;&gt;$object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Add-Member&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-MemberType&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;NoteProperty&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Name&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Member_&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Value&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;39&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;41&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c&#34;&gt;# Add the object to the output array&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$output&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$object&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;43&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;44&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;45&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# Exit the loop early for debugging purposes after processing 10 groups&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;46&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-eq&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;47&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;48&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;49&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Define the file path for the output CSV file at the root of the file system&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$csvFilePath&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\output.csv&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;51&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;52&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Export the data in the output array to a CSV file, omitting the type information&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;53&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$output&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Export-Csv&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$csvFilePath&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-NoTypeInformation&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;54&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;55&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Open the newly created CSV file in the default CSV file handler (typically Excel or a text editor)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;56&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Start-Process&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-FilePath&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$csvFilePath&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;connect-azuread&#34;&gt;Connect-AzureAD&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-PowerShell&#34; data-lang=&#34;PowerShell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Connect to Azure Active Directory (Azure AD)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Connect-AzureAD&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Get all Azure AD groups&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$groups&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-AzureADGroup&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-All&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;$true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Initialize an empty array to hold the results&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$resultsarray&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Get the total number of groups for progress tracking&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$totalgroups&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$groups&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Count&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Initialize a counter for the loop&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# For each group in the array of groups&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;ForEach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$group&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$groups&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;++&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# Display a progress bar in the console&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;Write-Progress&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-activity&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Processing &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$group&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;.DisplayName&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-status&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; out of &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$totalgroups&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; groups&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# Get all members of the current group&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$members&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-AzureADGroupMember&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ObjectId&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;ObjectId&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-All&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;$true&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# For each member in the array of members&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;ForEach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$member&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$members&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c&#34;&gt;# Create a new PSObject to hold the details&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;new-object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;PSObject&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c&#34;&gt;# Add properties to the object for the group and member details&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;PSObject&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Properties&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;ForEach-Object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;33&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nv&#34;&gt;$object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;add-member&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-membertype&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;NoteProperty&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-name&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Group &amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Value&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;34&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;36&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$member&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;PSObject&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Properties&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;ForEach-Object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;37&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nv&#34;&gt;$object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;add-member&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-membertype&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;NoteProperty&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-name&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Member &amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Value&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;38&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;39&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c&#34;&gt;# Add the object to the results array&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;41&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$resultsarray&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$object&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;43&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# Break after processing 10 groups for debugging. Remove or adjust this for actual run.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;44&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-eq&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;45&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;46&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;47&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Define the output path for the CSV file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;48&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$csvFilePath&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\output.csv&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;49&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Export the results array to a CSV file, without type information&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;51&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$resultsarray&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Export-Csv&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$csvFilePath&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-NoTypeInformation&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;52&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;53&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Open the CSV file automatically with the default associated application&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;54&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Start-Process&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-FilePath&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$csvFilePath&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Auto-Expanding Archives</title>
+      <link>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Managing auto-expanding archives via the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&#34;&gt;ExchangeOnlineManagement&lt;/a&gt; module is a pain in my ass. This Github Gist is an aggregate of scripts I&#39;ve written that allow me to administrate this mailbox feature effectively.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Trimad/a5e8441d1cc5767df7826e43a4402eaa.js&#34;&gt;&lt;/script&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Daily Donation Report</title>
+      <link>http://localhost:1313/post/2019-08-25-daily-donation-report/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019-08-25-daily-donation-report/</guid>
+      <description>
+        
+          
+            &lt;p&gt;This Google Apps Script aggregates data submitted by Google Forms, puts it in .xlsx format and sends it in an HTML formatted email.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Trimad/a7a659c6b54e87ebd2d75724b007afb8.js&#34;&gt;&lt;/script&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

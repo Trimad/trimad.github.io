@@ -1,2 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PIL on Hugo Grimoire</title><link>https://trimad.github.io/tags/pil/</link><description>Recent content in PIL on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/pil/index.xml" rel="self" type="application/rss+xml"/><item><title>Batch Compress Images</title><link>https://trimad.github.io/post/2024-07-30-batch-compress-images/</link><pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2024-07-30-batch-compress-images/</guid><description>
-This Python script gradually reduces the quality and colors of all .png's in the same directory until a target size is reached.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PIL on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/pil/</link>
+    <description>Recent content in PIL on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/pil/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Batch Compress Images</title>
+      <link>http://localhost:1313/post/2024-07-30-batch-compress-images/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-07-30-batch-compress-images/</guid>
+      <description>
+        
+          
+            This Python script gradually reduces the quality and colors of all .png&#39;s in the same directory until a target size is reached.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,18 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spiral on Hugo Grimoire</title><link>https://trimad.github.io/tags/spiral/</link><description>Recent content in Spiral on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/spiral/index.xml" rel="self" type="application/rss+xml"/><item><title>Archimedean Spiral</title><link>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</guid><description>
-&lt;iframe width=100% height=1024px src="https://editor.p5js.org/Berkanan/full/LjPig4gu_">&lt;/iframe>
-&lt;h2>&lt;a class="btn btn-outline-secondary btn-lg" href="https://editor.p5js.org/Berkanan/sketches/LjPig4gu_">Edit This Sketch&lt;/a>&lt;/h2>
-&lt;p>This sketch draws an &lt;a href="https://en.wikipedia.org/wiki/Archimedean_spiral">Archimedean Spiral&lt;/a> using polar coordinates. If the &amp;quot;EXPORT&amp;quot; variable is true, the sketch will spit-out an SVG file of the drawn spiral. My motivation for making this was so I could cut-out a spiral with my wife's Cricut Maker and hang something more interesting above my son's bassinet than empty white ceiling.&lt;/p>
-&lt;h2>Example SVG files&lt;/h2>
-&lt;p>
-&lt;figure>
-&lt;picture>
-&lt;img
-loading="lazy"
-decoding="async"
-alt="Desktop View"
-class="image_figure image_internal image_unprocessed"
-src="https://trimad.github.io/post/2022-05-04-archimedean-spiral/post/2022-05-04-archimedean-spiral/assets/img/2022-05-04/archimedes3.svg"
-/>
-&lt;/picture>
-&lt;/figure>
-{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spiral on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/spiral/</link>
+    <description>Recent content in Spiral on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/spiral/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archimedean Spiral</title>
+      <link>http://localhost:1313/post/2022-05-04-archimedean-spiral/</link>
+      <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-05-04-archimedean-spiral/</guid>
+      <description>
+        
+          
+            &lt;iframe width=100% height=1024px src=&#34;https://editor.p5js.org/Berkanan/full/LjPig4gu_&#34;&gt;&lt;/iframe&gt;
+&lt;h2&gt;&lt;a class=&#34;btn btn-outline-secondary btn-lg&#34; href=&#34;https://editor.p5js.org/Berkanan/sketches/LjPig4gu_&#34;&gt;Edit This Sketch&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This sketch draws an &lt;a href=&#34;https://en.wikipedia.org/wiki/Archimedean_spiral&#34;&gt;Archimedean Spiral&lt;/a&gt; using polar coordinates. If the &amp;quot;EXPORT&amp;quot; variable is true, the sketch will spit-out an SVG file of the drawn spiral. My motivation for making this was so I could cut-out a spiral with my wife&#39;s Cricut Maker and hang something more interesting above my son&#39;s bassinet than empty white ceiling.&lt;/p&gt;
+&lt;h2&gt;Example SVG files&lt;/h2&gt;
+&lt;p&gt;
+      
+  &lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;Desktop View&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/post/2022-05-04-archimedean-spiral/post/2022-05-04-archimedean-spiral/assets/img/2022-05-04/archimedes3.svg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+{: width=&amp;quot;auto&amp;quot; height=&amp;quot;auto&amp;quot; }&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

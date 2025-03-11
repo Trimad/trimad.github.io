@@ -1,9 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Distance on Hugo Grimoire</title><link>https://trimad.github.io/tags/distance/</link><description>Recent content in Distance on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/distance/index.xml" rel="self" type="application/rss+xml"/><item><title>Comparing Java Distance Functions</title><link>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</link><pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</guid><description>
-&lt;ul>
-&lt;li>Distance formula 1 execution time: 2224ms&lt;/li>
-&lt;li>Distance formula 2 execution time: 4ms&lt;/li>
-&lt;li>Distance formula 3 execution time: 3ms
-&lt;br>
-&lt;br>&lt;/li>
-&lt;/ul>
-&lt;script src="https://gist.github.com/Trimad/b222a8e360aa2fb17da2e512f4d4d22a.js">&lt;/script></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distance on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/distance/</link>
+    <description>Recent content in Distance on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/distance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comparing Java Distance Functions</title>
+      <link>http://localhost:1313/post/2018-04-17-comparing-java-distance-functions/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018-04-17-comparing-java-distance-functions/</guid>
+      <description>
+        
+          
+            &lt;ul&gt;
+&lt;li&gt;Distance formula 1 execution time: 2224ms&lt;/li&gt;
+&lt;li&gt;Distance formula 2 execution time: 4ms&lt;/li&gt;
+&lt;li&gt;Distance formula 3 execution time: 3ms
+&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src=&#34;https://gist.github.com/Trimad/b222a8e360aa2fb17da2e512f4d4d22a.js&#34;&gt;&lt;/script&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

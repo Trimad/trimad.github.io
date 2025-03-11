@@ -1,9 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Processing on Hugo Grimoire</title><link>https://trimad.github.io/tags/processing/</link><description>Recent content in Processing on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/processing/index.xml" rel="self" type="application/rss+xml"/><item><title>Fridge Magnet Simulator</title><link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link><pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid><description>
-This is a virtual simulation of the magnets on my girlfriend's fridge.</description></item><item><title>Ulam Spiral</title><link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link><pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid><description>
-&lt;div class="iframe-wrapper-1-1">
-&lt;iframe src="https://editor.p5js.org/Berkanan/full/PiHPI8iAw">&lt;/iframe>
-&lt;/div>
-&lt;h2>&lt;a href="https://editor.p5js.org/Berkanan/full/PiHPI8iAw" target="_blank">Launch this sketch is a new window (recommended)&lt;/a>&lt;/h2>
-&lt;h2>&lt;a href="https://editor.p5js.org/Berkanan/sketches/PiHPI8iAw">Launch p5.js web editor&lt;/a>&lt;/h2>
-&lt;p>The &lt;a href="https://en.wikipedia.org/wiki/Ulam_spiral">Ulam Spiral&lt;/a> or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanislaw Ulam in 1963 and popularized in Martin Gardner's Mathematical Games column in Scientific American a short time later. It is constructed by writing the positive integers in a square spiral and specially marking the prime numbers.&lt;/p>
-&lt;p>What I've done differently is allowed for iterating every integer in the grid forwards or backwards to search for long, connected diaganal lines of prime numbers in the grid. The framerate of the animation can be adjusted, as well as the &amp;quot;grid multiplier&amp;quot; which is how many cells to draw in each row and collumn. Double-clicking on the menu collapses it. There are also basic keyboard arrow controls:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Processing on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/processing/</link>
+    <description>Recent content in Processing on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fridge Magnet Simulator</title>
+      <link>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</guid>
+      <description>
+        
+          
+            This is a virtual simulation of the magnets on my girlfriend&#39;s fridge.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ulam Spiral</title>
+      <link>http://localhost:1313/post/2018-05-17-ulam-sprial/</link>
+      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018-05-17-ulam-sprial/</guid>
+      <description>
+        
+          
+            &lt;div class=&#34;iframe-wrapper-1-1&#34;&gt;
+    &lt;iframe src=&#34;https://editor.p5js.org/Berkanan/full/PiHPI8iAw&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2&gt;&lt;a href=&#34;https://editor.p5js.org/Berkanan/full/PiHPI8iAw&#34; target=&#34;_blank&#34;&gt;Launch this sketch is a new window (recommended)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&#34;https://editor.p5js.org/Berkanan/sketches/PiHPI8iAw&#34;&gt;Launch p5.js web editor&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The  &lt;a href=&#34;https://en.wikipedia.org/wiki/Ulam_spiral&#34;&gt;Ulam Spiral&lt;/a&gt; or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanislaw Ulam in 1963 and popularized in Martin Gardner&#39;s Mathematical Games column in Scientific American a short time later. It is constructed by writing the positive integers in a square spiral and specially marking the prime numbers.&lt;/p&gt;
+&lt;p&gt;What I&#39;ve done differently is allowed for iterating every integer in the grid forwards or backwards to search for long, connected diaganal lines of prime numbers in the grid. The framerate of the animation can be adjusted, as well as the &amp;quot;grid multiplier&amp;quot; which is how many cells to draw in each row and collumn. Double-clicking on the menu collapses it. There are also basic keyboard arrow controls:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

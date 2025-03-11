@@ -1,41 +1,126 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ExchangeOnlineManagement on Hugo Grimoire</title><link>https://trimad.github.io/tags/exchangeonlinemanagement/</link><description>Recent content in ExchangeOnlineManagement on Hugo Grimoire</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/exchangeonlinemanagement/index.xml" rel="self" type="application/rss+xml"/><item><title>Hiding users from GAL</title><link>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</link><pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</guid><description>
-Scripts for hiding users from the Global Address List</description></item><item><title>Handling Hacked Accounts and Purging Emails in M365</title><link>https://trimad.github.io/post/2023-02-07-purge-emails/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2023-02-07-purge-emails/</guid><description>
-This blog post is an evolving work flow for managing hacked accounts using the ExchangeOnlineManagement PowerShell module. I'll share my personal experiences using PowerShell, particularly focusing on remediation techniques like purging phishing emails and securing compromised accounts.</description></item><item><title>Combining PowerShell Cmdlets</title><link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link><pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid><description>
-&lt;p>I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the &lt;a href="https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps">ExchangeOnlineManagement&lt;/a> module, and other data only from the &lt;a href="https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0">AzureAD&lt;/a> module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.&lt;/p>
-&lt;script src="https://gist.github.com/Trimad/23d1f60c518fda9b4265edfe0456d8d9.js">&lt;/script></description></item><item><title>Managing Exchange Calendars</title><link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link><pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid><description>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-PowerShell" data-lang="PowerShell">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="c">#If not installed already&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="nb">Install-Module&lt;/span> &lt;span class="n">ExchangeOnlineManagement&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="c">#Import&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="nb">Import-Module&lt;/span> &lt;span class="n">ExchangeOnlineManagement&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="c">#Connect&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">&lt;span class="nb">Connect-ExchangeOnline&lt;/span> &lt;span class="n">-UserPrincipalName&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">UPN&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">&lt;span class="c"># Remove AccessRights from a user&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="nb">Remove-MailboxFolderPermission&lt;/span> &lt;span class="n">-Identity&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="nv">@company&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">com&lt;/span>&lt;span class="err">:&lt;/span>&lt;span class="p">\&lt;/span>&lt;span class="n">Calendar&lt;/span> &lt;span class="n">-User&lt;/span> &lt;span class="n">user&lt;/span>&lt;span class="nv">@company&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">com&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="c"># Grant AccessRights to a user&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="nb">Add-MailboxFolderPermission&lt;/span> &lt;span class="n">-Identity&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="nv">@company&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">com&lt;/span>&lt;span class="err">:&lt;/span>&lt;span class="p">\&lt;/span>&lt;span class="n">Calendar&lt;/span> &lt;span class="n">-User&lt;/span> &lt;span class="n">user&lt;/span>&lt;span class="nv">@company&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">com&lt;/span> &lt;span class="n">-AccessRights&lt;/span> &lt;span class="n">Owner&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">&lt;span class="c"># See who currently has folder permissions to a user&amp;#39;s calendar&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="nb">Get-MailboxFolderPermission&lt;/span> &lt;span class="n">-Identity&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="nv">@company&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">com&lt;/span>&lt;span class="err">:&lt;/span>&lt;span class="p">\&lt;/span>&lt;span class="n">Calendar&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I haven't tested these since 2021:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-PowerShell" data-lang="PowerShell">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="c"># Connect to Exchage&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="nb">Import-Module&lt;/span> &lt;span class="n">ExchangeOnlineManagement&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="nb">Connect-ExchangeOnline&lt;/span> &lt;span class="n">-UserPrincipalName&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">UPN&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="c"># Get a list of all mailbox aliases&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">&lt;span class="c"># Source: https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailbox?view=exchange-ps&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="nv">$users&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">Get-Mailbox&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">Select &lt;/span>&lt;span class="n">-ExpandProperty&lt;/span> &lt;span class="nb">Alias&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="c"># Add AccessRights for a user to all mailboxes&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="c"># Source: https://docs.microsoft.com/en-us/powershell/module/exchange/add-mailboxfolderpermission?view=exchange-ps&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="k">Foreach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$user&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="nv">$users&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nb">Add-MailboxFolderPermission&lt;/span> &lt;span class="nv">$user&lt;/span>&lt;span class="s2">&amp;#34;:\Calendar&amp;#34;&lt;/span> &lt;span class="n">-User&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">UPN&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="n">-AccessRights&lt;/span> &lt;span class="n">PublishingEditor&lt;/span>&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="c"># Set AccessRights to a user for all mailboxes. You would do this if AccessRights already exist and you need to overwrite them.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">&lt;span class="c"># Source: https://docs.microsoft.com/en-us/powershell/module/exchange/set-mailboxfolderpermission?view=exchange-ps&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">&lt;span class="k">Foreach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$user&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="nv">$users&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nb">Set-MailboxFolderPermission&lt;/span> &lt;span class="nv">$user&lt;/span>&lt;span class="s2">&amp;#34;:\Calendar&amp;#34;&lt;/span> &lt;span class="n">-User&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">UPN&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="n">-AccessRights&lt;/span> &lt;span class="n">PublishingEditor&lt;/span>&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">&lt;span class="c"># Get the current access rights this user has for all mailboxes.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">&lt;span class="c"># Source: https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailboxfolderpermission?view=exchange-ps&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">&lt;span class="k">Foreach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$user&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="nv">$users&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nb">Get-MailboxFolderPermission&lt;/span> &lt;span class="nv">$user&lt;/span>&lt;span class="s2">&amp;#34;:\Calendar&amp;#34;&lt;/span> &lt;span class="n">-User&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">UPN&lt;/span>&lt;span class="p">&amp;gt;}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Managing Auto-Expanding Archives</title><link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link><pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate><guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid><description>
-&lt;p>Managing auto-expanding archives via the &lt;a href="https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps">ExchangeOnlineManagement&lt;/a> module is a pain in my ass. This Github Gist is an aggregate of scripts I've written that allow me to administrate this mailbox feature effectively.&lt;/p>
-&lt;script src="https://gist.github.com/Trimad/a5e8441d1cc5767df7826e43a4402eaa.js">&lt;/script></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ExchangeOnlineManagement on Hugo Grimoire</title>
+    <link>http://localhost:1313/tags/exchangeonlinemanagement/</link>
+    <description>Recent content in ExchangeOnlineManagement on Hugo Grimoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/exchangeonlinemanagement/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hiding users from GAL</title>
+      <link>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</guid>
+      <description>
+        
+          
+            Scripts for hiding users from the Global Address List
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Handling Hacked Accounts and Purging Emails in M365</title>
+      <link>http://localhost:1313/post/2023-02-07-purge-emails/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-07-purge-emails/</guid>
+      <description>
+        
+          
+            This blog post is an evolving work flow for managing hacked accounts using the ExchangeOnlineManagement PowerShell module. I&#39;ll share my personal experiences using PowerShell, particularly focusing on remediation techniques like purging phishing emails and securing compromised accounts.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Combining PowerShell Cmdlets</title>
+      <link>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <description>
+        
+          
+            &lt;p&gt;I found myself in a situation where I needed to generate a report to troubleshoot an email issue for a client. Some data could only be retrieved from the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&#34;&gt;ExchangeOnlineManagement&lt;/a&gt; module, and other data only from the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0&#34;&gt;AzureAD&lt;/a&gt; module. This PowerShell script demonstrates one solution of using both modules in tandem with a nested for-loop that compares the UserPrincipalName with every iteration.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Trimad/23d1f60c518fda9b4265edfe0456d8d9.js&#34;&gt;&lt;/script&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Exchange Calendars</title>
+      <link>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</guid>
+      <description>
+        
+          
+            &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-PowerShell&#34; data-lang=&#34;PowerShell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#If not installed already&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Install-Module&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ExchangeOnlineManagement&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#Import&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Import-Module&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ExchangeOnlineManagement&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#Connect&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Connect-ExchangeOnline&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-UserPrincipalName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;UPN&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Remove AccessRights from a user&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Remove-MailboxFolderPermission&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Identity&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;target&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@company&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Calendar&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-User&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@company&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;com&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Grant AccessRights to a user&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Add-MailboxFolderPermission&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Identity&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;target&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@company&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Calendar&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-User&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@company&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;com&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-AccessRights&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Owner&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# See who currently has folder permissions to a user&amp;#39;s calendar&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Get-MailboxFolderPermission&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Identity&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;target&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@company&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Calendar&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I haven&#39;t tested these since 2021:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-PowerShell&#34; data-lang=&#34;PowerShell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Connect to Exchage&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Import-Module&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ExchangeOnlineManagement&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Connect-ExchangeOnline&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-UserPrincipalName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;UPN&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Get a list of all mailbox aliases&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Source: https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailbox?view=exchange-ps&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$users&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-Mailbox&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Select &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-ExpandProperty&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Alias&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Add AccessRights for a user to all mailboxes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Source: https://docs.microsoft.com/en-us/powershell/module/exchange/add-mailboxfolderpermission?view=exchange-ps&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;Foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$user&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Add-MailboxFolderPermission&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$user&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;:\Calendar&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-User&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;UPN&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-AccessRights&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;PublishingEditor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Set AccessRights to a user for all mailboxes. You would do this if AccessRights already exist and you need to overwrite them.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Source: https://docs.microsoft.com/en-us/powershell/module/exchange/set-mailboxfolderpermission?view=exchange-ps&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;Foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$user&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Set-MailboxFolderPermission&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$user&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;:\Calendar&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-User&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;UPN&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-AccessRights&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;PublishingEditor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Get the current access rights this user has for all mailboxes.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Source: https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailboxfolderpermission?view=exchange-ps&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;Foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$user&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Get-MailboxFolderPermission&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$user&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;:\Calendar&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-User&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;UPN&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Auto-Expanding Archives</title>
+      <link>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Managing auto-expanding archives via the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&#34;&gt;ExchangeOnlineManagement&lt;/a&gt; module is a pain in my ass. This Github Gist is an aggregate of scripts I&#39;ve written that allow me to administrate this mailbox feature effectively.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Trimad/a5e8441d1cc5767df7826e43a4402eaa.js&#34;&gt;&lt;/script&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
