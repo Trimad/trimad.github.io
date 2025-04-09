@@ -1,23 +1,30 @@
-# set `baseurl` to your root domain
-# if you set it to "/" share icons won't work properly on production
-baseurl = "https://trimad.github.io/"  # Include trailing slash
-title = "Hugo Grimoire"  # Edit directly from config/_default/languages.toml # alternatively, uncomment this and remove `title` entry from the aforemention file.
-# canonifyurls = true
-paginate = 16
-theme = "hugo-clarity"
-#disqusShortname = ""
+# Site metadata
+baseurl = "https://trimad.github.io/"  # Must include trailing slash for proper asset resolution
+title = "Hugo Grimoire"                # You can also set this per language in config/_default/languages.toml
+theme = "hugo-clarity"                 # Theme directory under /themes
 
-DefaultContentLanguage = "en"
-# [languages]
-# config/_default/languages.toml
+# Enable Git info for automatic .Lastmod population in pages (useful for RSS/sitemaps)
+enableGitInfo = true
 
-# [menus]
-# config/_default/menus/menu.xx.toml
+# Pagination settings (Hugo 0.145+)
+[pagination]
+  pagerSize = 10                       # Previously `paginate`, now replaced
 
+# Taxonomies (categories, tags, series)
 [taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+  category = "categories"
+  tag = "tags"
+  series = "series"
 
+# Output formats for various content types
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON"]       # Home page will generate index.html, index.xml, and index.json
+  section = ["HTML", "RSS"]            # Optional: section-level RSS feeds
+  taxonomy = ["HTML", "RSS"]           # Optional: taxonomy page RSS (e.g., tags/categories)
+  term = ["HTML", "RSS"]              # Term listing (e.g., /tags/)
+
+# Sitemap configuration
+[sitemap]
+  changefreq = "monthly"               # Suggests to search engines how often content changes
+  priority = 0.5                       # Relative importance (0.0–1.0)
+  filename = "sitemap.xml"             # Default is sitemap.xml
