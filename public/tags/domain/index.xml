@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Domain on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/domain/</link>
+    <link>http://localhost:1313/tags/domain/</link>
     <description>Recent content in Domain on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/domain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/domain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Get Group Membership</title>
-      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
+      <link>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</guid>
       <description>
         
           
@@ -138,15 +138,14 @@
     
     <item>
       <title>Enable AutoAdminLogon with PowerShell</title>
-      <link>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</link>
+      <link>http://localhost:1313/post/2019-08-19-enable-autoadminlogon/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</guid>
+      <guid>http://localhost:1313/post/2019-08-19-enable-autoadminlogon/</guid>
       <description>
         
           
-            &lt;p&gt;This script was written to satisfy a niche case where I temporarily needed a PoS (Point of Sale) to automatically login upon startup using AD credentials.&lt;/p&gt;
-&lt;script src=&#34;https://gist.github.com/Trimad/d0f3bcb296555e23d53a7196d8df53c9.js&#34;&gt;&lt;/script&gt;
+            This script was written to satisfy a niche case where I temporarily needed a PoS (Point of Sale) to automatically login upon startup using AD credentials.
           
           
         

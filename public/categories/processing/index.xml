@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Processing on Hugo Grimoire</title>
-    <link>https://trimad.github.io/categories/processing/</link>
+    <link>http://localhost:1313/categories/processing/</link>
     <description>Recent content in Processing on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>k-means Clustering</title>
-      <link>https://trimad.github.io/post/2021-05-18-k-means-clustering/</link>
+      <link>http://localhost:1313/post/2021-05-18-k-means-clustering/</link>
       <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-05-18-k-means-clustering/</guid>
+      <guid>http://localhost:1313/post/2021-05-18-k-means-clustering/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Blending Textures With Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2019-08-18-blending-textures-with-open-simplex-noise/</link>
       <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid>
       <description>
         
           
@@ -41,10 +41,10 @@
     
     <item>
       <title>Cube Wave</title>
-      <link>https://trimad.github.io/post/2018-12-30-cube-wave/</link>
+      <link>http://localhost:1313/post/2018-12-30-cube-wave/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-12-30-cube-wave/</guid>
+      <guid>http://localhost:1313/post/2018-12-30-cube-wave/</guid>
       <description>
         
           
@@ -57,10 +57,10 @@
     
     <item>
       <title>Lorenz Doll</title>
-      <link>https://trimad.github.io/post/2018-11-21-lorenz-doll/</link>
+      <link>http://localhost:1313/post/2018-11-21-lorenz-doll/</link>
       <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-21-lorenz-doll/</guid>
+      <guid>http://localhost:1313/post/2018-11-21-lorenz-doll/</guid>
       <description>
         
           
@@ -73,10 +73,10 @@
     
     <item>
       <title>Barnsley Fern</title>
-      <link>https://trimad.github.io/post/2018-06-28-barnsley-fern/</link>
+      <link>http://localhost:1313/post/2018-06-28-barnsley-fern/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-06-28-barnsley-fern/</guid>
+      <guid>http://localhost:1313/post/2018-06-28-barnsley-fern/</guid>
       <description>
         
           
@@ -89,10 +89,10 @@
     
     <item>
       <title>Kruskal&#39;s Algorithm Visualized With Processing</title>
-      <link>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</link>
+      <link>http://localhost:1313/post/2018-04-11-kruskal-algorithm-processing/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</guid>
+      <guid>http://localhost:1313/post/2018-04-11-kruskal-algorithm-processing/</guid>
       <description>
         
           
@@ -105,10 +105,10 @@
     
     <item>
       <title>Collatz Conjecture &#43; Unit Circle</title>
-      <link>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</link>
+      <link>http://localhost:1313/post/2018-04-09-collatz-conjecture-unit-circle/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</guid>
+      <guid>http://localhost:1313/post/2018-04-09-collatz-conjecture-unit-circle/</guid>
       <description>
         
           
@@ -121,10 +121,10 @@
     
     <item>
       <title>Minimum Spanning Tree Visualized</title>
-      <link>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</link>
+      <link>http://localhost:1313/post/2018-04-07-minimum-spanning-tree-visualized/</link>
       <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</guid>
+      <guid>http://localhost:1313/post/2018-04-07-minimum-spanning-tree-visualized/</guid>
       <description>
         
           
@@ -137,10 +137,10 @@
     
     <item>
       <title>AT&amp;T Hackathon</title>
-      <link>https://trimad.github.io/post/2018-03-12-att-hackathon/</link>
+      <link>http://localhost:1313/post/2018-03-12-att-hackathon/</link>
       <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-03-12-att-hackathon/</guid>
+      <guid>http://localhost:1313/post/2018-03-12-att-hackathon/</guid>
       <description>
         
           
@@ -158,10 +158,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Generating Terrain with Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2018-01-03-generating-terrain-with-open-simplex-noise/</link>
       <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2018-01-03-generating-terrain-with-open-simplex-noise/</guid>
       <description>
         
           
@@ -174,10 +174,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2018-01-02-open-simplex-noise/</link>
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2018-01-02-open-simplex-noise/</guid>
       <description>
         
           
@@ -190,10 +190,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Flipping Tiles</title>
-      <link>https://trimad.github.io/post/2017-11-18-flippy-tiles/</link>
+      <link>http://localhost:1313/post/2017-11-18-flippy-tiles/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-11-18-flippy-tiles/</guid>
+      <guid>http://localhost:1313/post/2017-11-18-flippy-tiles/</guid>
       <description>
         
           
@@ -206,10 +206,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Juno Cam Image Processing</title>
-      <link>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</link>
+      <link>http://localhost:1313/post/2017-11-12-juno-cam-image-processing/</link>
       <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</guid>
+      <guid>http://localhost:1313/post/2017-11-12-juno-cam-image-processing/</guid>
       <description>
         
           
@@ -222,10 +222,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Counting Sort</title>
-      <link>https://trimad.github.io/post/2017-07-18-counting-sort/</link>
+      <link>http://localhost:1313/post/2017-07-18-counting-sort/</link>
       <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-07-18-counting-sort/</guid>
+      <guid>http://localhost:1313/post/2017-07-18-counting-sort/</guid>
       <description>
         
           

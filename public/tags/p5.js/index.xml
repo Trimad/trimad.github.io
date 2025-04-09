@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>P5.js on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/p5.js/</link>
+    <link>http://localhost:1313/tags/p5.js/</link>
     <description>Recent content in P5.js on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/p5.js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/p5.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Disco Ball</title>
-      <link>https://trimad.github.io/post/2023-08-24-disco-ball/</link>
+      <link>http://localhost:1313/post/2023-08-24-disco-ball/</link>
       <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-08-24-disco-ball/</guid>
+      <guid>http://localhost:1313/post/2023-08-24-disco-ball/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Simple 2D Terrain Generation Using Perlin Noise</title>
-      <link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link>
+      <link>http://localhost:1313/post/2017-07-16-simple-2d-perlin-noise/</link>
       <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid>
+      <guid>http://localhost:1313/post/2017-07-16-simple-2d-perlin-noise/</guid>
       <description>
         
           

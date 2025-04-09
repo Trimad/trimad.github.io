@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Download on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/download/</link>
+    <link>http://localhost:1313/tags/download/</link>
     <description>Recent content in Download on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/download/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/download/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Download Streams</title>
-      <link>https://trimad.github.io/post/2022-06-09-download-streams/</link>
+      <link>http://localhost:1313/post/2022-06-09-download-streams/</link>
       <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid>
+      <guid>http://localhost:1313/post/2022-06-09-download-streams/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Download YouTube Videos</title>
-      <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
+      <link>http://localhost:1313/post/2022-04-16-downloading-youtube-videos/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid>
+      <guid>http://localhost:1313/post/2022-04-16-downloading-youtube-videos/</guid>
       <description>
         
           

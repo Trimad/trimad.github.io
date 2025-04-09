@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MASM on Hugo Grimoire</title>
-    <link>https://trimad.github.io/categories/masm/</link>
+    <link>http://localhost:1313/categories/masm/</link>
     <description>Recent content in MASM on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/masm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/masm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Demonstrating Procedures and Console Output</title>
-      <link>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</link>
+      <link>http://localhost:1313/post/2017-10-24-demonstrating-procedures-and-console-output/</link>
       <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</guid>
+      <guid>http://localhost:1313/post/2017-10-24-demonstrating-procedures-and-console-output/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Sieve of Eratosthenes</title>
-      <link>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</link>
+      <link>http://localhost:1313/post/2017-10-17-sieve-of-eratosthenes/</link>
       <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</guid>
+      <guid>http://localhost:1313/post/2017-10-17-sieve-of-eratosthenes/</guid>
       <description>
         
           
@@ -41,10 +41,10 @@
     
     <item>
       <title>Nth Fibonacci Number</title>
-      <link>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</link>
+      <link>http://localhost:1313/post/2017-10-07-nth-fibonacci-number/</link>
       <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</guid>
+      <guid>http://localhost:1313/post/2017-10-07-nth-fibonacci-number/</guid>
       <description>
         
           

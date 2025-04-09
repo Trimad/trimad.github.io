@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sound on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/sound/</link>
+    <link>http://localhost:1313/tags/sound/</link>
     <description>Recent content in Sound on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/sound/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sound/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NVIDIA Maxine Windows Audio Effects SDK</title>
-      <link>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
+      <link>http://localhost:1313/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
+      <guid>http://localhost:1313/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
       <description>
         
           

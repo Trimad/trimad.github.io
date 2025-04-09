@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Active Directory on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/active-directory/</link>
+    <link>http://localhost:1313/tags/active-directory/</link>
     <description>Recent content in Active Directory on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/active-directory/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/active-directory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Combining PowerShell Cmdlets</title>
-      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <link>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <guid>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</guid>
       <description>
         
           
@@ -26,10 +26,10 @@
     
     <item>
       <title>Get Group Membership</title>
-      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
+      <link>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</guid>
       <description>
         
           

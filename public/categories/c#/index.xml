@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C# on Hugo Grimoire</title>
-    <link>https://trimad.github.io/categories/c%23/</link>
+    <link>http://localhost:1313/categories/c%23/</link>
     <description>Recent content in C# on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/c%23/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/c%23/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Logistic Map</title>
-      <link>https://trimad.github.io/post/2022-05-14-logistic-map/</link>
+      <link>http://localhost:1313/post/2022-05-14-logistic-map/</link>
       <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-05-14-logistic-map/</guid>
+      <guid>http://localhost:1313/post/2022-05-14-logistic-map/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Buddhabrot</title>
-      <link>https://trimad.github.io/post/2019-08-25-buddhabrot/</link>
+      <link>http://localhost:1313/post/2019-08-25-buddhabrot/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-25-buddhabrot/</guid>
+      <guid>http://localhost:1313/post/2019-08-25-buddhabrot/</guid>
       <description>
         
           

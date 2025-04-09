@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hugo Grimoire</title>
-    <link>https://trimad.github.io/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Genesys Cloud Queue Watcher</title>
-      <link>https://trimad.github.io/post/2025-03-11-genesys-cloud-queue-watcher/</link>
+      <link>http://localhost:1313/post/2025-03-11-genesys-cloud-queue-watcher/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2025-03-11-genesys-cloud-queue-watcher/</guid>
+      <guid>http://localhost:1313/post/2025-03-11-genesys-cloud-queue-watcher/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Managing Microsoft Office Versions with OfficeC2RClient</title>
-      <link>https://trimad.github.io/post/2024-09-10-officec2rclient/</link>
+      <link>http://localhost:1313/post/2024-09-10-officec2rclient/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-09-10-officec2rclient/</guid>
+      <guid>http://localhost:1313/post/2024-09-10-officec2rclient/</guid>
       <description>
         
           
@@ -43,10 +43,10 @@
     
     <item>
       <title>Batch Compress Images</title>
-      <link>https://trimad.github.io/post/2024-07-30-batch-compress-images/</link>
+      <link>http://localhost:1313/post/2024-07-30-batch-compress-images/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-07-30-batch-compress-images/</guid>
+      <guid>http://localhost:1313/post/2024-07-30-batch-compress-images/</guid>
       <description>
         
           
@@ -59,10 +59,10 @@
     
     <item>
       <title>Get Public IP</title>
-      <link>https://trimad.github.io/post/2024-06-24-get-public-ip/</link>
+      <link>http://localhost:1313/post/2024-06-24-get-public-ip/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-06-24-get-public-ip/</guid>
+      <guid>http://localhost:1313/post/2024-06-24-get-public-ip/</guid>
       <description>
         
           
@@ -75,10 +75,10 @@
     
     <item>
       <title>DNS Records</title>
-      <link>https://trimad.github.io/post/2024-06-06-dns-records/</link>
+      <link>http://localhost:1313/post/2024-06-06-dns-records/</link>
       <pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-06-06-dns-records/</guid>
+      <guid>http://localhost:1313/post/2024-06-06-dns-records/</guid>
       <description>
         
           
@@ -91,10 +91,10 @@
     
     <item>
       <title>Visualizing Folder Permissions</title>
-      <link>https://trimad.github.io/post/2024-06-01-visualizing-folder-permissions/</link>
+      <link>http://localhost:1313/post/2024-06-01-visualizing-folder-permissions/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-06-01-visualizing-folder-permissions/</guid>
+      <guid>http://localhost:1313/post/2024-06-01-visualizing-folder-permissions/</guid>
       <description>
         
           
@@ -107,10 +107,10 @@
     
     <item>
       <title>User Lockout Report</title>
-      <link>https://trimad.github.io/post/2024-05-30-user-lockout-report/</link>
+      <link>http://localhost:1313/post/2024-05-30-user-lockout-report/</link>
       <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-05-30-user-lockout-report/</guid>
+      <guid>http://localhost:1313/post/2024-05-30-user-lockout-report/</guid>
       <description>
         
           
@@ -123,10 +123,10 @@
     
     <item>
       <title>Window Watcher</title>
-      <link>https://trimad.github.io/post/2024-03-25-window-watcher/</link>
+      <link>http://localhost:1313/post/2024-03-25-window-watcher/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-03-25-window-watcher/</guid>
+      <guid>http://localhost:1313/post/2024-03-25-window-watcher/</guid>
       <description>
         
           
@@ -139,10 +139,10 @@
     
     <item>
       <title>Mastering DNS Configuration: Remote and Local Techniques</title>
-      <link>https://trimad.github.io/post/2024-03-21-change-dns-remotely/</link>
+      <link>http://localhost:1313/post/2024-03-21-change-dns-remotely/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-03-21-change-dns-remotely/</guid>
+      <guid>http://localhost:1313/post/2024-03-21-change-dns-remotely/</guid>
       <description>
         
           
@@ -155,10 +155,10 @@
     
     <item>
       <title>Take Control</title>
-      <link>https://trimad.github.io/post/2024-01-02-take-control/</link>
+      <link>http://localhost:1313/post/2024-01-02-take-control/</link>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-01-02-take-control/</guid>
+      <guid>http://localhost:1313/post/2024-01-02-take-control/</guid>
       <description>
         
           
@@ -171,10 +171,10 @@
     
     <item>
       <title>Local AI API</title>
-      <link>https://trimad.github.io/post/2024-02-05-local-ai-api/</link>
+      <link>http://localhost:1313/post/2024-02-05-local-ai-api/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-02-05-local-ai-api/</guid>
+      <guid>http://localhost:1313/post/2024-02-05-local-ai-api/</guid>
       <description>
         
           
@@ -187,10 +187,10 @@
     
     <item>
       <title>Generate Knowledge Graphs with LLMs</title>
-      <link>https://trimad.github.io/post/2023-12-14-pyvis-knowledge-graphs/</link>
+      <link>http://localhost:1313/post/2023-12-14-pyvis-knowledge-graphs/</link>
       <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-12-14-pyvis-knowledge-graphs/</guid>
+      <guid>http://localhost:1313/post/2023-12-14-pyvis-knowledge-graphs/</guid>
       <description>
         
           
@@ -203,10 +203,10 @@
     
     <item>
       <title>PSWindowsUpdate</title>
-      <link>https://trimad.github.io/post/2023-10-10-pswindowsupdate/</link>
+      <link>http://localhost:1313/post/2023-10-10-pswindowsupdate/</link>
       <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-10-10-pswindowsupdate/</guid>
+      <guid>http://localhost:1313/post/2023-10-10-pswindowsupdate/</guid>
       <description>
         
           
@@ -219,10 +219,10 @@
     
     <item>
       <title>Gmail Photo Downloader</title>
-      <link>https://trimad.github.io/post/2023-09-11-picture-auto-downloader/</link>
+      <link>http://localhost:1313/post/2023-09-11-picture-auto-downloader/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-09-11-picture-auto-downloader/</guid>
+      <guid>http://localhost:1313/post/2023-09-11-picture-auto-downloader/</guid>
       <description>
         
           
@@ -235,10 +235,10 @@
     
     <item>
       <title>Disco Ball</title>
-      <link>https://trimad.github.io/post/2023-08-24-disco-ball/</link>
+      <link>http://localhost:1313/post/2023-08-24-disco-ball/</link>
       <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-08-24-disco-ball/</guid>
+      <guid>http://localhost:1313/post/2023-08-24-disco-ball/</guid>
       <description>
         
           
@@ -251,10 +251,10 @@
     
     <item>
       <title>Python networkx Library</title>
-      <link>https://trimad.github.io/post/2023-08-15-networkx/</link>
+      <link>http://localhost:1313/post/2023-08-15-networkx/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-08-15-networkx/</guid>
+      <guid>http://localhost:1313/post/2023-08-15-networkx/</guid>
       <description>
         
           
@@ -267,10 +267,10 @@
     
     <item>
       <title>Mapping Network Drives Using PowerShell and SID</title>
-      <link>https://trimad.github.io/post/2023-07-20-mapped-drives/</link>
+      <link>http://localhost:1313/post/2023-07-20-mapped-drives/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-20-mapped-drives/</guid>
+      <guid>http://localhost:1313/post/2023-07-20-mapped-drives/</guid>
       <description>
         
           
@@ -283,10 +283,10 @@
     
     <item>
       <title>Join a Workstation to Active Directory with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-07-13-join-active-directory/</link>
+      <link>http://localhost:1313/post/2023-07-13-join-active-directory/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-07-13-join-active-directory/</guid>
+      <guid>http://localhost:1313/post/2023-07-13-join-active-directory/</guid>
       <description>
         
           
@@ -299,10 +299,10 @@
     
     <item>
       <title>QR Codes</title>
-      <link>https://trimad.github.io/post/2023-06-24-qr/</link>
+      <link>http://localhost:1313/post/2023-06-24-qr/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-06-24-qr/</guid>
+      <guid>http://localhost:1313/post/2023-06-24-qr/</guid>
       <description>
         
           
@@ -315,10 +315,10 @@
     
     <item>
       <title>Deforum Cheat Sheet</title>
-      <link>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</link>
+      <link>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-24-deforum-cheat-sheet/</guid>
+      <guid>http://localhost:1313/post/2023-05-24-deforum-cheat-sheet/</guid>
       <description>
         
           
@@ -331,10 +331,10 @@
     
     <item>
       <title>Yahoo Finance API via RapidAPI</title>
-      <link>https://trimad.github.io/post/2023-05-11-rapidapi/</link>
+      <link>http://localhost:1313/post/2023-05-11-rapidapi/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-11-rapidapi/</guid>
+      <guid>http://localhost:1313/post/2023-05-11-rapidapi/</guid>
       <description>
         
           
@@ -347,10 +347,10 @@
     
     <item>
       <title>Key Event Tester</title>
-      <link>https://trimad.github.io/post/2023-05-08-keycode-event-test/</link>
+      <link>http://localhost:1313/post/2023-05-08-keycode-event-test/</link>
       <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-08-keycode-event-test/</guid>
+      <guid>http://localhost:1313/post/2023-05-08-keycode-event-test/</guid>
       <description>
         
           
@@ -363,10 +363,10 @@
     
     <item>
       <title>Deep Floyd IF</title>
-      <link>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</link>
+      <link>http://localhost:1313/post/2023-05-03-deep-floyd-if/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-03-deep-floyd-if/</guid>
+      <guid>http://localhost:1313/post/2023-05-03-deep-floyd-if/</guid>
       <description>
         
           
@@ -379,10 +379,10 @@
     
     <item>
       <title>ACL</title>
-      <link>https://trimad.github.io/post/2023-05-02-acl/</link>
+      <link>http://localhost:1313/post/2023-05-02-acl/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-02-acl/</guid>
+      <guid>http://localhost:1313/post/2023-05-02-acl/</guid>
       <description>
         
           
@@ -395,10 +395,10 @@
     
     <item>
       <title>net use</title>
-      <link>https://trimad.github.io/post/2023-04-13-net-use/</link>
+      <link>http://localhost:1313/post/2023-04-13-net-use/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-13-net-use/</guid>
+      <guid>http://localhost:1313/post/2023-04-13-net-use/</guid>
       <description>
         
           
@@ -411,10 +411,10 @@
     
     <item>
       <title>Thin Plate Spline Motion Model</title>
-      <link>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</link>
+      <link>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-12-thin-plate-spline-motion-model/</guid>
+      <guid>http://localhost:1313/post/2023-04-12-thin-plate-spline-motion-model/</guid>
       <description>
         
           
@@ -427,10 +427,10 @@
     
     <item>
       <title>Hiding users from GAL</title>
-      <link>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</link>
+      <link>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-04-05-hiding-users-from-gal/</guid>
+      <guid>http://localhost:1313/post/2023-04-05-hiding-users-from-gal/</guid>
       <description>
         
           
@@ -443,10 +443,10 @@
     
     <item>
       <title>Random Password Generator</title>
-      <link>https://trimad.github.io/post/2023-03-22-random-password-generator/</link>
+      <link>http://localhost:1313/post/2023-03-22-random-password-generator/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-22-random-password-generator/</guid>
+      <guid>http://localhost:1313/post/2023-03-22-random-password-generator/</guid>
       <description>
         
           
@@ -459,10 +459,10 @@
     
     <item>
       <title>Windows Remediation</title>
-      <link>https://trimad.github.io/post/2023-03-03-windows-remediation/</link>
+      <link>http://localhost:1313/post/2023-03-03-windows-remediation/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-03-windows-remediation/</guid>
+      <guid>http://localhost:1313/post/2023-03-03-windows-remediation/</guid>
       <description>
         
           
@@ -475,10 +475,10 @@
     
     <item>
       <title>Windows Defender Firewall</title>
-      <link>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</link>
+      <link>http://localhost:1313/post/2023-03-03-windows-defender-firewall/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-03-03-windows-defender-firewall/</guid>
+      <guid>http://localhost:1313/post/2023-03-03-windows-defender-firewall/</guid>
       <description>
         
           
@@ -491,10 +491,10 @@
     
     <item>
       <title>OpenAI Whisper</title>
-      <link>https://trimad.github.io/post/2023-02-24-openai-whisper/</link>
+      <link>http://localhost:1313/post/2023-02-24-openai-whisper/</link>
       <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-24-openai-whisper/</guid>
+      <guid>http://localhost:1313/post/2023-02-24-openai-whisper/</guid>
       <description>
         
           
@@ -507,10 +507,10 @@
     
     <item>
       <title>Microsoft LAPS (Local Administrator Password Solution)</title>
-      <link>https://trimad.github.io/post/2023-02-22-laps/</link>
+      <link>http://localhost:1313/post/2023-02-22-laps/</link>
       <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-22-laps/</guid>
+      <guid>http://localhost:1313/post/2023-02-22-laps/</guid>
       <description>
         
           
@@ -523,10 +523,10 @@
     
     <item>
       <title>MicrosoftTeams PowerShell module</title>
-      <link>https://trimad.github.io/post/2023-02-23-microsoftteams/</link>
+      <link>http://localhost:1313/post/2023-02-23-microsoftteams/</link>
       <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-23-microsoftteams/</guid>
+      <guid>http://localhost:1313/post/2023-02-23-microsoftteams/</guid>
       <description>
         
           
@@ -539,10 +539,10 @@
     
     <item>
       <title>net user</title>
-      <link>https://trimad.github.io/post/2023-02-21-net-user/</link>
+      <link>http://localhost:1313/post/2023-02-21-net-user/</link>
       <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-21-net-user/</guid>
+      <guid>http://localhost:1313/post/2023-02-21-net-user/</guid>
       <description>
         
           
@@ -555,10 +555,10 @@
     
     <item>
       <title>Decode Phishing Emails</title>
-      <link>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</link>
+      <link>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-15-decode-phishing-emails/</guid>
+      <guid>http://localhost:1313/post/2023-02-15-decode-phishing-emails/</guid>
       <description>
         
           
@@ -571,10 +571,10 @@
     
     <item>
       <title>Force domain controller to sync with AzureAD</title>
-      <link>https://trimad.github.io/post/2023-02-09-force-ad-sync/</link>
+      <link>http://localhost:1313/post/2023-02-09-force-ad-sync/</link>
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-09-force-ad-sync/</guid>
+      <guid>http://localhost:1313/post/2023-02-09-force-ad-sync/</guid>
       <description>
         
           
@@ -587,10 +587,10 @@
     
     <item>
       <title>Handling Hacked Accounts and Purging Emails in M365</title>
-      <link>https://trimad.github.io/post/2023-02-07-purge-emails/</link>
+      <link>http://localhost:1313/post/2023-02-07-purge-emails/</link>
       <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-07-purge-emails/</guid>
+      <guid>http://localhost:1313/post/2023-02-07-purge-emails/</guid>
       <description>
         
           
@@ -603,10 +603,10 @@
     
     <item>
       <title>MiDaS</title>
-      <link>https://trimad.github.io/post/2023-02-06-midas/</link>
+      <link>http://localhost:1313/post/2023-02-06-midas/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-06-midas/</guid>
+      <guid>http://localhost:1313/post/2023-02-06-midas/</guid>
       <description>
         
           
@@ -637,10 +637,10 @@
     
     <item>
       <title>Uninstall Third-Party Drivers with CMD</title>
-      <link>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</link>
+      <link>http://localhost:1313/post/2023-02-17-uninstall-drivers/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-17-uninstall-drivers/</guid>
+      <guid>http://localhost:1313/post/2023-02-17-uninstall-drivers/</guid>
       <description>
         
           
@@ -659,10 +659,10 @@
     
     <item>
       <title>Frame Interpolation Large Motion (FILM)</title>
-      <link>https://trimad.github.io/post/2023-02-05-film/</link>
+      <link>http://localhost:1313/post/2023-02-05-film/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-05-film/</guid>
+      <guid>http://localhost:1313/post/2023-02-05-film/</guid>
       <description>
         
           
@@ -675,10 +675,10 @@
     
     <item>
       <title>Stable Diffusion Scripts</title>
-      <link>https://trimad.github.io/post/2023-02-05-stable-diffusion/</link>
+      <link>http://localhost:1313/post/2023-02-05-stable-diffusion/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-05-stable-diffusion/</guid>
+      <guid>http://localhost:1313/post/2023-02-05-stable-diffusion/</guid>
       <description>
         
           
@@ -691,10 +691,10 @@
     
     <item>
       <title>Mastering Time with Shell and PowerShell</title>
-      <link>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
+      <link>http://localhost:1313/post/2023-02-02-mastering-time-with-shell-and-powershell/</link>
       <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
+      <guid>http://localhost:1313/post/2023-02-02-mastering-time-with-shell-and-powershell/</guid>
       <description>
         
           
@@ -707,10 +707,10 @@
     
     <item>
       <title>Download Streams</title>
-      <link>https://trimad.github.io/post/2022-06-09-download-streams/</link>
+      <link>http://localhost:1313/post/2022-06-09-download-streams/</link>
       <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-06-09-download-streams/</guid>
+      <guid>http://localhost:1313/post/2022-06-09-download-streams/</guid>
       <description>
         
           
@@ -723,10 +723,10 @@
     
     <item>
       <title>Logistic Map</title>
-      <link>https://trimad.github.io/post/2022-05-14-logistic-map/</link>
+      <link>http://localhost:1313/post/2022-05-14-logistic-map/</link>
       <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-05-14-logistic-map/</guid>
+      <guid>http://localhost:1313/post/2022-05-14-logistic-map/</guid>
       <description>
         
           
@@ -739,10 +739,10 @@
     
     <item>
       <title>Archimedean Spiral</title>
-      <link>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</link>
+      <link>http://localhost:1313/post/2022-05-04-archimedean-spiral/</link>
       <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-05-04-archimedean-spiral/</guid>
+      <guid>http://localhost:1313/post/2022-05-04-archimedean-spiral/</guid>
       <description>
         
           
@@ -769,7 +769,7 @@
       alt=&#34;Desktop View&#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;https://trimad.github.io/post/2022-05-04-archimedean-spiral/post/2022-05-04-archimedean-spiral/assets/img/2022-05-04/archimedes3.svg&#34;
+        src=&#34;http://localhost:1313/post/2022-05-04-archimedean-spiral/post/2022-05-04-archimedean-spiral/assets/img/2022-05-04/archimedes3.svg&#34;
       
       
     /&gt;
@@ -785,10 +785,10 @@
     
     <item>
       <title>NVIDIA Maxine Windows Audio Effects SDK</title>
-      <link>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
+      <link>http://localhost:1313/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
+      <guid>http://localhost:1313/post/2022-04-20-using-the-nvidia-maxine-audio-effects-sdk-demo/</guid>
       <description>
         
           
@@ -801,10 +801,10 @@
     
     <item>
       <title>Download YouTube Videos</title>
-      <link>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</link>
+      <link>http://localhost:1313/post/2022-04-16-downloading-youtube-videos/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-16-downloading-youtube-videos/</guid>
+      <guid>http://localhost:1313/post/2022-04-16-downloading-youtube-videos/</guid>
       <description>
         
           
@@ -821,10 +821,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Dump WiFi Passwords</title>
-      <link>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</link>
+      <link>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</link>
       <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-04-11-dump-wifi-passwords/</guid>
+      <guid>http://localhost:1313/post/2022-04-11-dump-wifi-passwords/</guid>
       <description>
         
           
@@ -838,10 +838,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Record Desktop Silently</title>
-      <link>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</link>
+      <link>http://localhost:1313/post/2022-02-09-record-desktop-silently/</link>
       <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-02-09-record-desktop-silently/</guid>
+      <guid>http://localhost:1313/post/2022-02-09-record-desktop-silently/</guid>
       <description>
         
           
@@ -870,10 +870,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>ffmpeg</title>
-      <link>https://trimad.github.io/post/2022-01-27-ffmpeg/</link>
+      <link>http://localhost:1313/post/2022-01-27-ffmpeg/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2022-01-27-ffmpeg/</guid>
+      <guid>http://localhost:1313/post/2022-01-27-ffmpeg/</guid>
       <description>
         
           
@@ -953,10 +953,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Combining PowerShell Cmdlets</title>
-      <link>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</link>
+      <link>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-11-17-combining-powershell-cmdlets/</guid>
+      <guid>http://localhost:1313/post/2021-11-17-combining-powershell-cmdlets/</guid>
       <description>
         
           
@@ -970,10 +970,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Get Group Membership</title>
-      <link>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</link>
+      <link>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-active-directory-group-membership/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-active-directory-group-membership/</guid>
       <description>
         
           
@@ -1099,10 +1099,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Managing Exchange Calendars</title>
-      <link>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</link>
+      <link>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-09-16-manage-exchange-online-calendars/</guid>
+      <guid>http://localhost:1313/post/2021-09-16-manage-exchange-online-calendars/</guid>
       <description>
         
           
@@ -1148,10 +1148,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Managing Auto-Expanding Archives</title>
-      <link>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</link>
+      <link>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</link>
       <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-07-06-manage-auto-expanding-archives/</guid>
+      <guid>http://localhost:1313/post/2021-07-06-manage-auto-expanding-archives/</guid>
       <description>
         
           
@@ -1165,10 +1165,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>k-means Clustering</title>
-      <link>https://trimad.github.io/post/2021-05-18-k-means-clustering/</link>
+      <link>http://localhost:1313/post/2021-05-18-k-means-clustering/</link>
       <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2021-05-18-k-means-clustering/</guid>
+      <guid>http://localhost:1313/post/2021-05-18-k-means-clustering/</guid>
       <description>
         
           
@@ -1181,10 +1181,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Remote Reboot With SMTP Status</title>
-      <link>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</link>
+      <link>http://localhost:1313/post/2019-08-28-remote-reboot-with-smtp-status/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-28-remote-reboot-with-smtp-status/</guid>
+      <guid>http://localhost:1313/post/2019-08-28-remote-reboot-with-smtp-status/</guid>
       <description>
         
           
@@ -1198,10 +1198,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Remove-AppxPackage</title>
-      <link>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</link>
+      <link>http://localhost:1313/post/2019-08-28-remove-appx-packages/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-28-remove-appx-packages/</guid>
+      <guid>http://localhost:1313/post/2019-08-28-remove-appx-packages/</guid>
       <description>
         
           
@@ -1215,10 +1215,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Buddhabrot</title>
-      <link>https://trimad.github.io/post/2019-08-25-buddhabrot/</link>
+      <link>http://localhost:1313/post/2019-08-25-buddhabrot/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-25-buddhabrot/</guid>
+      <guid>http://localhost:1313/post/2019-08-25-buddhabrot/</guid>
       <description>
         
           
@@ -1231,10 +1231,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Daily Donation Report</title>
-      <link>https://trimad.github.io/post/2019-08-25-daily-donation-report/</link>
+      <link>http://localhost:1313/post/2019-08-25-daily-donation-report/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-25-daily-donation-report/</guid>
+      <guid>http://localhost:1313/post/2019-08-25-daily-donation-report/</guid>
       <description>
         
           
@@ -1248,15 +1248,14 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Enable AutoAdminLogon with PowerShell</title>
-      <link>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</link>
+      <link>http://localhost:1313/post/2019-08-19-enable-autoadminlogon/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-19-enable-autoadminlogon/</guid>
+      <guid>http://localhost:1313/post/2019-08-19-enable-autoadminlogon/</guid>
       <description>
         
           
-            &lt;p&gt;This script was written to satisfy a niche case where I temporarily needed a PoS (Point of Sale) to automatically login upon startup using AD credentials.&lt;/p&gt;
-&lt;script src=&#34;https://gist.github.com/Trimad/d0f3bcb296555e23d53a7196d8df53c9.js&#34;&gt;&lt;/script&gt;
+            This script was written to satisfy a niche case where I temporarily needed a PoS (Point of Sale) to automatically login upon startup using AD credentials.
           
           
         
@@ -1265,10 +1264,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Blending Textures With Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2019-08-18-blending-textures-with-open-simplex-noise/</link>
       <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2019-08-18-blending-textures-with-open-simplex-noise/</guid>
       <description>
         
           
@@ -1281,10 +1280,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Robo Mirror</title>
-      <link>https://trimad.github.io/post/2019-02-28-robo-mirror/</link>
+      <link>http://localhost:1313/post/2019-02-28-robo-mirror/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2019-02-28-robo-mirror/</guid>
+      <guid>http://localhost:1313/post/2019-02-28-robo-mirror/</guid>
       <description>
         
           
@@ -1298,10 +1297,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Cube Wave</title>
-      <link>https://trimad.github.io/post/2018-12-30-cube-wave/</link>
+      <link>http://localhost:1313/post/2018-12-30-cube-wave/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-12-30-cube-wave/</guid>
+      <guid>http://localhost:1313/post/2018-12-30-cube-wave/</guid>
       <description>
         
           
@@ -1314,10 +1313,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Lorenz Doll</title>
-      <link>https://trimad.github.io/post/2018-11-21-lorenz-doll/</link>
+      <link>http://localhost:1313/post/2018-11-21-lorenz-doll/</link>
       <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-21-lorenz-doll/</guid>
+      <guid>http://localhost:1313/post/2018-11-21-lorenz-doll/</guid>
       <description>
         
           
@@ -1330,10 +1329,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Fridge Magnet Simulator</title>
-      <link>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</link>
+      <link>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</link>
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-16-fridge-magnet-simulator/</guid>
+      <guid>http://localhost:1313/post/2018-11-16-fridge-magnet-simulator/</guid>
       <description>
         
           
@@ -1346,10 +1345,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Orbiting Pixels Utility</title>
-      <link>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</link>
+      <link>http://localhost:1313/post/2018-11-12-orbiting-pixels-utility/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-11-12-orbiting-pixels-utility/</guid>
+      <guid>http://localhost:1313/post/2018-11-12-orbiting-pixels-utility/</guid>
       <description>
         
           
@@ -1362,10 +1361,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Barnsley Fern</title>
-      <link>https://trimad.github.io/post/2018-06-28-barnsley-fern/</link>
+      <link>http://localhost:1313/post/2018-06-28-barnsley-fern/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-06-28-barnsley-fern/</guid>
+      <guid>http://localhost:1313/post/2018-06-28-barnsley-fern/</guid>
       <description>
         
           
@@ -1378,10 +1377,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Comparing Java Distance Functions</title>
-      <link>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</link>
+      <link>http://localhost:1313/post/2018-04-17-comparing-java-distance-functions/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-17-comparing-java-distance-functions/</guid>
+      <guid>http://localhost:1313/post/2018-04-17-comparing-java-distance-functions/</guid>
       <description>
         
           
@@ -1401,10 +1400,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Ulam Spiral</title>
-      <link>https://trimad.github.io/post/2018-05-17-ulam-sprial/</link>
+      <link>http://localhost:1313/post/2018-05-17-ulam-sprial/</link>
       <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-05-17-ulam-sprial/</guid>
+      <guid>http://localhost:1313/post/2018-05-17-ulam-sprial/</guid>
       <description>
         
           
@@ -1423,10 +1422,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Faster Java String Inputs</title>
-      <link>https://trimad.github.io/post/2018-04-11-java-turbo-reader/</link>
+      <link>http://localhost:1313/post/2018-04-11-java-turbo-reader/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-11-java-turbo-reader/</guid>
+      <guid>http://localhost:1313/post/2018-04-11-java-turbo-reader/</guid>
       <description>
         
           
@@ -1439,10 +1438,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Kruskal&#39;s Algorithm Visualized With Processing</title>
-      <link>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</link>
+      <link>http://localhost:1313/post/2018-04-11-kruskal-algorithm-processing/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-11-kruskal-algorithm-processing/</guid>
+      <guid>http://localhost:1313/post/2018-04-11-kruskal-algorithm-processing/</guid>
       <description>
         
           
@@ -1455,10 +1454,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Collatz Conjecture &#43; Unit Circle</title>
-      <link>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</link>
+      <link>http://localhost:1313/post/2018-04-09-collatz-conjecture-unit-circle/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-09-collatz-conjecture-unit-circle/</guid>
+      <guid>http://localhost:1313/post/2018-04-09-collatz-conjecture-unit-circle/</guid>
       <description>
         
           
@@ -1471,10 +1470,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Minimum Spanning Tree Visualized</title>
-      <link>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</link>
+      <link>http://localhost:1313/post/2018-04-07-minimum-spanning-tree-visualized/</link>
       <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-04-07-minimum-spanning-tree-visualized/</guid>
+      <guid>http://localhost:1313/post/2018-04-07-minimum-spanning-tree-visualized/</guid>
       <description>
         
           
@@ -1487,10 +1486,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>Basic Prime Checker, C&#43;&#43;</title>
-      <link>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</link>
+      <link>http://localhost:1313/post/2018-03-24-basic-prime-checker/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-03-24-basic-prime-checker/</guid>
+      <guid>http://localhost:1313/post/2018-03-24-basic-prime-checker/</guid>
       <description>
         
           
@@ -1503,10 +1502,10 @@ yt-dlp is a free and open-source command-line tool for downloading videos and au
     
     <item>
       <title>AT&amp;T Hackathon</title>
-      <link>https://trimad.github.io/post/2018-03-12-att-hackathon/</link>
+      <link>http://localhost:1313/post/2018-03-12-att-hackathon/</link>
       <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-03-12-att-hackathon/</guid>
+      <guid>http://localhost:1313/post/2018-03-12-att-hackathon/</guid>
       <description>
         
           
@@ -1524,10 +1523,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Merge Sort using WEBGL</title>
-      <link>https://trimad.github.io/post/2018-02-05-merge-sort/</link>
+      <link>http://localhost:1313/post/2018-02-05-merge-sort/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-02-05-merge-sort/</guid>
+      <guid>http://localhost:1313/post/2018-02-05-merge-sort/</guid>
       <description>
         
           
@@ -1540,10 +1539,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>10PRINT Image Filter</title>
-      <link>https://trimad.github.io/post/2018-01-31-10print-image-filter/</link>
+      <link>http://localhost:1313/post/2018-01-31-10print-image-filter/</link>
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-31-10print-image-filter/</guid>
+      <guid>http://localhost:1313/post/2018-01-31-10print-image-filter/</guid>
       <description>
         
           
@@ -1561,10 +1560,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Insertion Sort using WEBGL</title>
-      <link>https://trimad.github.io/post/2018-01-28-insertion-sort/</link>
+      <link>http://localhost:1313/post/2018-01-28-insertion-sort/</link>
       <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-28-insertion-sort/</guid>
+      <guid>http://localhost:1313/post/2018-01-28-insertion-sort/</guid>
       <description>
         
           
@@ -1577,10 +1576,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Generating Terrain with Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2018-01-03-generating-terrain-with-open-simplex-noise/</link>
       <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-03-generating-terrain-with-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2018-01-03-generating-terrain-with-open-simplex-noise/</guid>
       <description>
         
           
@@ -1593,10 +1592,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Open Simplex Noise</title>
-      <link>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</link>
+      <link>http://localhost:1313/post/2018-01-02-open-simplex-noise/</link>
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2018-01-02-open-simplex-noise/</guid>
+      <guid>http://localhost:1313/post/2018-01-02-open-simplex-noise/</guid>
       <description>
         
           
@@ -1609,10 +1608,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Flipping Tiles</title>
-      <link>https://trimad.github.io/post/2017-11-18-flippy-tiles/</link>
+      <link>http://localhost:1313/post/2017-11-18-flippy-tiles/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-11-18-flippy-tiles/</guid>
+      <guid>http://localhost:1313/post/2017-11-18-flippy-tiles/</guid>
       <description>
         
           
@@ -1625,10 +1624,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Juno Cam Image Processing</title>
-      <link>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</link>
+      <link>http://localhost:1313/post/2017-11-12-juno-cam-image-processing/</link>
       <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-11-12-juno-cam-image-processing/</guid>
+      <guid>http://localhost:1313/post/2017-11-12-juno-cam-image-processing/</guid>
       <description>
         
           
@@ -1641,10 +1640,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Demonstrating Procedures and Console Output</title>
-      <link>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</link>
+      <link>http://localhost:1313/post/2017-10-24-demonstrating-procedures-and-console-output/</link>
       <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-10-24-demonstrating-procedures-and-console-output/</guid>
+      <guid>http://localhost:1313/post/2017-10-24-demonstrating-procedures-and-console-output/</guid>
       <description>
         
           
@@ -1657,10 +1656,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Sieve of Eratosthenes</title>
-      <link>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</link>
+      <link>http://localhost:1313/post/2017-10-17-sieve-of-eratosthenes/</link>
       <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-10-17-sieve-of-eratosthenes/</guid>
+      <guid>http://localhost:1313/post/2017-10-17-sieve-of-eratosthenes/</guid>
       <description>
         
           
@@ -1673,10 +1672,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Nth Fibonacci Number</title>
-      <link>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</link>
+      <link>http://localhost:1313/post/2017-10-07-nth-fibonacci-number/</link>
       <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-10-07-nth-fibonacci-number/</guid>
+      <guid>http://localhost:1313/post/2017-10-07-nth-fibonacci-number/</guid>
       <description>
         
           
@@ -1689,10 +1688,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Counting Sort</title>
-      <link>https://trimad.github.io/post/2017-07-18-counting-sort/</link>
+      <link>http://localhost:1313/post/2017-07-18-counting-sort/</link>
       <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-07-18-counting-sort/</guid>
+      <guid>http://localhost:1313/post/2017-07-18-counting-sort/</guid>
       <description>
         
           
@@ -1705,10 +1704,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Simple 2D Terrain Generation Using Perlin Noise</title>
-      <link>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</link>
+      <link>http://localhost:1313/post/2017-07-16-simple-2d-perlin-noise/</link>
       <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2017-07-16-simple-2d-perlin-noise/</guid>
+      <guid>http://localhost:1313/post/2017-07-16-simple-2d-perlin-noise/</guid>
       <description>
         
           
@@ -1721,10 +1720,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title>Arrays</title>
-      <link>https://trimad.github.io/post/2016-12-13-arrays/</link>
+      <link>http://localhost:1313/post/2016-12-13-arrays/</link>
       <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2016-12-13-arrays/</guid>
+      <guid>http://localhost:1313/post/2016-12-13-arrays/</guid>
       <description>
         
           
@@ -1737,10 +1736,10 @@ end. I wrote a lot of useful functions for building 3D scenes and I can&#39;t wa
     
     <item>
       <title></title>
-      <link>https://trimad.github.io/post/2024-10-23-delta-sync/</link>
+      <link>http://localhost:1313/post/2024-10-23-delta-sync/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2024-10-23-delta-sync/</guid>
+      <guid>http://localhost:1313/post/2024-10-23-delta-sync/</guid>
       <description>
         
           

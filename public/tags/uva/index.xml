@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uva on Hugo Grimoire</title>
-    <link>https://trimad.github.io/tags/uva/</link>
+    <link>http://localhost:1313/tags/uva/</link>
     <description>Recent content in Uva on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/tags/uva/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/uva/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

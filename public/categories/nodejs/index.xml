@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nodejs on Hugo Grimoire</title>
-    <link>https://trimad.github.io/categories/nodejs/</link>
+    <link>http://localhost:1313/categories/nodejs/</link>
     <description>Recent content in Nodejs on Hugo Grimoire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trimad.github.io/categories/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/nodejs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yahoo Finance API via RapidAPI</title>
-      <link>https://trimad.github.io/post/2023-05-11-rapidapi/</link>
+      <link>http://localhost:1313/post/2023-05-11-rapidapi/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://trimad.github.io/post/2023-05-11-rapidapi/</guid>
+      <guid>http://localhost:1313/post/2023-05-11-rapidapi/</guid>
       <description>
         
           
